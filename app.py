@@ -390,6 +390,10 @@ def file_version(path: Path) -> int:
 
 
 def vehicle_image_source(row: pd.Series) -> str | Path | None:
+    review_status = safe_str(row.get("image_review_status")).lower()
+    if review_status != "approved":
+        return None
+
     image_file = safe_str(row.get("image_file"))
     if image_file:
         candidates = [
@@ -427,6 +431,9 @@ def load_vehicles(version: int) -> pd.DataFrame:
         "target_tag": "",
         "image_url": "",
         "image_file": "",
+        "image_source_url": "",
+        "image_source_type": "",
+        "image_review_status": "",
         "price_url": "",
         "catalog_url": "",
         "active": "Y",
