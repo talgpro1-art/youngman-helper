@@ -1,50 +1,50 @@
-"rank","rank_change","brand","model","vehicle","units_sold","segment","powertrain","target_tag","image_url","price_url","catalog_url","active","note","image_file","image_source_url","image_review_status"
-"1","-","기아","쏘렌토","기아 쏘렌토","9,863","SUV","확인 필요","패밀리/장기렌트/레저","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf","","Y","직접 PDF URL","","",""
-"2","-","테슬라","Model Y","테슬라 Model Y","9,726","전기차","전기","전기차/법인/출퇴근/친환경","","https://www.tesla.com/ko_kr/modely/design","","Y","공식 홈페이지 가격/주문 페이지","","",""
-"3","-","현대","그랜저","현대 그랜저","9,589","세단","확인 필요","개인/법인/출퇴근","","https://www.hyundai.com/contents/repn-car/catalog/grandeur-hybrid-2026-price.pdf","https://www.hyundai.com/contents/repn-car/catalog/grandeur-2026-price.pdf","Y","직접 PDF URL","","",""
-"4","-","현대","쏘나타 디 엣지","현대 쏘나타 디 엣지","9,452","세단","확인 필요","개인/법인/출퇴근","","https://www.hyundai.com/contents/repn-car/catalog/sonata-the-edge-price.pdf","","Y","직접 PDF URL","","",""
-"5","-","기아","스포티지","기아 스포티지","9,315","SUV","확인 필요","패밀리/장기렌트/레저","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sportage.pdf","","Y","직접 PDF URL","","",""
-"6","-","기아","카니발","기아 카니발","9,178","MPV","확인 필요","패밀리/법인/의전/다인승","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf","","Y","직접 PDF URL","","",""
-"7","-","현대","아반떼","현대 아반떼","9,041","세단","확인 필요","개인/법인/출퇴근","","https://www.hyundai.com/contents/repn-car/catalog/avante-2026-price.pdf","","Y","직접 PDF URL","","",""
-"8","-","현대","포터 II","현대 포터 II","8,904","상용/업무용","확인 필요","법인/소상공인/물류/업무용","","https://www.hyundai.com/contents/repn-car/catalog/porter2-2024-price.pdf","","Y","직접 PDF URL","","",""
-"9","-","현대","투싼","현대 투싼","8,767","SUV","확인 필요","패밀리/장기렌트/레저","","https://www.hyundai.com/contents/repn-car/catalog/tucson-2026-price.pdf","","Y","직접 PDF URL","","",""
-"10","-","현대","싼타페","현대 싼타페","8,630","SUV","확인 필요","패밀리/장기렌트/레저","","https://www.hyundai.com/contents/repn-car/catalog/santafe-hev-2026-price.pdf","https://www.hyundai.com/contents/repn-car/catalog/santafe-price.pdf","Y","직접 PDF URL","","",""
-"11","-","기아","레이","기아 레이","8,493","경차/소형","확인 필요","가성비/단기렌트/대차/도심형","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf","","Y","직접 PDF URL","","",""
-"12","-","기아","EV3","기아 EV3","8,356","전기차","전기","전기차/법인/출퇴근/친환경","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev3.pdf","","Y","직접 PDF URL","","",""
-"13","-","현대","디 올 뉴 팰리세이드","현대 디 올 뉴 팰리세이드","8,219","SUV","확인 필요","패밀리/장기렌트/레저","","https://www.hyundai.com/contents/repn-car/catalog/palisade-2025-price.pdf","","Y","직접 PDF URL","","",""
-"14","-","제네시스","G80","제네시스 G80","8,082","세단","확인 필요","개인/법인/출퇴근","","https://www.genesis.com/kr/ko/support/download-center/genesis-models.html","","Y","공식 홈페이지 다운로드 센터에서 모델 선택 후 가격표/카탈로그 확인","","",""
-"15","-","기아","EV5","기아 EV5","7,945","전기차","전기","전기차/법인/출퇴근/친환경","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev5.pdf","","Y","직접 PDF URL","","",""
-"16","-","기아","셀토스","기아 셀토스","7,808","SUV","확인 필요","패밀리/장기렌트/레저","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf","","Y","직접 PDF URL","","",""
-"17","-","현대","코나","현대 코나","7,671","SUV","확인 필요","패밀리/장기렌트/레저","","https://www.hyundai.com/contents/repn-car/catalog/the-all-new-kona-hybrid-price.pdf","https://www.hyundai.com/contents/repn-car/catalog/the-all-new-kona-price.pdf","Y","직접 PDF URL","","",""
-"18","-","기아","PV5","기아 PV5","7,534","상용/업무용","확인 필요","법인/소상공인/물류/업무용","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-cargo.pdf","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-passenger.pdf","Y","직접 PDF URL","","",""
-"19","-","기아","K5","기아 K5","7,397","세단","확인 필요","개인/법인/출퇴근","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k5.pdf","","Y","직접 PDF URL","","",""
-"20","-","기아","봉고 3","기아 봉고 3","7,260","상용/업무용","확인 필요","법인/소상공인/물류/업무용","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_bongo3.pdf","","Y","직접 PDF URL","","",""
-"21","-","현대","더 뉴 스타리아","현대 더 뉴 스타리아","7,123","MPV","확인 필요","패밀리/법인/의전/다인승","","https://www.hyundai.com/contents/repn-car/catalog/staria-hybrid-24-price.pdf","https://www.hyundai.com/contents/repn-car/catalog/staria-24-price.pdf","Y","직접 PDF URL","","",""
-"22","-","제네시스","GV70","제네시스 GV70","6,986","SUV","확인 필요","패밀리/장기렌트/레저","","https://www.genesis.com/kr/ko/support/download-center/genesis-models.html","","Y","공식 홈페이지 다운로드 센터에서 모델 선택 후 가격표/카탈로그 확인","","",""
-"23","-","현대","아이오닉 5","현대 아이오닉 5","6,849","전기차","전기","전기차/법인/출퇴근/친환경","","https://www.hyundai.com/contents/repn-car/catalog/ioniq5-price.pdf","","Y","직접 PDF URL","","",""
-"24","-","기아","모닝","기아 모닝","6,712","경차/소형","확인 필요","가성비/단기렌트/대차/도심형","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_morning.pdf","","Y","직접 PDF URL","","",""
-"25","-","제네시스","GV80","제네시스 GV80","6,575","SUV","확인 필요","패밀리/장기렌트/레저","","https://www.genesis.com/kr/ko/support/download-center/genesis-models.html","","Y","공식 홈페이지 다운로드 센터에서 모델 선택 후 가격표/카탈로그 확인","","",""
-"26","-","벤츠","E-Class","벤츠 E-Class","6,438","세단","확인 필요","개인/법인/출퇴근","","https://www.mercedes-benz.co.kr/passengercars/models/saloon/e-class/overview.html","","Y","공식 홈페이지 모델/가격 확인 페이지","","",""
-"27","-","BMW","5 Series","BMW 5 Series","6,301","세단","확인 필요","개인/법인/출퇴근","","https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_september2025.pdf","","Y","직접 PDF URL","","",""
-"28","-","기아","K8","기아 K8","6,164","세단","확인 필요","개인/법인/출퇴근","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k8.pdf","","Y","직접 PDF URL","","",""
-"29","-","테슬라","Model 3","테슬라 Model 3","6,027","전기차","전기","전기차/법인/출퇴근/친환경","","https://www.tesla.com/ko_kr/model3/design","","Y","공식 홈페이지 가격/주문 페이지","","",""
-"30","-","르노","필랑트","르노 필랑트","5,890","기타","확인 필요","영업 참고","","https://www.renault.co.kr/upload/asset/price/price_rkm_202605.pdf","","Y","직접 PDF URL","","",""
-"31","-","르노","그랑 콜레오스","르노 그랑 콜레오스","5,753","SUV","확인 필요","패밀리/장기렌트/레저","","https://www.renault.co.kr/upload/asset/price/price_koleos_202601.pdf","","Y","직접 PDF URL","","",""
-"32","-","기아","EV4","기아 EV4","5,616","전기차","전기","전기차/법인/출퇴근/친환경","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev4.pdf","","Y","직접 PDF URL","","",""
-"33","-","KGM","무쏘","KGM 무쏘","5,479","상용/업무용","확인 필요","법인/소상공인/물류/업무용","","https://www.kg-mobility.com/attached/contents/display/file/200000200010009/20260104185705597_251IZJ.pdf","","Y","직접 PDF URL","","",""
-"34","-","현대","아이오닉 9","현대 아이오닉 9","5,342","전기차","전기","전기차/법인/출퇴근/친환경","","https://www.hyundai.com/contents/repn-car/catalog/ioniq9-price.pdf","","Y","직접 PDF URL","","",""
-"35","-","현대","포터 II 일렉트릭","현대 포터 II 일렉트릭","5,205","상용/업무용","전기","법인/소상공인/물류/업무용","","https://www.hyundai.com/contents/repn-car/catalog/porter2-electric-special-2024-price.pdf","","Y","직접 PDF URL","","",""
-"36","-","기아","레이 EV","기아 레이 EV","5,068","경차/소형","전기","가성비/단기렌트/대차/도심형","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf","","Y","직접 PDF URL","","",""
-"37","-","기아","EV6","기아 EV6","4,931","전기차","전기","전기차/법인/출퇴근/친환경","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev6.pdf","","Y","직접 PDF URL","","",""
-"38","-","현대","베뉴","현대 베뉴","4,794","경차/소형","확인 필요","가성비/단기렌트/대차/도심형","","https://www.hyundai.com/contents/repn-car/catalog/venue-price.pdf","","Y","직접 PDF URL","","",""
-"39","-","현대","아이오닉 6","현대 아이오닉 6","4,657","전기차","전기","전기차/법인/출퇴근/친환경","","https://www.hyundai.com/contents/repn-car/catalog/ioniq6-price.pdf","","Y","직접 PDF URL","","",""
-"40","-","기아","셀토스","기아 셀토스","4,520","SUV","확인 필요","패밀리/장기렌트/레저","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf","","Y","중복 모델명/중복 집계로 제외 권장","","",""
-"41","-","KGM","무쏘 EV","KGM 무쏘 EV","4,383","상용/업무용","전기","법인/소상공인/물류/업무용","","https://www.kg-mobility.com/pr/model","","Y","공식 홈페이지 모델/가격 확인 페이지","","",""
-"42","-","현대","캐스퍼 일렉트릭","현대 캐스퍼 일렉트릭","4,246","경차/소형","전기","가성비/단기렌트/대차/도심형","","https://m.casper.hyundai.com/wcontents/repn-car/catalog/AX05/AX_CASPER_Electric_price.pdf","","Y","직접 PDF URL","","",""
-"43","-","벤츠","GLC-Class","벤츠 GLC-Class","4,109","SUV","확인 필요","패밀리/장기렌트/레저","","https://www.mercedes-benz.co.kr/passengercars/models/suv/glc/overview.html","","Y","공식 홈페이지 모델/가격 확인 페이지","","",""
-"44","-","BMW","X3","BMW X3","3,972","SUV","확인 필요","패밀리/장기렌트/레저","","https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_september2025.pdf","","Y","직접 PDF URL","","",""
-"45","-","쉐보레","트랙스 크로스오버","쉐보레 트랙스 크로스오버","3,835","SUV","확인 필요","패밀리/장기렌트/레저","","https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2025/15-pdfs/2026%EB%85%84-1%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf","","Y","직접 PDF URL","","",""
-"46","-","기아","니로","기아 니로","3,698","SUV","확인 필요","패밀리/장기렌트/레저","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_niro.pdf","","Y","직접 PDF URL","","",""
-"47","-","BYD","SEALION 7","BYD SEALION 7","3,561","전기차","전기","전기차/법인/출퇴근/친환경","","https://bydauto.kr/purchase/build-my-car/sealion-7","","Y","공식 홈페이지 구매/견적 페이지","","",""
-"48","-","기아","니로 EV","기아 니로 EV","3,424","SUV","전기","패밀리/장기렌트/레저","","https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_niro-ev.pdf","","Y","직접 PDF URL","","",""
-"49","-","현대","캐스퍼","현대 캐스퍼","3,287","경차/소형","확인 필요","가성비/단기렌트/대차/도심형","","https://m.casper.hyundai.com/wcontents/repn-car/catalog/AX04/AX_The_new_CASPER_price.pdf","","Y","직접 PDF URL","","",""
+rank,rank_change,brand,model,vehicle,units_sold,segment,powertrain,target_tag,image_url,price_url,catalog_url,active,note,image_file,image_source_url,image_review_status,image_source_type
+1,-,기아,쏘렌토,기아 쏘렌토,"9,863",SUV,확인 필요,패밀리/장기렌트/레저,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf,,Y,직접 PDF URL,,,,
+2,-,테슬라,Model Y,테슬라 Model Y,"9,726",전기차,전기,전기차/법인/출퇴근/친환경,,https://www.tesla.com/ko_kr/modely/design,,Y,공식 홈페이지 가격/주문 페이지,,,,
+3,-,현대,그랜저,현대 그랜저,"9,589",세단,확인 필요,개인/법인/출퇴근,,https://www.hyundai.com/contents/repn-car/catalog/grandeur-hybrid-2026-price.pdf,https://www.hyundai.com/contents/repn-car/catalog/grandeur-2026-price.pdf,Y,직접 PDF URL,,,,
+4,-,현대,쏘나타 디 엣지,현대 쏘나타 디 엣지,"9,452",세단,확인 필요,개인/법인/출퇴근,,https://www.hyundai.com/contents/repn-car/catalog/sonata-the-edge-price.pdf,,Y,직접 PDF URL,,,,
+5,-,기아,스포티지,기아 스포티지,"9,315",SUV,확인 필요,패밀리/장기렌트/레저,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sportage.pdf,,Y,직접 PDF URL,,,,
+6,-,기아,카니발,기아 카니발,"9,178",MPV,확인 필요,패밀리/법인/의전/다인승,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf,,Y,직접 PDF URL,,,,
+7,-,현대,아반떼,현대 아반떼,"9,041",세단,확인 필요,개인/법인/출퇴근,,https://www.hyundai.com/contents/repn-car/catalog/avante-2026-price.pdf,,Y,직접 PDF URL,,,,
+8,-,현대,포터 II,현대 포터 II,"8,904",상용/업무용,확인 필요,법인/소상공인/물류/업무용,,https://www.hyundai.com/contents/repn-car/catalog/porter2-2024-price.pdf,,Y,직접 PDF URL,,,,
+9,-,현대,투싼,현대 투싼,"8,767",SUV,확인 필요,패밀리/장기렌트/레저,,https://www.hyundai.com/contents/repn-car/catalog/tucson-2026-price.pdf,,Y,직접 PDF URL,,,,
+10,-,현대,싼타페,현대 싼타페,"8,630",SUV,확인 필요,패밀리/장기렌트/레저,,https://www.hyundai.com/contents/repn-car/catalog/santafe-hev-2026-price.pdf,https://www.hyundai.com/contents/repn-car/catalog/santafe-price.pdf,Y,직접 PDF URL,,,,
+11,-,기아,레이,기아 레이,"8,493",경차/소형,확인 필요,가성비/단기렌트/대차/도심형,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf,,Y,직접 PDF URL,,,,
+12,-,기아,EV3,기아 EV3,"8,356",전기차,전기,전기차/법인/출퇴근/친환경,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev3.pdf,,Y,직접 PDF URL,,,,
+13,-,현대,디 올 뉴 팰리세이드,현대 디 올 뉴 팰리세이드,"8,219",SUV,확인 필요,패밀리/장기렌트/레저,,https://www.hyundai.com/contents/repn-car/catalog/palisade-2025-price.pdf,,Y,직접 PDF URL,,,,
+14,-,제네시스,G80,제네시스 G80,"8,082",세단,확인 필요,개인/법인/출퇴근,,https://www.genesis.com/kr/ko/support/download-center/genesis-models.html,,Y,공식 홈페이지 다운로드 센터에서 모델 선택 후 가격표/카탈로그 확인,,,,
+15,-,기아,EV5,기아 EV5,"7,945",전기차,전기,전기차/법인/출퇴근/친환경,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev5.pdf,,Y,직접 PDF URL,,,,
+16,-,기아,셀토스,기아 셀토스,"7,808",SUV,확인 필요,패밀리/장기렌트/레저,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf,,Y,직접 PDF URL,,,,
+17,-,현대,코나,현대 코나,"7,671",SUV,확인 필요,패밀리/장기렌트/레저,,https://www.hyundai.com/contents/repn-car/catalog/the-all-new-kona-hybrid-price.pdf,https://www.hyundai.com/contents/repn-car/catalog/the-all-new-kona-price.pdf,Y,직접 PDF URL,,,,
+18,-,기아,PV5,기아 PV5,"7,534",상용/업무용,확인 필요,법인/소상공인/물류/업무용,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-cargo.pdf,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-passenger.pdf,Y,직접 PDF URL,,,,
+19,-,기아,K5,기아 K5,"7,397",세단,확인 필요,개인/법인/출퇴근,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k5.pdf,,Y,직접 PDF URL,,,,
+20,-,기아,봉고 3,기아 봉고 3,"7,260",상용/업무용,확인 필요,법인/소상공인/물류/업무용,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_bongo3.pdf,,Y,직접 PDF URL,,,,
+21,-,현대,더 뉴 스타리아,현대 더 뉴 스타리아,"7,123",MPV,확인 필요,패밀리/법인/의전/다인승,,https://www.hyundai.com/contents/repn-car/catalog/staria-hybrid-24-price.pdf,https://www.hyundai.com/contents/repn-car/catalog/staria-24-price.pdf,Y,직접 PDF URL,,,,
+22,-,제네시스,GV70,제네시스 GV70,"6,986",SUV,확인 필요,패밀리/장기렌트/레저,,https://www.genesis.com/kr/ko/support/download-center/genesis-models.html,,Y,공식 홈페이지 다운로드 센터에서 모델 선택 후 가격표/카탈로그 확인,,,,
+23,-,현대,아이오닉 5,현대 아이오닉 5,"6,849",전기차,전기,전기차/법인/출퇴근/친환경,,https://www.hyundai.com/contents/repn-car/catalog/ioniq5-price.pdf,,Y,직접 PDF URL,,,,
+24,-,기아,모닝,기아 모닝,"6,712",경차/소형,확인 필요,가성비/단기렌트/대차/도심형,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_morning.pdf,,Y,직접 PDF URL,,,,
+25,-,제네시스,GV80,제네시스 GV80,"6,575",SUV,확인 필요,패밀리/장기렌트/레저,,https://www.genesis.com/kr/ko/support/download-center/genesis-models.html,,Y,공식 홈페이지 다운로드 센터에서 모델 선택 후 가격표/카탈로그 확인,,,,
+26,-,벤츠,E-Class,벤츠 E-Class,"6,438",세단,확인 필요,개인/법인/출퇴근,,https://www.mercedes-benz.co.kr/passengercars/models/saloon/e-class/overview.html,,Y,공식 홈페이지 모델/가격 확인 페이지,,,,
+27,-,BMW,5 Series,BMW 5 Series,"6,301",세단,확인 필요,개인/법인/출퇴근,,https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_september2025.pdf,,Y,직접 PDF URL,,,,
+28,-,기아,K8,기아 K8,"6,164",세단,확인 필요,개인/법인/출퇴근,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k8.pdf,,Y,직접 PDF URL,,,,
+29,-,테슬라,Model 3,테슬라 Model 3,"6,027",전기차,전기,전기차/법인/출퇴근/친환경,,https://www.tesla.com/ko_kr/model3/design,,Y,공식 홈페이지 가격/주문 페이지,,,,
+30,-,르노,필랑트,르노 필랑트,"5,890",기타,확인 필요,영업 참고,,https://www.renault.co.kr/upload/asset/price/price_rkm_202605.pdf,,Y,직접 PDF URL,,,,
+31,-,르노,그랑 콜레오스,르노 그랑 콜레오스,"5,753",SUV,확인 필요,패밀리/장기렌트/레저,,https://www.renault.co.kr/upload/asset/price/price_koleos_202601.pdf,,Y,직접 PDF URL,,,,
+32,-,기아,EV4,기아 EV4,"5,616",전기차,전기,전기차/법인/출퇴근/친환경,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev4.pdf,,Y,직접 PDF URL,,,,
+33,-,KGM,무쏘,KGM 무쏘,"5,479",상용/업무용,확인 필요,법인/소상공인/물류/업무용,,https://www.kg-mobility.com/attached/contents/display/file/200000200010009/20260104185705597_251IZJ.pdf,,Y,직접 PDF URL,,,,
+34,-,현대,아이오닉 9,현대 아이오닉 9,"5,342",전기차,전기,전기차/법인/출퇴근/친환경,,https://www.hyundai.com/contents/repn-car/catalog/ioniq9-price.pdf,,Y,직접 PDF URL,,,,
+35,-,현대,포터 II 일렉트릭,현대 포터 II 일렉트릭,"5,205",상용/업무용,전기,법인/소상공인/물류/업무용,,https://www.hyundai.com/contents/repn-car/catalog/porter2-electric-special-2024-price.pdf,,Y,직접 PDF URL,,,,
+36,-,기아,레이 EV,기아 레이 EV,"5,068",경차/소형,전기,가성비/단기렌트/대차/도심형,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf,,Y,직접 PDF URL,,,,
+37,-,기아,EV6,기아 EV6,"4,931",전기차,전기,전기차/법인/출퇴근/친환경,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev6.pdf,,Y,직접 PDF URL,,,,
+38,-,현대,베뉴,현대 베뉴,"4,794",경차/소형,확인 필요,가성비/단기렌트/대차/도심형,,https://www.hyundai.com/contents/repn-car/catalog/venue-price.pdf,,Y,직접 PDF URL,,,,
+39,-,현대,아이오닉 6,현대 아이오닉 6,"4,657",전기차,전기,전기차/법인/출퇴근/친환경,,https://www.hyundai.com/contents/repn-car/catalog/ioniq6-price.pdf,,Y,직접 PDF URL,,,,
+40,-,기아,셀토스,기아 셀토스,"4,520",SUV,확인 필요,패밀리/장기렌트/레저,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf,,Y,중복 모델명/중복 집계로 제외 권장,,,,
+41,-,KGM,무쏘 EV,KGM 무쏘 EV,"4,383",상용/업무용,전기,법인/소상공인/물류/업무용,,https://www.kg-mobility.com/pr/model,,Y,공식 홈페이지 모델/가격 확인 페이지,,,,
+42,-,현대,캐스퍼 일렉트릭,현대 캐스퍼 일렉트릭,"4,246",경차/소형,전기,가성비/단기렌트/대차/도심형,,https://m.casper.hyundai.com/wcontents/repn-car/catalog/AX05/AX_CASPER_Electric_price.pdf,,Y,직접 PDF URL,,,,
+43,-,벤츠,GLC-Class,벤츠 GLC-Class,"4,109",SUV,확인 필요,패밀리/장기렌트/레저,,https://www.mercedes-benz.co.kr/passengercars/models/suv/glc/overview.html,,Y,공식 홈페이지 모델/가격 확인 페이지,,,,
+44,-,BMW,X3,BMW X3,"3,972",SUV,확인 필요,패밀리/장기렌트/레저,,https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_september2025.pdf,,Y,직접 PDF URL,,,,
+45,-,쉐보레,트랙스 크로스오버,쉐보레 트랙스 크로스오버,"3,835",SUV,확인 필요,패밀리/장기렌트/레저,,https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2025/15-pdfs/2026%EB%85%84-1%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf,,Y,직접 PDF URL,,,,
+46,-,기아,니로,기아 니로,"3,698",SUV,확인 필요,패밀리/장기렌트/레저,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_niro.pdf,,Y,직접 PDF URL,,,,
+47,-,BYD,SEALION 7,BYD SEALION 7,"3,561",전기차,전기,전기차/법인/출퇴근/친환경,,https://bydauto.kr/purchase/build-my-car/sealion-7,,Y,공식 홈페이지 구매/견적 페이지,,,,
+48,-,기아,니로 EV,기아 니로 EV,"3,424",SUV,전기,패밀리/장기렌트/레저,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_niro-ev.pdf,,Y,직접 PDF URL,,,,
+49,-,현대,캐스퍼,현대 캐스퍼,"3,287",경차/소형,확인 필요,가성비/단기렌트/대차/도심형,,https://m.casper.hyundai.com/wcontents/repn-car/catalog/AX04/AX_The_new_CASPER_price.pdf,,Y,직접 PDF URL,,,,
