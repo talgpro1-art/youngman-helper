@@ -4,8 +4,10 @@ import argparse
 import csv
 import json
 import re
+import ssl
 import time
 from pathlib import Path
+from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
@@ -16,7 +18,7 @@ REVIEW_FILE = ROOT / "data" / "vehicle_image_review.csv"
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 USER_AGENT = "YoungmanHelper/1.0 (vehicle image updater)"
 
-IMAGE_COLUMNS = ["image_file", "image_source_url", "image_review_status"]
+IMAGE_COLUMNS = ["image_url", "image_file", "image_source_url", "image_review_status"]
 
 
 def safe_text(value: object) -> str:
@@ -30,10 +32,19 @@ def slugify(text: str) -> str:
     return text or "vehicle"
 
 
+def open_url(request: Request, timeout: int):
+    try:
+        return urlopen(request, timeout=timeout)
+    except Exception as exc:
+        if isinstance(getattr(exc, "reason", None), ssl.SSLCertVerificationError):
+            return urlopen(request, timeout=timeout, context=ssl._create_unverified_context())
+        raise
+
+
 def api_json(params: dict[str, str | int]) -> dict:
     query = urlencode({"format": "json", "formatversion": "2", **params})
     request = Request(f"{COMMONS_API}?{query}", headers={"User-Agent": USER_AGENT})
-    with urlopen(request, timeout=25) as response:
+    with open_url(request, timeout=25) as response:
         return json.loads(response.read().decode("utf-8"))
 
 
@@ -87,7 +98,7 @@ def extension_from_mime(mime: str, url: str) -> str:
 
 def download(url: str, path: Path) -> None:
     request = Request(url, headers={"User-Agent": USER_AGENT})
-    with urlopen(request, timeout=40) as response:
+    with open_url(request, timeout=40) as response:
         path.write_bytes(response.read())
 
 
@@ -111,10 +122,19 @@ def write_rows(rows: list[dict[str, str]], fieldnames: list[str]) -> None:
         writer.writerows(rows)
 
 
+def write_review_rows(review_rows: list[dict[str, str]]) -> None:
+    review_fields = ["rank", "vehicle", "status", "image_file", "source_url", "commons_title", "query"]
+    with REVIEW_FILE.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=review_fields)
+        writer.writeheader()
+        writer.writerows(review_rows)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Download candidate vehicle images into assets/cars.")
     parser.add_argument("--limit", type=int, default=50, help="Maximum number of vehicles to process.")
     parser.add_argument("--overwrite", action="store_true", help="Replace existing image_file values.")
+    parser.add_argument("--download", action="store_true", help="Download images into assets/cars instead of only storing remote image_url values.")
     parser.add_argument("--dry-run", action="store_true", help="Only print candidates; do not download or update CSV.")
     args = parser.parse_args()
 
@@ -127,7 +147,7 @@ def main() -> None:
     for row in rows:
         if processed >= args.limit:
             break
-        if safe_text(row.get("image_file")) and not args.overwrite:
+        if (safe_text(row.get("image_url")) or safe_text(row.get("image_file"))) and not args.overwrite:
             continue
 
         rank = safe_text(row.get("rank"))
@@ -136,26 +156,46 @@ def main() -> None:
         vehicle_name = safe_text(row.get("vehicle")) or f"{brand} {model}".strip()
         print(f"[{rank}] searching {vehicle_name}")
 
-        candidate = find_commons_image(vehicle_name, brand, model)
+        try:
+            candidate = find_commons_image(vehicle_name, brand, model)
+        except (HTTPError, URLError, TimeoutError, OSError) as exc:
+            row["image_review_status"] = f"error:{exc.__class__.__name__}"
+            review_rows.append({"rank": rank, "vehicle": vehicle_name, "status": row["image_review_status"]})
+            processed += 1
+            if not args.dry_run:
+                write_rows(rows, fieldnames)
+                write_review_rows(review_rows)
+            time.sleep(2.0)
+            continue
+
         if not candidate:
             row["image_review_status"] = "not_found"
             review_rows.append({"rank": rank, "vehicle": vehicle_name, "status": "not_found"})
             processed += 1
+            if not args.dry_run:
+                write_rows(rows, fieldnames)
+                write_review_rows(review_rows)
             continue
-
-        ext = extension_from_mime(candidate["mime"], candidate["image_url"])
-        filename = f"{int(rank):02d}_{slugify(brand)}_{slugify(model)}{ext}" if rank.isdigit() else f"{slugify(vehicle_name)}{ext}"
-        relative_path = f"assets/cars/{filename}"
-        target = ROOT / relative_path
 
         if args.dry_run:
             status = "candidate_only"
+            relative_path = ""
         else:
-            download(candidate["image_url"], target)
-            row["image_file"] = relative_path
+            row["image_url"] = candidate["image_url"]
             row["image_source_url"] = candidate["source_url"]
             row["image_review_status"] = "needs_review"
-            status = "downloaded"
+            relative_path = ""
+            status = "linked"
+
+            if args.download:
+                ext = extension_from_mime(candidate["mime"], candidate["image_url"])
+                filename = f"{int(rank):02d}_{slugify(brand)}_{slugify(model)}{ext}" if rank.isdigit() else f"{slugify(vehicle_name)}{ext}"
+                relative_path = f"assets/cars/{filename}"
+                target = ROOT / relative_path
+                if not target.exists():
+                    download(candidate["image_url"], target)
+                row["image_file"] = relative_path
+                status = "downloaded"
 
         review_rows.append(
             {
@@ -169,16 +209,14 @@ def main() -> None:
             }
         )
         processed += 1
-        time.sleep(0.4)
+        if not args.dry_run:
+            write_rows(rows, fieldnames)
+            write_review_rows(review_rows)
+        time.sleep(1.0)
 
     if not args.dry_run:
         write_rows(rows, fieldnames)
-
-    review_fields = ["rank", "vehicle", "status", "image_file", "source_url", "commons_title", "query"]
-    with REVIEW_FILE.open("w", encoding="utf-8-sig", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=review_fields)
-        writer.writeheader()
-        writer.writerows(review_rows)
+    write_review_rows(review_rows)
 
     print(f"review file: {REVIEW_FILE}")
     print("next: review downloaded images, then change image_review_status to approved where correct.")
