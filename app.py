@@ -12,6 +12,7 @@ VEHICLE_MASTER = ROOT / "vehicle_master.csv"
 OPTION_SUMMARY = ROOT / "data" / "option_summary.csv"
 OPTION_MENTIONS = ROOT / "data" / "option_mentions.csv"
 NOTIFICATIONS = ROOT / "data" / "notifications.json"
+CAR_IMAGE_DIR = ROOT / "assets" / "cars"
 
 st.set_page_config(page_title="영맨 헬퍼", page_icon="🚗", layout="wide")
 
@@ -388,6 +389,24 @@ def file_version(path: Path) -> int:
     return path.stat().st_mtime_ns
 
 
+def vehicle_image_source(row: pd.Series) -> str | Path | None:
+    image_file = safe_str(row.get("image_file"))
+    if image_file:
+        candidates = [
+            ROOT / image_file,
+            CAR_IMAGE_DIR / image_file,
+            CAR_IMAGE_DIR / Path(image_file).name,
+        ]
+        for candidate in candidates:
+            if candidate.exists() and candidate.is_file():
+                return candidate
+
+    image_url = safe_str(row.get("image_url"))
+    if image_url.startswith("http"):
+        return image_url
+    return None
+
+
 @st.cache_data(show_spinner=False)
 def load_vehicles(version: int) -> pd.DataFrame:
     if not VEHICLE_MASTER.exists():
@@ -407,6 +426,7 @@ def load_vehicles(version: int) -> pd.DataFrame:
         "powertrain": "",
         "target_tag": "",
         "image_url": "",
+        "image_file": "",
         "price_url": "",
         "catalog_url": "",
         "active": "Y",
@@ -525,7 +545,7 @@ def show_vehicle_card(row: pd.Series) -> None:
     rank = safe_str(row.get("rank"))
     rank_change = display_rank_change(row.get("rank_change"))
     units = display_units(row.get("units_sold"))
-    image_url = safe_str(row.get("image_url"))
+    image_source = vehicle_image_source(row)
     price_url = safe_str(row.get("price_url"))
     catalog_url = safe_str(row.get("catalog_url"))
     segment = safe_str(row.get("segment"))
@@ -553,8 +573,8 @@ def show_vehicle_card(row: pd.Series) -> None:
         unsafe_allow_html=True,
     )
 
-    if image_url.startswith("http"):
-        st.image(image_url, width="stretch")
+    if image_source:
+        st.image(image_source, width="stretch")
     else:
         st.markdown('<div class="car-placeholder">🚗</div>', unsafe_allow_html=True)
 
