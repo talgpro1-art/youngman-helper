@@ -1,11 +1,50 @@
-rank,vehicle,status,image_file,source_url,commons_title,query
-1,기아 쏘렌토,linked,,https://commons.wikimedia.org/wiki/File:Kia_Sorento_BL_Sanming_02_2023-01-06.jpg,File:Kia Sorento BL Sanming 02 2023-01-06.jpg,"""기아 쏘렌토"" car"
-2,테슬라 Model Y,linked,,https://commons.wikimedia.org/wiki/File:Tesla_Model_Y_1X7A6211.jpg,File:Tesla Model Y 1X7A6211.jpg,테슬라 Model Y automobile
-3,현대 그랜저,linked,,https://commons.wikimedia.org/wiki/File:20200203_Hyundai_Grandeur_Front-side.png,File:20200203 Hyundai Grandeur Front-side.png,"""현대 그랜저"" car"
-4,현대 쏘나타 디 엣지,not_found,,,,
-5,기아 스포티지,linked,,https://commons.wikimedia.org/wiki/File:2018_Kia_Sportage_GT-Line_ISG_1.6.jpg,File:2018 Kia Sportage GT-Line ISG 1.6.jpg,"""기아 스포티지"" car"
-6,기아 카니발,linked,,"https://commons.wikimedia.org/wiki/File:2022_Kia_Carnival_LX,_Front_Right,_05-02-2021.jpg","File:2022 Kia Carnival LX, Front Right, 05-02-2021.jpg","""기아 카니발"" car"
-7,현대 아반떼,error:HTTPError,,,,
-8,현대 포터 II,error:HTTPError,,,,
-9,현대 투싼,error:HTTPError,,,,
-10,현대 싼타페,error:HTTPError,,,,
+rank,vehicle,status,image_url,image_file,image_source_url,image_source_type,image_review_status,recommended_action
+1,기아 쏘렌토,missing,,,,,,add official_newsroom or official_site image URL
+2,테슬라 Model Y,missing,,,,,,add official_newsroom or official_site image URL
+3,현대 그랜저,missing,,,,,,add official_newsroom or official_site image URL
+4,현대 쏘나타 디 엣지,missing,,,,,,add official_newsroom or official_site image URL
+5,기아 스포티지,missing,,,,,,add official_newsroom or official_site image URL
+6,기아 카니발,missing,,,,,,add official_newsroom or official_site image URL
+7,현대 아반떼,missing,,,,,,add official_newsroom or official_site image URL
+8,현대 포터 II,missing,,,,,,add official_newsroom or official_site image URL
+9,현대 투싼,missing,,,,,,add official_newsroom or official_site image URL
+10,현대 싼타페,missing,,,,,,add official_newsroom or official_site image URL
+11,기아 레이,missing,,,,,,add official_newsroom or official_site image URL
+12,기아 EV3,missing,,,,,,add official_newsroom or official_site image URL
+13,현대 디 올 뉴 팰리세이드,missing,,,,,,add official_newsroom or official_site image URL
+14,제네시스 G80,missing,,,,,,add official_newsroom or official_site image URL
+15,기아 EV5,missing,,,,,,add official_newsroom or official_site image URL
+16,기아 셀토스,missing,,,,,,add official_newsroom or official_site image URL
+17,현대 코나,missing,,,,,,add official_newsroom or official_site image URL
+18,기아 PV5,missing,,,,,,add official_newsroom or official_site image URL
+19,기아 K5,missing,,,,,,add official_newsroom or official_site image URL
+20,기아 봉고 3,missing,,,,,,add official_newsroom or official_site image URL
+21,현대 더 뉴 스타리아,missing,,,,,,add official_newsroom or official_site image URL
+22,제네시스 GV70,missing,,,,,,add official_newsroom or official_site image URL
+23,현대 아이오닉 5,missing,,,,,,add official_newsroom or official_site image URL
+24,기아 모닝,missing,,,,,,add official_newsroom or official_site image URL
+25,제네시스 GV80,missing,,,,,,add official_newsroom or official_site image URL
+26,벤츠 E-Class,missing,,,,,,add official_newsroom or official_site image URL
+27,BMW 5 Series,missing,,,,,,add official_newsroom or official_site image URL
+28,기아 K8,missing,,,,,,add official_newsroom or official_site image URL
+29,테슬라 Model 3,missing,,,,,,add official_newsroom or official_site image URL
+30,르노 필랑트,missing,,,,,,add official_newsroom or official_site image URL
+31,르노 그랑 콜레오스,missing,,,,,,add official_newsroom or official_site image URL
+32,기아 EV4,missing,,,,,,add official_newsroom or official_site image URL
+33,KGM 무쏘,missing,,,,,,add official_newsroom or official_site image URL
+34,현대 아이오닉 9,missing,,,,,,add official_newsroom or official_site image URL
+35,현대 포터 II 일렉트릭,missing,,,,,,add official_newsroom or official_site image URL
+36,기아 레이 EV,missing,,,,,,add official_newsroom or official_site image URL
+37,기아 EV6,missing,,,,,,add official_newsroom or official_site image URL
+38,현대 베뉴,missing,,,,,,add official_newsroom or official_site image URL
+39,현대 아이오닉 6,missing,,,,,,add official_newsroom or official_site image URL
+40,기아 셀토스,missing,,,,,,add official_newsroom or official_site image URL
+41,KGM 무쏘 EV,missing,,,,,,add official_newsroom or official_site image URL
+42,현대 캐스퍼 일렉트릭,missing,,,,,,add official_newsroom or official_site image URL
+43,벤츠 GLC-Class,missing,,,,,,add official_newsroom or official_site image URL
+44,BMW X3,missing,,,,,,add official_newsroom or official_site image URL
+45,쉐보레 트랙스 크로스오버,missing,,,,,,add official_newsroom or official_site image URL
+46,기아 니로,missing,,,,,,add official_newsroom or official_site image URL
+47,BYD SEALION 7,missing,,,,,,add official_newsroom or official_site image URL
+48,기아 니로 EV,missing,,,,,,add official_newsroom or official_site image URL
+49,현대 캐스퍼,missing,,,,,,add official_newsroom or official_site image URL
