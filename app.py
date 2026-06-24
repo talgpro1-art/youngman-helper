@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 from html import escape
 from pathlib import Path
 
@@ -12,7 +11,7 @@ ROOT = Path(__file__).resolve().parent
 VEHICLE_MASTER = ROOT / "vehicle_master.csv"
 OPTION_SUMMARY = ROOT / "data" / "option_summary.csv"
 OPTION_MENTIONS = ROOT / "data" / "option_mentions.csv"
-NOTIFICATIONS = ROOT / "data" / "notifications.json"
+NEWCAR_ROADMAP = ROOT / "data" / "newcar_roadmap.csv"
 CAR_IMAGE_DIR = ROOT / "assets" / "cars"
 HEADER_IMAGE = ROOT / "assets" / "header.png"
 APP_ICON = ROOT / "assets" / "icon.png"
@@ -111,6 +110,84 @@ st.markdown(
         padding: 0.9rem;
         color: #374151;
         font-weight: 750;
+    }
+    .premium-zone {
+        border: 1px solid #bae6fd;
+        border-radius: 16px;
+        background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+        padding: 1rem;
+        margin: 0.9rem 0 0.85rem 0;
+        box-shadow: 0 6px 18px rgba(14, 116, 144, 0.10);
+    }
+    .premium-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.7rem;
+        align-items: flex-start;
+        margin-bottom: 0.75rem;
+    }
+    .premium-title {
+        font-size: 1.1rem;
+        font-weight: 950;
+        color: #0f172a;
+        line-height: 1.3;
+    }
+    .premium-sub {
+        color: #475569;
+        font-size: 0.84rem;
+        line-height: 1.45;
+        margin-top: 0.2rem;
+    }
+    .premium-badge {
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+        border-radius: 999px;
+        background: #0f172a;
+        color: white;
+        padding: 0.25rem 0.6rem;
+        font-size: 0.72rem;
+        font-weight: 850;
+    }
+    .roadmap-card {
+        border: 1px solid #e0f2fe;
+        border-radius: 14px;
+        background: #ffffff;
+        padding: 0.85rem;
+        margin-top: 0.55rem;
+    }
+    .roadmap-topline {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.7rem;
+        align-items: flex-start;
+    }
+    .roadmap-car {
+        font-size: 1.0rem;
+        font-weight: 900;
+        color: #111827;
+        line-height: 1.3;
+    }
+    .roadmap-dday {
+        border-radius: 999px;
+        background: #ecfeff;
+        color: #0e7490;
+        padding: 0.18rem 0.48rem;
+        font-size: 0.74rem;
+        font-weight: 900;
+        white-space: nowrap;
+    }
+    .roadmap-summary {
+        color: #475569;
+        font-size: 0.84rem;
+        line-height: 1.45;
+        margin-top: 0.35rem;
+    }
+    .roadmap-section-label {
+        font-size: 0.82rem;
+        font-weight: 900;
+        color: #075985;
+        margin: 0.7rem 0 0.3rem 0;
     }
     .vehicle-card {
         border: 1px solid #e5e7eb;
@@ -476,13 +553,20 @@ def load_options(version: int) -> pd.DataFrame:
     return df
 
 @st.cache_data(show_spinner=False)
-def load_notifications(version: int) -> list[dict]:
-    if not NOTIFICATIONS.exists():
-        return []
-    try:
-        return json.loads(NOTIFICATIONS.read_text(encoding="utf-8"))
-    except Exception:
-        return []
+def load_newcar_roadmap(version: int) -> pd.DataFrame:
+    if not NEWCAR_ROADMAP.exists():
+        return pd.DataFrame()
+    df = pd.read_csv(NEWCAR_ROADMAP)
+    df.columns = [c.replace("\ufeff", "").strip() for c in df.columns]
+    if "launch_date" in df.columns:
+        df["launch_dt"] = pd.to_datetime(df["launch_date"], errors="coerce")
+    else:
+        df["launch_dt"] = pd.NaT
+    if "priority" in df.columns:
+        df["priority"] = pd.to_numeric(df["priority"], errors="coerce").fillna(99).astype(int)
+    else:
+        df["priority"] = 99
+    return df
 
 @st.cache_data(show_spinner=False)
 def load_mentions(version: int) -> pd.DataFrame:
@@ -504,41 +588,129 @@ def render_link_button(url: str, label: str, secondary: bool = False, disabled_l
         )
 
 
-def show_notifications() -> None:
-    notifications = load_notifications(file_version(NOTIFICATIONS))
-    st.markdown('<div class="mobile-section-title">🔔 오늘의 신차·가격표 알림</div>', unsafe_allow_html=True)
+def dday_label(value: object) -> str:
+    launch_dt = pd.to_datetime(value, errors="coerce")
+    if pd.isna(launch_dt):
+        return "일정 확인"
+    today = pd.Timestamp.today().normalize()
+    diff = (launch_dt.normalize() - today).days
+    if diff > 0:
+        return f"D-{diff}"
+    if diff == 0:
+        return "D-Day"
+    return f"D+{abs(diff)}"
 
-    if not notifications:
-        st.markdown(
-            '<div class="noti-empty">오늘의 주요 변경사항 없음 · 운영 시 신차/가격표/업무공지 알림을 주기적으로 업데이트할 수 있습니다.</div>',
-            unsafe_allow_html=True,
-        )
-        return
 
-    for item in notifications[:3]:
-        title = html_text(item.get("title"), "알림")
-        body = html_text(item.get("body"))
-        link = safe_str(item.get("link"))
-        vehicle = f"{safe_str(item.get('brand'))} {safe_str(item.get('model'))}".strip()
-        if not vehicle:
-            vehicle = safe_str(item.get("vehicle"))
-        vehicle_line = f" · {vehicle}" if vehicle else ""
-        body_html = f'<div class="noti-body">{body}</div>' if body else ""
-        link_html = f'<div class="noti-body"><a href="{escape(link)}" target="_blank">관련 내용 열기</a></div>' if link.startswith("http") else ""
-        badge_label, badge_class = notification_badge(item)
-        st.markdown(
-            f"""
-            <div class="noti-card">
-                <div class="noti-topline">
-                    <span class="alert-badge {badge_class}">{badge_label}</span>
-                    <span class="noti-title">🚨 {title}{html_text(vehicle_line)}</span>
+def filtered_newcars(newcars: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    if newcars.empty:
+        return pd.DataFrame(), pd.DataFrame()
+
+    today = pd.Timestamp.today().normalize()
+    statuses = newcars.get("status", pd.Series([""] * len(newcars))).astype(str).str.lower()
+    launch_dt = newcars.get("launch_dt", pd.Series([pd.NaT] * len(newcars)))
+
+    upcoming = newcars[
+        (statuses == "upcoming")
+        & (launch_dt.notna())
+        & (launch_dt >= today)
+        & (launch_dt <= today + pd.Timedelta(days=60))
+    ].copy()
+
+    recent = newcars[
+        (statuses == "recent")
+        & (launch_dt.notna())
+        & (launch_dt >= today - pd.Timedelta(days=14))
+        & (launch_dt <= today)
+    ].copy()
+
+    return (
+        upcoming.sort_values(["priority", "launch_dt"]).head(5),
+        recent.sort_values(["priority", "launch_dt"], ascending=[True, False]).head(5),
+    )
+
+
+def show_newcar_premium_zone(newcars: pd.DataFrame) -> None:
+    upcoming, recent = filtered_newcars(newcars)
+    total = len(upcoming) + len(recent)
+    html_parts = [
+        f"""
+        <div class="premium-zone">
+            <div class="premium-head">
+                <div>
+                    <div class="premium-title">🚨 신차 출시 로드맵</div>
+                    <div class="premium-sub">향후 60일 출시 예정 차량과 최근 2주 출시 차량의 가격표를 먼저 확인합니다.</div>
                 </div>
-                {body_html}
-                {link_html}
+                <div class="premium-badge">{total}건</div>
             </div>
-            """,
-            unsafe_allow_html=True,
+        """
+    ]
+
+    if total == 0:
+        html_parts.append(
+            """
+            <div class="roadmap-card">
+                <div class="roadmap-car">업데이트 대기</div>
+                <div class="roadmap-summary">현재 D+60 출시 예정 또는 최근 2주 내 출시 차량 데이터가 없습니다.</div>
+            </div>
+            """
         )
+    else:
+        if not upcoming.empty:
+            html_parts.append('<div class="roadmap-section-label">출시 예정 D+60</div>')
+            for _, row in upcoming.iterrows():
+                vehicle = html_text(row.get("vehicle"), "신차")
+                launch_date = html_text(row.get("launch_date"))
+                summary = html_text(row.get("summary"), "출시 일정 확인 필요")
+                source_url = safe_str(row.get("source_url"))
+                source_html = f'<div class="roadmap-summary"><a href="{escape(source_url)}" target="_blank">출처 확인</a></div>' if source_url.startswith("http") else ""
+                html_parts.append(
+                    f"""
+                    <div class="roadmap-card">
+                        <div class="roadmap-topline">
+                            <div>
+                                <div class="roadmap-car">{vehicle}</div>
+                                <div class="small-muted">{launch_date} 출시 예정</div>
+                            </div>
+                            <div class="roadmap-dday">{html_text(dday_label(row.get("launch_dt")))}</div>
+                        </div>
+                        <div class="roadmap-summary">{summary}</div>
+                        {source_html}
+                    </div>
+                    """
+                )
+
+        if not recent.empty:
+            html_parts.append('<div class="roadmap-section-label">최근 출시 / 가격표</div>')
+            for _, row in recent.iterrows():
+                vehicle = html_text(row.get("vehicle"), "신차")
+                launch_date = html_text(row.get("launch_date"))
+                summary = html_text(row.get("summary"), "최근 출시 차량입니다.")
+                links_html = ""
+                for url, label in [
+                    (safe_str(row.get("price_url")), "신차 가격표 바로보기"),
+                    (safe_str(row.get("catalog_url")), "신차 카탈로그 바로보기"),
+                ]:
+                    if url.startswith("http"):
+                        cls = "pdf-button secondary" if "카탈로그" in label else "pdf-button"
+                        links_html += f'<a href="{escape(url)}" target="_blank" class="{cls}">{html_text(label)}</a>'
+                html_parts.append(
+                    f"""
+                    <div class="roadmap-card">
+                        <div class="roadmap-topline">
+                            <div>
+                                <div class="roadmap-car">{vehicle}</div>
+                                <div class="small-muted">{launch_date} 출시</div>
+                            </div>
+                            <div class="roadmap-dday">{html_text(dday_label(row.get("launch_dt")))}</div>
+                        </div>
+                        <div class="roadmap-summary">{summary}</div>
+                        {links_html}
+                    </div>
+                    """
+                )
+
+    html_parts.append("</div>")
+    st.markdown("".join(html_parts), unsafe_allow_html=True)
 
 
 def filter_vehicles(df: pd.DataFrame) -> pd.DataFrame:
@@ -837,12 +1009,13 @@ def main() -> None:
     df = load_vehicles(file_version(VEHICLE_MASTER))
     options = load_options(file_version(OPTION_SUMMARY))
     mentions = load_mentions(file_version(OPTION_MENTIONS))
+    newcars = load_newcar_roadmap(file_version(NEWCAR_ROADMAP))
 
     if df.empty:
         st.error("vehicle_master.csv 파일을 찾을 수 없거나 데이터가 비어 있습니다.")
         return
 
-    show_notifications()
+    show_newcar_premium_zone(newcars)
     st.divider()
 
     tab1, tab2, tab3, tab4 = st.tabs(["TOP50", "가격표", "옵션", "업무효과"])
