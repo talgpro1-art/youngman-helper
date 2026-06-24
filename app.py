@@ -830,9 +830,9 @@ def show_effect_section() -> None:
 
 def main() -> None:
     if HEADER_IMAGE.exists():
-    st.image(HEADER_IMAGE, width="stretch")
+        st.image(HEADER_IMAGE, width="stretch")
     else:
-    st.markdown('<div class="main-title">🚗 영맨 헬퍼</div>', unsafe_allow_html=True)
+        st.markdown('<div class="main-title">🚗 영맨 헬퍼</div>', unsafe_allow_html=True)
 
     df = load_vehicles(file_version(VEHICLE_MASTER))
     options = load_options(file_version(OPTION_SUMMARY))
