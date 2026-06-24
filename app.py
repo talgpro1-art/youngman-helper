@@ -30,7 +30,7 @@ st.markdown(
         display: none !important;
     }
     .block-container {
-        padding-top: 1.2rem;
+        padding-top: 3.2rem;
         padding-left: 1rem;
         padding-right: 1rem;
         max-width: 980px;
@@ -292,7 +292,7 @@ st.markdown(
     }
     @media (max-width: 768px) {
         .block-container {
-            padding-top: 0.75rem;
+            padding-top: 3.4rem;
             padding-left: 0.75rem;
             padding-right: 0.75rem;
         }
