@@ -6,6 +6,7 @@ from pathlib import Path
 
 import pandas as pd
 import streamlit as st
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parent
 VEHICLE_MASTER = ROOT / "vehicle_master.csv"
@@ -13,10 +14,12 @@ OPTION_SUMMARY = ROOT / "data" / "option_summary.csv"
 OPTION_MENTIONS = ROOT / "data" / "option_mentions.csv"
 NOTIFICATIONS = ROOT / "data" / "notifications.json"
 CAR_IMAGE_DIR = ROOT / "assets" / "cars"
+HEADER_IMAGE = ROOT / "assets" / "header.png"
+APP_ICON = ROOT / "assets" / "icon.png"
 
 st.set_page_config(
     page_title="영맨 헬퍼",
-    page_icon="🚗",
+    page_icon=Image.open(APP_ICON) if APP_ICON.exists() else "🚗",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
@@ -826,11 +829,10 @@ def show_effect_section() -> None:
 
 
 def main() -> None:
+    if HEADER_IMAGE.exists():
+    st.image(HEADER_IMAGE, use_container_width=True)
+    else:
     st.markdown('<div class="main-title">🚗 영맨 헬퍼</div>', unsafe_allow_html=True)
-    st.markdown(
-        '<div class="sub-title">국내 판매 TOP50 차량의 순위, 공식 가격표, 관심 옵션, 신차 이슈를 모바일에서 빠르게 확인하는 렌터카 영업매니저용 대시보드</div>',
-        unsafe_allow_html=True,
-    )
 
     df = load_vehicles(file_version(VEHICLE_MASTER))
     options = load_options(file_version(OPTION_SUMMARY))
