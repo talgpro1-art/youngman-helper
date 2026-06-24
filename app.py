@@ -14,11 +14,21 @@ OPTION_MENTIONS = ROOT / "data" / "option_mentions.csv"
 NOTIFICATIONS = ROOT / "data" / "notifications.json"
 CAR_IMAGE_DIR = ROOT / "assets" / "cars"
 
-st.set_page_config(page_title="영맨 헬퍼", page_icon="🚗", layout="wide")
+st.set_page_config(
+    page_title="영맨 헬퍼",
+    page_icon="🚗",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+)
 
 st.markdown(
     """
     <style>
+    section[data-testid="stSidebar"],
+    button[kind="header"][data-testid="baseButton-headerNoPadding"],
+    button[data-testid="collapsedControl"] {
+        display: none !important;
+    }
     .block-container {
         padding-top: 1.2rem;
         padding-left: 1rem;
@@ -815,21 +825,7 @@ def show_effect_section() -> None:
     )
 
 
-def show_demo_flow() -> None:
-    st.sidebar.markdown("### 시연 추천 흐름")
-    st.sidebar.markdown(
-        """
-1. TOP50에서 인기 차량 확인
-2. 공식 가격표 보기 버튼 클릭
-3. 옵션 탭에서 고객 상담 문장 확인
-4. 업무효과 탭에서 시간절감/보안효과 확인
-        """
-    )
-    st.sidebar.caption("데모는 공개 자료 기반이며, 운영 시 주기적 업데이트로 확장 가능합니다.")
-
-
 def main() -> None:
-    show_demo_flow()
     st.markdown('<div class="main-title">🚗 영맨 헬퍼</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="sub-title">국내 판매 TOP50 차량의 순위, 공식 가격표, 관심 옵션, 신차 이슈를 모바일에서 빠르게 확인하는 렌터카 영업매니저용 대시보드</div>',
