@@ -830,7 +830,7 @@ def show_effect_section() -> None:
 
 def main() -> None:
     if HEADER_IMAGE.exists():
-    st.image(HEADER_IMAGE, use_container_width=True)
+    st.image(HEADER_IMAGE, width="stretch")
     else:
     st.markdown('<div class="main-title">🚗 영맨 헬퍼</div>', unsafe_allow_html=True)
 
