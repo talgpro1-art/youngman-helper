@@ -1,43 +1,43 @@
 rank,vehicle,status,image_url,image_file,image_source_url,image_source_type,image_review_status,recommended_action
-1,기아 쏘렌토,needs_review,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000040413/bca92877fb8e4dc786a40be04246d481.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000102538,official_newsroom,needs_review,"review image, then set image_review_status to approved"
-2,테슬라 Model Y,needs_review,https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto%2Cq_auto/Model-Y-2-Specs-LR-AWD-Desktop-KR.png,,https://www.tesla.com/ko_kr/modely,official_site,needs_review,"review image, then set image_review_status to approved"
-3,현대 그랜저,needs_review,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000078838/72dabdc6092f4644b18f9ece68bd5a1d.jpg,,https://www.hyundaimotorgroup.com/ko/news/hyundai-new-grandeur-design-reveal,official_newsroom,needs_review,"review image, then set image_review_status to approved"
-4,현대 쏘나타 디 엣지,needs_review,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000070421/99fc6d4804ec46b2a2ef88726195d0a1.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000188025,official_newsroom,needs_review,"review image, then set image_review_status to approved"
-5,기아 스포티지,needs_review,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000055596/f5032236de1845668952429b49fed1a1.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000163986,official_newsroom,needs_review,"review image, then set image_review_status to approved"
-6,기아 카니발,needs_review,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000066415/a4eacd7bc434453391b974d6ccd14ae7.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000183309,official_newsroom,needs_review,"review image, then set image_review_status to approved"
-7,현대 아반떼,needs_review,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000061388/bf7b014705c64abdbe8690f2ef2a87ad.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000174496,official_newsroom,needs_review,"review image, then set image_review_status to approved"
-8,현대 포터 II,needs_review,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000073560/0a60c35f2a9047259d3e9aa11933836a.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000196277,official_newsroom,needs_review,"review image, then set image_review_status to approved"
-9,현대 투싼,needs_review,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000066001/d794bf4766ef47eb8ad8a13f8e4f80e2.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000182689,official_newsroom,needs_review,"review image, then set image_review_status to approved"
-10,현대 싼타페,needs_review,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000066001/d794bf4766ef47eb8ad8a13f8e4f80e2.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000182689,official_newsroom,needs_review,"review image, then set image_review_status to approved"
+1,기아 쏘렌토,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000040413/bca92877fb8e4dc786a40be04246d481.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000102538,official_newsroom,approved,ready
+2,테슬라 Model Y,approved,https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto%2Cq_auto/Model-Y-2-Specs-LR-AWD-Desktop-KR.png,,https://www.tesla.com/ko_kr/modely,official_site,approved,ready
+3,현대 그랜저,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000078838/72dabdc6092f4644b18f9ece68bd5a1d.jpg,,https://www.hyundaimotorgroup.com/ko/news/hyundai-new-grandeur-design-reveal,official_newsroom,approved,ready
+4,현대 쏘나타 디 엣지,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000070421/99fc6d4804ec46b2a2ef88726195d0a1.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000188025,official_newsroom,approved,ready
+5,기아 스포티지,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000055596/f5032236de1845668952429b49fed1a1.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000163986,official_newsroom,approved,ready
+6,기아 카니발,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000066415/a4eacd7bc434453391b974d6ccd14ae7.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000183309,official_newsroom,approved,ready
+7,현대 아반떼,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000061388/bf7b014705c64abdbe8690f2ef2a87ad.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000174496,official_newsroom,approved,ready
+8,현대 포터 II,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000073560/0a60c35f2a9047259d3e9aa11933836a.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000196277,official_newsroom,approved,ready
+9,현대 투싼,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000066001/d794bf4766ef47eb8ad8a13f8e4f80e2.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000182689,official_newsroom,approved,ready
+10,현대 싼타페,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000066001/d794bf4766ef47eb8ad8a13f8e4f80e2.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000182689,official_newsroom,approved,ready
 11,기아 레이,missing,,,,,,add official_newsroom or official_site image URL
 12,기아 EV3,missing,,,,,,add official_newsroom or official_site image URL
-13,현대 디 올 뉴 팰리세이드,missing,,,,,,add official_newsroom or official_site image URL
+13,현대 디 올 뉴 팰리세이드,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000065005/b8638ca2f8da4559a820f776f46935cf.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000180342,official_newsroom,approved,ready
 14,제네시스 G80,missing,,,,,,add official_newsroom or official_site image URL
 15,기아 EV5,missing,,,,,,add official_newsroom or official_site image URL
 16,기아 셀토스,missing,,,,,,add official_newsroom or official_site image URL
-17,현대 코나,missing,,,,,,add official_newsroom or official_site image URL
+17,현대 코나,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000066001/d794bf4766ef47eb8ad8a13f8e4f80e2.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000182689,official_newsroom,approved,ready
 18,기아 PV5,missing,,,,,,add official_newsroom or official_site image URL
 19,기아 K5,missing,,,,,,add official_newsroom or official_site image URL
 20,기아 봉고 3,missing,,,,,,add official_newsroom or official_site image URL
-21,현대 더 뉴 스타리아,missing,,,,,,add official_newsroom or official_site image URL
+21,현대 더 뉴 스타리아,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000052298/935147ad5992486fae759308e7d7bbe7.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000157252,official_newsroom,approved,ready
 22,제네시스 GV70,missing,,,,,,add official_newsroom or official_site image URL
-23,현대 아이오닉 5,missing,,,,,,add official_newsroom or official_site image URL
+23,현대 아이오닉 5,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000058230/43d82d6ee4d44573a455b97880816a31.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000169113,official_newsroom,approved,ready
 24,기아 모닝,missing,,,,,,add official_newsroom or official_site image URL
 25,제네시스 GV80,missing,,,,,,add official_newsroom or official_site image URL
 26,벤츠 E-Class,missing,,,,,,add official_newsroom or official_site image URL
 27,BMW 5 Series,missing,,,,,,add official_newsroom or official_site image URL
 28,기아 K8,missing,,,,,,add official_newsroom or official_site image URL
-29,테슬라 Model 3,missing,,,,,,add official_newsroom or official_site image URL
+29,테슬라 Model 3,approved,https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto%2Cq_auto/Model-3-Performance-Hero-Desktop-KR.png,,https://www.tesla.com/ko_kr/model3,official_site,approved,ready
 30,르노 필랑트,missing,,,,,,add official_newsroom or official_site image URL
 31,르노 그랑 콜레오스,missing,,,,,,add official_newsroom or official_site image URL
 32,기아 EV4,missing,,,,,,add official_newsroom or official_site image URL
 33,KGM 무쏘,missing,,,,,,add official_newsroom or official_site image URL
-34,현대 아이오닉 9,missing,,,,,,add official_newsroom or official_site image URL
-35,현대 포터 II 일렉트릭,missing,,,,,,add official_newsroom or official_site image URL
+34,현대 아이오닉 9,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000061284/bad86a51a404428db68e328bcd3960df.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000174032,official_newsroom,approved,ready
+35,현대 포터 II 일렉트릭,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000059699/7e5e8e2d180d40e3ac11e5292b77b53b.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000171778,official_newsroom,approved,ready
 36,기아 레이 EV,missing,,,,,,add official_newsroom or official_site image URL
 37,기아 EV6,missing,,,,,,add official_newsroom or official_site image URL
 38,현대 베뉴,missing,,,,,,add official_newsroom or official_site image URL
-39,현대 아이오닉 6,missing,,,,,,add official_newsroom or official_site image URL
+39,현대 아이오닉 6,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000030052/a617d4aec46943218bebc9ce6ad4ca99.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000070253,official_newsroom,approved,ready
 40,기아 셀토스,missing,,,,,,add official_newsroom or official_site image URL
 41,KGM 무쏘 EV,missing,,,,,,add official_newsroom or official_site image URL
 42,현대 캐스퍼 일렉트릭,missing,,,,,,add official_newsroom or official_site image URL
