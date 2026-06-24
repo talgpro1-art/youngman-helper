@@ -589,6 +589,12 @@ def render_link_button(url: str, label: str, secondary: bool = False, disabled_l
         )
 
 
+def show_half_width_image(source: str | Path) -> None:
+    _, center, _ = st.columns([1, 2, 1])
+    with center:
+        st.image(source, width="stretch")
+
+
 def dday_label(value: object) -> str:
     launch_dt = pd.to_datetime(value, errors="coerce")
     if pd.isna(launch_dt):
@@ -768,7 +774,7 @@ def show_vehicle_card(row: pd.Series) -> None:
     )
 
     if image_source:
-        st.image(image_source, width="stretch")
+        show_half_width_image(image_source)
     else:
         st.markdown('<div class="car-placeholder">🚗</div>', unsafe_allow_html=True)
 
@@ -1004,7 +1010,7 @@ def show_effect_section() -> None:
 
 def main() -> None:
     if HEADER_IMAGE.exists():
-        st.image(HEADER_IMAGE, width="stretch")
+        show_half_width_image(HEADER_IMAGE)
     else:
         st.markdown('<div class="main-title">🚗 영맨 헬퍼</div>', unsafe_allow_html=True)
 
