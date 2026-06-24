@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from html import escape
 from pathlib import Path
+from textwrap import dedent
 
 import pandas as pd
 import streamlit as st
@@ -710,7 +711,8 @@ def show_newcar_premium_zone(newcars: pd.DataFrame) -> None:
                 )
 
     html_parts.append("</div>")
-    st.markdown("".join(html_parts), unsafe_allow_html=True)
+    roadmap_html = "\n".join(dedent(part).strip() for part in html_parts if safe_str(part))
+    st.markdown(roadmap_html, unsafe_allow_html=True)
 
 
 def filter_vehicles(df: pd.DataFrame) -> pd.DataFrame:
