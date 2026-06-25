@@ -13,6 +13,7 @@ VEHICLE_MASTER = ROOT / "vehicle_master.csv"
 OPTION_SUMMARY = ROOT / "data" / "option_summary.csv"
 OPTION_MENTIONS = ROOT / "data" / "option_mentions.csv"
 NEWCAR_ROADMAP = ROOT / "data" / "newcar_roadmap.csv"
+NEWCAR_ROADMAP_RUL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTTCzFCPz6nPFnu-oRoTjB16Ng7hhPAy811JU3DZcnSKglptFHHf3hLOVIXN4Y-yis7_RZhK52_Ys1m/pub?gid=1952505960&single=true&output=csv"
 CAR_IMAGE_DIR = ROOT / "assets" / "cars"
 HEADER_IMAGE = ROOT / "assets" / "header.png"
 APP_ICON = ROOT / "assets" / "icon.png"
@@ -553,20 +554,24 @@ def load_options(version: int) -> pd.DataFrame:
     df.columns = [c.replace("\ufeff", "").strip() for c in df.columns]
     return df
 
-@st.cache_data(show_spinner=False)
-def load_newcar_roadmap(version: int) -> pd.DataFrame:
-    if not NEWCAR_ROADMAP.exists():
-        return pd.DataFrame()
-    df = pd.read_csv(NEWCAR_ROADMAP)
+@st.cache_data(show_spinner=False, ttl=3600)
+def load_newcar_roadmap(version: int = 0) -> pd.DataFrame:
+    try:
+        if NEWCAR_ROADMAP_URL:
+            df = pd.read_csv(NEWCAR_ROADMAP_URL)
+        elif NEWCAR_ROADMAP.exists():
+            df = pd.read_csv(NEWCAR_ROADMAP)
+        else:
+            return pd.DataFrame()
+    except Exception:
+        if NEWCAR_ROADMAP.exists():
+            df = pd.read_csv(NEWCAR_ROADMAP)
+        else:
+            return pd.DataFrame()
+
     df.columns = [c.replace("\ufeff", "").strip() for c in df.columns]
-    if "launch_date" in df.columns:
-        df["launch_dt"] = pd.to_datetime(df["launch_date"], errors="coerce")
-    else:
-        df["launch_dt"] = pd.NaT
-    if "priority" in df.columns:
-        df["priority"] = pd.to_numeric(df["priority"], errors="coerce").fillna(99).astype(int)
-    else:
-        df["priority"] = 99
+    df["launch_dt"] = pd.to_datetime(df.get("launch_date"), errors="coerce")
+    df["priority"] = pd.to_numeric(df.get("priority"), errors="coerce").fillna(99).astype(int)
     return df
 
 @st.cache_data(show_spinner=False)
@@ -1042,7 +1047,7 @@ def main() -> None:
     df = load_vehicles(file_version(VEHICLE_MASTER))
     options = load_options(file_version(OPTION_SUMMARY))
     mentions = load_mentions(file_version(OPTION_MENTIONS))
-    newcars = load_newcar_roadmap(file_version(NEWCAR_ROADMAP))
+    newcars = load_newcar_roadmap()
 
     if df.empty:
         st.error("vehicle_master.csv 파일을 찾을 수 없거나 데이터가 비어 있습니다.")
