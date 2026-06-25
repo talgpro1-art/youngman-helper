@@ -640,16 +640,24 @@ def filtered_newcars(newcars: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]
 
     upcoming = newcars[
         (statuses == "upcoming")
-        & (launch_dt.notna())
-        & (launch_dt >= today)
-        & (launch_dt <= today + pd.Timedelta(days=60))
+        & (
+            launch_dt.isna()
+            | (
+                (launch_dt >= today)
+                & (launch_dt <= today + pd.Timedelta(days=60))
+            )
+        )
     ].copy()
 
     recent = newcars[
         (statuses == "recent")
-        & (launch_dt.notna())
-        & (launch_dt >= today - pd.Timedelta(days=14))
-        & (launch_dt <= today)
+        & (
+            launch_dt.isna()
+            | (
+                (launch_dt >= today - pd.Timedelta(days=14))
+                & (launch_dt <= today)
+            )
+        )
     ].copy()
 
     return (
@@ -689,6 +697,7 @@ def show_newcar_premium_zone(newcars: pd.DataFrame) -> None:
             for _, row in upcoming.iterrows():
                 vehicle = html_text(row.get("vehicle"), "신차")
                 launch_date = html_text(row.get("launch_date"))
+                launch_line = f"{launch_date} 출시 예정" if launch_date else "출시 일정 확인중"
                 summary = html_text(row.get("summary"), "출시 일정 확인 필요")
                 confidence = html_text(confidence_label(row.get("launch_confidence")))
                 price_status = html_text(price_status_label(row.get("price_status")))
