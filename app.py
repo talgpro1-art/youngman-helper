@@ -697,7 +697,7 @@ def show_newcar_premium_zone(newcars: pd.DataFrame) -> None:
             for _, row in upcoming.iterrows():
                 vehicle = html_text(row.get("vehicle"), "신차")
                 launch_date = html_text(row.get("launch_date"))
-                launch_line = f"{launch_date} 출시 예정" if launch_date else "출시 일정 확인중"
+                launch_line = f"{launch_date} 출시" if launch_date else "최근 출시/가격 공개"
                 summary = html_text(row.get("summary"), "출시 일정 확인 필요")
                 confidence = html_text(confidence_label(row.get("launch_confidence")))
                 price_status = html_text(price_status_label(row.get("price_status")))
@@ -711,7 +711,7 @@ def show_newcar_premium_zone(newcars: pd.DataFrame) -> None:
                         <div class="roadmap-topline">
                             <div>
                                 <div class="roadmap-car">{vehicle}</div>
-                                <div class="small-muted">{launch_date} 출시 예정</div>
+                                <div class="small-muted">{launch_line}</div>
                             </div>
                             <div class="roadmap-dday">{html_text(dday_label(row.get("launch_dt")))}</div>
                         </div>
@@ -744,7 +744,7 @@ def show_newcar_premium_zone(newcars: pd.DataFrame) -> None:
                         <div class="roadmap-topline">
                             <div>
                                 <div class="roadmap-car">{vehicle}</div>
-                                <div class="small-muted">{launch_date} 출시</div>
+                                <div class="small-muted">{launch_line}</div>
                             </div>
                             <div class="roadmap-dday">{html_text(dday_label(row.get("launch_dt")))}</div>
                         </div>
