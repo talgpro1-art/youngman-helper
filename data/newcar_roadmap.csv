@@ -1,5 +1,5 @@
-vehicle,brand,model,launch_date,status,price_url,catalog_url,source_url,summary,priority
-현대 디 올 뉴 팰리세이드,현대,디 올 뉴 팰리세이드,2026-06-18,recent,https://www.hyundai.com/contents/repn-car/catalog/palisade-2025-price.pdf,,,최근 2주 내 출시 차량으로 관리하는 프리미엄 SUV 상담 우선 확인 대상입니다.,1
-기아 PV5,기아,PV5,2026-06-21,recent,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-cargo.pdf,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-passenger.pdf,,최근 2주 내 가격표 확인 대상입니다. 카고와 패신저 가격표를 함께 확인합니다.,2
-기아 EV5,기아,EV5,2026-07-15,upcoming,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev5.pdf,,,향후 60일 내 출시 예정 모니터링 대상입니다. 전기 SUV 상담 수요를 선제 확인합니다.,1
-현대 아이오닉 9,현대,아이오닉 9,2026-08-05,upcoming,https://www.hyundai.com/contents/repn-car/catalog/ioniq9-price.pdf,,,향후 60일 내 출시 예정 모니터링 대상입니다. 대형 전기 SUV 법인 상담 포인트를 준비합니다.,2
+vehicle,brand,model,launch_date,status,launch_confidence,price_status,price_url,catalog_url,source_url,source_title,source_date,summary,priority,last_checked
+현대 디 올 뉴 팰리세이드,현대,디 올 뉴 팰리세이드,2026-06-18,recent,confirmed,available,https://www.hyundai.com/contents/repn-car/catalog/palisade-2025-price.pdf,,,공식 가격표 확인,2026-06-18,최근 출시 차량으로 프리미엄 SUV 상담 우선 확인 대상입니다.,1,2026-06-25
+기아 PV5,기아,PV5,2026-06-21,recent,confirmed,available,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-cargo.pdf,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-passenger.pdf,,공식 가격표 확인,2026-06-21,최근 출시 차량입니다. 카고와 패신저 가격표를 함께 확인합니다.,2,2026-06-25
+기아 EV5,기아,EV5,2026-07-15,upcoming,likely,available,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev5.pdf,,,출시 예정 모니터링,2026-06-25,향후 60일 내 출시 예정 모니터링 대상입니다. 전기 SUV 상담 수요를 선제 확인합니다.,1,2026-06-25
+현대 아이오닉 9,현대,아이오닉 9,2026-08-05,upcoming,likely,available,https://www.hyundai.com/contents/repn-car/catalog/ioniq9-price.pdf,,,출시 예정 모니터링,2026-06-25,향후 60일 내 출시 예정 모니터링 대상입니다. 대형 전기 SUV 법인 상담 포인트를 준비합니다.,2,2026-06-25
