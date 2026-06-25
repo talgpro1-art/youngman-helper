@@ -554,8 +554,8 @@ def load_options(version: int) -> pd.DataFrame:
     df.columns = [c.replace("\ufeff", "").strip() for c in df.columns]
     return df
 
-@st.cache_data(show_spinner=False, ttl=3600)
-def load_newcar_roadmap(version: int = 0) -> pd.DataFrame:
+@st.cache_data(show_spinner=False, ttl=600)
+def load_newcar_roadmap() -> pd.DataFrame:
     try:
         if NEWCAR_ROADMAP_URL:
             df = pd.read_csv(NEWCAR_ROADMAP_URL)
