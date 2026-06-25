@@ -607,6 +607,23 @@ def dday_label(value: object) -> str:
         return "D-Day"
     return f"D+{abs(diff)}"
 
+def confidence_label(value: object) -> str:
+    value = safe_str(value).lower()
+    return {
+        "confirmed": "공식 확인",
+        "likely": "출시 유력",
+        "rumor": "검증 필요",
+    }.get(value, "확인중")
+
+
+def price_status_label(value: object) -> str:
+    value = safe_str(value).lower()
+    return {
+        "available": "가격표 있음",
+        "pending": "가격표 대기",
+        "none": "가격표 없음",
+    }.get(value, "가격표 확인중")
+
 
 def filtered_newcars(newcars: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     if newcars.empty:
@@ -668,7 +685,11 @@ def show_newcar_premium_zone(newcars: pd.DataFrame) -> None:
                 vehicle = html_text(row.get("vehicle"), "신차")
                 launch_date = html_text(row.get("launch_date"))
                 summary = html_text(row.get("summary"), "출시 일정 확인 필요")
+                confidence = html_text(confidence_label(row.get("launch_confidence")))
+                price_status = html_text(price_status_label(row.get("price_status")))
                 source_url = safe_str(row.get("source_url"))
+                confidence = html_text(row.get("launch_confidence"), "확인중")
+                price_status = html_text(row.get("price_status"), "pending")
                 source_html = f'<div class="roadmap-summary"><a href="{escape(source_url)}" target="_blank">출처 확인</a></div>' if source_url.startswith("http") else ""
                 html_parts.append(
                     f"""
@@ -681,6 +702,7 @@ def show_newcar_premium_zone(newcars: pd.DataFrame) -> None:
                             <div class="roadmap-dday">{html_text(dday_label(row.get("launch_dt")))}</div>
                         </div>
                         <div class="roadmap-summary">{summary}</div>
+                        <div class="small-muted">출시 신뢰도: {confidence} · 가격표: {price_status}</div>
                         {source_html}
                     </div>
                     """
@@ -692,6 +714,8 @@ def show_newcar_premium_zone(newcars: pd.DataFrame) -> None:
                 vehicle = html_text(row.get("vehicle"), "신차")
                 launch_date = html_text(row.get("launch_date"))
                 summary = html_text(row.get("summary"), "최근 출시 차량입니다.")
+                confidence = html_text(confidence_label(row.get("launch_confidence")))
+                price_status = html_text(price_status_label(row.get("price_status")))
                 links_html = ""
                 for url, label in [
                     (safe_str(row.get("price_url")), "신차 가격표 바로보기"),
@@ -711,6 +735,7 @@ def show_newcar_premium_zone(newcars: pd.DataFrame) -> None:
                             <div class="roadmap-dday">{html_text(dday_label(row.get("launch_dt")))}</div>
                         </div>
                         <div class="roadmap-summary">{summary}</div>
+                        <div class="small-muted">출시 신뢰도: {confidence} · 가격표: {price_status}</div>
                         {links_html}
                     </div>
                     """
