@@ -8,43 +8,43 @@ rank,vehicle,status,image_url,image_file,image_source_url,image_source_type,imag
 7,현대 아반떼,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000061388/bf7b014705c64abdbe8690f2ef2a87ad.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000174496,official_newsroom,approved,ready
 8,현대 포터 II,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000073560/0a60c35f2a9047259d3e9aa11933836a.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000196277,official_newsroom,approved,ready
 9,현대 투싼,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000066001/d794bf4766ef47eb8ad8a13f8e4f80e2.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000182689,official_newsroom,approved,ready
-10,현대 싼타페,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000066001/d794bf4766ef47eb8ad8a13f8e4f80e2.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000182689,official_newsroom,approved,ready
-11,기아 레이,missing,,,,,,add official_newsroom or official_site image URL
-12,기아 EV3,missing,,,,,,add official_newsroom or official_site image URL
-13,현대 디 올 뉴 팰리세이드,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000065005/b8638ca2f8da4559a820f776f46935cf.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000180342,official_newsroom,approved,ready
-14,제네시스 G80,missing,,,,,,add official_newsroom or official_site image URL
-15,기아 EV5,missing,,,,,,add official_newsroom or official_site image URL
-16,기아 셀토스,missing,,,,,,add official_newsroom or official_site image URL
-17,현대 코나,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000066001/d794bf4766ef47eb8ad8a13f8e4f80e2.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000182689,official_newsroom,approved,ready
-18,기아 PV5,missing,,,,,,add official_newsroom or official_site image URL
-19,기아 K5,missing,,,,,,add official_newsroom or official_site image URL
-20,기아 봉고 3,missing,,,,,,add official_newsroom or official_site image URL
-21,현대 더 뉴 스타리아,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000052298/935147ad5992486fae759308e7d7bbe7.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000157252,official_newsroom,approved,ready
-22,제네시스 GV70,missing,,,,,,add official_newsroom or official_site image URL
-23,현대 아이오닉 5,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000058230/43d82d6ee4d44573a455b97880816a31.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000169113,official_newsroom,approved,ready
-24,기아 모닝,missing,,,,,,add official_newsroom or official_site image URL
-25,제네시스 GV80,missing,,,,,,add official_newsroom or official_site image URL
-26,벤츠 E-Class,missing,,,,,,add official_newsroom or official_site image URL
-27,BMW 5 Series,missing,,,,,,add official_newsroom or official_site image URL
-28,기아 K8,missing,,,,,,add official_newsroom or official_site image URL
-29,테슬라 Model 3,approved,https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto%2Cq_auto/Model-3-Performance-Hero-Desktop-KR.png,,https://www.tesla.com/ko_kr/model3,official_site,approved,ready
-30,르노 필랑트,missing,,,,,,add official_newsroom or official_site image URL
-31,르노 그랑 콜레오스,missing,,,,,,add official_newsroom or official_site image URL
-32,기아 EV4,missing,,,,,,add official_newsroom or official_site image URL
-33,KGM 무쏘,missing,,,,,,add official_newsroom or official_site image URL
-34,현대 아이오닉 9,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000061284/bad86a51a404428db68e328bcd3960df.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000174032,official_newsroom,approved,ready
+10,현대 싼타페,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000040986/7879465f018c462fbf8a9c1043ccb92c.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000104603,official_newsroom,approved,ready
+11,기아 레이,approved,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/ray/23my/ray_feature_bg_pc.jpg,,https://www.kia.com/kr/vehicles/ray/features,official_site,approved,ready
+12,기아 EV3,approved,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/ev3/24my/content/the_kia_ev3_feature_bg_pc.jpg,,https://www.kia.com/kr/vehicles/ev3/features,official_site,approved,ready
+13,현대 디 올 뉴 팰리세이드,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000056822/ddcc0d7edabd4adebad93d7c9f8b6c5e.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000166099,official_newsroom,approved,ready
+14,제네시스 G80,approved,https://www.genesis.com/content/dam/genesis-p2/kr/admin/model-information/G80/list-thumbnail/2026-01-06/16-22-33/genesis-kr-admin-model-list-thumbnail-g80-27my-pc-630x240-ko.png,,https://www.genesis.com/kr/ko/models/luxury-sedan-genesis/g80/highlights.html,official_site,approved,ready
+15,기아 EV5,approved,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/ev5/26my/the_kia_ev5_feature_bg_pc.jpg,,https://www.kia.com/kr/vehicles/ev5/features,official_site,approved,ready
+16,기아 셀토스,approved,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/seltos/26my/kv_the_all-new_seltos_release_pc.jpg,,https://www.kia.com/kr/vehicles/seltos/features,official_site,approved,ready
+17,현대 코나,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000078053/2baa17e3f8a5464491c1ace253cf0d52.jpg,,https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-company-2027-kona-launch,official_newsroom,approved,ready
+18,기아 PV5,approved,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pv5-passenger/26my/content/the_kia_pv5_passenger_feature_bg_pc.jpg,,https://www.kia.com/kr/vehicles/pv5-passenger/features,official_site,approved,ready
+19,기아 K5,approved,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/k5/24pe/k5_feature_bg_pc.jpg,,https://www.kia.com/kr/vehicles/k5/features,official_site,approved,ready
+20,기아 봉고 3,approved,https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202311/kv_bongo3_contract_pc.jpg,,https://www.kia.com/kr/vehicles/bongo3/features,official_site,approved,ready
+21,현대 더 뉴 스타리아,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000074533/ebc127a5c2de4f9e8c747f93cac7ef7c.jpg,,https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-company-new-staria-ev-world-premiere,official_newsroom,approved,ready
+22,제네시스 GV70,approved,https://www.genesis.com/content/dam/genesis-p2/kr/admin/model-information/GV70/list-thumbnail/2025-10-10/11-18-12/genesis-kr-admin-model-list-thumbnail-gv70-desktop-630x240-ko.png,,https://www.genesis.com/kr/ko/models/luxury-suv-genesis/gv70/highlights.html,official_site,approved,ready
+23,현대 아이오닉 5,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000047696/eedd82d25696467b85945a117d60f3f7.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000137598,official_newsroom,approved,ready
+24,기아 모닝,approved,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/morning/my/morning_feature_pc_bg.jpg,,https://www.kia.com/kr/vehicles/morning/features,official_site,approved,ready
+25,제네시스 GV80,approved,https://www.genesis.com/content/dam/genesis-p2/kr/admin/model-information/GV80/list-thumbnail/2026-02-11/15-51-00/genesis-kr-admin-model-list-thumbnail-gv80-desktop-630x240-ko.png,,https://www.genesis.com/kr/ko/models/luxury-suv-genesis/gv80/highlights.html,official_site,approved,ready
+26,벤츠 E-Class,approved,https://media.oneweb.mercedes-benz.com/images/dynamic/asia/KR/214050/806/iris.png?BKGND=9&IMGT=P27&POV=BE030%2CPZM&cp=U7lLKRUtPa6KAFr8s_ubHw&q=COSY-EU-100-1713d0VXqaWFqtyO67PobzIr3eWsrrCsdRRzwQZgk4ZbMw3SGtxmFtsd2HtcUfpF0XGEuTRJ0l3CJOB2Nz2bApRiyI5ux4ZQC30MrkzNBzkm7jA2jhKViSM%25vq4BjyLRgYFYaxPJ8rH1yC%25n8w0AEoiZBkoM4FvIPTg9LxZ6PDaroSeWHtItsd8c%25cUfiAkXGE5YrJbXSqxVh6n8wPbIoTnlR4M6o58FTg97zp6PD4PDSeWgejtsdRs3cUfGU6XGE0GYJ0lB4lOB2AQ1bA4wHEcmqN1IwCJ0MFspnIu2fzfXRXPq0Agjeq89i3mtHBr&uni=m,,https://www.mercedes-benz.co.kr/passengercars/models/saloon/e-class/overview.html,official_site,approved,ready
+27,BMW 5 Series,approved,https://bmw.scene7.com/is/image/BMW/g60_ice_driving-dynamics_dsk_fb_en?fmt=webp&qlt=80&wid=1024,,https://www.bmw.co.kr/ko/all-models/5-series/sedan/bmw-5-series-sedan-overview.html,official_site,approved,ready
+28,기아 K8,approved,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/k8/25pe/the_new_k8_feature_bg_pc.jpg,,https://www.kia.com/kr/vehicles/k8/features,official_site,approved,ready
+29,테슬라 Model 3,approved,https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto%2Cq_auto/Model-3-Specs-RWD-Desktop-KR.png,,https://www.tesla.com/ko_kr/model3,official_site,approved,ready
+30,르노 필랑트,approved,https://cdn.renault.co.kr/ko/resource/img/upload/asset/filante/design_slide/slide01_mo.webp,,https://www.renault.co.kr/ko/model/filante_overview.jsp,official_site,approved,ready
+31,르노 그랑 콜레오스,approved,https://cdn.renault.co.kr/upload/asset/koleos/main_off.webp,,https://www.renault.co.kr/ko/model/koleos_overview.jsp,official_site,approved,ready
+32,기아 EV4,approved,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/ev4/25my/content/the-kia-ev4_feature_bg_pc.jpg,,https://www.kia.com/kr/vehicles/ev4/features,official_site,approved,ready
+33,KGM 무쏘,approved,https://file.newswire.co.kr/data/datafile2/thumb_640/2026/01/1028147215_20260105100708_6930055065.jpg,,https://www.newswire.co.kr/newsRead.php?no=1026410,official_press_release,approved,ready
+34,현대 아이오닉 9,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000056177/3281c1ab8658414281a09587ed8be5a7.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000164925,official_newsroom,approved,ready
 35,현대 포터 II 일렉트릭,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000059699/7e5e8e2d180d40e3ac11e5292b77b53b.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000171778,official_newsroom,approved,ready
-36,기아 레이 EV,missing,,,,,,add official_newsroom or official_site image URL
-37,기아 EV6,missing,,,,,,add official_newsroom or official_site image URL
-38,현대 베뉴,missing,,,,,,add official_newsroom or official_site image URL
-39,현대 아이오닉 6,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000030052/a617d4aec46943218bebc9ce6ad4ca99.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000070253,official_newsroom,approved,ready
-40,기아 셀토스,missing,,,,,,add official_newsroom or official_site image URL
-41,KGM 무쏘 EV,missing,,,,,,add official_newsroom or official_site image URL
-42,현대 캐스퍼 일렉트릭,missing,,,,,,add official_newsroom or official_site image URL
-43,벤츠 GLC-Class,missing,,,,,,add official_newsroom or official_site image URL
-44,BMW X3,missing,,,,,,add official_newsroom or official_site image URL
-45,쉐보레 트랙스 크로스오버,missing,,,,,,add official_newsroom or official_site image URL
-46,기아 니로,missing,,,,,,add official_newsroom or official_site image URL
-47,BYD SEALION 7,missing,,,,,,add official_newsroom or official_site image URL
-48,기아 니로 EV,missing,,,,,,add official_newsroom or official_site image URL
-49,현대 캐스퍼,missing,,,,,,add official_newsroom or official_site image URL
+36,기아 레이 EV,approved,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/ray-ev/24my/content/ray_feature_bg_pc.jpg,,https://www.kia.com/kr/vehicles/ray-ev/features,official_site,approved,ready
+37,기아 EV6,approved,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/ev6/pe/ev6_pe_feature_bg_pc.jpg,,https://www.kia.com/kr/vehicles/ev6/features,official_site,approved,ready
+38,현대 베뉴,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000060692/e722b7a4a3c54c7e9b1ae3e12591ca91.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000173334,official_newsroom,approved,ready
+39,현대 아이오닉 6,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000065481/6dff1b56ddba45ba98c7714f3b09abea.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000182012,official_newsroom,approved,ready
+40,기아 셀토스,approved,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/seltos/26my/kv_the_all-new_seltos_release_pc.jpg,,https://www.kia.com/kr/vehicles/seltos/features,official_site,approved,ready
+41,KGM 무쏘 EV,approved,https://www.kg-mobility.com/attached/contents/display/image/200000100030003/20250304093959205_CZWAVZ.png,,https://www.kg-mobility.com/pr/model/show-room/200000100030003,official_site,approved,ready
+42,현대 캐스퍼 일렉트릭,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000064743/733a0c625af54d2f81c208fe65fff286.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000180743,official_newsroom,approved,ready
+43,벤츠 GLC-Class,approved,https://media.oneweb.mercedes-benz.com/images/dynamic/asia/KR/254605/806_056/iris.png?BKGND=9&IMGT=P27&POV=BE030%2CPZM&cp=U7lLKRUtPa6KAFr8s_ubHw&q=COSY-EU-100-1713d0VXqaWFqtyO67PobzIr3eWsrrCsdRRzwQZUnRZbMw3SGtGyUtsd1JpcUfwFuXGEZT3J0l34JOB2Ng1bApjkyI5uVmJQC3qhQkzNRtbm7jx2vhKV1bW%25vqwylyLRZimYaxF4YrH19gOn8wfOFoiZEiEM4Fl4wTg92zO6PDp7NSeWuXjtsd3YQcUfNrqXGEj9RJ0lVDZOB2qbcbApUnyI5uG5IQC30grkzNB%25km7jAyjhKV5pV%25vqCIdyLRgcDYaxPXSrH1eHrn8wsAxoiZU71M4FGTlTg906V6PDBSlSeWAhhtsd6vDcUfSM1XGEvaXJ0lLHxOB2aMFbApHTxI5u8Q%25QC3ivwkzNL6Sm%25kbFDZoOtsdB%25ycJtj9GXOcLsEJ0l4YfOB2igSbAp0ApI5uB5ZQC3ACWkzN5Pwm7jCGDhKVzYE%25vq7rcyLRKOyYaxvOorH1LOWn8waepoiZ3bXM4FGTlTg9Pg26PDePoSeWsehtsdUvTcUfG8fXGE0iRJ0lBIxOB2AMqbA4wHEcmqN1IwCu0E10pnIu2fzfXRXPq0Agjeq89i3mtHBr&uni=m,,https://www.mercedes-benz.co.kr/passengercars/models/suv/glc/overview.html,official_site,approved,ready
+44,BMW X3,approved,https://bmw.scene7.com/is/image/BMW/g45_ice_intro-1%3A16to7?fit=constrain%2C1&fmt=webp&wid=2560,,https://www.bmw.co.kr/ko/all-models/x-series/x3/bmw-x3.html,official_site,approved,ready
+45,쉐보레 트랙스 크로스오버,approved,https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/suvs/2026/trax/gallery/trax-gal-ext-01.jpg?imwidth=650,,https://www.chevrolet.co.kr/cuvs/trax-crossover,official_site,approved,ready
+46,기아 니로,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000077049/6d3eb0fa4f0e4d91ac32a3c7d045cd31.jpg,,https://www.hyundaimotorgroup.com/ko/news/kia-the-new-niro-sales-launch,official_newsroom,approved,ready
+47,BYD SEALION 7,approved,https://www.bydauto.kr/static/images/model/byd_sealion7/spac_img1_2.png,,https://www.bydauto.kr/car/byd-sealion7,official_site,approved,ready
+48,기아 니로 EV,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000074922/74ca5d2b468940e88c287668662f743e.jpg,,https://www.hyundaimotorgroup.com/ko/news/kia-new-niro-design-reveal,official_newsroom,approved,ready
+49,현대 캐스퍼,approved,https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000064743/733a0c625af54d2f81c208fe65fff286.jpg,,https://www.hyundaimotorgroup.com/ko/news/CONT0000000000180743,official_newsroom,approved,ready
