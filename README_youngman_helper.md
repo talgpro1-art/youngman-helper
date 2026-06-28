@@ -20,6 +20,7 @@ data/notifications.json        # 상단 알림 데이터
 scripts/update_notifications.py # 뉴스 RSS 기반 알림 갱신
 scripts/check_price_links.py    # 공식 PDF 파일 변경 여부 체크
 docs/top50_url_review.csv       # TOP50 URL 검토표
+docs/vehicle_image_backlog.md   # 차량 이미지 보강 체크리스트
 requirements.txt
 ```
 
@@ -82,6 +83,12 @@ python scripts\update_sales_rankings.py --input data\sales_snapshot\monthly_sale
 ```powershell
 streamlit run app.py
 ```
+
+GitHub Actions 자동 갱신:
+
+- `.github/workflows/refresh-dashboard-data.yml`
+- 매일 공개 뉴스 알림과 공식 가격표 링크 상태를 갱신합니다.
+- 필요하면 GitHub Actions 화면에서 수동 실행할 수 있습니다.
 
 ## 앞으로 채워야 할 데이터
 
