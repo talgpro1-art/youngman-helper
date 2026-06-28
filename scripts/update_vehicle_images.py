@@ -9,7 +9,7 @@ VEHICLE_MASTER = ROOT / "vehicle_master.csv"
 REVIEW_FILE = ROOT / "data" / "vehicle_image_review.csv"
 
 IMAGE_COLUMNS = ["image_url", "image_file", "image_source_url", "image_source_type", "image_review_status"]
-ALLOWED_APPROVED_TYPES = {"official_newsroom", "official_site", "manual"}
+ALLOWED_APPROVED_TYPES = {"official_newsroom", "official_site", "official_press_release", "manual"}
 BLOCKED_IMAGE_HOSTS = ("wikimedia.org", "wikipedia.org")
 
 
@@ -80,7 +80,7 @@ def write_review(rows: list[dict[str, str]]) -> None:
         elif status == "rejected_blocked_source":
             action = "remove blocked source and replace with official/manual URL"
         elif status == "needs_source_type":
-            action = "set image_source_type to official_newsroom, official_site, or manual"
+            action = "set image_source_type to official_newsroom, official_site, official_press_release, or manual"
         else:
             action = "review image, then set image_review_status to approved"
 
@@ -115,7 +115,7 @@ def main() -> None:
     write_review(rows)
 
     print(f"review file: {REVIEW_FILE}")
-    print("Only image_review_status=approved with official_newsroom, official_site, or manual sources is shown in the app.")
+    print("Only image_review_status=approved with official_newsroom, official_site, official_press_release, or manual sources is shown in the app.")
 
 
 if __name__ == "__main__":
