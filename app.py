@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import base64
+import json
 import mimetypes
 from html import escape
 from pathlib import Path
@@ -14,11 +15,13 @@ ROOT = Path(__file__).resolve().parent
 VEHICLE_MASTER = ROOT / "vehicle_master.csv"
 OPTION_SUMMARY = ROOT / "data" / "option_summary.csv"
 OPTION_MENTIONS = ROOT / "data" / "option_mentions.csv"
+NOTIFICATIONS = ROOT / "data" / "notifications.json"
 NEWCAR_ROADMAP = ROOT / "data" / "newcar_roadmap.csv"
 NEWCAR_ROADMAP_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTTCzFCPz6nPFnu-oRoTjB16Ng7hhPAy811JU3DZcnSKglptFHHf3hLOVIXN4Y-yis7_RZhK52_Ys1m/pub?gid=1952505960&single=true&output=csv"
 CAR_IMAGE_DIR = ROOT / "assets" / "cars"
 HEADER_IMAGE = ROOT / "assets" / "header.png"
 APP_ICON = ROOT / "assets" / "icon.png"
+APPROVED_IMAGE_SOURCE_TYPES = {"official_newsroom", "official_site", "official_press_release", "manual"}
 
 st.set_page_config(
     page_title="영맨 헬퍼",
@@ -35,6 +38,18 @@ st.markdown(
     button[data-testid="collapsedControl"] {display:none!important;}
     .block-container{padding-top:3.2rem;padding-left:1rem;padding-right:1rem;max-width:980px;}
     .mobile-section-title{font-size:1.15rem;font-weight:850;margin:1.1rem 0 .55rem 0;}
+    .notice-zone{border:1px solid #e5e7eb;border-radius:14px;background:#fff;padding:.82rem;margin:.75rem 0 .85rem 0;box-shadow:0 2px 10px rgba(15,23,42,.05);}
+    .notice-head{display:flex;justify-content:space-between;gap:.65rem;align-items:center;margin-bottom:.45rem;}
+    .notice-title{font-size:1rem;font-weight:950;color:#111827;}
+    .notice-count{border-radius:999px;background:#f3f4f6;color:#374151;padding:.18rem .5rem;font-size:.72rem;font-weight:850;white-space:nowrap;}
+    .notice-card{border-radius:12px;padding:.68rem .72rem;margin-top:.48rem;border:1px solid #dbeafe;background:#eff6ff;}
+    .notice-card.warning{border-color:#fde68a;background:#fffbeb;}
+    .notice-card.critical{border-color:#fecaca;background:#fef2f2;}
+    .notice-card.info{border-color:#dbeafe;background:#eff6ff;}
+    .notice-card-title{font-size:.92rem;font-weight:900;color:#111827;line-height:1.35;}
+    .notice-body{font-size:.84rem;color:#4b5563;line-height:1.45;margin-top:.25rem;}
+    .notice-meta{font-size:.74rem;color:#6b7280;line-height:1.35;margin-top:.35rem;}
+    .notice-link{display:inline-flex;margin-top:.45rem;color:#1d4ed8!important;font-size:.8rem;font-weight:850;text-decoration:none!important;}
     .premium-zone{border:1px solid #bae6fd;border-radius:16px;background:linear-gradient(180deg,#f0f9ff 0%,#fff 100%);padding:1rem;margin:.9rem 0 .85rem 0;box-shadow:0 6px 18px rgba(14,116,144,.10);}
     .premium-head{display:flex;justify-content:space-between;gap:.7rem;align-items:flex-start;margin-bottom:.75rem;}
     .premium-title{font-size:1.1rem;font-weight:950;color:#0f172a;line-height:1.3;}
@@ -89,6 +104,7 @@ st.markdown(
         .compact-link{min-height:30px;padding:.36rem .52rem;font-size:.74rem;}
         .pdf-button{padding:.76rem .65rem;font-size:.9rem;}
         .option-card,.effect-card{padding:.82rem;}
+        .notice-zone{padding:.72rem;}
     }
     </style>
     """,
@@ -171,6 +187,8 @@ def image_file_to_data_url(path: Path) -> str:
 def vehicle_image_source(row: pd.Series) -> str | Path | None:
     if safe_str(row.get("image_review_status")).lower() != "approved":
         return None
+    if safe_str(row.get("image_source_type")).lower() not in APPROVED_IMAGE_SOURCE_TYPES:
+        return None
     image_file = safe_str(row.get("image_file"))
     if image_file:
         for candidate in [ROOT / image_file, CAR_IMAGE_DIR / image_file, CAR_IMAGE_DIR / Path(image_file).name]:
@@ -237,6 +255,19 @@ def load_mentions(version: int) -> pd.DataFrame:
     return df
 
 
+@st.cache_data(show_spinner=False)
+def load_notifications(version: int) -> list[dict]:
+    if not NOTIFICATIONS.exists():
+        return []
+    try:
+        data = json.loads(NOTIFICATIONS.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    if not isinstance(data, list):
+        return []
+    return [item for item in data if isinstance(item, dict)]
+
+
 @st.cache_data(show_spinner=False, ttl=600)
 def load_newcar_roadmap() -> pd.DataFrame:
     try:
@@ -278,6 +309,48 @@ def confidence_label(value: object) -> str:
 
 def price_status_label(value: object) -> str:
     return {"available": "가격표 있음", "pending": "가격표 대기", "none": "가격표 없음"}.get(safe_str(value).lower(), "가격표 확인중")
+
+
+def notification_meta(item: dict) -> str:
+    date = safe_str(item.get("date")) or safe_str(item.get("created_at")) or safe_str(item.get("published"))
+    vehicle = safe_str(item.get("vehicle"))
+    if not vehicle:
+        vehicle = f"{safe_str(item.get('brand'))} {safe_str(item.get('model'))}".strip()
+    source = safe_str(item.get("source"))
+    return " · ".join(part for part in [date, vehicle, source] if part)
+
+
+def show_notifications(items: list[dict]) -> None:
+    if not items:
+        return
+    cards = [f"""
+    <div class="notice-zone">
+      <div class="notice-head">
+        <div class="notice-title">🔔 상단 알림</div>
+        <div class="notice-count">{len(items[:5])}건</div>
+      </div>
+    """]
+    for item in items[:5]:
+        severity = safe_str(item.get("severity"), "info").lower()
+        if severity not in {"info", "warning", "critical"}:
+            severity = "info"
+        title = html_text(item.get("title"), "알림")
+        body = html_text(item.get("body"))
+        meta = html_text(notification_meta(item))
+        link = safe_str(item.get("link"))
+        link_html = f'<a class="notice-link" href="{escape(link)}" target="_blank">자세히 보기</a>' if link.startswith("http") else ""
+        body_html = f'<div class="notice-body">{body}</div>' if body else ""
+        meta_html = f'<div class="notice-meta">{meta}</div>' if meta else ""
+        cards.append(f"""
+        <div class="notice-card {severity}">
+          <div class="notice-card-title">{title}</div>
+          {body_html}
+          {meta_html}
+          {link_html}
+        </div>
+        """)
+    cards.append("</div>")
+    st.markdown("\n".join(dedent(card).strip() for card in cards), unsafe_allow_html=True)
 
 
 def filtered_newcars(newcars: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -481,10 +554,12 @@ def main() -> None:
     df = load_vehicles(file_version(VEHICLE_MASTER))
     options = load_options(file_version(OPTION_SUMMARY))
     mentions = load_mentions(file_version(OPTION_MENTIONS))
+    notifications = load_notifications(file_version(NOTIFICATIONS))
     newcars = load_newcar_roadmap()
     if df.empty:
         st.error("vehicle_master.csv 파일을 찾을 수 없거나 데이터가 비어 있습니다.")
         return
+    show_notifications(notifications)
     show_newcar_premium_zone(newcars)
     st.divider()
     tab1, tab2, tab3, tab4 = st.tabs(["TOP50", "가격표", "옵션", "업무효과"])
