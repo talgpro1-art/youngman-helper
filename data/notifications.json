@@ -1,46 +1,56 @@
 [
   {
-    "date": "2026-06-30",
+    "date": "2026-07-01",
     "brand": "기아",
-    "model": "스포티지",
-    "title": "공식 가격표 변경 감지: 기아 스포티지",
+    "model": "쏘렌토",
+    "title": "공식 가격표 변경 감지: 기아 쏘렌토",
     "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sportage.pdf",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf",
     "severity": "warning",
     "source": "price_link_checker"
   },
   {
-    "date": "2026-06-30",
-    "brand": "기아",
-    "model": "카니발",
-    "title": "공식 가격표 변경 감지: 기아 카니발",
+    "date": "2026-07-01",
+    "brand": "현대",
+    "model": "아반떼",
+    "title": "공식 가격표 변경 감지: 현대 아반떼",
     "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/avante-2026-price.pdf",
     "severity": "warning",
     "source": "price_link_checker"
   },
   {
-    "date": "2026-06-30",
-    "brand": "기아",
-    "model": "레이",
-    "title": "공식 가격표 변경 감지: 기아 레이",
+    "date": "2026-07-01",
+    "brand": "현대",
+    "model": "투싼",
+    "title": "공식 가격표 변경 감지: 현대 투싼",
     "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/tucson-2026-price.pdf",
     "severity": "warning",
     "source": "price_link_checker"
   },
   {
-    "date": "2026-06-30",
-    "brand": "기아",
-    "model": "EV3",
-    "title": "공식 가격표 변경 감지: 기아 EV3",
+    "date": "2026-07-01",
+    "brand": "현대",
+    "model": "싼타페",
+    "title": "공식 가격표 변경 감지: 현대 싼타페",
     "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev3.pdf",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/santafe-hev-2026-price.pdf",
     "severity": "warning",
     "source": "price_link_checker"
   },
   {
-    "date": "2026-06-30",
+    "date": "2026-07-01",
+    "brand": "현대",
+    "model": "디 올 뉴 팰리세이드",
+    "title": "공식 가격표 변경 감지: 현대 디 올 뉴 팰리세이드",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/palisade-2025-price.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-07-01",
     "brand": "제네시스",
     "model": "G80",
     "title": "공식 가격표 변경 감지: 제네시스 G80",
@@ -50,47 +60,27 @@
     "source": "price_link_checker"
   },
   {
-    "date": "2026-06-30",
+    "date": "2026-07-01",
     "brand": "기아",
-    "model": "EV5",
-    "title": "공식 가격표 변경 감지: 기아 EV5",
+    "model": "셀토스",
+    "title": "공식 가격표 변경 감지: 기아 셀토스",
     "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev5.pdf",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf",
     "severity": "warning",
     "source": "price_link_checker"
   },
   {
-    "date": "2026-06-30",
+    "date": "2026-07-01",
     "brand": "기아",
-    "model": "PV5",
-    "title": "공식 가격표 변경 감지: 기아 PV5",
+    "model": "K5",
+    "title": "공식 가격표 변경 감지: 기아 K5",
     "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-cargo.pdf",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k5.pdf",
     "severity": "warning",
     "source": "price_link_checker"
   },
   {
-    "date": "2026-06-30",
-    "brand": "기아",
-    "model": "PV5",
-    "title": "공식 추가PDF 변경 감지: 기아 PV5",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-passenger.pdf",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-06-30",
-    "brand": "기아",
-    "model": "봉고 3",
-    "title": "공식 가격표 변경 감지: 기아 봉고 3",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_bongo3.pdf",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-06-30",
+    "date": "2026-07-01",
     "brand": "제네시스",
     "model": "GV70",
     "title": "공식 가격표 변경 감지: 제네시스 GV70",
@@ -100,18 +90,28 @@
     "source": "price_link_checker"
   },
   {
-    "date": "2026-06-30",
+    "date": "2026-07-01",
+    "brand": "제네시스",
+    "model": "GV80",
+    "title": "공식 가격표 변경 감지: 제네시스 GV80",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-07-01",
     "brand": "현대",
     "model": "그랜저",
-    "title": "현대자동차, '2026 그랜저' 출시 - Hyundai Motor Group",
+    "title": "시간이 없다, 현대차 신형 그랜저에 전사적 총력 - 오토헤럴드",
     "body": "신차/가격표/연식변경 관련 공개 뉴스 후보입니다. 상세 내용은 링크에서 확인해 주세요.",
-    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9fVkJLRFFuSWFIYWpRdnJWR3hpdGNwa0pGT0ttODBNR3VZSGszcjFtX2NLVHdLY1RFMl9OaUNRMUFIVzFjTWJMb2ZlN0VLbUhTdjJ3Skxtczl6SzVjbVJzN3BvTUxqaWdybVYwbElPdw?oc=5",
-    "published": "Wed, 21 May 2025 07:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE50NnVmeDZYeWsxNW53ZEZmeER6QXJDZWZiMU95aEFka09rNDBWS3RmMEE4bkYwNGpMaFpRSUJGZG9IXzg2empTUERPdmxMT3h5bm5BVTBxTlFjcHhIX21DMUd0U1ZfQ1lTTmNCdXdB0gFyQVVfeXFMTjh1NkZUVlRJRW1YVEw2VnIxd3gyWWUwREF1aG5Wb1NnMmRkcUhoamlnSzZpcnVzY05Oa1VqbHNtbHRLLXlhZHhYUkNHRU5SdDEtNVBXUEFBenE2aWx1eFlIeVhJUmtCa0FuNXFtLTluSkxR?oc=5",
+    "published": "Wed, 23 Nov 2016 08:00:00 GMT",
     "severity": "warning",
     "source": "google_news_rss"
   },
   {
-    "date": "2026-06-30",
+    "date": "2026-07-01",
     "brand": "현대",
     "model": "아반떼",
     "title": "현대자동차, ‘2026 아반떼’ 출시 - Hyundai Motor Group",
@@ -122,7 +122,18 @@
     "source": "google_news_rss"
   },
   {
-    "date": "2026-06-30",
+    "date": "2026-07-01",
+    "brand": "현대",
+    "model": "포터 II",
+    "title": "현대차 포터II 2023년형 조용히 출시, 가격은 1865~2366만원 - 탑라이더",
+    "body": "신차/가격표/연식변경 관련 공개 뉴스 후보입니다. 상세 내용은 링크에서 확인해 주세요.",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9vMk9yMkRPbzFqSzNkMUdwNzh6VlRTSmJ3aF9wT0hOdEROb21IRUVrLWRKcEZlV1VsVWtPT2lVRlpBQTJ1WmhKblNzZVFYS3J5dWNnMzNvaEdqdGd3Um5kSmY0NHY?oc=5",
+    "published": "Mon, 06 Feb 2023 08:00:00 GMT",
+    "severity": "warning",
+    "source": "google_news_rss"
+  },
+  {
+    "date": "2026-07-01",
     "brand": "현대",
     "model": "싼타페",
     "title": "현대차 싼타페 6인승 나오나? 쏘렌토 수요 정조준 - 탑라이더",
@@ -133,24 +144,13 @@
     "source": "google_news_rss"
   },
   {
-    "date": "2026-06-30",
+    "date": "2026-07-01",
     "brand": "기아",
     "model": "레이",
     "title": "[모플포토] 더 뉴 기아 레이, 솜털까지 보이는 현장사진 - motorplex.co.kr",
     "body": "신차/가격표/연식변경 관련 공개 뉴스 후보입니다. 상세 내용은 링크에서 확인해 주세요.",
     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9iUzBOXzRERERvdl9rS3NURXBsTFVDTTNwOU5RT0s0NmZIRUliejdLcHlMWktfWHdTdUI0TVlwcWtMRF9hWU95QzdlVWtjTUhGWmRtYUhEc2RYelU2MnpxX2d1dE9wek15cU1BNQ?oc=5",
     "published": "Wed, 31 Aug 2022 07:00:00 GMT",
-    "severity": "warning",
-    "source": "google_news_rss"
-  },
-  {
-    "date": "2026-06-30",
-    "brand": "기아",
-    "model": "셀토스",
-    "title": "기아, 셀토스 연식변경 모델 출시...2147만원부터 - autocast.kr",
-    "body": "신차/가격표/연식변경 관련 공개 뉴스 후보입니다. 상세 내용은 링크에서 확인해 주세요.",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAxMDdSUGpBMkxEMzh2LTRsZ1BzN25abXZIdVNzbjNfUDhISW00R2V2SkdkcmJmOVh1NXlNbk5xSEM2am83QVltakt1TUh0Y1Q4V29JbndXVzF1RTJpS3lRTkZB?oc=5",
-    "published": "Mon, 15 Jul 2024 07:00:00 GMT",
     "severity": "warning",
     "source": "google_news_rss"
   }
