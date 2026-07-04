@@ -1,16 +1,6 @@
 [
   {
-    "date": "2026-07-03",
-    "brand": "제네시스",
-    "model": "G80",
-    "title": "공식 가격표 변경 감지: 제네시스 G80",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-07-03",
+    "date": "2026-07-04",
     "brand": "제네시스",
     "model": "GV70",
     "title": "공식 가격표 변경 감지: 제네시스 GV70",
@@ -20,77 +10,7 @@
     "source": "price_link_checker"
   },
   {
-    "date": "2026-07-03",
-    "brand": "기아",
-    "model": "레이 EV",
-    "title": "공식 가격표 변경 감지: 기아 레이 EV",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray-ev.pdf",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-07-03",
-    "brand": "현대",
-    "model": "베뉴",
-    "title": "공식 가격표 변경 감지: 현대 베뉴",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.hyundai.com/kr/ko/e/vehicles/venue/price",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-07-03",
-    "brand": "현대",
-    "model": "더 뉴 아이오닉 6",
-    "title": "공식 가격표 변경 감지: 현대 더 뉴 아이오닉 6",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.hyundai.com/contents/repn-car/catalog/ioniq6-pe_price.pdf",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-07-03",
-    "brand": "KGM",
-    "model": "뉴 토레스",
-    "title": "공식 가격표 변경 감지: KGM 뉴 토레스",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kg-mobility.com/pr/model/show-room/200000100010001",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-07-03",
-    "brand": "KGM",
-    "model": "무쏘 EV",
-    "title": "공식 가격표 변경 감지: KGM 무쏘 EV",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kg-mobility.com/pr/model",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-07-03",
-    "brand": "KGM",
-    "model": "액티언",
-    "title": "공식 가격표 변경 감지: KGM 액티언",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kg-mobility.com/pr/model/show-room/200000100010016",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-07-03",
-    "brand": "KGM",
-    "model": "티볼리",
-    "title": "공식 가격표 변경 감지: KGM 티볼리",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kg-mobility.com/pr/model/show-room/200000100010007",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-07-03",
+    "date": "2026-07-04",
     "brand": "기아",
     "model": "셀토스",
     "title": "\"너무 비싸\" 기아 신형 셀토스 가격 공개 후 네티즌들 질타 - 라이센스뉴스",
@@ -101,7 +21,7 @@
     "source": "google_news_rss"
   },
   {
-    "date": "2026-07-03",
+    "date": "2026-07-04",
     "brand": "현대",
     "model": "아반떼",
     "title": "현대자동차, ‘2026 아반떼’ 출시 - Hyundai Motor Group",
@@ -112,7 +32,7 @@
     "source": "google_news_rss"
   },
   {
-    "date": "2026-07-03",
+    "date": "2026-07-04",
     "brand": "현대",
     "model": "싼타페",
     "title": "현대차 싼타페 6인승 나오나? 쏘렌토 수요 정조준 - 탑라이더",
@@ -123,7 +43,7 @@
     "source": "google_news_rss"
   },
   {
-    "date": "2026-07-03",
+    "date": "2026-07-04",
     "brand": "기아",
     "model": "레이",
     "title": "[모플포토] 더 뉴 기아 레이, 솜털까지 보이는 현장사진 - motorplex.co.kr",
@@ -134,7 +54,7 @@
     "source": "google_news_rss"
   },
   {
-    "date": "2026-07-03",
+    "date": "2026-07-04",
     "brand": "기아",
     "model": "EV3",
     "title": "\"추락하는 코나 일렉트릭\"... 기아 EV3와 비교하면, 경쟁력이 진짜 없나? - 오토트리뷴",
