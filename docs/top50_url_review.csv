@@ -1,4 +1,4 @@
-﻿rank,vehicle,brand,model,urls_count,direct_pdf_count,active,note,catalog_url,price_url,raw_urls
+rank,vehicle,brand,model,urls_count,direct_pdf_count,active,note,catalog_url,price_url,raw_urls
 1,기아 쏘렌토,기아,쏘렌토,1,1,Y,직접 PDF URL,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf
 2,테슬라 Model Y,테슬라,Model Y,1,0,N,직접 PDF URL 없음 - 별도 확인 필요,,,https://www.tesla.com/ko_kr/modely/design
 3,현대 그랜저,현대,그랜저,2,2,Y,직접 PDF URL,https://www.hyundai.com/contents/repn-car/catalog/grandeur-2026-price.pdf,https://www.hyundai.com/contents/repn-car/catalog/grandeur-hybrid-2026-price.pdf,https://www.hyundai.com/contents/repn-car/catalog/grandeur-2026-price.pdf | https://www.hyundai.com/contents/repn-car/catalog/grandeur-hybrid-2026-price.pdf
@@ -25,7 +25,7 @@
 24,기아 모닝,기아,모닝,1,1,Y,직접 PDF URL,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_morning.pdf,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_morning.pdf
 25,제네시스 GV80,제네시스,GV80,1,0,N,직접 PDF URL 없음 - 별도 확인 필요,,,https://www.genesis.com/kr/en/support/download-center/genesis-models.html
 26,벤츠 E-Class,벤츠,E-Class,1,0,N,직접 PDF URL 없음 - 별도 확인 필요,,,https://www.mercedes-benz.co.kr/passengercars/models/price-list.html
-27,BMW 5 Series,BMW,5 Series,1,1,Y,직접 PDF URL,,https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_september2025.pdf,https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_september2025.pdf
+27,BMW 5 Series,BMW,5 Series,1,0,Y,BMW 코리아 공식 모델/가격 확인 페이지,,https://www.bmw.co.kr/ko/all-models/5-series/sedan/bmw-5-series-sedan-overview.html,https://www.bmw.co.kr/ko/all-models/5-series/sedan/bmw-5-series-sedan-overview.html
 28,기아 K8,기아,K8,1,1,Y,직접 PDF URL,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k8.pdf,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k8.pdf
 29,테슬라 Model 3,테슬라,Model 3,1,0,N,직접 PDF URL 없음 - 별도 확인 필요,,,https://www.tesla.com/ko_kr/model3
 30,르노 필랑트,르노,필랑트,1,1,Y,직접 PDF URL,,https://www.renault.co.kr/upload/asset/price/price_rkm_202605.pdf,https://www.renault.co.kr/upload/asset/price/price_rkm_202605.pdf
@@ -43,7 +43,7 @@
 42,KGM 무쏘 EV,KGM,무쏘 EV,1,0,N,직접 PDF URL 없음 - 별도 확인 필요,,,https://www.kg-mobility.com/od/promotion/catalog-download
 43,현대 캐스퍼 일렉트릭,현대,캐스퍼 일렉트릭,1,1,Y,직접 PDF URL,,https://m.casper.hyundai.com/wcontents/repn-car/catalog/AX05/AX_CASPER_Electric_price.pdf,https://m.casper.hyundai.com/wcontents/repn-car/catalog/AX05/AX_CASPER_Electric_price.pdf
 44,벤츠 GLC-Class,벤츠,GLC-Class,1,0,N,직접 PDF URL 없음 - 별도 확인 필요,,,https://www.mercedes-benz.co.kr/passengercars/models/price-list.html
-45,BMW X3,BMW,X3,1,1,Y,직접 PDF URL,,https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_september2025.pdf,https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_september2025.pdf
+45,BMW X3,BMW,X3,1,0,Y,BMW 코리아 공식 모델/가격 확인 페이지,,https://www.bmw.co.kr/ko/all-models/x-series/x3/bmw-x3.html,https://www.bmw.co.kr/ko/all-models/x-series/x3/bmw-x3.html
 46,쉐보레 트랙스 크로스오버,쉐보레,트랙스 크로스오버,1,1,Y,직접 PDF URL,,https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2025/15-pdfs/2026%EB%85%84-1%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf,https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2025/15-pdfs/2026%EB%85%84-1%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf
 47,기아 니로,기아,니로,1,1,Y,직접 PDF URL,,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_niro.pdf,https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_niro.pdf
 48,BYD SEALION 7,BYD,SEALION 7,1,0,N,직접 PDF URL 없음 - 별도 확인 필요,,,https://www.bydauto.kr/
