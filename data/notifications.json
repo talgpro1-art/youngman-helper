@@ -1,67 +1,13 @@
 [
   {
-    "date": "2026-07-04",
-    "brand": "제네시스",
-    "model": "GV70",
-    "title": "공식 가격표 변경 감지: 제네시스 GV70",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-07-04",
-    "brand": "기아",
-    "model": "셀토스",
-    "title": "\"너무 비싸\" 기아 신형 셀토스 가격 공개 후 네티즌들 질타 - 라이센스뉴스",
-    "body": "신차/가격표/연식변경 관련 공개 뉴스 후보입니다. 상세 내용은 링크에서 확인해 주세요.",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9IRTJFUHF6d1d0VlcwdUZaSmk1aTl1NWhCWGJYU0hZWXlNWkt0eWRnWlpwWWVKT1pRRFNValRaX1dKV2d1VXRqS1E3V3NaZmZzNk51U0pMY1ExZ25kUDZHN212Yk1JVE9jQU9V?oc=5",
-    "published": "Mon, 02 Feb 2026 08:00:00 GMT",
-    "severity": "warning",
-    "source": "google_news_rss"
-  },
-  {
-    "date": "2026-07-04",
-    "brand": "현대",
-    "model": "아반떼",
-    "title": "현대자동차, ‘2026 아반떼’ 출시 - Hyundai Motor Group",
-    "body": "신차/가격표/연식변경 관련 공개 뉴스 후보입니다. 상세 내용은 링크에서 확인해 주세요.",
-    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBJRVkyYWpOV2o0ZHZ2aXRTc3lxQXFVRXYxNEM3MHVxNkYyYTVlYWxnZVhnY09raW1xZGVBTmFUWGNOQzBsUTJEZ2x0NXg2UmpQQV91Tk83VDBQTkF5SkU4WGVucEZDcnZUMTBwcHFaSQ?oc=5",
-    "published": "Tue, 15 Apr 2025 07:00:00 GMT",
-    "severity": "warning",
-    "source": "google_news_rss"
-  },
-  {
-    "date": "2026-07-04",
-    "brand": "현대",
-    "model": "싼타페",
-    "title": "현대차 싼타페 6인승 나오나? 쏘렌토 수요 정조준 - 탑라이더",
-    "body": "신차/가격표/연식변경 관련 공개 뉴스 후보입니다. 상세 내용은 링크에서 확인해 주세요.",
-    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1nLVBxNi1Cd1huZmxQQi13b05VN1ZrMWtmQ1JHNTVvTi10MkVPbTR2ejkwdTdrQWxGbHhZYTM5c0t4UDlXcEdYMU1mSmZES3U4cmZmVFoxNmE3UjNKUnd1OWRxbEg?oc=5",
-    "published": "Tue, 16 Nov 2021 08:00:00 GMT",
-    "severity": "warning",
-    "source": "google_news_rss"
-  },
-  {
-    "date": "2026-07-04",
-    "brand": "기아",
-    "model": "레이",
-    "title": "[모플포토] 더 뉴 기아 레이, 솜털까지 보이는 현장사진 - motorplex.co.kr",
-    "body": "신차/가격표/연식변경 관련 공개 뉴스 후보입니다. 상세 내용은 링크에서 확인해 주세요.",
-    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9iUzBOXzRERERvdl9rS3NURXBsTFVDTTNwOU5RT0s0NmZIRUliejdLcHlMWktfWHdTdUI0TVlwcWtMRF9hWU95QzdlVWtjTUhGWmRtYUhEc2RYelU2MnpxX2d1dE9wek15cU1BNQ?oc=5",
-    "published": "Wed, 31 Aug 2022 07:00:00 GMT",
-    "severity": "warning",
-    "source": "google_news_rss"
-  },
-  {
-    "date": "2026-07-04",
-    "brand": "기아",
-    "model": "EV3",
-    "title": "\"추락하는 코나 일렉트릭\"... 기아 EV3와 비교하면, 경쟁력이 진짜 없나? - 오토트리뷴",
-    "body": "신차/가격표/연식변경 관련 공개 뉴스 후보입니다. 상세 내용은 링크에서 확인해 주세요.",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4wXzB0NEhpOWVnWGxWN2VlWU1QSnZjanpEQ0p6N1A0Ry1HTFgyV2xuWFJGYVYxN1BtaVdNdzdVa0pRdGg3bFJ4T2VmSFViME8xdHB1TTlFVWpydS1KZV9zZTZXOE5nck91djhETGY3blA?oc=5",
-    "published": "Fri, 09 Aug 2024 07:00:00 GMT",
-    "severity": "warning",
-    "source": "google_news_rss"
+    "date": "2026-07-06",
+    "brand": "",
+    "model": "",
+    "title": "최근 감지된 주요 신차/가격표 이슈가 없습니다.",
+    "body": "최근 120일 이내 TOP50 관련 주요 키워드 뉴스가 감지되지 않았습니다.",
+    "link": "",
+    "published": "",
+    "severity": "info",
+    "source": "system"
   }
 ]
