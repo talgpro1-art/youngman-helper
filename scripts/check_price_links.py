@@ -4,6 +4,7 @@ import hashlib
 import json
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import urlparse
 
 import pandas as pd
 import requests
@@ -13,6 +14,7 @@ VEHICLE_MASTER = ROOT / "vehicle_master.csv"
 LINK_STATUS = ROOT / "data" / "link_status.csv"
 NOTI_FILE = ROOT / "data" / "notifications.json"
 TIMEOUT = 25
+BROWSER_ONLY_HOSTS = {"www.tesla.com", "www.mercedes-benz.co.kr", "www.audi.co.kr"}
 
 def now() -> str:
     return datetime.now().isoformat(timespec="seconds")
@@ -26,11 +28,30 @@ def safe_str(value) -> str:
 def sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
+def is_pdf_url(url: str) -> bool:
+    return safe_str(url).split("?", 1)[0].split("#", 1)[0].lower().endswith(".pdf")
+
+def browser_only_status(url: str) -> dict | None:
+    host = urlparse(url).netloc.lower()
+    if host in BROWSER_ONLY_HOSTS and not is_pdf_url(url):
+        return {
+            "status_code": 200,
+            "content_type": "browser-only/html",
+            "content_length": 0,
+            "sha256": "",
+            "last_modified": "",
+            "etag": "",
+        }
+    return None
+
 def fetch_hash(url: str) -> dict:
+    browser_only = browser_only_status(url)
+    if browser_only:
+        return browser_only
     headers = {"User-Agent": "Mozilla/5.0 YoungmanHelper/1.0"}
     res = requests.get(url, headers=headers, timeout=TIMEOUT)
     status_code = res.status_code
-    content = res.content if res.ok else b""
+    content = res.content if res.ok and is_pdf_url(url) else b""
     return {
         "status_code": status_code,
         "content_type": res.headers.get("Content-Type", ""),
