@@ -12,7 +12,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 VEHICLE_MASTER = ROOT / "vehicle_master.csv"
 NOTI_FILE = ROOT / "data" / "notifications.json"
-MAX_NEWS_AGE_DAYS = 120
+MAX_NEWS_AGE_DAYS = 540
 
 
 def u(value: str) -> str:
