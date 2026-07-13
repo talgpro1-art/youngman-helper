@@ -27,6 +27,8 @@ EXTRA_PDF_LABEL = "\ucd94\uac00PDF"
 NOTICE_TITLE = "\uacf5\uc2dd {doc_type} \ubcc0\uacbd \uac10\uc9c0: {vehicle}"
 NOTICE_BODY = "\uacf5\uc2dd PDF/\uac00\uaca9\ud45c \ub9c1\ud06c\uc758 \ud30c\uc77c \ub0b4\uc6a9\uc774 \uc774\uc804 \uccb4\ud06c \ub300\ube44 \ubcc0\uacbd\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \uc0c1\ub2f4 \uc804 \ucd5c\uc2e0 \uac00\uaca9\ud45c\ub97c \ud655\uc778\ud574 \uc8fc\uc138\uc694."
 
+requests.packages.urllib3.disable_warnings()
+
 
 def now() -> str:
     return datetime.now().isoformat(timespec="seconds")
@@ -66,7 +68,8 @@ def fetch_hash(url: str) -> dict:
     if browser_only:
         return browser_only
     headers = {"User-Agent": "Mozilla/5.0 YoungmanHelper/1.0"}
-    res = requests.get(url, headers=headers, timeout=TIMEOUT)
+    # Company SSL inspection can break cert validation for official carmaker sites.
+    res = requests.get(url, headers=headers, timeout=TIMEOUT, verify=False)
     content = res.content if res.ok and is_pdf_url(url) else b""
     return {
         "status_code": res.status_code,
