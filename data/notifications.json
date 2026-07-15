@@ -1,6 +1,36 @@
 [
   {
-    "date": "2026-07-13",
+    "date": "2026-07-15",
+    "brand": "기아",
+    "model": "레이",
+    "title": "공식 가격표 변경 감지: 기아 레이",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-07-15",
+    "brand": "기아",
+    "model": "레이 EV",
+    "title": "공식 가격표 변경 감지: 기아 레이 EV",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray-ev.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-07-15",
+    "brand": "기아",
+    "model": "레이 EV",
+    "title": "공식 추가PDF 변경 감지: 기아 레이 EV",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ray-ev.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-07-15",
     "brand": "기아",
     "model": "셀토스",
     "title": "\"너무 비싸\" 기아 신형 셀토스 가격 공개 후 네티즌들 질타 - 라이센스뉴스",
@@ -11,24 +41,13 @@
     "source": "google_news_rss"
   },
   {
-    "date": "2026-07-13",
-    "brand": "현대",
-    "model": "아반떼",
-    "title": "현대자동차, ‘2026 아반떼’ 출시 - Hyundai Motor Group",
+    "date": "2026-07-15",
+    "brand": "기아",
+    "model": "카니발",
+    "title": "\"5천만 원 아래면 합격\"... 디젤 엔진 단종한 카니발, 전기차로 출시? - 오토트리뷴",
     "body": "최근 신차/가격표/연식변경 관련 공개 뉴스 후보입니다. 상세 내용은 링크에서 확인해 주세요.",
-    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBJRVkyYWpOV2o0ZHZ2aXRTc3lxQXFVRXYxNEM3MHVxNkYyYTVlYWxnZVhnY09raW1xZGVBTmFUWGNOQzBsUTJEZ2x0NXg2UmpQQV91Tk83VDBQTkF5SkU4WGVucEZDcnZUMTBwcHFaSQ?oc=5",
-    "published": "Tue, 15 Apr 2025 07:00:00 GMT",
-    "severity": "warning",
-    "source": "google_news_rss"
-  },
-  {
-    "date": "2026-07-13",
-    "brand": "현대",
-    "model": "포터2",
-    "title": "“진작 이렇게 만들지”… 2천만원대 신형 포터2, ‘이 기능’ 하나로 대박났다 - 뉴스와",
-    "body": "최근 신차/가격표/연식변경 관련 공개 뉴스 후보입니다. 상세 내용은 링크에서 확인해 주세요.",
-    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdmdvcWc3UzRGVnBYR3ZRdDhjTUczTzNldXRLMXdKemJDeUlwQ0R4UHplVjRPTzBBaG8yWVJfaE1SUF9qNzZ0ejl5dDFJVWZKb19RTHVUMVA2NU9oMm5aU0pjdmZreVUyZUNXVGlUa2R1d293aEVDVjd4TzJnck95LVhlcw?oc=5",
-    "published": "Tue, 16 Dec 2025 08:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5aaDhVQy1ic3FuR3F1RVNIbnZZR0FVVTZ2cU0wcTF6bDNYSXNOQjkxOGFsdDlsaFRCTGZnTUNnLU1qLVNXS1ZuOFU5WTVMSzI1N1ZhNVpQRi1QVThDUVg0Wm8tLWFDdEpPdGZFUGxLYjY?oc=5",
+    "published": "Mon, 25 Aug 2025 07:00:00 GMT",
     "severity": "warning",
     "source": "google_news_rss"
   }
