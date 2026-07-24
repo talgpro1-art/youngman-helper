@@ -12,7 +12,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 VEHICLE_MASTER = ROOT / "vehicle_master.csv"
 NOTI_FILE = ROOT / "data" / "notifications.json"
-MAX_NEWS_AGE_DAYS = 540
+MAX_NEWS_AGE_DAYS = 7
 
 
 def u(value: str) -> str:
@@ -92,11 +92,17 @@ def fetch_news_for_vehicle(brand: str, model: str, limit: int = 1) -> list[dict]
             continue
         if not is_recent_published(published):
             continue
+        article_dt = parse_published(published)
+        if article_dt is None:
+            continue
         if not is_relevant_title(title, brand, model):
             continue
         seen_links.add(link)
         results.append({
-            "date": now_date(),
+            # Show the publisher's date, never the collection run date.
+            "date": article_dt.astimezone(timezone(timedelta(hours=9))).strftime("%Y-%m-%d"),
+            "article_date": article_dt.astimezone(timezone(timedelta(hours=9))).strftime("%Y-%m-%d"),
+            "collected_at": datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d %H:%M"),
             "brand": brand,
             "model": model,
             "title": title,
