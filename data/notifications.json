@@ -1,35 +1,15 @@
 [
   {
-    "date": "2026-07-23",
-    "brand": "기아",
-    "model": "셀토스",
-    "title": "\"하이브리드 추가\"… 기아, 완전변경 '신형 셀토스' 계약 개시 - 디지틀조선일보",
-    "body": "최근 신차/가격표/연식변경 관련 공개 뉴스 후보입니다. 상세 내용은 링크에서 확인해 주세요.",
-    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOd3I5V3NGRklLeWFna0xraERGWWc3OWc3WU5SeTZVa1IzOTdsNTFtalpVUEJxeWk0a2VwZUI0aVpzQk9waGZGQ2M1S25mRjJIalJ6elU3ZWUyODB0NTltZU9qaVUyNHhFSWltUFI2UDBPNlQ1RUdRR3cwNnRPLU9RUFBGVkZnR0nSAXtBVV95cUxNMjVmV3k4VEdCTnZBN3NFVVR2NU00XzJVS3FLMXdTUE95ZUlRUWRYeUdDLU9lcDd4VklRdEsybFVaSlN6RWFPWXpQWURmQWRVR1RSaFhtd0Z6Sk5VZGNsRHR5ZFppaU13OEQ3akZYZkFrVW01MWpsNmpnalk?oc=5",
-    "published": "Mon, 26 Jan 2026 08:00:00 GMT",
-    "severity": "warning",
-    "source": "google_news_rss"
-  },
-  {
-    "date": "2026-07-23",
-    "brand": "기아",
-    "model": "카니발",
-    "title": "\"5천만 원 아래면 합격\"... 디젤 엔진 단종한 카니발, 전기차로 출시? - 오토트리뷴",
-    "body": "최근 신차/가격표/연식변경 관련 공개 뉴스 후보입니다. 상세 내용은 링크에서 확인해 주세요.",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5aaDhVQy1ic3FuR3F1RVNIbnZZR0FVVTZ2cU0wcTF6bDNYSXNOQjkxOGFsdDlsaFRCTGZnTUNnLU1qLVNXS1ZuOFU5WTVMSzI1N1ZhNVpQRi1QVThDUVg0Wm8tLWFDdEpPdGZFUGxLYjY?oc=5",
-    "published": "Mon, 25 Aug 2025 07:00:00 GMT",
-    "severity": "warning",
-    "source": "google_news_rss"
-  },
-  {
-    "date": "2026-07-23",
-    "brand": "기아",
-    "model": "레이",
-    "title": "기아 레이, 소리없이 90만원 올랐다…핵심은 ‘이것’ 기본 탑재 - 뉴스와",
-    "body": "최근 신차/가격표/연식변경 관련 공개 뉴스 후보입니다. 상세 내용은 링크에서 확인해 주세요.",
-    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNS0lKN0tfX2VLSkh4Y2lrYW1wdjhYZkNCeVhaN3EtSUxibUkyVUM5SDRnRnNlRHQ4ZzFTdUp4SGxZTURxTWZqMVNPMF9jbHRiZzJqaGhxQnZXSFg0N2VZQjZPMmJtNzJiZEJwV0NvU25RR0UxV0ZIYUk2eXpkcDZTM0c5NA?oc=5",
-    "published": "Sat, 04 Jul 2026 07:00:00 GMT",
-    "severity": "warning",
-    "source": "google_news_rss"
+    "date": "2026-07-24",
+    "article_date": "2026-07-24",
+    "collected_at": "2026-07-24",
+    "brand": "",
+    "model": "",
+    "title": "최근 7일 내 확인된 신차·가격표 변경 알림 없음",
+    "body": "기사 발행일 기준으로 검증한 결과입니다.",
+    "link": "",
+    "published": "",
+    "severity": "info",
+    "source": "system"
   }
 ]
