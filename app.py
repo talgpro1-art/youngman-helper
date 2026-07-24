@@ -312,7 +312,7 @@ def price_status_label(value: object) -> str:
 
 
 def notification_meta(item: dict) -> str:
-    date = safe_str(item.get("date")) or safe_str(item.get("created_at")) or safe_str(item.get("published"))
+    date = safe_str(item.get("article_date")) or safe_str(item.get("date")) or safe_str(item.get("created_at")) or safe_str(item.get("published"))
     vehicle = safe_str(item.get("vehicle"))
     if not vehicle:
         vehicle = f"{safe_str(item.get('brand'))} {safe_str(item.get('model'))}".strip()
