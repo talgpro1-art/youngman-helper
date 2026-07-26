@@ -1,0 +1,38 @@
+name: Keep Streamlit awake
+
+on:
+  schedule:
+    # Every six hours, at a minute away from the top of the hour (UTC).
+    - cron: "17 1,7,13,19 * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: streamlit-keep-alive
+  cancel-in-progress: false
+
+jobs:
+  visit-app:
+    name: Visit app URLs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request each app home page
+        env:
+          STREAMLIT_APP_URLS: ${{ secrets.STREAMLIT_APP_URLS }}
+        run: |
+          test -n "$STREAMLIT_APP_URLS"
+          while IFS= read -r app_url; do
+            [ -z "$app_url" ] && continue
+            curl \
+              --fail \
+              --silent \
+              --show-error \
+              --location \
+              --max-time 90 \
+              --retry 2 \
+              --retry-all-errors \
+              --user-agent 'YoungmanHelper-KeepAlive/1.0' \
+              --output /dev/null \
+              "$app_url"
+          done <<< "$STREAMLIT_APP_URLS"
