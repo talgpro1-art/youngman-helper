@@ -35,39 +35,44 @@ jobs:
           node <<'NODE'
           const { chromium } = require("playwright");
 
-          const urls = (process.env.STREAMLIT_APP_URLS || "")
-            .split(/\r?\n/)
-            .map((value) => value.trim())
-            .filter(Boolean);
+          (async () => {
+            const urls = (process.env.STREAMLIT_APP_URLS || "")
+              .split(/\r?\n/)
+              .map((value) => value.trim())
+              .filter(Boolean);
 
-          if (urls.length === 0) {
-            throw new Error("STREAMLIT_APP_URLS is not configured.");
-          }
-
-          const browser = await chromium.launch({ headless: true });
-          try {
-            for (const url of urls) {
-              const context = await browser.newContext();
-              const page = await context.newPage();
-              await page.goto(url, { waitUntil: "domcontentloaded", timeout: 90000 });
-
-              const wakeButton = page.getByRole("button", {
-                name: "Yes, get this app back up!",
-              });
-              if (await wakeButton.count()) {
-                await wakeButton.click();
-                await page.waitForTimeout(5000);
-                console.log(`Woke ${url}`);
-              } else {
-                console.log(`Visited ${url}`);
-              }
-
-              if (await wakeButton.count()) {
-                throw new Error(`The app did not wake: ${url}`);
-              }
-              await context.close();
+            if (urls.length === 0) {
+              throw new Error("STREAMLIT_APP_URLS is not configured.");
             }
-          } finally {
-            await browser.close();
-          }
+
+            const browser = await chromium.launch({ headless: true });
+            try {
+              for (const url of urls) {
+                const context = await browser.newContext();
+                const page = await context.newPage();
+                await page.goto(url, { waitUntil: "domcontentloaded", timeout: 90000 });
+
+                const wakeButton = page.getByRole("button", {
+                  name: "Yes, get this app back up!",
+                });
+                if (await wakeButton.count()) {
+                  await wakeButton.click();
+                  await page.waitForTimeout(5000);
+                  console.log(`Woke ${url}`);
+                } else {
+                  console.log(`Visited ${url}`);
+                }
+
+                if (await wakeButton.count()) {
+                  throw new Error(`The app did not wake: ${url}`);
+                }
+                await context.close();
+              }
+            } finally {
+              await browser.close();
+            }
+          })().catch((error) => {
+            console.error(error);
+            process.exit(1);
+          });
           NODE
