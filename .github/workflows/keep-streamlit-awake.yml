@@ -16,25 +16,58 @@ jobs:
   visit-app:
     name: Visit app URLs
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - name: Request each app home page
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install headless browser
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps --only-shell
+
+      - name: Visit each app and wake it when needed
         env:
           STREAMLIT_APP_URLS: ${{ secrets.STREAMLIT_APP_URLS }}
         run: |
-          test -n "$STREAMLIT_APP_URLS"
-          while IFS= read -r app_url; do
-            [ -z "$app_url" ] && continue
-            curl \
-              --fail \
-              --silent \
-              --show-error \
-              --location \
-              --cookie-jar /dev/null \
-              --cookie /dev/null \
-              --max-time 90 \
-              --retry 2 \
-              --retry-all-errors \
-              --user-agent 'YoungmanHelper-KeepAlive/1.0' \
-              --output /dev/null \
-              "$app_url"
-          done <<< "$STREAMLIT_APP_URLS"
+          node <<'NODE'
+          const { chromium } = require("playwright");
+
+          const urls = (process.env.STREAMLIT_APP_URLS || "")
+            .split(/\r?\n/)
+            .map((value) => value.trim())
+            .filter(Boolean);
+
+          if (urls.length === 0) {
+            throw new Error("STREAMLIT_APP_URLS is not configured.");
+          }
+
+          const browser = await chromium.launch({ headless: true });
+          try {
+            for (const url of urls) {
+              const context = await browser.newContext();
+              const page = await context.newPage();
+              await page.goto(url, { waitUntil: "domcontentloaded", timeout: 90000 });
+
+              const wakeButton = page.getByRole("button", {
+                name: "Yes, get this app back up!",
+              });
+              if (await wakeButton.count()) {
+                await wakeButton.click();
+                await page.waitForTimeout(5000);
+                console.log(`Woke ${url}`);
+              } else {
+                console.log(`Visited ${url}`);
+              }
+
+              if (await wakeButton.count()) {
+                throw new Error(`The app did not wake: ${url}`);
+              }
+              await context.close();
+            }
+          } finally {
+            await browser.close();
+          }
+          NODE
