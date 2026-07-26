@@ -29,6 +29,8 @@ jobs:
               --silent \
               --show-error \
               --location \
+              --cookie-jar /dev/null \
+              --cookie /dev/null \
               --max-time 90 \
               --retry 2 \
               --retry-all-errors \
