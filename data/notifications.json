@@ -1,6 +1,106 @@
 [
   {
-    "date": "2026-07-30",
+    "date": "2026-07-31",
+    "brand": "현대",
+    "model": "더 뉴 그랜저",
+    "title": "공식 가격표 변경 감지: 현대 더 뉴 그랜저",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/the-new-grandeur-price.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-07-31",
+    "brand": "현대",
+    "model": "더 뉴 그랜저",
+    "title": "공식 추가PDF 변경 감지: 현대 더 뉴 그랜저",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/the-new-grandeur-catalog.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-07-31",
+    "brand": "현대",
+    "model": "쏘나타 디 엣지",
+    "title": "공식 가격표 변경 감지: 현대 쏘나타 디 엣지",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/sonata-the-edge2026-price.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-07-31",
+    "brand": "현대",
+    "model": "쏘나타 디 엣지",
+    "title": "공식 추가PDF 변경 감지: 현대 쏘나타 디 엣지",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/sonata-the-edge_catalog.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-07-31",
+    "brand": "현대",
+    "model": "디 올 뉴 팰리세이드",
+    "title": "공식 가격표 변경 감지: 현대 디 올 뉴 팰리세이드",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/palisade-2025-price.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-07-31",
+    "brand": "현대",
+    "model": "디 올 뉴 팰리세이드",
+    "title": "공식 추가PDF 변경 감지: 현대 디 올 뉴 팰리세이드",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-palisade-catalog.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-07-31",
+    "brand": "현대",
+    "model": "아반떼",
+    "title": "공식 가격표 변경 감지: 현대 아반떼",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/avante-2026-price.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-07-31",
+    "brand": "현대",
+    "model": "아반떼",
+    "title": "공식 추가PDF 변경 감지: 현대 아반떼",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/avante-catalog.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-07-31",
+    "brand": "현대",
+    "model": "싼타페",
+    "title": "공식 가격표 변경 감지: 현대 싼타페",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/santafe-2026-price.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-07-31",
+    "brand": "현대",
+    "model": "싼타페",
+    "title": "공식 추가PDF 변경 감지: 현대 싼타페",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/santafe-catalog.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-07-31",
     "brand": "",
     "model": "",
     "title": "최근 감지된 주요 신차/가격표 이슈가 없습니다.",
