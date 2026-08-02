@@ -75,7 +75,7 @@ python scripts\check_price_links.py
 판매순위 갱신:
 
 ```powershell
-python scripts\update_sales_rankings.py --input data\sales_snapshot\monthly_sales.csv
+python scripts\build_combined_sales_rankings.py
 ```
 
 앱 실행:
@@ -100,7 +100,7 @@ GitHub Actions 자동 갱신:
 - `price_url`: 공식 가격표 PDF 또는 가격 페이지
 - `catalog_url`: 추가 PDF 링크. 현재는 카탈로그뿐 아니라 HEV 가격표 등 추가 PDF도 포함
 
-판매순위 자동 갱신 스크립트는 월간 집계 CSV를 입력으로 사용합니다. 입력 파일은 최소 `brand`, `model` 컬럼이 필요하고, `rank`, `units_sold`, `vehicle`까지 있으면 더 안정적으로 갱신됩니다.
+판매순위는 `scripts/build_combined_sales_rankings.py`의 월간 국산·수입 통합 목록을 수동으로 검증한 뒤 실행하면 `vehicle_master.csv`와 `data/sales_snapshot/monthly_sales.csv`를 함께 갱신합니다.
 현재 통합 TOP50은 2026년 8월 2일 확인 가능한 최신 공개 집계인 국산·수입 2026년 6월 판매/등록실적을 동일 월 기준으로 합산했습니다. 2026년 7월 모델별 공식 집계가 공개되면 다음 수동 갱신 때 반영합니다.
 
 ## 판매순위/링크 소스 메모
