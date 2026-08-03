@@ -1,14 +1,114 @@
 [
   {
+    "date": "2026-08-03",
+    "brand": "기아",
+    "model": "쏘렌토",
+    "title": "공식 가격표 변경 감지: 기아 쏘렌토",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-08-03",
+    "brand": "기아",
+    "model": "셀토스",
+    "title": "공식 가격표 변경 감지: 기아 셀토스",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-08-03",
+    "brand": "기아",
+    "model": "카니발",
+    "title": "공식 가격표 변경 감지: 기아 카니발",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-08-03",
+    "brand": "기아",
+    "model": "스포티지",
+    "title": "공식 가격표 변경 감지: 기아 스포티지",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sportage.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-08-03",
+    "brand": "기아",
+    "model": "EV5",
+    "title": "공식 가격표 변경 감지: 기아 EV5",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev5.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-08-03",
+    "brand": "기아",
+    "model": "K5",
+    "title": "공식 가격표 변경 감지: 기아 K5",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k5.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-08-03",
+    "brand": "기아",
+    "model": "레이",
+    "title": "공식 가격표 변경 감지: 기아 레이",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-08-03",
+    "brand": "기아",
+    "model": "EV3",
+    "title": "공식 가격표 변경 감지: 기아 EV3",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev3.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-08-03",
+    "brand": "현대",
+    "model": "더 뉴 스타리아",
+    "title": "공식 추가PDF 변경 감지: 현대 더 뉴 스타리아",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria_catalog.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-08-03",
+    "brand": "기아",
+    "model": "PV5",
+    "title": "공식 가격표 변경 감지: 기아 PV5",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-cargo.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
     "date": "2026-08-02",
     "article_date": "2026-08-02",
-    "collected_at": "2026-08-03 08:07",
+    "collected_at": "2026-08-04 08:17",
     "brand": "현대",
     "model": "아반떼",
     "title": "“신형 아반떼 기다릴까, 재고 할인받을까” 가격 공개 전 따져볼 3가지 - 유카포스트",
     "body": "최근 신차/가격표/연식변경 관련 공개 뉴스 후보입니다. 상세 내용은 링크에서 확인해 주세요.",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBjOU9zQ1Z3a1A4OVFkVFdFT2MyVDdlMXZ1UGVzcHNLWkxIRmtJUU50RHNlMzAzSFlYQU1vMVFQWGpkTjJIeTVzcGdZdlB0cDJicS1pTDVWaHdINEJ0Sm14WDAxeHhha05IN2hPSTVwT0lvZVRG0gF0QVVfeXFMUGM5T3NDVndrUDg5UWRUV0VPYzJUN2UxdnVQZXNwc0taTEhGa0lRTnREc2UzMDNIWVhBTW8xUVBYamROMkh5NXNwZ1l2UHRwMmJxLWlMNVZod0g0QnRKbXhYMDF4eGFrTkg3aE9JNXBPSW9lVEY?oc=5",
-    "published": "Sun, 02 Aug 2026 02:03:04 GMT",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9xTjhYU0o5bmVyZklROVVVNGlXUk1SVTl3b3p4Nzd0TVB5WGRadUEwUGd2VzBBMEFPWm96cUhMTjF0aElMTk9jdVpsTEh4Tk1hQkhGU01sNGZjSXJEeVdJN3c1eVdncGdYWGZwd0JSSmTSAXRBVV95cUxQYzlPc0NWd2tQODlRZFRXRU9jMlQ3ZTF2dVBlc3BzS1pMSEZrSVFOdERzZTMwM0hZWEFNbzFRUFhqZE4ySHk1c3BnWXZQdHAyYnEtaUw1Vmh3SDRCdEpteFgwMXh4YWtOSDdoT0k1cE9Jb2VURg?oc=5",
+    "published": "Sat, 01 Aug 2026 23:11:45 GMT",
     "severity": "warning",
     "source": "google_news_rss"
   }
