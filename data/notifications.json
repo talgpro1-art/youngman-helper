@@ -1,6 +1,26 @@
 [
   {
-    "date": "2026-08-05",
+    "date": "2026-08-07",
+    "brand": "기아",
+    "model": "EV5",
+    "title": "공식 가격표 변경 감지: 기아 EV5",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev5.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-08-07",
+    "brand": "기아",
+    "model": "K8",
+    "title": "공식 가격표 변경 감지: 기아 K8",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k8.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-08-07",
     "brand": "",
     "model": "",
     "title": "최근 감지된 주요 신차/가격표 이슈가 없습니다.",
