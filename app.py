@@ -215,7 +215,7 @@ def show_half_width_image(source: str | Path) -> None:
 
 
 @st.cache_data(show_spinner=False)
-def load_vehicles(version: int) -> pd.DataFrame:
+def load_vehicles(version: int, revision: str = "") -> pd.DataFrame:
     if not VEHICLE_MASTER.exists():
         return pd.DataFrame()
     df = pd.read_csv(VEHICLE_MASTER)
@@ -552,7 +552,7 @@ def main() -> None:
         show_half_width_image(HEADER_IMAGE)
     else:
         st.markdown('<div style="font-size:2rem;font-weight:900;">🚗 영맨 헬퍼</div>', unsafe_allow_html=True)
-    df = load_vehicles(file_version(VEHICLE_MASTER))
+    df = load_vehicles(file_version(VEHICLE_MASTER), "2026-08-10-sales-refresh")
     options = load_options(file_version(OPTION_SUMMARY))
     mentions = load_mentions(file_version(OPTION_MENTIONS))
     notifications = load_notifications(file_version(NOTIFICATIONS))
