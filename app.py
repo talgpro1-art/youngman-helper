@@ -463,7 +463,7 @@ def rank_table(df: pd.DataFrame) -> pd.DataFrame:
 def show_rank_section(df: pd.DataFrame) -> None:
     st.markdown('<div class="mobile-section-title">🏆 국내 판매 차량 순위 TOP50</div>', unsafe_allow_html=True)
     st.dataframe(rank_table(df), width="stretch", hide_index=True, height=215)
-    st.caption("판매실적 기준: 국산차 2026년 7월 · 수입차 2026년 6월 | 출처: 다나와자동차(KAMA·KAIDA 집계)")
+    st.caption("업데이트: 2026-08-10 | 판매실적 기준: 국산차 2026년 7월 · 수입차 2026년 6월 | 출처: 다나와자동차(KAMA·KAIDA 집계)")
     st.caption("표는 5위 정도만 보이도록 고정했습니다. 나머지 순위는 표 안에서 스크롤해 확인합니다.")
     filtered = filter_vehicles(df)
     st.caption(f"표시 차량: {len(filtered)}개")
