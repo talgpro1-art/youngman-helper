@@ -21,7 +21,7 @@ NEWCAR_ROADMAP_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTTCzFCPz6
 CAR_IMAGE_DIR = ROOT / "assets" / "cars"
 HEADER_IMAGE = ROOT / "assets" / "header.png"
 APP_ICON = ROOT / "assets" / "icon.png"
-APPROVED_IMAGE_SOURCE_TYPES = {"official_newsroom", "official_site", "official_press_release", "manual"}
+APPROVED_IMAGE_SOURCE_TYPES = {"official_newsroom", "official_site", "official_press_release", "trusted_auto_portal", "manual"}
 
 st.set_page_config(
     page_title="영맨 헬퍼",
