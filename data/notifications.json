@@ -1,13 +1,13 @@
 [
   {
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "brand": "",
     "model": "",
-    "title": "최근 감지된 주요 신차/가격표 이슈가 없습니다.",
-    "body": "최근 7일 이내 TOP50 관련 주요 키워드 뉴스가 감지되지 않았습니다.",
+    "title": "최근 검증 완료된 주요 신차/가격표 이슈가 없습니다.",
+    "body": "구글시트 검증 기준을 통과한 최근 7일 이내 신차·가격표 소식이 없습니다.",
     "link": "",
     "published": "",
     "severity": "info",
-    "source": "system"
+    "source": "newcar_watch_verified"
   }
 ]
