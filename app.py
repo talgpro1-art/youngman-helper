@@ -277,7 +277,12 @@ def load_newcar_roadmap() -> pd.DataFrame:
             return pd.DataFrame()
         df = pd.read_csv(NEWCAR_ROADMAP)
     df.columns = [c.replace("\ufeff", "").strip() for c in df.columns]
-    df["launch_dt"] = pd.to_datetime(df.get("launch_date"), errors="coerce")
+    launch_values = df["launch_date"] if "launch_date" in df.columns else pd.Series([None] * len(df))
+    source_values = df["source_date"] if "source_date" in df.columns else pd.Series([None] * len(df))
+    checked_values = df["last_checked"] if "last_checked" in df.columns else pd.Series([None] * len(df))
+    df["launch_dt"] = pd.to_datetime(launch_values, errors="coerce")
+    df["source_dt"] = pd.to_datetime(source_values, errors="coerce", utc=True).dt.tz_convert(None)
+    df["checked_dt"] = pd.to_datetime(checked_values, errors="coerce")
     df["priority"] = pd.to_numeric(df.get("priority"), errors="coerce").fillna(99).astype(int)
     return df
 
@@ -353,15 +358,60 @@ def show_notifications(items: list[dict]) -> None:
     st.markdown("\n".join(dedent(card).strip() for card in cards), unsafe_allow_html=True)
 
 
+BLOCKED_NEWS_SOURCES = ("mshale", "naver blog", "네이버 블로그", "youtube", "유튜브", "gwaramedia", "바카라")
+
+
+def roadmap_source_usable(value: object) -> bool:
+    title = safe_str(value).lower()
+    return bool(title) and not any(blocked in title for blocked in BLOCKED_NEWS_SOURCES)
+
+
+def roadmap_freshness(row: pd.Series) -> str:
+    source_dt = pd.to_datetime(row.get("source_dt"), errors="coerce")
+    checked_dt = pd.to_datetime(row.get("checked_dt"), errors="coerce")
+    parts = []
+    if not pd.isna(source_dt):
+        parts.append(f"기사 {source_dt:%Y-%m-%d}")
+    if not pd.isna(checked_dt):
+        parts.append(f"검증 {checked_dt:%Y-%m-%d}")
+    return " · ".join(parts)
+
+
 def filtered_newcars(newcars: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     if newcars.empty:
         return pd.DataFrame(), pd.DataFrame()
+
+    work = newcars.copy()
     today = pd.Timestamp.today().normalize()
-    statuses = newcars.get("status", pd.Series([""] * len(newcars))).astype(str).str.lower()
-    launch_dt = newcars.get("launch_dt", pd.Series([pd.NaT] * len(newcars)))
-    upcoming = newcars[(statuses == "upcoming") & (launch_dt.isna() | ((launch_dt >= today) & (launch_dt <= today + pd.Timedelta(days=60))))].copy()
-    recent = newcars[(statuses == "recent") & (launch_dt.isna() | ((launch_dt >= today - pd.Timedelta(days=14)) & (launch_dt <= today)))].copy()
-    return upcoming.sort_values(["priority", "launch_dt"]).head(5), recent.sort_values(["priority", "launch_dt"], ascending=[True, False]).head(5)
+    statuses = work.get("status", pd.Series([""] * len(work))).astype(str).str.strip().str.lower()
+    confidence = work.get("launch_confidence", pd.Series([""] * len(work))).astype(str).str.strip().str.lower()
+    price_status = work.get("price_status", pd.Series([""] * len(work))).astype(str).str.strip().str.lower()
+    launch_dt = work.get("launch_dt", pd.Series([pd.NaT] * len(work)))
+    source_dt = work.get("source_dt", pd.Series([pd.NaT] * len(work)))
+    trusted = work.get("source_title", pd.Series([""] * len(work))).map(roadmap_source_usable)
+    validated = trusted & confidence.eq("confirmed") & price_status.isin(["available", "pending"])
+
+    source_recent = source_dt.between(today - pd.Timedelta(days=14), today + pd.Timedelta(days=1))
+    recent_window = launch_dt.between(today - pd.Timedelta(days=14), today)
+    upcoming_window = launch_dt.between(today, today + pd.Timedelta(days=60))
+
+    upcoming = work[(statuses == "upcoming") & validated & (upcoming_window | (launch_dt.isna() & source_recent))].copy()
+    recent = work[(statuses == "recent") & validated & (recent_window | (launch_dt.isna() & source_recent))].copy()
+
+    for data in (upcoming, recent):
+        model = data.get("model", pd.Series([""] * len(data), index=data.index)).fillna("").astype(str)
+        vehicle = data.get("vehicle", pd.Series([""] * len(data), index=data.index)).fillna("").astype(str)
+        brand = data.get("brand", pd.Series([""] * len(data), index=data.index)).fillna("").astype(str)
+        data["_vehicle_key"] = (brand + "|" + model.where(model.str.strip().ne(""), vehicle)).str.lower().str.replace(r"[^0-9a-z가-힣]+", "", regex=True)
+
+    if not upcoming.empty:
+        upcoming["_sort_launch"] = upcoming["launch_dt"].fillna(today + pd.Timedelta(days=61))
+        upcoming = upcoming.sort_values(["_sort_launch", "source_dt", "checked_dt"], ascending=[True, False, False]).drop_duplicates("_vehicle_key").head(5)
+    if not recent.empty:
+        recent["_sort_recent"] = recent["launch_dt"].fillna(recent["source_dt"]).fillna(recent["checked_dt"])
+        recent = recent.sort_values(["_sort_recent", "source_dt", "checked_dt"], ascending=[False, False, False]).drop_duplicates("_vehicle_key").head(5)
+
+    return upcoming, recent
 
 
 def show_newcar_premium_zone(newcars: pd.DataFrame) -> None:
@@ -387,7 +437,7 @@ def show_newcar_premium_zone(newcars: pd.DataFrame) -> None:
             <div class="small-muted">{launch_date + ' 출시 예정' if launch_date else '출시 일정 확인중'}</div>
             </div><div class="roadmap-dday">{html_text(dday_label(row.get('launch_dt')))}</div></div>
             <div class="roadmap-summary">{html_text(row.get('summary'), '출시 일정 확인 필요')}</div>
-            <div class="small-muted">출시 신뢰도: {html_text(confidence_label(row.get('launch_confidence')))} · 가격표: {html_text(price_status_label(row.get('price_status')))}</div>{source_html}</div>
+            <div class="small-muted">출시 신뢰도: {html_text(confidence_label(row.get('launch_confidence')))} · 가격표: {html_text(price_status_label(row.get('price_status')))}</div><div class="small-muted">{html_text(roadmap_freshness(row))}</div>{source_html}</div>
             """)
     if not recent.empty:
         parts.append('<div class="roadmap-section-label">최근 출시 / 가격표</div>')
@@ -404,7 +454,7 @@ def show_newcar_premium_zone(newcars: pd.DataFrame) -> None:
             <div class="small-muted">{launch_date + ' 출시' if launch_date else '최근 출시/가격 공개'}</div>
             </div><div class="roadmap-dday">{html_text(dday_label(row.get('launch_dt')))}</div></div>
             <div class="roadmap-summary">{html_text(row.get('summary'), '최근 출시 차량입니다.')}</div>
-            <div class="small-muted">출시 신뢰도: {html_text(confidence_label(row.get('launch_confidence')))} · 가격표: {html_text(price_status_label(row.get('price_status')))}</div>{links_html}</div>
+            <div class="small-muted">출시 신뢰도: {html_text(confidence_label(row.get('launch_confidence')))} · 가격표: {html_text(price_status_label(row.get('price_status')))}</div><div class="small-muted">{html_text(roadmap_freshness(row))}</div>{links_html}</div>
             """)
     parts.append("</div>")
     st.markdown("\n".join(dedent(part).strip() for part in parts), unsafe_allow_html=True)
@@ -463,7 +513,7 @@ def rank_table(df: pd.DataFrame) -> pd.DataFrame:
 def show_rank_section(df: pd.DataFrame) -> None:
     st.markdown('<div class="mobile-section-title">🏆 국내 판매 차량 순위 TOP50</div>', unsafe_allow_html=True)
     st.dataframe(rank_table(df), width="stretch", hide_index=True, height=215)
-    st.caption("업데이트: 2026-08-10 | 판매실적 기준: 국산차 2026년 7월 · 수입차 2026년 6월 | 출처: 다나와자동차(KAMA·KAIDA 집계)")
+    st.caption("업데이트: 2026-08-13 | 판매실적 기준: 국산차 2026년 7월 · 수입차 2026년 7월 | 출처: 다나와자동차(KAMA·KAIDA 집계)")
     st.caption("표는 5위 정도만 보이도록 고정했습니다. 나머지 순위는 표 안에서 스크롤해 확인합니다.")
     filtered = filter_vehicles(df)
     st.caption(f"표시 차량: {len(filtered)}개")
@@ -552,7 +602,7 @@ def main() -> None:
         show_half_width_image(HEADER_IMAGE)
     else:
         st.markdown('<div style="font-size:2rem;font-weight:900;">🚗 영맨 헬퍼</div>', unsafe_allow_html=True)
-    df = load_vehicles(file_version(VEHICLE_MASTER), "2026-08-10-sales-refresh-2")
+    df = load_vehicles(file_version(VEHICLE_MASTER), "2026-08-13-sales-and-news-refresh")
     options = load_options(file_version(OPTION_SUMMARY))
     mentions = load_mentions(file_version(OPTION_MENTIONS))
     notifications = load_notifications(file_version(NOTIFICATIONS))
