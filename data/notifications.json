@@ -1,13 +1,15 @@
 [
   {
     "date": "2026-08-21",
-    "brand": "",
-    "model": "",
-    "title": "최근 검증 완료된 주요 신차/가격표 이슈가 없습니다.",
-    "body": "구글시트 검증 기준을 통과한 최근 7일 이내 신차·가격표 소식이 없습니다.",
-    "link": "",
-    "published": "",
-    "severity": "info",
+    "article_date": "2026-08-21",
+    "brand": "제네시스",
+    "model": "GV90",
+    "vehicle": "제네시스 GV90",
+    "title": "제네시스 'GV90', 연내 국내 첫 출시…무뇨스 \"내년 초 美 판매\" | - 민주신문",
+    "body": "제네시스의 플래그십 대형 전기 SUV인 GV90이 올해 안으로 국내에 첫 출시될 예정이며 내년 초 미국 시장 판매를 목표로 하고 있습니다.",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1NcU12dHVQRHZQTHpaUkdzNmhYQzBRek1jRU5LNDB0dndPY2lWeHlNazc4aE42eVRobkJiNW03NDBQOGFxWkZITWdVaW9qUElCR2lZeUVwVUkwYzliSGVsSlQ2WkNHQ3BsYklj?oc=5",
+    "published": "2026-08-21T17:27:13+09:00",
+    "severity": "warning",
     "source": "newcar_watch_verified"
   }
 ]
