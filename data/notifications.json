@@ -1,33 +1,16 @@
 [
   {
     "date": "2026-08-27",
-    "brand": "기아",
-    "model": "카니발",
-    "title": "공식 가격표 변경 감지: 기아 카니발",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf",
+    "article_date": "2026-08-27",
+    "brand": "제네시스",
+    "model": "GV80 하이브리드",
+    "vehicle": "제네시스 GV80 하이브리드",
+    "title": "\"궁극의 패밀리카 뜬다\"... 제네시스 GV80 하이브리드, 올해 하반기 출시 확정 - 오토트리뷴",
+    "body": "제네시스의 인기 준대형 SUV인 GV80 하이브리드 모델이 올해 하반기 국내 출시를 확정했다는 소식입니다.",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0wNzJVdkYyaEJUeVFJRkhteG4zUExSSWhWcjBMX2hoaXZEcEZHeXFzeWxwRXZZNkhFaVZkM1NMZzVINzdjdjhLdEtSbUJZa0k0OENXdXRvakVnMmU0NExUZ2lCMnhNeE1OWnpkM3JfbTQ?oc=5",
+    "published": "2026-08-27T16:50:00+09:00",
     "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-08-27",
-    "brand": "기아",
-    "model": "쏘렌토",
-    "title": "공식 가격표 변경 감지: 기아 쏘렌토",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-08-27",
-    "brand": "기아",
-    "model": "스포티지",
-    "title": "공식 가격표 변경 감지: 기아 스포티지",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sportage.pdf",
-    "severity": "warning",
-    "source": "price_link_checker"
+    "source": "newcar_watch_verified"
   },
   {
     "date": "2026-08-26",
@@ -78,19 +61,6 @@
     "body": "기아 K8 하이브리드의 트림별 가격이 공개되었습니다. 기본 모델은 4267만원, 후측방 및 서라운드 뷰가 포함된 사양은 4420만원부터 시작합니다.",
     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBfRThfSDAwS1ZabVBHYXNMbF9uMi1HVFpwZ2FrUllNLTdVMlk4dUt5YjhISHJjLTBnbWpERWlqUG1wZXdKdTV1TlgxcHhHbXNxZVdHMjUzd2lVZTI1X0JrODJCbU1USHIzeDhaYUh0eVNDX1A30gF0QVVfeXFMUF9FOF9IMDBLVlptUEdhc0xsX24yLUdUWnBnYWtSWU0tN1UyWTh1S3liOEhIcmMtMGdtakRFaWpQbXBld0p1NXVOWDFweEdtc3FlV0cyNTN3aVVlMjVfQms4MkJtTVRIcjN4OFphSHR5U0NfUDc?oc=5",
     "published": "2026-08-21T21:22:25+09:00",
-    "severity": "warning",
-    "source": "newcar_watch_verified"
-  },
-  {
-    "date": "2026-08-21",
-    "article_date": "2026-08-21",
-    "brand": "제네시스",
-    "model": "GV90",
-    "vehicle": "제네시스 GV90",
-    "title": "제네시스 'GV90', 연내 국내 첫 출시…무뇨스 \"내년 초 美 판매\" | - 민주신문",
-    "body": "제네시스의 플래그십 대형 전기 SUV인 GV90이 올해 안으로 국내에 첫 출시될 예정이며 내년 초 미국 시장 판매를 목표로 하고 있습니다.",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1NcU12dHVQRHZQTHpaUkdzNmhYQzBRek1jRU5LNDB0dndPY2lWeHlNazc4aE42eVRobkJiNW03NDBQOGFxWkZITWdVaW9qUElCR2lZeUVwVUkwYzliSGVsSlQ2WkNHQ3BsYklj?oc=5",
-    "published": "2026-08-21T17:27:13+09:00",
     "severity": "warning",
     "source": "newcar_watch_verified"
   }
