@@ -1,13 +1,16 @@
 [
   {
-    "date": "2026-09-02",
-    "brand": "BYD",
-    "model": "SEALION 7",
-    "title": "공식 추가PDF 변경 감지: BYD SEALION 7",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.bydauto.kr/static/file/BYD_SEALION_7_Catalog.pdf",
+    "date": "2026-09-01",
+    "article_date": "2026-09-01",
+    "brand": "르노코리아",
+    "model": "그랑 콜레오스, 필랑트",
+    "vehicle": "르노코리아 2027 그랑 콜레오스 / 필랑트",
+    "title": "르노코리아, 2027년형 그랑 콜레오스·필랑트 출격…최대 7년 무상 보증 혜택 제공 - focusincheon.com",
+    "body": "르노코리아가 2027년형 그랑 콜레오스와 신규 모델 필랑트를 출시하며 최대 7년의 무상 보증 혜택을 제공합니다.",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0wVFRxT0o1SXVZckZ6SWM4b0tUQUl6NWktSUdTeGFkbENPTG5idzJZS1poazBqMmpNcWoyX0pWeFlsM1BnQXV2UDJ6enQySk9oMTVvRS12WDh1dDhQeHIyUDkySTQ0NDl6dVo3eNIBcEFVX3lxTFBDSncyVE4yNElyY2FTTlcwdjFwT01LWkU0emtYOUF5aHZVR21TQndYX0RhYjYzcXVrMVR3QmgyOXhVRktCdFI0MVI0b0NFM2s1VkQyX2p1VjRjOHpyanFXbEJRWFJieDhKcGxtUmlqYmU?oc=5",
+    "published": "2026-09-01T22:54:55+09:00",
     "severity": "warning",
-    "source": "price_link_checker"
+    "source": "newcar_watch_verified"
   },
   {
     "date": "2026-09-01",
@@ -58,19 +61,6 @@
     "body": "기아 스포티지의 트림별 가격이 공개되었습니다. 기본 모델은 2944만원, 블랙 에디션은 3587만원부터 시작하여 신형 투싼과 경쟁을 시작합니다.",
     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBkTEQ1RXhsSkpZbERuMXZDOXhoX2c4c1U1bnBUSFpaQkhOVTRsMTI2OGdwN1JQZnVyYnpQaG8zQzVjSmJnbUVqa0V2QkpvdFVfbElxcENGX2NlUnNIdUtMR2dwczJaRjFzOXVOQUhGbG_SAXRBVV95cUxPamIwMUtYdkNqX2llRmlFZnNUd29mU1pTSEJjVzRUeEFGaGlHbi12MzUxc2dHMHIxSzNrMDBLM2lldjFPTG1YMFZ1NnJaQ1h2d2ZLS0NfR3FaOFRwU0JRVmpfeGF2STZWQTMycEFFRVVKX3k1cw?oc=5",
     "published": "2026-08-29T19:44:03+09:00",
-    "severity": "warning",
-    "source": "newcar_watch_verified"
-  },
-  {
-    "date": "2026-08-27",
-    "article_date": "2026-08-27",
-    "brand": "제네시스",
-    "model": "GV80 하이브리드",
-    "vehicle": "제네시스 GV80 하이브리드",
-    "title": "\"궁극의 패밀리카 뜬다\"... 제네시스 GV80 하이브리드, 올해 하반기 출시 확정 - 오토트리뷴",
-    "body": "제네시스의 인기 준대형 SUV인 GV80 하이브리드 모델이 올해 하반기 국내 출시를 확정했다는 소식입니다.",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0wNzJVdkYyaEJUeVFJRkhteG4zUExSSWhWcjBMX2hoaXZEcEZHeXFzeWxwRXZZNkhFaVZkM1NMZzVINzdjdjhLdEtSbUJZa0k0OENXdXRvakVnMmU0NExUZ2lCMnhNeE1OWnpkM3JfbTQ?oc=5",
-    "published": "2026-08-27T16:50:00+09:00",
     "severity": "warning",
     "source": "newcar_watch_verified"
   }
