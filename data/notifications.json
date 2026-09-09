@@ -1,41 +1,23 @@
 [
   {
-    "date": "2026-09-01",
-    "article_date": "2026-09-01",
-    "brand": "르노코리아",
-    "model": "그랑 콜레오스, 필랑트",
-    "vehicle": "르노코리아 2027 그랑 콜레오스 / 필랑트",
-    "title": "르노코리아, 2027년형 그랑 콜레오스·필랑트 출격…최대 7년 무상 보증 혜택 제공 - focusincheon.com",
-    "body": "르노코리아가 2027년형 그랑 콜레오스와 신규 모델 필랑트를 출시하며 최대 7년의 무상 보증 혜택을 제공합니다.",
-    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0wVFRxT0o1SXVZckZ6SWM4b0tUQUl6NWktSUdTeGFkbENPTG5idzJZS1poazBqMmpNcWoyX0pWeFlsM1BnQXV2UDJ6enQySk9oMTVvRS12WDh1dDhQeHIyUDkySTQ0NDl6dVo3eNIBcEFVX3lxTFBDSncyVE4yNElyY2FTTlcwdjFwT01LWkU0emtYOUF5aHZVR21TQndYX0RhYjYzcXVrMVR3QmgyOXhVRktCdFI0MVI0b0NFM2s1VkQyX2p1VjRjOHpyanFXbEJRWFJieDhKcGxtUmlqYmU?oc=5",
-    "published": "2026-09-01T22:54:55+09:00",
+    "date": "2026-09-09",
+    "brand": "기아",
+    "model": "카니발",
+    "title": "공식 가격표 변경 감지: 기아 카니발",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf",
     "severity": "warning",
-    "source": "newcar_watch_verified"
+    "source": "price_link_checker"
   },
   {
-    "date": "2026-09-01",
-    "article_date": "2026-09-01",
-    "brand": "르노코리아",
-    "model": "그랑 콜레오스 2027년형",
-    "vehicle": "그랑 콜레오스",
-    "title": "르노코리아, 그랑 콜레오스 2027년형 출시…에뚜알 에디션 4574만9000원 - 인더스트리뉴스",
-    "body": "르노코리아가 그랑 콜레오스 2027년형 모델을 출시하고 에뚜알 에디션의 가격을 4574만9000원으로 공개했습니다.",
-    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBreVhrYnBlQzA4S285OEJ1RnFZTlRQZk9zZUdqR2RuUVkxRFZIUFBJRFZfMm8zb0pQaWIzdDlFWjhNQTZSOGZpYTQ4N0dtNkpFNkdwVnJjR29ERWtMTVRpbUx6ZE5NSTViLWdJeURqa2FnZw?oc=5",
-    "published": "2026-09-01T18:36:25+09:00",
-    "severity": "warning",
-    "source": "newcar_watch_verified"
-  },
-  {
-    "date": "2026-09-01",
-    "article_date": "2026-09-01",
-    "brand": "르노코리아",
-    "model": "그랑 콜레오스",
-    "vehicle": "르노코리아 그랑 콜레오스",
-    "title": "르노코리아, 그랑 콜레오스 2027년형·에뚜알 에디션 출시 - 모터트렌드",
-    "body": "르노코리아가 그랑 콜레오스의 2027년형 모델과 신규 트림인 에뚜알 에디션을 공식 출시했습니다.",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9DbUVEUDZ4TUxQUUV2RVQ5MTFvanJVZVNSUkk4TzZkZzNOQmpxb0FCZFlJazNvdjFVcW51SU1XR3ItUW1hNElHWlhMZGtsd1hCWUM1N0E5MjRmNkZjVnZldUM2dS0zT3NwZGc?oc=5",
-    "published": "2026-09-01T10:39:04+09:00",
-    "severity": "warning",
+    "date": "2026-09-09",
+    "brand": "",
+    "model": "",
+    "title": "최근 검증 완료된 주요 신차/가격표 이슈가 없습니다.",
+    "body": "구글시트 검증 기준을 통과한 최근 7일 이내 신차·가격표 소식이 없습니다.",
+    "link": "",
+    "published": "",
+    "severity": "info",
     "source": "newcar_watch_verified"
   }
 ]
