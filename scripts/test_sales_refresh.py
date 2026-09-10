@@ -47,17 +47,17 @@ class SalesRefreshTests(unittest.TestCase):
             reviewed = snapshot / 'reviewed_sales.csv'
             for src, dest in [(build.VEHICLE_MASTER, master), (build.BASELINE, baseline), (build.REVIEWED_SALES, reviewed), (build.MONTHLY_SALES.parent / 'price_updates_2026-09-07.json', snapshot / 'price_updates_2026-09-07.json')]:
                 shutil.copy2(src, dest)
-            before = master.read_bytes()
+            before = master.read_text(encoding="utf-8-sig")
             with patch.multiple(build, ROOT=root, VEHICLE_MASTER=master, MONTHLY_SALES=snapshot / 'monthly_sales.csv', BASELINE=baseline, REVIEWED_SALES=reviewed):
                 build.main()
-                self.assertEqual(before, master.read_bytes())
+                self.assertEqual(before, master.read_text(encoding="utf-8-sig"))
                 build.main()
-                self.assertEqual(before, master.read_bytes())
+                self.assertEqual(before, master.read_text(encoding="utf-8-sig"))
                 data = pd.read_csv(reviewed)
                 pd.concat([data, data.iloc[:1]]).to_csv(reviewed, index=False)
                 with self.assertRaises(ValueError):
                     build.main()
-                self.assertEqual(before, master.read_bytes())
+                self.assertEqual(before, master.read_text(encoding="utf-8-sig"))
                 data.loc[0, 'units_sold'] = -1
                 data.to_csv(reviewed, index=False)
                 with self.assertRaises(ValueError):
