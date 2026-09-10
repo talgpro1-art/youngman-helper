@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 from pathlib import Path
+import shutil
+import json
 
 import pandas as pd
 
@@ -11,61 +13,12 @@ MONTHLY_SALES = ROOT / "data" / "sales_snapshot" / "monthly_sales.csv"
 COLUMNS = [
     "rank", "rank_change", "brand", "model", "vehicle", "units_sold", "segment", "powertrain", "target_tag",
     "image_url", "price_url", "catalog_url", "active", "note", "image_file", "image_source_url",
-    "image_review_status", "image_source_type",
+    "image_review_status", "image_source_type", "source_period",
 ]
 
-RANKING = [
-    ("현대", "더 뉴 그랜저", 10062, "국산 2026-06"),
-    ("테슬라", "Model Y", 9188, "수입 2026-06"),
-    ("기아", "쏘렌토", 8561, "국산 2026-06"),
-    ("기아", "셀토스", 6685, "국산 2026-06"),
-    ("기아", "카니발", 6267, "국산 2026-06"),
-    ("기아", "스포티지", 6176, "국산 2026-06"),
-    ("현대", "쏘나타 디 엣지", 5102, "국산 2026-06"),
-    ("현대", "디 올 뉴 팰리세이드", 4211, "국산 2026-06"),
-    ("현대", "아반떼", 4201, "국산 2026-06"),
-    ("현대", "싼타페", 4068, "국산 2026-06"),
-    ("현대", "투싼", 3285, "국산 2026-06"),
-    ("현대", "포터2", 3270, "국산 2026-06"),
-    ("기아", "EV5", 3192, "국산 2026-06"),
-    ("기아", "K5", 3150, "국산 2026-06"),
-    ("기아", "레이", 2954, "국산 2026-06"),
-    ("기아", "EV3", 2838, "국산 2026-06"),
-    ("BYD", "Dolphin", 2828, "수입 2026-06"),
-    ("제네시스", "G80", 2757, "국산 2026-06"),
-    ("현대", "더 뉴 스타리아", 2579, "국산 2026-06"),
-    ("현대", "코나", 2558, "국산 2026-06"),
-    ("기아", "PV5", 2349, "국산 2026-06"),
-    ("제네시스", "GV70", 2294, "국산 2026-06"),
-    ("BMW", "5 Series", 2266, "수입 2026-06"),
-    ("벤츠", "E-Class", 2114, "수입 2026-06"),
-    ("기아", "K8", 1981, "국산 2026-06"),
-    ("기아", "모닝", 1919, "국산 2026-06"),
-    ("기아", "니로", 1880, "국산 2026-06"),
-    ("제네시스", "GV80", 1840, "국산 2026-06"),
-    ("현대", "아이오닉 5", 1693, "국산 2026-06"),
-    ("기아", "봉고 3", 1494, "국산 2026-06"),
-    ("현대", "버스/트럭", 1452, "국산 2026-06"),
-    ("기아", "버스/특수", 1389, "국산 2026-06"),
-    ("KGM", "무쏘", 1333, "국산 2026-06"),
-    ("르노", "필랑트", 1324, "국산 2026-06"),
-    ("현대", "아이오닉 9", 1318, "국산 2026-06"),
-    ("르노", "그랑 콜레오스", 1313, "국산 2026-06"),
-    ("벤츠", "GLC-Class", 1221, "수입 2026-06"),
-    ("기아", "레이 EV", 1205, "국산 2026-06"),
-    ("현대", "베뉴", 1123, "국산 2026-06"),
-    ("BYD", "SEALION 7", 1117, "수입 2026-06"),
-    ("테슬라", "Model X", 1027, "수입 2026-06"),
-    ("기아", "EV4", 1019, "국산 2026-06"),
-    ("쉐보레", "트랙스 크로스오버", 842, "국산 2026-06"),
-    ("기아", "EV6", 820, "국산 2026-06"),
-    ("현대", "캐스퍼 일렉트릭", 774, "국산 2026-06"),
-    ("현대", "더 뉴 아이오닉 6", 773, "국산 2026-06"),
-    ("르노", "아르카나", 763, "국산 2026-06"),
-    ("현대", "캐스퍼", 711, "국산 2026-06"),
-    ("토요타", "All New RAV4", 674, "수입 2026-06"),
-    ("벤츠", "GLE-Class", 634, "수입 2026-06"),
-]
+REVIEWED_SALES = MONTHLY_SALES.parent / "reviewed_sales.csv"
+UPDATE_ID = "2026-09-10-all08"
+BASELINE = MONTHLY_SALES.parent / "history" / "vehicle_master_before_2026-09-07-domestic08-import07.csv"
 
 
 def normalize(value: object) -> str:
@@ -245,9 +198,29 @@ def load_master() -> pd.DataFrame:
 
 def main() -> None:
     master = load_master()
+    sales = pd.read_csv(REVIEWED_SALES).fillna("")
+    if sales.duplicated(["brand", "model"]).any():
+        raise ValueError("Duplicate brand/model in reviewed sales")
+    sales["units_sold"] = pd.to_numeric(sales["units_sold"], errors="raise")
+    if (sales["units_sold"] < 0).any() or (sales["units_sold"] % 1 != 0).any():
+        raise ValueError("Sales counts must be nonnegative integers")
+    if not sales["source_period"].str.fullmatch(r"(국산|수입) 20\d{2}-(0[1-9]|1[0-2])").all():
+        raise ValueError("Invalid reporting period")
+    ranking = sales.sort_values("units_sold", ascending=False, kind="stable").head(50)
+    if len(sales) < 51 or len(ranking) != 50:
+        raise ValueError("Not enough reviewed rows to establish the TOP50")
+    next_units = sales.sort_values("units_sold", ascending=False, kind="stable").iloc[50]["units_sold"]
+    if ranking.iloc[-1]["units_sold"] <= next_units:
+        raise ValueError("TOP50 cutoff is tied or not established")
+    BASELINE.parent.mkdir(parents=True, exist_ok=True)
+    if not BASELINE.exists():
+        shutil.copy2(VEHICLE_MASTER, BASELINE)
+    baseline = pd.read_csv(BASELINE, dtype=str).fillna("")
+    price_updates = json.loads((MONTHLY_SALES.parent / "price_updates_2026-09-07.json").read_text(encoding="utf-8"))
+    overrides = {row_key(r["brand"], r["model"]): r for r in price_updates}
     lookup = {row_key(row["brand"], row["model"]): row.to_dict() for _, row in master.iterrows()}
     old_rank = {}
-    for _, row in master.iterrows():
+    for _, row in baseline.iterrows():
         try:
             old_rank[row_key(row["brand"], row["model"])] = int(float(row["rank"]))
         except (TypeError, ValueError):
@@ -255,11 +228,13 @@ def main() -> None:
 
     rows = []
     sales_rows = []
-    for new_rank, (brand, model, units_sold, source_period) in enumerate(RANKING, start=1):
+    for new_rank, (brand, model, units_sold, source_period) in enumerate(ranking[["brand", "model", "units_sold", "source_period"]].itertuples(index=False, name=None), start=1):
         key = row_key(brand, model)
         row = {col: "" for col in COLUMNS}
         row.update({col: lookup.get(key, {}).get(col, "") for col in COLUMNS})
-        row.update(IMPORT_META.get(key, {}))
+        for col, value in IMPORT_META.get(key, {}).items():
+            if not row.get(col):
+                row[col] = value
 
         row["rank"] = new_rank
         row["rank_change"] = rank_change(old_rank.get(key), new_rank)
@@ -267,6 +242,7 @@ def main() -> None:
         row["model"] = model
         row["vehicle"] = f"{brand} {model}"
         row["units_sold"] = f"{units_sold:,}"
+        row["source_period"] = source_period
         row["segment"] = clean_unknown(row.get("segment")) or default_segment(model)
         row["powertrain"] = infer_powertrain(model, row.get("powertrain"))
         row["target_tag"] = clean_unknown(row.get("target_tag")) or default_target(row["segment"], row["powertrain"])
@@ -274,12 +250,15 @@ def main() -> None:
         row["image_review_status"] = clean_unknown(row.get("image_review_status"))
         row["image_source_type"] = clean_unknown(row.get("image_source_type"))
 
-        if key in RENAULT_LINKS:
+        if key in RENAULT_LINKS and not row.get("price_url"):
             price_url, catalog_url, note = RENAULT_LINKS[key]
             row["price_url"] = price_url
             row["catalog_url"] = catalog_url
             row["note"] = note
 
+        for col, value in overrides.get(key, {}).items():
+            if col in COLUMNS and col not in {"brand", "model", "rank", "units_sold", "source_period"}:
+                row[col] = value
         rows.append({col: row.get(col, "") for col in COLUMNS})
         sales_rows.append({
             "rank": new_rank,
@@ -289,9 +268,9 @@ def main() -> None:
             "source_period": source_period,
         })
 
-    pd.DataFrame(rows, columns=COLUMNS).to_csv(VEHICLE_MASTER, index=False, encoding="utf-8-sig")
+    pd.DataFrame(rows, columns=COLUMNS).to_csv(VEHICLE_MASTER, index=False, encoding="utf-8-sig", lineterminator="\n")
     MONTHLY_SALES.parent.mkdir(parents=True, exist_ok=True)
-    pd.DataFrame(sales_rows).to_csv(MONTHLY_SALES, index=False, encoding="utf-8-sig")
+    pd.DataFrame(sales_rows).to_csv(MONTHLY_SALES, index=False, encoding="utf-8-sig", lineterminator="\n")
     print(f"Updated {VEHICLE_MASTER.name}: {len(rows)} rows")
     print(f"Updated {MONTHLY_SALES.relative_to(ROOT)}")
 

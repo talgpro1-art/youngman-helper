@@ -224,7 +224,7 @@ def load_vehicles(version: int, revision: str = "") -> pd.DataFrame:
         "rank": range(1, len(df) + 1), "rank_change": "-", "brand": "", "model": "", "vehicle": "",
         "units_sold": "업데이트 필요", "segment": "", "powertrain": "", "target_tag": "",
         "image_url": "", "image_file": "", "image_source_url": "", "image_source_type": "",
-        "image_review_status": "", "price_url": "", "catalog_url": "", "active": "Y", "note": "",
+        "image_review_status": "", "price_url": "", "catalog_url": "", "active": "Y", "note": "", "source_period": "",
     }
     for col, default in defaults.items():
         if col not in df.columns:
@@ -491,6 +491,8 @@ def show_vehicle_card(row: pd.Series) -> None:
     status_html = '<span class="status-badge">확인 필요</span>' if safe_str(row.get("active"), "Y").upper() == "N" else ""
     thumb_html = vehicle_thumb_html(vehicle_image_source(row), name)
     meta = f"{units} · {segment or '차급 업데이트 예정'}"
+    if safe_str(row.get("source_period")):
+        meta = f"{safe_str(row.get('source_period'))} 기준 · {meta}"
     st.markdown(f"""
     <div class="vehicle-card">
       <div class="vehicle-card-head"><div><span class="rank-badge">{html_text(rank)}위</span><span class="rank-change">{html_text(rank_change)}</span></div>
@@ -501,19 +503,27 @@ def show_vehicle_card(row: pd.Series) -> None:
 
 
 def rank_table(df: pd.DataFrame) -> pd.DataFrame:
-    table = df[["rank", "rank_change", "vehicle_name", "units_sold", "segment", "has_pdf", "active"]].copy()
+    table = df[["rank", "rank_change", "vehicle_name", "source_period", "units_sold", "segment", "has_pdf", "active"]].copy()
     table["rank_change"] = table["rank_change"].apply(display_rank_change)
     table["units_sold"] = table["units_sold"].apply(display_units)
     table["has_pdf"] = table["has_pdf"].map(lambda ready: "있음" if ready else "확인 필요")
     table["active"] = table["active"].astype(str).str.upper().map(lambda value: "확인 필요" if value == "N" else "활성")
-    table.columns = ["순위", "변동", "차량", "판매/등록대수", "차급", "공식링크", "상태"]
+    table.columns = ["순위", "이전 대비", "차량", "기준월", "판매/등록대수", "차급", "공식링크", "상태"]
     return table
+
+
+def show_sales_period(df: pd.DataFrame) -> None:
+    periods = sorted(df.get("source_period", pd.Series(dtype=str)).dropna().unique())
+    st.caption("판매/등록 기준: " + " · ".join(periods) + " | 출처: 다나와자동차")
+    if len({p.split()[-1] for p in periods}) > 1:
+        st.caption("국산·수입 기준월이 다른 참고 순위입니다. 수입 8월 모델별 공개표 확인 전까지 7월을 유지합니다.")
+    st.caption("순위변동은 이전 앱 반영 순위 대비입니다. 가격표는 판매월과 별개로 확인된 최신 공식 자료를 연결합니다.")
 
 
 def show_rank_section(df: pd.DataFrame) -> None:
     st.markdown('<div class="mobile-section-title">🏆 국내 판매 차량 순위 TOP50</div>', unsafe_allow_html=True)
     st.dataframe(rank_table(df), width="stretch", hide_index=True, height=215)
-    st.caption("업데이트: 2026-08-13 | 판매실적 기준: 국산차 2026년 7월 · 수입차 2026년 7월 | 출처: 다나와자동차(KAMA·KAIDA 집계)")
+    show_sales_period(df)
     st.caption("표는 5위 정도만 보이도록 고정했습니다. 나머지 순위는 표 안에서 스크롤해 확인합니다.")
     filtered = filter_vehicles(df)
     st.caption(f"표시 차량: {len(filtered)}개")
@@ -523,6 +533,7 @@ def show_rank_section(df: pd.DataFrame) -> None:
 
 def show_pdf_section(df: pd.DataFrame) -> None:
     st.markdown('<div class="mobile-section-title">📄 공식 가격표·PDF 바로가기</div>', unsafe_allow_html=True)
+    show_sales_period(df)
     keyword = st.text_input("가격표 검색", placeholder="예: 쏘렌토, 그랜저, 카니발")
     filtered = df.copy()
     if keyword.strip():
@@ -602,7 +613,7 @@ def main() -> None:
         show_half_width_image(HEADER_IMAGE)
     else:
         st.markdown('<div style="font-size:2rem;font-weight:900;">🚗 영맨 헬퍼</div>', unsafe_allow_html=True)
-    df = load_vehicles(file_version(VEHICLE_MASTER), "2026-08-13-sales-and-news-refresh")
+    df = load_vehicles(file_version(VEHICLE_MASTER), "2026-09-10-all08")
     options = load_options(file_version(OPTION_SUMMARY))
     mentions = load_mentions(file_version(OPTION_MENTIONS))
     notifications = load_notifications(file_version(NOTIFICATIONS))

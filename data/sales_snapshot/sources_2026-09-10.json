@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-09-10",
+  "update_id": "2026-09-10-all08",
+  "selection": "Domestic and import data both available for August",
+  "sources": [
+    {
+      "market": "국산",
+      "period": "2026-08",
+      "url": "https://auto.danawa.com/auto/?Work=record&Tab=Model&Nation=domestic&Month=2026-08-00",
+      "coverage": "All 66 displayed rows, including commercial aggregates",
+      "records_saved": 66
+    },
+    {
+      "market": "수입",
+      "period": "2026-08",
+      "url": "https://auto.danawa.com/auto/?Work=record&Tab=Model&Nation=export&Month=2026-08-00",
+      "coverage": "Full 155-row table inspected; top 12 retained to establish the integrated TOP50 cutoff",
+      "records_inspected": 155,
+      "records_saved": 12,
+      "maximum_omitted_units": 445
+    }
+  ],
+  "method": {
+    "grain": "Brand and source model group; not individual trim or fuel variant",
+    "sort": "units_sold descending; stable source order for ties (domestic before import)",
+    "rank_movement": "Previous deployed July master snapshot; NEW means outside previous TOP50, not a new launch",
+    "caveat": "Domestic sales and import registrations are different measures. The combined list is a sales-support convenience ranking, not a market-share table.",
+    "normalization": [
+      "Hyundai 버스/트럭 (현대) -> 버스/트럭",
+      "Kia 버스/특수 (기아) -> 버스/특수",
+      "아반떼 and 디 올 뉴 아반떼 remain separate"
+    ]
+  },
+  "top50": {
+    "domestic_rows": 40,
+    "import_rows": 10,
+    "cutoff_units": 481,
+    "next_excluded": {
+      "brand": "BMW",
+      "model": "3 Series",
+      "units": 468
+    }
+  }
+}

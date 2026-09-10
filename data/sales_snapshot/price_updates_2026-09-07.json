@@ -1,0 +1,129 @@
+[
+  {
+    "brand": "현대",
+    "model": "디 올 뉴 아반떼",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante_price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante-catalog.pdf",
+    "note": "신형 디 올 뉴 아반떼 전용 공식 가격표. 기존 아반떼와 별도 집계",
+    "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+    "checked_at": "2026-09-07"
+  },
+  {
+    "brand": "현대",
+    "model": "아반떼",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/avante-2026-price.pdf",
+    "catalog_url": "",
+    "note": "이전 세대 아반떼(2026) 보관 가격표. 신형 가격표와 구분, 재고·판매조건은 별도 확인",
+    "source_url": "data/sales_snapshot/history/vehicle_master_2026-06-22.csv",
+    "checked_at": "2026-09-07"
+  },
+  {
+    "brand": "현대",
+    "model": "디 올 뉴 팰리세이드",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/palisade-2027-price.pdf",
+    "note": "현대 공식 다운로드 페이지의 2027 팰리세이드 가격표",
+    "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+    "checked_at": "2026-09-07"
+  },
+  {
+    "brand": "BMW",
+    "model": "5 Series",
+    "price_url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/august_2026_pricelist.pdf.asset.1787055301974.pdf",
+    "note": "BMW 코리아 공식 2026년 8월 통합 가격표 (9월 7일 공식 홈페이지 연결 확인)",
+    "source_url": "https://www.bmw.co.kr/ko/index.html",
+    "checked_at": "2026-09-07"
+  },
+  {
+    "brand": "BMW",
+    "model": "X3",
+    "price_url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/august_2026_pricelist.pdf.asset.1787055301974.pdf",
+    "note": "BMW 코리아 공식 2026년 8월 통합 가격표 (9월 7일 공식 홈페이지 연결 확인)",
+    "source_url": "https://www.bmw.co.kr/ko/index.html",
+    "checked_at": "2026-09-07"
+  },
+  {
+    "brand": "BMW",
+    "model": "X5",
+    "price_url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/august_2026_pricelist.pdf.asset.1787055301974.pdf",
+    "note": "BMW 코리아 공식 2026년 8월 통합 가격표 (9월 7일 공식 홈페이지 연결 확인)",
+    "source_url": "https://www.bmw.co.kr/ko/index.html",
+    "checked_at": "2026-09-07"
+  },
+  {
+    "brand": "르노",
+    "model": "그랑 콜레오스",
+    "price_url": "https://www.renault.co.kr/upload/asset/price/price_koleos_202609.pdf",
+    "note": "르노코리아 공식 2026년 9월 가격표",
+    "source_url": "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+    "segment": "SUV",
+    "checked_at": "2026-09-07"
+  },
+  {
+    "brand": "르노",
+    "model": "필랑트",
+    "price_url": "https://www.renault.co.kr/upload/asset/price/price_filante_202609.pdf",
+    "note": "르노코리아 공식 2026년 9월 가격표",
+    "source_url": "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+    "segment": "SUV",
+    "checked_at": "2026-09-07"
+  },
+  {
+    "brand": "르노",
+    "model": "아르카나",
+    "price_url": "https://www.renault.co.kr/upload/asset/price/price_Arkana_202609.pdf",
+    "note": "르노코리아 공식 2026년 9월 가격표",
+    "source_url": "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+    "segment": "SUV",
+    "checked_at": "2026-09-07"
+  },
+  {
+    "brand": "쉐보레",
+    "model": "트랙스 크로스오버",
+    "price_url": "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/10-pdf/2026%EB%85%84-9%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf",
+    "note": "쉐보레 공식 2026년 9월 전차종 가격표",
+    "source_url": "https://www.chevrolet.co.kr/finance/type-price",
+    "checked_at": "2026-09-07"
+  },
+  {
+    "brand": "KGM",
+    "model": "티볼리",
+    "price_url": "https://www.kg-mobility.com/attached/contents/display/file/2000001000100070004/20260828134154903_srUygq.pdf",
+    "note": "KGM 공식 티볼리 가격표 (9월 7일 공식 모델 페이지 연결 확인)",
+    "segment": "SUV",
+    "powertrain": "가솔린",
+    "target_tag": "개인/출퇴근/소형SUV/가성비",
+    "source_url": "https://www.kg-mobility.com/pr/model/show-room/200000100010007",
+    "checked_at": "2026-09-07"
+  },
+  {
+    "brand": "KGM",
+    "model": "무쏘",
+    "price_url": "https://www.kg-mobility.com/attached/contents/display/file/2000001000300040001/20260828134320306_jLO34o.pdf",
+    "note": "KGM 공식 무쏘 가격표 (9월 7일 공식 모델 페이지 연결 확인)",
+    "source_url": "https://www.kg-mobility.com/pr/model/show-room/200000100030004",
+    "checked_at": "2026-09-07"
+  },
+  {
+    "brand": "BYD",
+    "model": "SEALION 6 DM-i",
+    "price_url": "https://www.bydauto.kr/car/byd-sealion6",
+    "note": "BYD 코리아 공식 모델 페이지에 가격과 견적 연결 제공",
+    "segment": "SUV",
+    "powertrain": "플러그인 하이브리드",
+    "target_tag": "패밀리/장기렌트/하이브리드/레저",
+    "source_url": "https://www.bydauto.kr/car/byd-sealion6",
+    "checked_at": "2026-09-10"
+  },
+  {
+    "brand": "현대",
+    "model": "포터2 일렉트릭",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-electric-2026-price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-electric-catalog.pdf",
+    "note": "현대 공식 2026 포터 II 일렉트릭 가격표",
+    "segment": "상용/업무용",
+    "powertrain": "전기",
+    "target_tag": "법인/소상공인/물류/업무용",
+    "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/porter2-electric/intro",
+    "checked_at": "2026-09-10"
+  }
+]

@@ -5,6 +5,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
+from functools import lru_cache
 
 import pandas as pd
 import requests
@@ -26,9 +27,6 @@ PRICE_LABEL = "\uac00\uaca9\ud45c"
 EXTRA_PDF_LABEL = "\ucd94\uac00PDF"
 NOTICE_TITLE = "\uacf5\uc2dd {doc_type} \ubcc0\uacbd \uac10\uc9c0: {vehicle}"
 NOTICE_BODY = "\uacf5\uc2dd PDF/\uac00\uaca9\ud45c \ub9c1\ud06c\uc758 \ud30c\uc77c \ub0b4\uc6a9\uc774 \uc774\uc804 \uccb4\ud06c \ub300\ube44 \ubcc0\uacbd\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \uc0c1\ub2f4 \uc804 \ucd5c\uc2e0 \uac00\uaca9\ud45c\ub97c \ud655\uc778\ud574 \uc8fc\uc138\uc694."
-
-requests.packages.urllib3.disable_warnings()
-
 
 def now() -> str:
     return datetime.now().isoformat(timespec="seconds")
@@ -53,7 +51,7 @@ def browser_only_status(url: str) -> dict | None:
     host = urlparse(url).netloc.lower()
     if host in BROWSER_ONLY_HOSTS and not is_pdf_url(url):
         return {
-            "status_code": 200,
+            "status_code": "BROWSER_REQUIRED",
             "content_type": "browser-only/html",
             "content_length": 0,
             "sha256": "",
@@ -63,14 +61,16 @@ def browser_only_status(url: str) -> dict | None:
     return None
 
 
+@lru_cache(maxsize=256)
 def fetch_hash(url: str) -> dict:
     browser_only = browser_only_status(url)
     if browser_only:
         return browser_only
     headers = {"User-Agent": "Mozilla/5.0 YoungmanHelper/1.0"}
-    # Company SSL inspection can break cert validation for official carmaker sites.
-    res = requests.get(url, headers=headers, timeout=TIMEOUT, verify=False)
+    res = requests.get(url, headers=headers, timeout=TIMEOUT)
     content = res.content if res.ok and is_pdf_url(url) else b""
+    if content and not content.lstrip().startswith(b"%PDF-"):
+        raise ValueError("PDF URL returned non-PDF content")
     return {
         "status_code": res.status_code,
         "content_type": res.headers.get("Content-Type", ""),
