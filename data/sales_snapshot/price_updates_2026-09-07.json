@@ -5,6 +5,10 @@
     "price_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante_price.pdf",
     "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante-catalog.pdf",
     "note": "신형 디 올 뉴 아반떼 전용 공식 가격표. 기존 아반떼와 별도 집계",
+    "image_url": "https://www.hyundai.com/contents/repn-car/side-45/avante-27fc-45side.png",
+    "image_source_url": "https://www.hyundai.com/kr/ko/vehicles/avante",
+    "image_review_status": "approved",
+    "image_source_type": "official_site",
     "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
     "checked_at": "2026-09-07"
   },
@@ -46,6 +50,10 @@
     "model": "X5",
     "price_url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/august_2026_pricelist.pdf.asset.1787055301974.pdf",
     "note": "BMW 코리아 공식 2026년 8월 통합 가격표 (9월 7일 공식 홈페이지 연결 확인)",
+    "image_url": "https://bmw.scene7.com/is/image/BMW/BMW-SEPTEMBER2026-OFFERS-X5-xDrive40i?wid=1200&hei=800",
+    "image_source_url": "https://www.bmw.co.kr/ko/all-models/x-series/x5/bmw-x5.html",
+    "image_review_status": "approved",
+    "image_source_type": "official_site",
     "source_url": "https://www.bmw.co.kr/ko/index.html",
     "checked_at": "2026-09-07"
   },
@@ -65,6 +73,10 @@
     "note": "르노코리아 공식 2026년 9월 가격표",
     "source_url": "https://www.renault.co.kr/ko/side/catalog_download.jsp",
     "segment": "SUV",
+    "image_url": "https://cdn.renault.co.kr/ko/resource/img/main/img_banner_filante.webp",
+    "image_source_url": "https://cdn.renault.co.kr/ko/model/filante_overview.jsp",
+    "image_review_status": "approved",
+    "image_source_type": "official_site",
     "checked_at": "2026-09-07"
   },
   {
@@ -74,6 +86,10 @@
     "note": "르노코리아 공식 2026년 9월 가격표",
     "source_url": "https://www.renault.co.kr/ko/side/catalog_download.jsp",
     "segment": "SUV",
+    "image_url": "https://cdn.renault.co.kr/ko/resource/img/upload/asset/arkana/main/overview_main_pc.webp",
+    "image_source_url": "https://cdn.renault.co.kr/ko/model/arkana_overview.jsp?inBanner=RKMgnbOverviewArkana&inSeq=1",
+    "image_review_status": "approved",
+    "image_source_type": "official_site",
     "checked_at": "2026-09-07"
   },
   {
@@ -81,6 +97,10 @@
     "model": "트랙스 크로스오버",
     "price_url": "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/10-pdf/2026%EB%85%84-9%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf",
     "note": "쉐보레 공식 2026년 9월 전차종 가격표",
+    "image_url": "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/suvs/2026/trax/masthead/v3/trax-mast-l-xl.jpg?imwidth=1200",
+    "image_source_url": "https://www.chevrolet.co.kr/cuvs/trax-crossover",
+    "image_review_status": "approved",
+    "image_source_type": "official_site",
     "source_url": "https://www.chevrolet.co.kr/finance/type-price",
     "checked_at": "2026-09-07"
   },
@@ -92,6 +112,10 @@
     "segment": "SUV",
     "powertrain": "가솔린",
     "target_tag": "개인/출퇴근/소형SUV/가성비",
+    "image_url": "https://www.kg-mobility.com/images/od/img-car-tivoli.png",
+    "image_source_url": "https://www.kg-mobility.com/pr/model/show-room/200000100010007",
+    "image_review_status": "approved",
+    "image_source_type": "official_site",
     "source_url": "https://www.kg-mobility.com/pr/model/show-room/200000100010007",
     "checked_at": "2026-09-07"
   },
@@ -161,6 +185,10 @@
     "segment": "SUV",
     "powertrain": "플러그인 하이브리드",
     "target_tag": "패밀리/장기렌트/하이브리드/레저",
+    "image_url": "https://www.bydauto.kr/static/video/car/poster/byd_sealion6.jpg",
+    "image_source_url": "https://www.bydauto.kr/car/byd-sealion6",
+    "image_review_status": "approved",
+    "image_source_type": "official_site",
     "source_url": "https://www.bydauto.kr/car/byd-sealion6",
     "checked_at": "2026-09-10"
   },
@@ -173,6 +201,10 @@
     "segment": "상용/업무용",
     "powertrain": "전기",
     "target_tag": "법인/소상공인/물류/업무용",
+    "image_url": "https://www.hyundai.com/contents/repn-car/side-45/porter2-electric-26my-45side.png",
+    "image_source_url": "https://www.hyundai.com/kr/ko/e/vehicles/porter2-electric/intro",
+    "image_review_status": "approved",
+    "image_source_type": "official_site",
     "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/porter2-electric/intro",
     "checked_at": "2026-09-10"
   }
