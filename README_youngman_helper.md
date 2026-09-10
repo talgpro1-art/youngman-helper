@@ -72,6 +72,8 @@ python scripts\update_notifications.py
 python scripts\check_price_links.py
 ```
 
+이 검사는 링크가 열리는지와 PDF 파일 변경 여부뿐 아니라, PDF 안에서 해당 차량명을 찾을 수 있는지도 확인합니다. 앱의 차량 카드와 가격표 화면에는 최근 검수일과 `차종 일치`, `공식 페이지`, `브라우저 확인`, `확인 필요` 상태가 표시됩니다.
+
 판매순위 갱신:
 
 ```powershell

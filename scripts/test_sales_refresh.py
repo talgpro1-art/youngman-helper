@@ -78,6 +78,32 @@ class SalesRefreshTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 checker.fetch_hash('https://example.com/price.pdf')
 
+    def test_pdf_model_name_verification(self):
+        matched = checker.semantic_verification(
+            '쏘렌토',
+            'https://example.com/price.pdf',
+            {'status_code': 200, '_pdf_text': 'The 2027 KIA SORENTO 가격표'},
+        )
+        self.assertEqual(matched[0], 'MATCHED')
+        mismatch = checker.semantic_verification(
+            '쏘렌토',
+            'https://example.com/price.pdf',
+            {'status_code': 200, '_pdf_text': 'KIA CARNIVAL PRICE LIST'},
+        )
+        self.assertEqual(mismatch[0], 'MISMATCH')
+        degraded = checker.semantic_verification(
+            'SEALION 7',
+            'https://example.com/catalog.pdf',
+            {'status_code': 200, '_pdf_text': 'BYD SEALION \ufffd SPECIFICATIONS'},
+        )
+        self.assertEqual(degraded[0], 'TEXT_UNAVAILABLE')
+        official_page = checker.semantic_verification(
+            'G80',
+            'https://www.genesis.com/price-list',
+            {'status_code': 200},
+        )
+        self.assertEqual(official_page[0], 'OFFICIAL_PAGE')
+
 
 if __name__ == '__main__':
     unittest.main()

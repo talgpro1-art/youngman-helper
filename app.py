@@ -16,6 +16,7 @@ VEHICLE_MASTER = ROOT / "vehicle_master.csv"
 OPTION_SUMMARY = ROOT / "data" / "option_summary.csv"
 OPTION_MENTIONS = ROOT / "data" / "option_mentions.csv"
 NOTIFICATIONS = ROOT / "data" / "notifications.json"
+LINK_STATUS = ROOT / "data" / "link_status.csv"
 NEWCAR_ROADMAP = ROOT / "data" / "newcar_roadmap.csv"
 NEWCAR_ROADMAP_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTTCzFCPz6nPFnu-oRoTjB16Ng7hhPAy811JU3DZcnSKglptFHHf3hLOVIXN4Y-yis7_RZhK52_Ys1m/pub?gid=1952505960&single=true&output=csv"
 CAR_IMAGE_DIR = ROOT / "assets" / "cars"
@@ -81,6 +82,9 @@ st.markdown(
     .pdf-button.secondary{background:#374151;}
     .pdf-button.disabled{background:#e5e7eb;color:#6b7280!important;pointer-events:none;font-weight:850;}
     .card-note{color:#9ca3af;font-size:.76rem;line-height:1.35;margin-top:.42rem;}
+    .price-audit{font-size:.74rem;line-height:1.35;margin-top:.42rem;font-weight:800;color:#166534;}
+    .price-audit.review{color:#92400e;}
+    .price-audit.error{color:#b91c1c;}
     .option-card,.effect-card{border:1px solid #e5e7eb;border-radius:14px;padding:.95rem;margin-bottom:.65rem;background:#fff;box-shadow:0 2px 8px rgba(15,23,42,.04);}
     .option-name,.effect-title{font-size:1rem;font-weight:900;margin-bottom:.35rem;color:#111827;}
     .option-label{display:inline-block;font-size:.74rem;font-weight:850;color:#4b5563;background:#f3f4f6;border-radius:999px;padding:.15rem .48rem;margin:.45rem 0 .25rem 0;}
@@ -151,6 +155,8 @@ def is_hybrid_price_url(url: str) -> bool:
 
 def price_button_label(url: str, has_hybrid_pair: bool = False) -> str:
     lower = safe_str(url).lower()
+    if "mercedes-benz.co.kr/passengercars/models/price-list" in lower or "hyundai.com/kr/ko/c/purchase-guid/catalog" in lower:
+        return "공식 전체 가격표"
     if "genesis.com/kr/ko/support/download-center" in lower:
         return "공홈 가격표/카탈로그 보기"
     if not is_pdf_url(url):
@@ -268,6 +274,20 @@ def load_notifications(version: int) -> list[dict]:
     return [item for item in data if isinstance(item, dict)]
 
 
+@st.cache_data(show_spinner=False)
+def load_price_checks(version: int) -> pd.DataFrame:
+    columns = ["vehicle", "verification_status", "verification_detail", "checked_at"]
+    if not LINK_STATUS.exists():
+        return pd.DataFrame(columns=columns)
+    df = pd.read_csv(LINK_STATUS, dtype=str).fillna("")
+    df.columns = [c.replace("\ufeff", "").strip() for c in df.columns]
+    for col in columns + ["doc_type"]:
+        if col not in df.columns:
+            df[col] = ""
+    df = df[df["doc_type"].astype(str).eq("가격표")].copy()
+    return df.sort_values("checked_at").drop_duplicates("vehicle", keep="last")[columns]
+
+
 @st.cache_data(show_spinner=False, ttl=600)
 def load_newcar_roadmap() -> pd.DataFrame:
     try:
@@ -314,6 +334,26 @@ def confidence_label(value: object) -> str:
 
 def price_status_label(value: object) -> str:
     return {"available": "가격표 있음", "pending": "가격표 대기", "none": "가격표 없음"}.get(safe_str(value).lower(), "가격표 확인중")
+
+
+def price_verification_label(value: object) -> str:
+    return {
+        "MATCHED": "차종 일치",
+        "OFFICIAL_PAGE": "공식 페이지",
+        "BROWSER_REQUIRED": "브라우저 확인",
+        "TEXT_UNAVAILABLE": "내용 확인 필요",
+        "MISMATCH": "차종 불일치 의심",
+        "ERROR": "링크 오류",
+    }.get(safe_str(value).upper(), "검수 대기")
+
+
+def price_audit_html(row: pd.Series) -> str:
+    status = safe_str(row.get("verification_status"))
+    label = price_verification_label(status)
+    checked = safe_str(row.get("price_checked_at"))[:10]
+    css = "error" if status.upper() in {"MISMATCH", "ERROR"} else "review" if status.upper() in {"BROWSER_REQUIRED", "TEXT_UNAVAILABLE"} else ""
+    suffix = f" · {checked}" if checked else ""
+    return f'<div class="price-audit {css}">가격표 검수: {html_text(label + suffix)}</div>'
 
 
 def notification_meta(item: dict) -> str:
@@ -488,6 +528,7 @@ def show_vehicle_card(row: pd.Series) -> None:
         link_html = '<span class="compact-link disabled">공식 PDF 확인 필요</span>'
     note = safe_str(row.get("note"))
     note_html = f'<div class="card-note">비고: {html_text(note)}</div>' if note else ""
+    audit_html = price_audit_html(row)
     status_html = '<span class="status-badge">확인 필요</span>' if safe_str(row.get("active"), "Y").upper() == "N" else ""
     thumb_html = vehicle_thumb_html(vehicle_image_source(row), name)
     meta = f"{units} · {segment or '차급 업데이트 예정'}"
@@ -497,18 +538,18 @@ def show_vehicle_card(row: pd.Series) -> None:
     <div class="vehicle-card">
       <div class="vehicle-card-head"><div><span class="rank-badge">{html_text(rank)}위</span><span class="rank-change">{html_text(rank_change)}</span></div>
       <div><div class="vehicle-name">{html_text(name)}{status_html}</div><div class="vehicle-meta">{html_text(meta)}</div></div></div>
-      <div class="vehicle-main"><div>{thumb_html}</div><div>{tag_html}<div class="vehicle-actions">{link_html}</div>{note_html}</div></div>
+      <div class="vehicle-main"><div>{thumb_html}</div><div>{tag_html}<div class="vehicle-actions">{link_html}</div>{audit_html}{note_html}</div></div>
     </div>
     """, unsafe_allow_html=True)
 
 
 def rank_table(df: pd.DataFrame) -> pd.DataFrame:
-    table = df[["rank", "rank_change", "vehicle_name", "source_period", "units_sold", "segment", "has_pdf", "active"]].copy()
+    table = df[["rank", "rank_change", "vehicle_name", "source_period", "units_sold", "segment", "verification_status", "active"]].copy()
     table["rank_change"] = table["rank_change"].apply(display_rank_change)
     table["units_sold"] = table["units_sold"].apply(display_units)
-    table["has_pdf"] = table["has_pdf"].map(lambda ready: "있음" if ready else "확인 필요")
+    table["verification_status"] = table["verification_status"].map(price_verification_label)
     table["active"] = table["active"].astype(str).str.upper().map(lambda value: "확인 필요" if value == "N" else "활성")
-    table.columns = ["순위", "이전 대비", "차량", "기준월", "판매/등록대수", "차급", "공식링크", "상태"]
+    table.columns = ["순위", "이전 대비", "차량", "기준월", "판매/등록대수", "차급", "가격표 검수", "상태"]
     return table
 
 
@@ -549,6 +590,8 @@ def show_pdf_section(df: pd.DataFrame) -> None:
                 render_link_button("", "공식 가격표 보기", disabled_label="공식 PDF 확인 필요")
             if safe_str(row.get("note")):
                 st.caption(f"비고: {safe_str(row.get('note'))}")
+            checked = safe_str(row.get("price_checked_at"))[:10]
+            st.caption(f"가격표 검수: {price_verification_label(row.get('verification_status'))}" + (f" · {checked}" if checked else ""))
 
 
 def show_option_section(df: pd.DataFrame, options: pd.DataFrame, mentions: pd.DataFrame) -> None:
@@ -602,10 +645,12 @@ def show_effect_section() -> None:
 
 def show_summary_metrics(df: pd.DataFrame) -> None:
     st.markdown('<div class="mobile-section-title">운영 데이터 요약</div>', unsafe_allow_html=True)
-    m1, m2, m3 = st.columns(3)
+    m1, m2, m3, m4 = st.columns(4)
     m1.metric("관리 차종", f"{len(df)}개")
     m2.metric("공식링크", f"{int(df['has_pdf'].sum()) if not df.empty else 0}개")
     m3.metric("활성", f"{int((df['active'].astype(str).str.upper() == 'Y').sum()) if not df.empty else 0}개")
+    verified = df["verification_status"].astype(str).str.upper().isin({"MATCHED", "OFFICIAL_PAGE", "BROWSER_REQUIRED"}).sum() if not df.empty else 0
+    m4.metric("가격표 검수기록", f"{int(verified)}개")
 
 
 def main() -> None:
@@ -613,7 +658,14 @@ def main() -> None:
         show_half_width_image(HEADER_IMAGE)
     else:
         st.markdown('<div style="font-size:2rem;font-weight:900;">🚗 영맨 헬퍼</div>', unsafe_allow_html=True)
-    df = load_vehicles(file_version(VEHICLE_MASTER), "2026-09-10-all08")
+    df = load_vehicles(file_version(VEHICLE_MASTER), "2026-09-10-price-audit")
+    price_checks = load_price_checks(file_version(LINK_STATUS))
+    if not price_checks.empty:
+        price_checks = price_checks.rename(columns={"checked_at": "price_checked_at"})
+        df = df.merge(price_checks, on="vehicle", how="left")
+    for col in ["verification_status", "verification_detail", "price_checked_at"]:
+        if col not in df.columns:
+            df[col] = ""
     options = load_options(file_version(OPTION_SUMMARY))
     mentions = load_mentions(file_version(OPTION_MENTIONS))
     notifications = load_notifications(file_version(NOTIFICATIONS))
