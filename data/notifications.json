@@ -1,16 +1,6 @@
 [
   {
-    "date": "2026-09-09",
-    "brand": "기아",
-    "model": "카니발",
-    "title": "공식 가격표 변경 감지: 기아 카니발",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-09-09",
+    "date": "2026-09-10",
     "brand": "",
     "model": "",
     "title": "최근 검증 완료된 주요 신차/가격표 이슈가 없습니다.",
