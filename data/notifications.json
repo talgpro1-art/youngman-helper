@@ -1,13 +1,15 @@
 [
   {
-    "date": "2026-09-12",
-    "brand": "",
-    "model": "",
-    "title": "최근 검증 완료된 주요 신차/가격표 이슈가 없습니다.",
-    "body": "구글시트 검증 기준을 통과한 최근 7일 이내 신차·가격표 소식이 없습니다.",
-    "link": "",
-    "published": "",
-    "severity": "info",
+    "date": "2026-09-07",
+    "article_date": "2026-09-07",
+    "brand": "테슬라",
+    "model": "모델 3 퍼포먼스",
+    "vehicle": "테슬라 모델 3 퍼포먼스",
+    "title": "테슬라 모델 3 퍼포먼스... 주행거리 24km 늘리고 출력 향상 - 오토뷰",
+    "body": "테슬라 모델 3 퍼포먼스 모델의 주행거리가 기존 대비 24km 늘어나고 동력 성능이 향상되었다는 소식입니다.",
+    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9NNWEtYlFvTHhCUnRPTUJXd0VaVDFiSlF3VkZJeV9RUG1zai14TVJEd2lkeDlXOUd6aUE4eUVtSjZRV2Nkaldsb2paX1VyU2h1UDl1OGpoRERDMHRH?oc=5",
+    "published": "2026-09-07T17:55:00+09:00",
+    "severity": "warning",
     "source": "newcar_watch_verified"
   }
 ]
