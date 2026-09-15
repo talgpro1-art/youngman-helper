@@ -1,14 +1,24 @@
 [
   {
-    "date": "2026-09-07",
-    "article_date": "2026-09-07",
-    "brand": "테슬라",
-    "model": "모델 3 퍼포먼스",
-    "vehicle": "테슬라 모델 3 퍼포먼스",
-    "title": "테슬라 모델 3 퍼포먼스... 주행거리 24km 늘리고 출력 향상 - 오토뷰",
-    "body": "테슬라 모델 3 퍼포먼스 모델의 주행거리가 기존 대비 24km 늘어나고 동력 성능이 향상되었다는 소식입니다.",
-    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9NNWEtYlFvTHhCUnRPTUJXd0VaVDFiSlF3VkZJeV9RUG1zai14TVJEd2lkeDlXOUd6aUE4eUVtSjZRV2Nkaldsb2paX1VyU2h1UDl1OGpoRERDMHRH?oc=5",
-    "published": "2026-09-07T17:55:00+09:00",
+    "date": "2026-09-15",
+    "brand": "기아",
+    "model": "카니발",
+    "title": "공식 가격표 변경 감지: 기아 카니발",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-09-14",
+    "article_date": "2026-09-14",
+    "brand": "기아",
+    "model": "스포티지",
+    "vehicle": "기아 더 뉴 스포티지",
+    "title": "“이게 기본?” 2,944만원 신형 스포티지, 풀체인지 앞두고 파격 구성 - 뉴스와",
+    "body": "기아 신형 스포티지의 시작 가격이 2,944만 원으로 책정되었으며, 상품성이 대폭 강화된 구성으로 출시되었다는 소식입니다.",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeXpCOGY3dFhvclRhZ2xvNjdfYURLbFVNd0lMM2RfLU5PcGF6d05xNklZdjI0dVpPNUJvUnZNSUE4X1k3VkhzSjNnSTBPRll0ZVFVRDZMUWhUeXJvdG8zc1BlWUpZaHNGcVdhd05CSGV6aGxRQkFENG9Zd3BZdFR5eHpYNA?oc=5",
+    "published": "2026-09-14T13:33:43+09:00",
     "severity": "warning",
     "source": "newcar_watch_verified"
   }
