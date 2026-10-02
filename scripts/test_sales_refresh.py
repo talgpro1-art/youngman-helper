@@ -100,6 +100,8 @@ class SalesRefreshTests(unittest.TestCase):
         module = ast.Module(body=[node for node in tree.body if isinstance(node, ast.FunctionDef) and node.name in names], type_ignores=[])
         scope = {'pd': pd}
         exec(compile(module, 'app.py', 'exec'), scope)
+        self.assertFalse(scope['is_hybrid_price_url']('https://www.chevrolet.co.kr/chevrolet-price.pdf'))
+        self.assertEqual(scope['price_button_label']('https://www.chevrolet.co.kr/chevrolet-price.pdf'), '공식 가격표')
         links = scope['price_links'](pd.Series({'price_url': 'https://example.com/model-price.pdf', 'catalog_url': 'https://example.com/model-catalog.pdf'}))
         self.assertEqual([item[1] for item in links], ['공식 가격표', '공식 카탈로그'])
         links = scope['price_links'](pd.Series({'price_url': 'https://example.com/model-price.pdf', 'catalog_url': 'https://example.com/model-hev-price.pdf'}))

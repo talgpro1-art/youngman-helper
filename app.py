@@ -149,8 +149,9 @@ def is_pdf_url(url: str) -> bool:
 
 
 def is_hybrid_price_url(url: str) -> bool:
-    clean = safe_str(url).lower()
-    return "hybrid" in clean or "hev" in clean
+    filename = safe_str(url).split("?", 1)[0].split("#", 1)[0].rsplit("/", 1)[-1].lower()
+    tokens = filename.replace("-", "_").replace(".", "_").split("_")
+    return "hybrid" in filename or "hev" in tokens or "phev" in tokens
 
 
 def price_button_label(url: str, has_hybrid_pair: bool = False) -> str:
