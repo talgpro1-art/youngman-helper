@@ -1,0 +1,823 @@
+{
+  "checked_at": "2026-10-02",
+  "scope": "50 models; official currently advertised document links and applicable model/variant reviewed",
+  "notes": [
+    "Latest official price-list link may retain an earlier publication month. BMW is September 2026; Mercedes price list is October 2 with April 24/model-year 2026 catalogs.",
+    "Genesis model-selected official download landing pages retained; advertised October filenames verified, downstream PDF bytes not independently downloaded.",
+    "Illustrated trim and price/catalog scope may differ; follow per-model applicability notes."
+  ],
+  "records": [
+    {
+      "brand": "BMW",
+      "model": "5 Series",
+      "price_url": "https://bmwfinancial.co.kr/bmw/bmw-pricelist-pdf/september_2026_pricelist.pdf",
+      "catalog_url": "",
+      "note": "BMW 코리아 공식 2026년 9월 통합 가격표 (10월 2일 공식 홈페이지 연결 및 차종 적용 확인)",
+      "source_url": "https://www.bmw.co.kr/ko/index.html",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official_link",
+      "uncertainty": "10월 2일 현재 공식 홈페이지가 제공하는 최신 연결본은 9월판이다. 모델 페이지 3곳에서 카탈로그 PDF 링크는 발견하지 못하여 기존 빈 catalog_url을 유지한다.",
+      "pdf_revision": "2026-09",
+      "evidence_summary": [
+        "공식 홈페이지 BMW 구매 정보의 가격표 링크가 해당 BMW Financial PDF로 연결됨",
+        "PDF 자체 제목과 기준일: BMW 가격표, 2026년 9월 기준; VAT 포함 권장소비자가격",
+        "BMW 5시리즈 세단: 520i/530i, 523d, 530e/550e 포함",
+        "PDF 다운로드 성공 및 텍스트 확인; 10월판 주소를 추측하지 않음"
+      ]
+    },
+    {
+      "brand": "BMW",
+      "model": "X3",
+      "price_url": "https://bmwfinancial.co.kr/bmw/bmw-pricelist-pdf/september_2026_pricelist.pdf",
+      "catalog_url": "",
+      "note": "BMW 코리아 공식 2026년 9월 통합 가격표 (10월 2일 공식 홈페이지 연결 및 차종 적용 확인)",
+      "source_url": "https://www.bmw.co.kr/ko/index.html",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official_link",
+      "uncertainty": "10월 2일 현재 공식 홈페이지가 제공하는 최신 연결본은 9월판이다. 모델 페이지 3곳에서 카탈로그 PDF 링크는 발견하지 못하여 기존 빈 catalog_url을 유지한다.",
+      "pdf_revision": "2026-09",
+      "evidence_summary": [
+        "공식 홈페이지 BMW 구매 정보의 가격표 링크가 해당 BMW Financial PDF로 연결됨",
+        "PDF 자체 제목과 기준일: BMW 가격표, 2026년 9월 기준; VAT 포함 권장소비자가격",
+        "뉴 X3: 20/30 xDrive, M50 xDrive, 20d xDrive 포함",
+        "PDF 다운로드 성공 및 텍스트 확인; 10월판 주소를 추측하지 않음"
+      ]
+    },
+    {
+      "brand": "BMW",
+      "model": "X5",
+      "price_url": "https://bmwfinancial.co.kr/bmw/bmw-pricelist-pdf/september_2026_pricelist.pdf",
+      "catalog_url": "",
+      "note": "BMW 코리아 공식 2026년 9월 통합 가격표 (10월 2일 공식 홈페이지 연결 및 차종 적용 확인)",
+      "source_url": "https://www.bmw.co.kr/ko/index.html",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official_link",
+      "uncertainty": "10월 2일 현재 공식 홈페이지가 제공하는 최신 연결본은 9월판이다. 모델 페이지 3곳에서 카탈로그 PDF 링크는 발견하지 못하여 기존 빈 catalog_url을 유지한다.",
+      "pdf_revision": "2026-09",
+      "evidence_summary": [
+        "공식 홈페이지 BMW 구매 정보의 가격표 링크가 해당 BMW Financial PDF로 연결됨",
+        "PDF 자체 제목과 기준일: BMW 가격표, 2026년 9월 기준; VAT 포함 권장소비자가격",
+        "X5: 40i/M60i, 30d/40d, 50e 및 M 컴페티션 포함",
+        "PDF 다운로드 성공 및 텍스트 확인; 10월판 주소를 추측하지 않음"
+      ]
+    },
+    {
+      "brand": "벤츠",
+      "model": "E-Class",
+      "price_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261002.pdf",
+      "catalog_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/model/catalog/2026/Mercedes-Benz_The%20new%20E-Class_Catalogue_20260424.pdf",
+      "note": "벤츠 코리아 공식 2026년 10월 2일 통합 가격표. 카탈로그는 공식 최신 연결본인 2026년 4월 24일·26년식 기준",
+      "source_url": "https://www.mercedes-benz.co.kr/passengercars/models/price-list.html",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official_link",
+      "uncertainty": "가격표는 2026-10-02판이나 카탈로그는 2026-04-24/26년식이다. 특히 GLC 27년식 사양 전체를 이 카탈로그가 보증하지 않는다. 실제 판매가격/옵션은 공식 딜러 확인 대상.",
+      "pdf_revision": "2026-10-02",
+      "catalog_revision": "2026-04-24",
+      "catalog_model_year": "2026",
+      "evidence_summary": [
+        "클라우드 브라우저의 공식 차량 가격표 페이지가 전체 차량 가격표 다운로드로 261002 PDF를 제공함",
+        "다운로드한 PDF 내 인쇄일 2026.10.02와 차종 적용을 텍스트 및 렌더링으로 확인",
+        "E-Class 26년식 E200/E220d/E300/E350e/E450 가격 확인",
+        "공식 catalog.html 페이지의 해당 모델 카탈로그 링크와 다운로드 PDF 표지를 확인. 두 카탈로그 모두 2026-04-24, 26년식 기준 명시"
+      ]
+    },
+    {
+      "brand": "벤츠",
+      "model": "GLC-Class",
+      "price_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261002.pdf",
+      "catalog_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/model/catalog/2026/The%20new%20GLC%20n%20GLC%20Coupe_Catalogue_20260424.pdf",
+      "note": "벤츠 코리아 공식 2026년 10월 2일 통합 가격표. GLC·GLC Coupé 카탈로그는 26년식 기준으로 27년식 사양과 구분",
+      "source_url": "https://www.mercedes-benz.co.kr/passengercars/models/price-list.html",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official_link",
+      "uncertainty": "가격표는 2026-10-02판이나 카탈로그는 2026-04-24/26년식이다. 특히 GLC 27년식 사양 전체를 이 카탈로그가 보증하지 않는다. 실제 판매가격/옵션은 공식 딜러 확인 대상.",
+      "pdf_revision": "2026-10-02",
+      "catalog_revision": "2026-04-24",
+      "catalog_model_year": "2026",
+      "evidence_summary": [
+        "클라우드 브라우저의 공식 차량 가격표 페이지가 전체 차량 가격표 다운로드로 261002 PDF를 제공함",
+        "다운로드한 PDF 내 인쇄일 2026.10.02와 차종 적용을 텍스트 및 렌더링으로 확인",
+        "GLC SUV 26·27년식 220d/300 및 GLC Coupé 별도 가격 확인",
+        "공식 catalog.html 페이지의 해당 모델 카탈로그 링크와 다운로드 PDF 표지를 확인. 두 카탈로그 모두 2026-04-24, 26년식 기준 명시"
+      ]
+    },
+    {
+      "brand": "테슬라",
+      "model": "Model Y",
+      "price_url": "https://www.tesla.com/ko_kr/modely/design",
+      "catalog_url": "",
+      "note": "Tesla 대한민국 공식 Model Y 가격·구성 페이지 (10월 2일 한국 트림·원화 표시 확인)",
+      "source_url": "https://www.tesla.com/ko_kr/modely/design",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official_link",
+      "uncertainty": "동적 가격 구성기이며 별도 가격표 PDF는 확인하지 않았다. 일반 Model Y와 Model Y L을 혼동하지 말 것. 실시간 가격·옵션·혜택은 변동 가능.",
+      "verification_method": "cloud_browser_visible_dom",
+      "evidence_summary": [
+        "클라우드 브라우저 최종 URL /ko_kr/modely/design#overview, 한국어·KR 표기 확인",
+        "프리미엄 RWD 49,990,000원, 프리미엄 Long Range AWD 66,990,000원 표시; Y L 프리미엄 AWD 72,990,000원도 별도 선택지로 제공"
+      ]
+    },
+    {
+      "brand": "테슬라",
+      "model": "Model 3",
+      "price_url": "https://www.tesla.com/ko_kr/model3/design",
+      "catalog_url": "",
+      "note": "Tesla 대한민국 공식 Model 3 가격·구성 페이지 (10월 2일 한국 트림·원화 표시 확인)",
+      "source_url": "https://www.tesla.com/ko_kr/model3",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official_link",
+      "uncertainty": "기존 모델 소개 페이지는 클라우드에서 최초 한국어 표시 후 en_gb로 지역 리디렉션됨. 한국 구성기는 한국어·원화 유지. 별도 가격표 PDF는 확인하지 않았다.",
+      "verification_method": "cloud_browser_visible_dom",
+      "evidence_summary": [
+        "한국 모델 소개 페이지가 주문하기 링크로 /ko_kr/model3/design을 제공하는 것을 확인",
+        "구성기 최종 URL /ko_kr/model3/design#overview, 한국어 및 RWD 46,990,000원, Premium Long Range RWD 59,990,000원, Performance AWD 69,990,000원 표시 확인"
+      ]
+    },
+    {
+      "brand": "BYD",
+      "model": "Dolphin",
+      "price_url": "https://www.bydauto.kr/purchase/build-my-car/dolphin",
+      "catalog_url": "https://www.bydauto.kr/static/file/BYD_DOLPHIN_Catalog.pdf",
+      "note": "BYD 코리아 공식 견적·카탈로그. 카탈로그 대표 성능은 Active 기준, 기본형과 구분",
+      "source_url": "https://www.bydauto.kr/car/byd-dolphin",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official_link",
+      "uncertainty": "카탈로그 본문에 발행일은 확인되지 않아 연월을 추정하지 않는다. Active 대표 성능/이미지를 기본형의 사양으로 단정하지 않는다.",
+      "verification_method": "official_link_html_plus_cloud_browser_and_rendered_pdf",
+      "evidence_summary": [
+        "공식 모델 페이지에 DOLPHIN 2,450만원 / Active 2,920만원 표시",
+        "공식 모델 HTML이 기존 견적 URL 및 카탈로그 PDF를 직접 연결",
+        "클라우드 견적 화면에 DOLPHIN/Active 트림 및 기본형 24,500,000원 표시",
+        "카탈로그 12쪽 다운로드·렌더링 확인; 표지에 Active 기준 제작 명시, 후반 사양표에 기본형/Active 구분"
+      ]
+    },
+    {
+      "brand": "BYD",
+      "model": "SEALION 7",
+      "price_url": "https://www.bydauto.kr/purchase/build-my-car/sealion7",
+      "catalog_url": "https://www.bydauto.kr/static/file/BYD_SEALION_7_Catalog.pdf",
+      "note": "BYD 코리아 공식 견적·카탈로그. 기본·Plus·Dynamic AWD 적용 확인",
+      "source_url": "https://www.bydauto.kr/car/byd-sealion7",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official_link",
+      "uncertainty": "PDF 일부 숫자/한글 텍스트 추출이 깨지지만 렌더링은 정상이다. 공식 연결본의 발행일은 확인되지 않았다.",
+      "verification_method": "official_link_html_plus_cloud_browser_and_rendered_pdf",
+      "evidence_summary": [
+        "공식 모델 페이지에 기본 4,490만원 / Plus 4,690만원 / Dynamic AWD 5,390만원 표시",
+        "공식 모델 HTML이 기존 견적 URL 및 카탈로그 PDF를 직접 연결",
+        "클라우드 견적 화면에 세 트림 및 기본형 44,900,000원 표시",
+        "10쪽 PDF를 렌더링 확인. 9쪽 사양표에 SEALION 7 / Plus / Dynamic AWD, RWD와 AWD 구분 정상 표시"
+      ]
+    },
+    {
+      "brand": "BYD",
+      "model": "SEALION 6 DM-i",
+      "price_url": "https://www.bydauto.kr/purchase/build-my-car/sealion6",
+      "catalog_url": "https://www.bydauto.kr/static/file/BYD_SEALION_6_DM-i_Catalog.pdf",
+      "note": "BYD 코리아 공식 SEALION 6 DM-i 견적·카탈로그 (PHEV 전용 적용 확인)",
+      "source_url": "https://www.bydauto.kr/car/byd-sealion6",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official_link",
+      "uncertainty": "카탈로그 일부 텍스트 추출이 깨지지만 렌더링 정상. 문서 내 발행일은 확인되지 않았다.",
+      "verification_method": "official_link_html_plus_cloud_browser_and_rendered_pdf",
+      "evidence_summary": [
+        "공식 모델 페이지에 SEALION 6 DM-i 3,750만원 표시",
+        "공식 모델 HTML이 /purchase/build-my-car/sealion6 및 신규 제공 카탈로그 PDF를 직접 연결",
+        "클라우드 견적 화면의 SEALION 6 DM-i 단일 트림과 37,500,000원 표시 확인",
+        "11쪽 PDF 표지·마지막 페이지에 SEALION 6 DM-i 표시, 10쪽 사양표의 1.5T PHEV, 18.3kWh, FWD 적용 확인"
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "쏘렌토",
+      "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf",
+      "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_sorento.pdf",
+      "note": "기아 공식 가격표·카탈로그 PDF",
+      "source_url": "https://www.kia.com/kr/vehicles/sorento/features",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_document_period_from_pdf_title": "2026-10",
+        "verification_scope": "Official feature page explicitly links these documents; price PDF fully downloaded and text/metadata checked; catalog URL returned HTTP 200 application/pdf with PDF magic bytes."
+      }
+    },
+    {
+      "brand": "현대",
+      "model": "더 뉴 그랜저",
+      "price_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-grandeur-price.pdf",
+      "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-grandeur-catalog.pdf",
+      "note": "현대 공식 다운로드 목록에서 확인한 더 뉴 그랜저 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도",
+      "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "content_verified": "Downloaded both PDFs and extracted text; model and variant checked",
+        "price_document_first_line": "더 뉴 그랜저",
+        "separate_hybrid_price_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-grandeur-hybrid-price.pdf"
+      }
+    },
+    {
+      "brand": "기아",
+      "model": "카니발",
+      "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf",
+      "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_carnival.pdf",
+      "note": "기아 공식 가격표·카탈로그 PDF",
+      "source_url": "https://www.kia.com/kr/vehicles/carnival/features",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_document_period_from_pdf_title": "2026-10",
+        "verification_scope": "Official feature page explicitly links these documents; price PDF fully downloaded and text/metadata checked; catalog URL returned HTTP 200 application/pdf with PDF magic bytes."
+      }
+    },
+    {
+      "brand": "기아",
+      "model": "스포티지",
+      "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sportage.pdf",
+      "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_sportage.pdf",
+      "note": "기아 공식 가격표·카탈로그 PDF",
+      "source_url": "https://www.kia.com/kr/vehicles/sportage/features",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_document_period_from_pdf_title": "2026-10",
+        "verification_scope": "Official feature page explicitly links these documents; price PDF fully downloaded and text/metadata checked; catalog URL returned HTTP 200 application/pdf with PDF magic bytes."
+      }
+    },
+    {
+      "brand": "현대",
+      "model": "포터2",
+      "price_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-2026-price.pdf",
+      "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-catalog.pdf",
+      "note": "현대 공식 다운로드 목록에서 확인한 포터 II 가격표·카탈로그 (2026-10-02 확인); 일반차 기준, 특장차 가격표 별도",
+      "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "content_verified": "Downloaded both PDFs and extracted text; model and variant checked",
+        "price_document_first_line": "2026 포터 II"
+      }
+    },
+    {
+      "brand": "현대",
+      "model": "싼타페",
+      "price_url": "https://www.hyundai.com/contents/repn-car/catalog/santafe-2026-price.pdf",
+      "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/santafe-catalog.pdf",
+      "note": "현대 공식 다운로드 목록에서 확인한 싼타페 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도",
+      "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "content_verified": "Downloaded both PDFs and extracted text; model and variant checked",
+        "price_document_first_line": "2026 싼타페",
+        "separate_hybrid_price_url": "https://www.hyundai.com/contents/repn-car/catalog/santafe-hev-2026-price.pdf"
+      }
+    },
+    {
+      "brand": "기아",
+      "model": "셀토스",
+      "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf",
+      "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_seltos.pdf",
+      "note": "기아 공식 가격표·카탈로그 PDF",
+      "source_url": "https://www.kia.com/kr/vehicles/seltos/features",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_document_period_from_pdf_title": "2026-10",
+        "verification_scope": "Official feature page explicitly links these documents; price PDF fully downloaded and text/metadata checked; catalog URL returned HTTP 200 application/pdf with PDF magic bytes."
+      }
+    },
+    {
+      "brand": "기아",
+      "model": "EV3",
+      "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev3.pdf",
+      "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev3.pdf",
+      "note": "기아 공식 가격표·카탈로그 PDF",
+      "source_url": "https://www.kia.com/kr/vehicles/ev3/features",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_document_period_from_pdf_title": "2026-10",
+        "verification_scope": "Official feature page explicitly links these documents; price PDF fully downloaded and text/metadata checked; catalog URL returned HTTP 200 application/pdf with PDF magic bytes."
+      }
+    },
+    {
+      "brand": "기아",
+      "model": "EV5",
+      "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev5.pdf",
+      "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev5.pdf",
+      "note": "기아 공식 가격표·카탈로그 PDF",
+      "source_url": "https://www.kia.com/kr/vehicles/ev5/features",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_document_period_from_pdf_title": "2026-10",
+        "verification_scope": "Official feature page explicitly links these documents; price PDF fully downloaded and text/metadata checked; catalog URL returned HTTP 200 application/pdf with PDF magic bytes."
+      }
+    },
+    {
+      "brand": "현대",
+      "model": "쏘나타 디 엣지",
+      "price_url": "https://www.hyundai.com/contents/repn-car/catalog/sonata-the-edge2026-price.pdf",
+      "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/sonata-the-edge_catalog.pdf",
+      "note": "현대 공식 다운로드 목록에서 확인한 쏘나타 디 엣지 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도",
+      "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "content_verified": "Downloaded both PDFs and extracted text; model and variant checked",
+        "price_document_first_line": "2026 쏘나타 디 엣지",
+        "separate_hybrid_price_url": "https://www.hyundai.com/contents/repn-car/catalog/sonata-the-edge-hybrid2026-price.pdf"
+      }
+    },
+    {
+      "brand": "기아",
+      "model": "레이",
+      "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf",
+      "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ray.pdf",
+      "note": "기아 공식 가격표·카탈로그 PDF",
+      "source_url": "https://www.kia.com/kr/vehicles/ray/features",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_document_period_from_pdf_title": "2026-10",
+        "verification_scope": "Official feature page explicitly links these documents; price PDF fully downloaded and text/metadata checked; catalog URL returned HTTP 200 application/pdf with PDF magic bytes."
+      }
+    },
+    {
+      "brand": "기아",
+      "model": "봉고 3",
+      "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_bongo3.pdf",
+      "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_bongo3.pdf",
+      "note": "기아 공식 가격표·카탈로그 PDF (가격표 2026-09판, 2026-10-02 현재 공식 페이지 게시본)",
+      "source_url": "https://www.kia.com/kr/vehicles/bongo3/features",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_document_period_from_pdf_title": "2026-09",
+        "verification_scope": "Official feature page explicitly links these documents; price PDF fully downloaded and text/metadata checked; catalog URL returned HTTP 200 application/pdf with PDF magic bytes."
+      }
+    },
+    {
+      "brand": "기아",
+      "model": "K8",
+      "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k8.pdf",
+      "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_k8.pdf",
+      "note": "기아 공식 가격표·카탈로그 PDF",
+      "source_url": "https://www.kia.com/kr/vehicles/k8/features",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_document_period_from_pdf_title": "2026-10",
+        "verification_scope": "Official feature page explicitly links these documents; price PDF fully downloaded and text/metadata checked; catalog URL returned HTTP 200 application/pdf with PDF magic bytes."
+      }
+    },
+    {
+      "brand": "기아",
+      "model": "K5",
+      "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k5.pdf",
+      "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_k5.pdf",
+      "note": "기아 공식 가격표·카탈로그 PDF",
+      "source_url": "https://www.kia.com/kr/vehicles/k5/features",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_document_period_from_pdf_title": "2026-10",
+        "verification_scope": "Official feature page explicitly links these documents; price PDF fully downloaded and text/metadata checked; catalog URL returned HTTP 200 application/pdf with PDF magic bytes."
+      }
+    },
+    {
+      "brand": "현대",
+      "model": "디 올 뉴 팰리세이드",
+      "price_url": "https://www.hyundai.com/contents/repn-car/catalog/palisade-2027-price.pdf",
+      "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/palisade-catalog.pdf",
+      "note": "현대 공식 다운로드 목록에서 확인한 팰리세이드 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도",
+      "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "content_verified": "Downloaded both PDFs and extracted text; model and variant checked",
+        "price_document_first_line": "2027 팰리세이드",
+        "separate_hybrid_price_url": "https://www.hyundai.com/contents/repn-car/catalog/palisade-hev-2027-price.pdf"
+      }
+    },
+    {
+      "brand": "기아",
+      "model": "PV5",
+      "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-cargo.pdf",
+      "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-passenger.pdf",
+      "note": "PV5 합산 판매량. 공식 카고 롱·패신저 가격표를 각각 연결; 차체·좌석 구성별 적용을 구분하세요.",
+      "source_url": "https://www.kia.com/kr/vehicles/pv5-cargo/features",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [
+        "Sales row aggregates PV5. The two links cover Cargo Long and Passenger; other PV5 body variants are not represented by these two price links."
+      ],
+      "evidence_summary": {
+        "price_document_period_from_pdf_title": "2026-10",
+        "verification_scope": "Official feature page explicitly links these documents; price PDF fully downloaded and text/metadata checked; catalog URL returned HTTP 200 application/pdf with PDF magic bytes.",
+        "passenger_price_advertised": true,
+        "passenger_price_document_title": "PV5 패신저_202610"
+      },
+      "additional_catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-passenger.pdf"
+    },
+    {
+      "brand": "현대",
+      "model": "더 뉴 스타리아",
+      "price_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria_price.pdf",
+      "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria_catalog.pdf",
+      "note": "현대 공식 다운로드 목록에서 확인한 더 뉴 스타리아 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도; 투어러·카고 기준, 라운지·리무진·하이브리드는 별도",
+      "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "content_verified": "Downloaded both PDFs and extracted text; model and variant checked",
+        "price_document_first_line": "더 뉴 스타리아 투어러",
+        "separate_hybrid_price_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria-hybrid_price.pdf"
+      }
+    },
+    {
+      "brand": "현대",
+      "model": "버스/트럭",
+      "price_url": "https://www.hyundai.com/kr/ko/c/purchase-guid/catalog",
+      "catalog_url": "",
+      "note": "여러 상용차가 합산된 항목이므로 현대 공식 트럭·버스 전체 가격표 페이지로 연결",
+      "source_url": "https://www.hyundai.com/kr/ko/c/purchase-guid/catalog",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "aggregation": "Multiple truck/bus models are aggregated, so a single model PDF would be misleading; retain official commercial download landing"
+      }
+    },
+    {
+      "brand": "기아",
+      "model": "모닝",
+      "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_morning.pdf",
+      "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_morning.pdf",
+      "note": "기아 공식 가격표·카탈로그 PDF",
+      "source_url": "https://www.kia.com/kr/vehicles/morning/features",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_document_period_from_pdf_title": "2026-10",
+        "verification_scope": "Official feature page explicitly links these documents; price PDF fully downloaded and text/metadata checked; catalog URL returned HTTP 200 application/pdf with PDF magic bytes."
+      }
+    },
+    {
+      "brand": "제네시스",
+      "model": "G80",
+      "price_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000076",
+      "catalog_url": "",
+      "note": "G80이 선택된 제네시스 공식 다운로드 센터; 2026년 10월 가격표·카탈로그 연결 확인 (2026-10-02)",
+      "source_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000076",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official_landing",
+      "uncertain_items": [
+        "Downstream Genesis PDF bytes were not independently downloaded; the retained official landing URL, exact selected model and advertised October filenames were verified."
+      ],
+      "evidence_summary": {
+        "verification_scope": "Official stable landing retained; model selection mapping and current advertised October filenames verified in landing HTML. Genesis downstream file bytes were not separately downloaded.",
+        "advertised_price_filename": "genesis-g80-pricelist-kor-202610.pdf",
+        "advertised_catalog_filename": "genesis-g80-catalog-kor-202610.pdf",
+        "selection_code": "000076",
+        "selection_verified": true
+      }
+    },
+    {
+      "brand": "현대",
+      "model": "아이오닉 5",
+      "price_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq-5-2027-price.pdf",
+      "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq5-catalog.pdf",
+      "note": "현대 공식 다운로드 목록에서 확인한 아이오닉 5 가격표·카탈로그 (2026-10-02 확인)",
+      "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "content_verified": "Downloaded both PDFs and extracted text; model and variant checked",
+        "price_document_first_line": "2027 아이오닉 5"
+      }
+    },
+    {
+      "brand": "제네시스",
+      "model": "GV70",
+      "price_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000119",
+      "catalog_url": "",
+      "note": "GV70이 선택된 제네시스 공식 다운로드 센터; 2026년 10월 가격표·카탈로그 연결 확인 (2026-10-02)",
+      "source_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000119",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official_landing",
+      "uncertain_items": [
+        "Downstream Genesis PDF bytes were not independently downloaded; the retained official landing URL, exact selected model and advertised October filenames were verified."
+      ],
+      "evidence_summary": {
+        "verification_scope": "Official stable landing retained; model selection mapping and current advertised October filenames verified in landing HTML. Genesis downstream file bytes were not separately downloaded.",
+        "advertised_price_filename": "genesis-gv70-pricelist-kor-202610.pdf",
+        "advertised_catalog_filename": "genesis-gv70-catalog-kor-202610.pdf",
+        "selection_code": "000119",
+        "selection_verified": true
+      }
+    },
+    {
+      "brand": "제네시스",
+      "model": "GV80",
+      "price_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000072",
+      "catalog_url": "",
+      "note": "GV80이 선택된 제네시스 공식 다운로드 센터; 2026년 10월 가격표·카탈로그 연결 확인 (2026-10-02)",
+      "source_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000072",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official_landing",
+      "uncertain_items": [
+        "Downstream Genesis PDF bytes were not independently downloaded; the retained official landing URL, exact selected model and advertised October filenames were verified."
+      ],
+      "evidence_summary": {
+        "verification_scope": "Official stable landing retained; model selection mapping and current advertised October filenames verified in landing HTML. Genesis downstream file bytes were not separately downloaded.",
+        "advertised_price_filename": "genesis-gv80-pricelist-kor-202610.pdf",
+        "advertised_catalog_filename": "genesis-gv80-catalog-kor-202610.pdf",
+        "selection_code": "000072",
+        "selection_verified": true
+      }
+    },
+    {
+      "brand": "기아",
+      "model": "레이 EV",
+      "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray-ev.pdf",
+      "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ray-ev.pdf",
+      "note": "레이 EV 전용 공식 가격표·카탈로그",
+      "source_url": "https://www.kia.com/kr/vehicles/ray-ev/features",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_document_period_from_pdf_title": "2026-10",
+        "verification_scope": "Official feature page explicitly links these documents; price PDF fully downloaded and text/metadata checked; catalog URL returned HTTP 200 application/pdf with PDF magic bytes."
+      }
+    },
+    {
+      "brand": "기아",
+      "model": "니로",
+      "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_niro.pdf",
+      "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_niro.pdf",
+      "note": "기아 공식 가격표·카탈로그 PDF",
+      "source_url": "https://www.kia.com/kr/vehicles/niro/features",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_document_period_from_pdf_title": "2026-10",
+        "verification_scope": "Official feature page explicitly links these documents; price PDF fully downloaded and text/metadata checked; catalog URL returned HTTP 200 application/pdf with PDF magic bytes."
+      }
+    },
+    {
+      "brand": "르노",
+      "model": "그랑 콜레오스",
+      "price_url": "https://cdn.renault.co.kr/upload/asset/price/price_koleos_202610.pdf",
+      "catalog_url": "https://cdn.renault.co.kr/upload/asset/ebrochure/eBrochure_koleos_202610.pdf",
+      "note": "르노코리아 공식 2026년 10월 가격표·카탈로그 (2026-10-02 공식 다운로드 연결 확인)",
+      "source_url": "https://cdn.renault.co.kr/ko/side/catalog_download.jsp",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "verification": "Both PDFs fully downloaded and model text checked; Koleos and Filante price covers explicitly state 2026년 10월; Arkana body identifies 27MY, official October URL controls publication period"
+      }
+    },
+    {
+      "brand": "현대",
+      "model": "아이오닉 9",
+      "price_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq9-2027-price.pdf",
+      "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq9-catalog.pdf",
+      "note": "현대 공식 다운로드 목록에서 확인한 아이오닉 9 가격표·카탈로그 (2026-10-02 확인)",
+      "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "content_verified": "Downloaded both PDFs and extracted text; model and variant checked",
+        "price_document_first_line": "2027 아이오닉 9"
+      }
+    },
+    {
+      "brand": "현대",
+      "model": "코나",
+      "price_url": "https://www.hyundai.com/contents/repn-car/catalog/kona-2027-price.pdf",
+      "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/kona-catalog.pdf",
+      "note": "현대 공식 다운로드 목록에서 확인한 코나 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도",
+      "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "content_verified": "Downloaded both PDFs and extracted text; model and variant checked",
+        "price_document_first_line": "2027 코나",
+        "separate_hybrid_price_url": "https://www.hyundai.com/contents/repn-car/catalog/kona-hybrid-2027-price.pdf"
+      }
+    },
+    {
+      "brand": "기아",
+      "model": "EV4",
+      "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev4.pdf",
+      "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev4.pdf",
+      "note": "기아 공식 가격표·카탈로그 PDF",
+      "source_url": "https://www.kia.com/kr/vehicles/ev4/features",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_document_period_from_pdf_title": "2026-10",
+        "verification_scope": "Official feature page explicitly links these documents; price PDF fully downloaded and text/metadata checked; catalog URL returned HTTP 200 application/pdf with PDF magic bytes."
+      }
+    },
+    {
+      "brand": "현대",
+      "model": "캐스퍼",
+      "price_url": "https://casper.hyundai.com/wcontents/repn-car/catalog/AX08/AX_CASPER_price.pdf",
+      "catalog_url": "https://casper.hyundai.com/wcontents/repn-car/catalog/AX08/AX_CASPER_catalog.pdf",
+      "note": "현대 캐스퍼 공식 2027 가솔린 가격표·카탈로그; 가격표 기준일 2026-07-15 (2026-10-02 공식 연결 확인)",
+      "source_url": "https://casper.hyundai.com/vehicles/highlight",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_basis_date": "2026-07-15",
+        "official_landing_model_year": "2027",
+        "verification": "Live official model page download handler and full PDF contents verified; electric price target also observed as browser opened PDF URL"
+      }
+    },
+    {
+      "brand": "쉐보레",
+      "model": "트랙스 크로스오버",
+      "price_url": "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/11-pdf/2026%EB%85%84-10%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf",
+      "catalog_url": "",
+      "note": "쉐보레 공식 2026년 10월 전차종 가격표; 트랙스 크로스오버 2026 수록 (2026-10-02 공식 연결 확인)",
+      "source_url": "https://www.chevrolet.co.kr/finance/type-price",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {}
+    },
+    {
+      "brand": "현대",
+      "model": "디 올 뉴 아반떼",
+      "price_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante_price.pdf",
+      "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante-catalog.pdf",
+      "note": "현대 공식 다운로드 목록에서 확인한 디 올 뉴 아반떼 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도",
+      "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "content_verified": "Downloaded both PDFs and extracted text; model and variant checked",
+        "price_document_first_line": "디 올 뉴 아반떼",
+        "separate_hybrid_price_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante-hybrid_price.pdf"
+      }
+    },
+    {
+      "brand": "르노",
+      "model": "아르카나",
+      "price_url": "https://cdn.renault.co.kr/upload/asset/price/price_Arkana_202610.pdf",
+      "catalog_url": "https://cdn.renault.co.kr/upload/asset/ebrochure/eBrochure_Arkana_202610.pdf",
+      "note": "르노코리아 공식 2026년 10월 가격표·카탈로그 (2026-10-02 공식 다운로드 연결 확인)",
+      "source_url": "https://cdn.renault.co.kr/ko/side/catalog_download.jsp",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "verification": "Both PDFs fully downloaded and model text checked; Koleos and Filante price covers explicitly state 2026년 10월; Arkana body identifies 27MY, official October URL controls publication period"
+      }
+    },
+    {
+      "brand": "현대",
+      "model": "스타리아 일렉트릭",
+      "price_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria-electric_price.pdf",
+      "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria-eletric-catalog.pdf",
+      "note": "현대 공식 다운로드 목록에서 확인한 더 뉴 스타리아 Electric 가격표·카탈로그 (2026-10-02 확인); 투어러·카고 기준, 라운지·리무진은 별도",
+      "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "content_verified": "Downloaded both PDFs and extracted text; model and variant checked",
+        "price_document_first_line": "스타리아 투어러 일렉트릭"
+      }
+    },
+    {
+      "brand": "KGM",
+      "model": "무쏘",
+      "price_url": "https://www.kg-mobility.com/attached/contents/display/file/200000200010009/20260930235631587_DTUhhe.pdf",
+      "catalog_url": "https://www.kg-mobility.com/attached/contents/display/file/200000200010009/20260930235631342_MBxm14.pdf",
+      "note": "KGM 공식 무쏘 가격표·카탈로그; 2026년 10월 게시본, 가솔린·디젤/스탠다드·롱데크 선택 확인 (2026-10-02)",
+      "source_url": "https://www.kg-mobility.com/od/promotion/catalog-download",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "catalog_publication_mark": "KGM 202610",
+        "model_source_note": "The existing source /pr/model/show-room/200000200010009 redirects to homepage. API category ID is an estimate category, not the showroom ID; use official catalog landing or /pr/model/show-room/200000100030004 for separate image review."
+      }
+    },
+    {
+      "brand": "현대",
+      "model": "투싼",
+      "price_url": "https://www.hyundai.com/contents/repn-car/catalog/tucson-2026-price.pdf",
+      "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/tucson-catalog.pdf",
+      "note": "현대 공식 다운로드 목록에서 확인한 투싼 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도; 기존 2026 투싼용. 디 올 뉴 투싼과 구분",
+      "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "content_verified": "Downloaded both PDFs and extracted text; model and variant checked",
+        "price_document_first_line": "2026 투싼",
+        "separate_hybrid_price_url": "https://www.hyundai.com/contents/repn-car/catalog/tucson-hybrid-2026-price.pdf"
+      }
+    },
+    {
+      "brand": "르노",
+      "model": "필랑트",
+      "price_url": "https://cdn.renault.co.kr/upload/asset/price/price_filante_202610.pdf",
+      "catalog_url": "https://cdn.renault.co.kr/upload/asset/ebrochure/eBrochure_filante_202610.pdf",
+      "note": "르노코리아 공식 2026년 10월 가격표·카탈로그 (2026-10-02 공식 다운로드 연결 확인)",
+      "source_url": "https://cdn.renault.co.kr/ko/side/catalog_download.jsp",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "verification": "Both PDFs fully downloaded and model text checked; Koleos and Filante price covers explicitly state 2026년 10월; Arkana body identifies 27MY, official October URL controls publication period"
+      }
+    },
+    {
+      "brand": "현대",
+      "model": "포터2 일렉트릭",
+      "price_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-electric-2026-price.pdf",
+      "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-electric_catalog.pdf",
+      "note": "현대 공식 2026 포터 II Electric 가격표; LPG·Electric 통합 카탈로그 7쪽 전기차 소개, 12쪽 전기차 제원",
+      "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "content_verified": "Downloaded both PDFs and extracted text; model and variant checked",
+        "price_document_first_line": "2026 포터 II 일렉트릭"
+      },
+      "manual_visual_verification": {
+        "checked_at": "2026-10-02",
+        "pages": [
+          7,
+          8,
+          12
+        ],
+        "result": "PORTER II Electric title, charging photo, battery details and electric dimensions/specifications visually confirmed; combined LPG and Electric catalog"
+      }
+    },
+    {
+      "brand": "현대",
+      "model": "더 뉴 아이오닉 6",
+      "price_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq6-pe_price.pdf",
+      "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-ioniq6-catalog.pdf",
+      "note": "현대 공식 다운로드 목록에서 확인한 더 뉴 아이오닉 6 가격표·카탈로그 (2026-10-02 확인); 더 뉴 아이오닉 6 일반·N Line, 아이오닉 6 N 별도",
+      "source_url": "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "content_verified": "Downloaded both PDFs and extracted text; model and variant checked",
+        "price_document_first_line": "더 뉴 아이오닉 6"
+      }
+    },
+    {
+      "brand": "현대",
+      "model": "캐스퍼 일렉트릭",
+      "price_url": "https://casper.hyundai.com/wcontents/repn-car/catalog/AX07/AX_CASPER_Electric_price.pdf",
+      "catalog_url": "https://casper.hyundai.com/wcontents/repn-car/catalog/AX07/AX_CASPER_Electric_catalog.pdf",
+      "note": "현대 캐스퍼 공식 2027 일렉트릭 가격표·카탈로그; 가격표 기준일 2026-07-15 (2026-10-02 공식 연결 확인)",
+      "source_url": "https://casper.hyundai.com/vehicles/electric/highlight",
+      "checked_at": "2026-10-02",
+      "status": "verified_current_official",
+      "uncertain_items": [],
+      "evidence_summary": {
+        "price_basis_date": "2026-07-15",
+        "official_landing_model_year": "2027",
+        "verification": "Live official model page download handler and full PDF contents verified; electric price target also observed as browser opened PDF URL"
+      }
+    }
+  ]
+}

@@ -1,0 +1,403 @@
+[
+  {
+    "brand": "BMW",
+    "model": "5 Series",
+    "price_url": "https://bmwfinancial.co.kr/bmw/bmw-pricelist-pdf/september_2026_pricelist.pdf",
+    "catalog_url": "",
+    "note": "BMW 코리아 공식 2026년 9월 통합 가격표 (10월 2일 공식 홈페이지 연결 및 차종 적용 확인)"
+  },
+  {
+    "brand": "BMW",
+    "model": "X3",
+    "price_url": "https://bmwfinancial.co.kr/bmw/bmw-pricelist-pdf/september_2026_pricelist.pdf",
+    "catalog_url": "",
+    "note": "BMW 코리아 공식 2026년 9월 통합 가격표 (10월 2일 공식 홈페이지 연결 및 차종 적용 확인)"
+  },
+  {
+    "brand": "BMW",
+    "model": "X5",
+    "price_url": "https://bmwfinancial.co.kr/bmw/bmw-pricelist-pdf/september_2026_pricelist.pdf",
+    "catalog_url": "",
+    "note": "BMW 코리아 공식 2026년 9월 통합 가격표 (10월 2일 공식 홈페이지 연결 및 차종 적용 확인)"
+  },
+  {
+    "brand": "벤츠",
+    "model": "E-Class",
+    "price_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261002.pdf",
+    "catalog_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/model/catalog/2026/Mercedes-Benz_The%20new%20E-Class_Catalogue_20260424.pdf",
+    "note": "벤츠 코리아 공식 2026년 10월 2일 통합 가격표. 카탈로그는 공식 최신 연결본인 2026년 4월 24일·26년식 기준",
+    "image_url": "https://www.mercedes-benz.co.kr/content/dam/hq/passengercars/cars/e-class/e-class-saloon-w214-pi/modeloverview/02-2023/images/mercedes-benz-e-class-w214-modeloverview-696x392-02-2023.jpg",
+    "image_file": "",
+    "image_source_url": "https://www.mercedes-benz.co.kr/passengercars/models/saloon/e-class/overview.html",
+    "image_review_status": "approved",
+    "image_source_type": "official_site"
+  },
+  {
+    "brand": "벤츠",
+    "model": "GLC-Class",
+    "price_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261002.pdf",
+    "catalog_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/model/catalog/2026/The%20new%20GLC%20n%20GLC%20Coupe_Catalogue_20260424.pdf",
+    "note": "벤츠 코리아 공식 2026년 10월 2일 통합 가격표. GLC·GLC Coupé 카탈로그는 26년식 기준으로 27년식 사양과 구분"
+  },
+  {
+    "brand": "테슬라",
+    "model": "Model Y",
+    "price_url": "https://www.tesla.com/ko_kr/modely/design",
+    "catalog_url": "",
+    "note": "Tesla 대한민국 공식 Model Y 가격·구성 페이지 (10월 2일 한국 트림·원화 표시 확인)"
+  },
+  {
+    "brand": "테슬라",
+    "model": "Model 3",
+    "price_url": "https://www.tesla.com/ko_kr/model3/design",
+    "catalog_url": "",
+    "note": "Tesla 대한민국 공식 Model 3 가격·구성 페이지 (10월 2일 한국 트림·원화 표시 확인)",
+    "image_url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Premium-Specs-Desktop-Metric-LHD-APAC.png",
+    "image_file": "",
+    "image_source_url": "https://www.tesla.com/ko_kr/model3",
+    "image_review_status": "approved",
+    "image_source_type": "official_site"
+  },
+  {
+    "brand": "BYD",
+    "model": "Dolphin",
+    "price_url": "https://www.bydauto.kr/purchase/build-my-car/dolphin",
+    "catalog_url": "https://www.bydauto.kr/static/file/BYD_DOLPHIN_Catalog.pdf",
+    "note": "BYD 코리아 공식 견적·카탈로그. 카탈로그 대표 성능은 Active 기준, 기본형과 구분"
+  },
+  {
+    "brand": "BYD",
+    "model": "SEALION 7",
+    "price_url": "https://www.bydauto.kr/purchase/build-my-car/sealion7",
+    "catalog_url": "https://www.bydauto.kr/static/file/BYD_SEALION_7_Catalog.pdf",
+    "note": "BYD 코리아 공식 견적·카탈로그. 기본·Plus·Dynamic AWD 적용 확인"
+  },
+  {
+    "brand": "BYD",
+    "model": "SEALION 6 DM-i",
+    "price_url": "https://www.bydauto.kr/purchase/build-my-car/sealion6",
+    "catalog_url": "https://www.bydauto.kr/static/file/BYD_SEALION_6_DM-i_Catalog.pdf",
+    "note": "BYD 코리아 공식 SEALION 6 DM-i 견적·카탈로그 (PHEV 전용 적용 확인)",
+    "image_url": "https://www.bydauto.kr/static/images/model/byd_sealion6/spec_img1_2.png",
+    "image_file": "",
+    "image_source_url": "https://www.bydauto.kr/car/byd-sealion6",
+    "image_review_status": "approved",
+    "image_source_type": "official_site"
+  },
+  {
+    "brand": "현대",
+    "model": "포터2",
+    "image_url": "https://www.hyundai.com/contents/repn-car/side-45/porter2-26my-45side.png",
+    "image_file": "",
+    "image_source_url": "https://www.hyundai.com/kr/ko/e/vehicles/porter2/intro",
+    "image_review_status": "approved",
+    "image_source_type": "official_site",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-2026-price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-catalog.pdf",
+    "note": "현대 공식 다운로드 목록에서 확인한 포터 II 가격표·카탈로그 (2026-10-02 확인); 일반차 기준, 특장차 가격표 별도"
+  },
+  {
+    "brand": "기아",
+    "model": "PV5",
+    "image_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krw2316/pv5-cargo_s_ud.png?imwidth=800",
+    "image_file": "",
+    "image_source_url": "https://www.kia.com/kr/vehicles/pv5-cargo/features",
+    "image_review_status": "approved",
+    "image_source_type": "official_site",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-cargo.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-passenger.pdf",
+    "note": "PV5 합산 판매량. 공식 카고 롱·패신저 가격표를 각각 연결; 차체·좌석 구성별 적용을 구분하세요."
+  },
+  {
+    "brand": "현대",
+    "model": "버스/트럭",
+    "note": "여러 상용차가 합산된 항목이므로 현대 공식 트럭·버스 전체 가격표 페이지로 연결; 이미지는 현대 마이티 대표 이미지입니다.",
+    "price_url": "https://www.hyundai.com/kr/ko/c/purchase-guid/catalog",
+    "catalog_url": ""
+  },
+  {
+    "brand": "제네시스",
+    "model": "G80",
+    "image_url": "https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000074315/3f445ab7d17049a58590275a36392fcb.jpg",
+    "image_file": "",
+    "image_source_url": "https://www.hyundaimotorgroup.com/ko/news/CONT0000000000198453",
+    "image_review_status": "approved",
+    "image_source_type": "official_newsroom",
+    "price_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000076",
+    "catalog_url": "",
+    "note": "G80이 선택된 제네시스 공식 다운로드 센터; 2026년 10월 가격표·카탈로그 연결 확인 (2026-10-02)"
+  },
+  {
+    "brand": "제네시스",
+    "model": "GV80",
+    "image_url": "https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000054334/706e5dd2de06414ebec774cad10b8756.jpg",
+    "image_file": "",
+    "image_source_url": "https://www.hyundaimotorgroup.com/ko/news/CONT0000000000161667",
+    "image_review_status": "approved",
+    "image_source_type": "official_newsroom",
+    "price_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000072",
+    "catalog_url": "",
+    "note": "GV80이 선택된 제네시스 공식 다운로드 센터; 2026년 10월 가격표·카탈로그 연결 확인 (2026-10-02)"
+  },
+  {
+    "brand": "현대",
+    "model": "스타리아 일렉트릭",
+    "image_url": "https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000078578/3aa9d6d72627466db97088b8b69ac5f1.jpg",
+    "image_file": "",
+    "image_source_url": "https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-company-new-staria-electric-limousine-launch",
+    "image_review_status": "approved",
+    "image_source_type": "official_newsroom",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria-electric_price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria-eletric-catalog.pdf",
+    "note": "현대 공식 다운로드 목록에서 확인한 더 뉴 스타리아 Electric 가격표·카탈로그 (2026-10-02 확인); 투어러·카고 기준, 라운지·리무진은 별도"
+  },
+  {
+    "brand": "현대",
+    "model": "더 뉴 아이오닉 6",
+    "image_url": "https://www.hyundai.com/contents/repn-car/side-45/ioniq6-25fl-45side.png",
+    "image_file": "",
+    "image_source_url": "https://www.hyundai.com/kr/ko/e/vehicles/the-new-ioniq6/intro",
+    "image_review_status": "approved",
+    "image_source_type": "official_site",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq6-pe_price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-ioniq6-catalog.pdf",
+    "note": "현대 공식 다운로드 목록에서 확인한 더 뉴 아이오닉 6 가격표·카탈로그 (2026-10-02 확인); 더 뉴 아이오닉 6 일반·N Line, 아이오닉 6 N 별도"
+  },
+  {
+    "brand": "현대",
+    "model": "캐스퍼 일렉트릭",
+    "image_url": "https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000082226/e2ec25b345d3463484e930a94de5f651.jpg",
+    "image_file": "",
+    "image_source_url": "https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-company-casper-electric-2027",
+    "image_review_status": "approved",
+    "image_source_type": "official_newsroom",
+    "price_url": "https://casper.hyundai.com/wcontents/repn-car/catalog/AX07/AX_CASPER_Electric_price.pdf",
+    "catalog_url": "https://casper.hyundai.com/wcontents/repn-car/catalog/AX07/AX_CASPER_Electric_catalog.pdf",
+    "note": "현대 캐스퍼 공식 2027 일렉트릭 가격표·카탈로그; 가격표 기준일 2026-07-15 (2026-10-02 공식 연결 확인)"
+  },
+  {
+    "brand": "기아",
+    "model": "쏘렌토",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_sorento.pdf",
+    "note": "기아 공식 가격표·카탈로그 PDF"
+  },
+  {
+    "brand": "현대",
+    "model": "더 뉴 그랜저",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-grandeur-price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-grandeur-catalog.pdf",
+    "note": "현대 공식 다운로드 목록에서 확인한 더 뉴 그랜저 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도"
+  },
+  {
+    "brand": "기아",
+    "model": "카니발",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_carnival.pdf",
+    "note": "기아 공식 가격표·카탈로그 PDF"
+  },
+  {
+    "brand": "기아",
+    "model": "스포티지",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sportage.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_sportage.pdf",
+    "note": "기아 공식 가격표·카탈로그 PDF"
+  },
+  {
+    "brand": "현대",
+    "model": "싼타페",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/santafe-2026-price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/santafe-catalog.pdf",
+    "note": "현대 공식 다운로드 목록에서 확인한 싼타페 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도"
+  },
+  {
+    "brand": "기아",
+    "model": "셀토스",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_seltos.pdf",
+    "note": "기아 공식 가격표·카탈로그 PDF"
+  },
+  {
+    "brand": "기아",
+    "model": "EV3",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev3.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev3.pdf",
+    "note": "기아 공식 가격표·카탈로그 PDF"
+  },
+  {
+    "brand": "기아",
+    "model": "EV5",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev5.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev5.pdf",
+    "note": "기아 공식 가격표·카탈로그 PDF"
+  },
+  {
+    "brand": "현대",
+    "model": "쏘나타 디 엣지",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/sonata-the-edge2026-price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/sonata-the-edge_catalog.pdf",
+    "note": "현대 공식 다운로드 목록에서 확인한 쏘나타 디 엣지 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도"
+  },
+  {
+    "brand": "기아",
+    "model": "레이",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ray.pdf",
+    "note": "기아 공식 가격표·카탈로그 PDF"
+  },
+  {
+    "brand": "기아",
+    "model": "봉고 3",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_bongo3.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_bongo3.pdf",
+    "note": "기아 공식 가격표·카탈로그 PDF (가격표 2026-09판, 2026-10-02 현재 공식 페이지 게시본)"
+  },
+  {
+    "brand": "기아",
+    "model": "K8",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k8.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_k8.pdf",
+    "note": "기아 공식 가격표·카탈로그 PDF"
+  },
+  {
+    "brand": "기아",
+    "model": "K5",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k5.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_k5.pdf",
+    "note": "기아 공식 가격표·카탈로그 PDF"
+  },
+  {
+    "brand": "현대",
+    "model": "디 올 뉴 팰리세이드",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/palisade-2027-price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/palisade-catalog.pdf",
+    "note": "현대 공식 다운로드 목록에서 확인한 팰리세이드 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도"
+  },
+  {
+    "brand": "현대",
+    "model": "더 뉴 스타리아",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria_price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria_catalog.pdf",
+    "note": "현대 공식 다운로드 목록에서 확인한 더 뉴 스타리아 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도; 투어러·카고 기준, 라운지·리무진·하이브리드는 별도"
+  },
+  {
+    "brand": "기아",
+    "model": "모닝",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_morning.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_morning.pdf",
+    "note": "기아 공식 가격표·카탈로그 PDF"
+  },
+  {
+    "brand": "현대",
+    "model": "아이오닉 5",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq-5-2027-price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq5-catalog.pdf",
+    "note": "현대 공식 다운로드 목록에서 확인한 아이오닉 5 가격표·카탈로그 (2026-10-02 확인)"
+  },
+  {
+    "brand": "제네시스",
+    "model": "GV70",
+    "price_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000119",
+    "catalog_url": "",
+    "note": "GV70이 선택된 제네시스 공식 다운로드 센터; 2026년 10월 가격표·카탈로그 연결 확인 (2026-10-02)"
+  },
+  {
+    "brand": "기아",
+    "model": "레이 EV",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray-ev.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ray-ev.pdf",
+    "note": "레이 EV 전용 공식 가격표·카탈로그"
+  },
+  {
+    "brand": "기아",
+    "model": "니로",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_niro.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_niro.pdf",
+    "note": "기아 공식 가격표·카탈로그 PDF"
+  },
+  {
+    "brand": "르노",
+    "model": "그랑 콜레오스",
+    "price_url": "https://cdn.renault.co.kr/upload/asset/price/price_koleos_202610.pdf",
+    "catalog_url": "https://cdn.renault.co.kr/upload/asset/ebrochure/eBrochure_koleos_202610.pdf",
+    "note": "르노코리아 공식 2026년 10월 가격표·카탈로그 (2026-10-02 공식 다운로드 연결 확인)"
+  },
+  {
+    "brand": "현대",
+    "model": "아이오닉 9",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq9-2027-price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq9-catalog.pdf",
+    "note": "현대 공식 다운로드 목록에서 확인한 아이오닉 9 가격표·카탈로그 (2026-10-02 확인)"
+  },
+  {
+    "brand": "현대",
+    "model": "코나",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/kona-2027-price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/kona-catalog.pdf",
+    "note": "현대 공식 다운로드 목록에서 확인한 코나 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도"
+  },
+  {
+    "brand": "기아",
+    "model": "EV4",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev4.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev4.pdf",
+    "note": "기아 공식 가격표·카탈로그 PDF"
+  },
+  {
+    "brand": "현대",
+    "model": "캐스퍼",
+    "price_url": "https://casper.hyundai.com/wcontents/repn-car/catalog/AX08/AX_CASPER_price.pdf",
+    "catalog_url": "https://casper.hyundai.com/wcontents/repn-car/catalog/AX08/AX_CASPER_catalog.pdf",
+    "note": "현대 캐스퍼 공식 2027 가솔린 가격표·카탈로그; 가격표 기준일 2026-07-15 (2026-10-02 공식 연결 확인)"
+  },
+  {
+    "brand": "쉐보레",
+    "model": "트랙스 크로스오버",
+    "price_url": "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/11-pdf/2026%EB%85%84-10%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf",
+    "catalog_url": "",
+    "note": "쉐보레 공식 2026년 10월 전차종 가격표; 트랙스 크로스오버 2026 수록 (2026-10-02 공식 연결 확인)"
+  },
+  {
+    "brand": "현대",
+    "model": "디 올 뉴 아반떼",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante_price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante-catalog.pdf",
+    "note": "현대 공식 다운로드 목록에서 확인한 디 올 뉴 아반떼 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도"
+  },
+  {
+    "brand": "르노",
+    "model": "아르카나",
+    "price_url": "https://cdn.renault.co.kr/upload/asset/price/price_Arkana_202610.pdf",
+    "catalog_url": "https://cdn.renault.co.kr/upload/asset/ebrochure/eBrochure_Arkana_202610.pdf",
+    "note": "르노코리아 공식 2026년 10월 가격표·카탈로그 (2026-10-02 공식 다운로드 연결 확인)"
+  },
+  {
+    "brand": "KGM",
+    "model": "무쏘",
+    "price_url": "https://www.kg-mobility.com/attached/contents/display/file/200000200010009/20260930235631587_DTUhhe.pdf",
+    "catalog_url": "https://www.kg-mobility.com/attached/contents/display/file/200000200010009/20260930235631342_MBxm14.pdf",
+    "note": "KGM 공식 무쏘 가격표·카탈로그; 2026년 10월 게시본, 가솔린·디젤/스탠다드·롱데크 선택 확인 (2026-10-02)",
+    "image_source_url": "https://www.kg-mobility.com/pr/model/show-room/200000100030004"
+  },
+  {
+    "brand": "현대",
+    "model": "투싼",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/tucson-2026-price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/tucson-catalog.pdf",
+    "note": "현대 공식 다운로드 목록에서 확인한 투싼 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도; 기존 2026 투싼용. 디 올 뉴 투싼과 구분"
+  },
+  {
+    "brand": "르노",
+    "model": "필랑트",
+    "price_url": "https://cdn.renault.co.kr/upload/asset/price/price_filante_202610.pdf",
+    "catalog_url": "https://cdn.renault.co.kr/upload/asset/ebrochure/eBrochure_filante_202610.pdf",
+    "note": "르노코리아 공식 2026년 10월 가격표·카탈로그 (2026-10-02 공식 다운로드 연결 확인)"
+  },
+  {
+    "brand": "현대",
+    "model": "포터2 일렉트릭",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-electric-2026-price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-electric_catalog.pdf",
+    "note": "현대 공식 2026 포터 II Electric 가격표. LPG·Electric 통합 카탈로그의 전기차 소개는 7쪽, 제원은 12쪽; 일반차 기준, 특장차 별도 (2026-10-02 확인)"
+  }
+]

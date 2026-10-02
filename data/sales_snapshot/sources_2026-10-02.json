@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-10-02",
+  "update_id": "2026-10-02-domestic09-import08",
+  "selection": "Latest published model tables: domestic September and import August; September import model table is not yet published",
+  "sources": [
+    {
+      "market": "국산",
+      "period": "2026-09",
+      "url": "https://auto.danawa.com/auto/?Work=record&Tab=Model&Nation=domestic&Month=2026-09-00",
+      "coverage": "All 67 displayed model-group rows, including commercial aggregates",
+      "records_saved": 67,
+      "displayed_total": 100083,
+      "saved_total": 100083,
+      "verification": "Selected 2026/09 in the live table; headline Hyundai groups checked against manufacturer September announcement"
+    },
+    {
+      "market": "수입",
+      "period": "2026-08",
+      "url": "https://auto.danawa.com/auto/?Work=record&Tab=Model&Nation=export&Month=2026-08-00",
+      "coverage": "Full 155-model-group table inspected; top 12 retained to establish the integrated TOP50 cutoff",
+      "records_inspected": 155,
+      "records_saved": 12,
+      "maximum_omitted_units": 445,
+      "displayed_total": 29817,
+      "all_model_rows_total": 29817,
+      "verification": "All 155 model ranks sequential and units non-increasing; maximum omitted model 445, below TOP50 cutoff"
+    }
+  ],
+  "publication_checks": [
+    {
+      "url": "https://auto.danawa.com/auto/?Work=record&Tab=Model&Nation=export&Month=2026-09-00",
+      "result": "September 2026 selected; no imported model sales table. Sidebar latest import period is August. The source says imports are normally updated around the 15th."
+    },
+    {
+      "url": "https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-company-september-2026-sales",
+      "published_at": "2026-10-01",
+      "result": "Official Hyundai September release confirms Grandeur 8898, Sonata 4153, Santa Fe 3217 and Palisade 2965. Other manufacturer totals may combine separate fuel or model groups."
+    }
+  ],
+  "method": {
+    "grain": "Brand and source model group; not individual trim or fuel variant",
+    "sort": "units_sold descending; stable source order for ties (domestic before import)",
+    "rank_movement": "Previous deployed August master snapshot; NEW means outside previous TOP50, not a new launch",
+    "caveat": "Domestic sales and import registrations are different measures and currently use different reporting months. This is a sales-support convenience ranking, not a same-month market-share table.",
+    "normalization": [
+      "Hyundai 버스/트럭 (현대) -> 버스/트럭",
+      "Kia 버스/특수 (기아) -> 버스/특수",
+      "아반떼 and 디 올 뉴 아반떼 remain separate",
+      "Combustion and electric variants remain separate where the source separates them"
+    ]
+  },
+  "top50": {
+    "domestic_rows": 40,
+    "import_rows": 10,
+    "cutoff_units": 478,
+    "next_excluded": {
+      "brand": "BMW",
+      "model": "3 Series",
+      "units": 468
+    },
+    "added": [
+      "현대 더 뉴 아이오닉 6",
+      "현대 캐스퍼 일렉트릭"
+    ],
+    "removed": [
+      "현대 아반떼",
+      "KGM 티볼리"
+    ]
+  }
+}

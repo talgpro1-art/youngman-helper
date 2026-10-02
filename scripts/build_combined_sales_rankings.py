@@ -17,8 +17,9 @@ COLUMNS = [
 ]
 
 REVIEWED_SALES = MONTHLY_SALES.parent / "reviewed_sales.csv"
-UPDATE_ID = "2026-09-10-all08"
-BASELINE = MONTHLY_SALES.parent / "history" / "vehicle_master_before_2026-09-07-domestic08-import07.csv"
+UPDATE_ID = "2026-10-02-domestic09-import08"
+BASELINE = MONTHLY_SALES.parent / "history" / "vehicle_master_before_2026-10-02-domestic09-import08.csv"
+VEHICLE_UPDATES = MONTHLY_SALES.parent / "vehicle_updates_2026-10-02.json"
 
 
 def normalize(value: object) -> str:
@@ -46,7 +47,7 @@ def rank_change(old_rank: int | None, new_rank: int) -> str:
 def default_segment(model: str) -> str:
     if any(token in model for token in ["Model Y", "Model X", "X3", "SEALION", "RAV4", "GLC", "GLE", "GV", "팰리세이드", "싼타페", "투싼", "코나", "콜레오스", "아르카나", "토레스"]):
         return "SUV"
-    if any(token in model for token in ["Model 3", "5 Series", "E-Class", "A6", "그랜저", "쏘나타", "아반떼", "K5", "K8", "G80"]):
+    if any(token in model for token in ["Model 3", "5 Series", "E-Class", "A6", "그랜저", "쏘나타", "아반떼", "아이오닉 6", "K5", "K8", "G80"]):
         return "세단"
     if any(token in model for token in ["Dolphin", "레이", "모닝", "베뉴", "캐스퍼"]):
         return "경차/소형"
@@ -216,7 +217,7 @@ def main() -> None:
     if not BASELINE.exists():
         shutil.copy2(VEHICLE_MASTER, BASELINE)
     baseline = pd.read_csv(BASELINE, dtype=str).fillna("")
-    price_updates = json.loads((MONTHLY_SALES.parent / "price_updates_2026-09-07.json").read_text(encoding="utf-8"))
+    price_updates = json.loads(VEHICLE_UPDATES.read_text(encoding="utf-8"))
     overrides = {row_key(r["brand"], r["model"]): r for r in price_updates}
     lookup = {row_key(row["brand"], row["model"]): row.to_dict() for _, row in master.iterrows()}
     old_rank = {}

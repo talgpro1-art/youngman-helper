@@ -161,6 +161,10 @@ def price_button_label(url: str, has_hybrid_pair: bool = False) -> str:
         return "공홈 가격표/카탈로그 보기"
     if not is_pdf_url(url):
         return "공홈 가격표 보기"
+    if "price_pv5-cargo" in lower:
+        return "공식 가격표(카고)"
+    if "price_pv5-passenger" in lower:
+        return "공식 가격표(패신저)"
     if is_hybrid_price_url(url):
         return "공식 가격표(하이브리드)"
     if has_hybrid_pair:
@@ -169,13 +173,20 @@ def price_button_label(url: str, has_hybrid_pair: bool = False) -> str:
 
 
 def price_links(row: pd.Series) -> list[tuple[str, str, bool]]:
-    urls = []
+    documents = []
     for key in ["price_url", "catalog_url"]:
         url = safe_str(row.get(key))
-        if url.startswith("http") and url not in urls:
-            urls.append(url)
-    has_hybrid_pair = any(is_hybrid_price_url(url) for url in urls) and len(urls) > 1
-    return [(url, price_button_label(url, has_hybrid_pair), idx > 0) for idx, url in enumerate(urls)]
+        if url.startswith("http") and url not in [item[1] for item in documents]:
+            # The supplemental field can contain either a catalog or another price list.
+            filename = url.split("?", 1)[0].rsplit("/", 1)[-1].lower()
+            is_price = key == "price_url" or "price" in filename
+            documents.append((key, url, is_price))
+    has_hybrid_pair = any(is_price and is_hybrid_price_url(url) for _, url, is_price in documents) and sum(is_price for _, _, is_price in documents) > 1
+    links = []
+    for idx, (_, url, is_price) in enumerate(documents):
+        label = price_button_label(url, has_hybrid_pair) if is_price else "공식 카탈로그" if is_pdf_url(url) else "공식 모델 안내"
+        links.append((url, label, idx > 0))
+    return links
 
 
 def consultation_sentence(vehicle_name: str, option_name: str, sales_point: str) -> str:
@@ -557,7 +568,7 @@ def show_sales_period(df: pd.DataFrame) -> None:
     periods = sorted(df.get("source_period", pd.Series(dtype=str)).dropna().unique())
     st.caption("판매/등록 기준: " + " · ".join(periods) + " | 출처: 다나와자동차")
     if len({p.split()[-1] for p in periods}) > 1:
-        st.caption("국산·수입 기준월이 다른 참고 순위입니다. 수입 8월 모델별 공개표 확인 전까지 7월을 유지합니다.")
+        st.caption("국산·수입 기준월이 다른 참고 순위입니다. 각 시장에서 확인 가능한 최신 공개 모델별 집계를 사용합니다.")
     st.caption("순위변동은 이전 앱 반영 순위 대비입니다. 가격표는 판매월과 별개로 확인된 최신 공식 자료를 연결합니다.")
 
 
@@ -658,7 +669,7 @@ def main() -> None:
         show_half_width_image(HEADER_IMAGE)
     else:
         st.markdown('<div style="font-size:2rem;font-weight:900;">🚗 영맨 헬퍼</div>', unsafe_allow_html=True)
-    df = load_vehicles(file_version(VEHICLE_MASTER), "2026-09-10-price-audit")
+    df = load_vehicles(file_version(VEHICLE_MASTER), "2026-10-02-price-image-audit")
     price_checks = load_price_checks(file_version(LINK_STATUS))
     if not price_checks.empty:
         price_checks = price_checks.rename(columns={"checked_at": "price_checked_at"})
