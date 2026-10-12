@@ -1,35 +1,31 @@
 # 판매순위 갱신 프로세스
 
-## 목적
+## 범위와 입력
 
-국내 차량 판매순위 TOP50을 월간 기준으로 갱신하고, `vehicle_master.csv`의 순위와 판매대수를 자동 반영한다.
+- 공개 월간 국산 판매·수입 등록 모델별 표를 각각 확인한다. 빈 표는 0대나 새 집계로 취급하지 않는다.
+- 전체 원천 모델을 확인하고 기록한다. 현재 `source_rows_2026-10-12.json`에는 국산 67개·수입 155개, 총 222개 모델이 있다.
+- `reviewed_sales.csv`에는 국산 67개와 검증된 수입 13개를 보관한다. 미보관 수입 모델의 최대 판매대수 447대가 TOP50 경계 498대보다 낮음을 전체 원천으로 검증했다.
+- 필수 컬럼: `brand`, `model`, `units_sold`, `source_period`. 수입 행의 `source_model_url`로 원천 세대를 구분한다.
+- 임의 차종 합산 금지: E-Class Model=4516은 2,748대, 구형 Model=3757은 1대이며 서로 다른 행이다. 원천이 분리한 내연기관·전기차와 신·구형도 합치지 않는다.
 
-## 입력
+## 갱신 순서
 
-- 월간 판매집계 CSV
-- 필수 컬럼: `brand`, `model`
-- 권장 컬럼: `rank`, `units_sold`, `vehicle`
+1. 최신 main과 원천을 비교한다. 값·기준월·TOP50에 변화가 없으면 파일·확인일·순위변동을 다시 쓰지 않는다.
+2. 원천 증빙과 `reviewed_sales.csv`를 갱신한다. 판매대수 내림차순, 동률은 국산 우선·시장 내 원천 순서로 정렬한다. 50위와 51위가 동률이면 반영을 보류한다.
+3. 새 진입 차량은 공식 모델/세대·가격/자료·이미지를 확인하여 `vehicle_updates_<확인일>.json`과 이미지 검증 내역을 준비한다. 기존 차량의 비순위 필드는 그대로 보존한다.
+4. 빌더의 `UPDATE_ID`, `BASELINE`, `VEHICLE_UPDATES`를 새 검증본에 맞춘다. `BASELINE`은 실행 직전 실제 배포 master를 최초 한 번만 보관하며 재실행 시 변경하지 않는다.
+5. 아래 빌드·회귀·앱 검사를 실행한다. 순위변동은 보관한 직전 반영본 대비이며 NEW는 직전 TOP50 밖의 차량이다. 같은 입력 재실행은 바이트·수정시간·순위변동을 유지한다.
+6. 변경 범위와 최신 원격 main을 재검토한 뒤 승인된 갱신 파일만 한 커밋으로 반영한다. 병행 변경은 보존하고 강제 푸시는 사용하지 않는다. 해당 커밋의 검사와 실제 앱을 확인한다.
 
-## 처리 순서
-
-1. 원본 CSV를 읽는다.
-2. `brand + model` 기준으로 `vehicle_master.csv`의 기존 행을 매칭한다.
-3. `rank`와 `units_sold`를 갱신한다.
-4. 이전 `rank`와 비교해 `rank_change`를 계산한다.
-5. 갱신본을 `vehicle_master.csv`에 저장하고, 스냅샷을 `data/sales_snapshot/history/`에 보관한다.
-6. 순위 변동이 있을 때만 후속 작업과 알림 갱신을 실행한다.
-7. 변경 내역은 `data/notifications.json` 상단 알림으로 추가한다.
-
-## 참고 소스
-
-- 판매순위 원천: 월간 판매집계 CSV 또는 내부 정리본
-- 공홈 확인 원천: 제조사 공식 홈페이지, 다운로드 센터, 구매/견적 페이지
-- 알림 원천: 공개 뉴스 RSS
-- 링크 검증 원천: 공식 가격표 PDF, 모델 안내 페이지
-- 후속 작업: 순위 변동이 있는 경우에만 `update_notifications.py`와 `check_price_links.py`를 실행
-
-## 실행 예시
-
-```powershell
-python scripts\update_sales_rankings.py --input data\sales_snapshot\monthly_sales.csv
+```sh
+python scripts/build_combined_sales_rankings.py
+python scripts/test_sales_refresh.py
+python scripts/test_app_sales.py
+python -m compileall -q app.py scripts
 ```
+
+기존 `update_sales_rankings.py`는 신규 진입·최신 기준월·누락 행 및 재실행 보존을 이 절차처럼 검증하지 않으므로 이 월간 통합 TOP50 갱신에는 사용하지 않는다. 뉴스·가격 링크 정기 워크플로는 판매순위 갱신과 별개이며, 순위 변경을 이유로 전체 가격·이미지를 재수집하지 않는다.
+
+## 현재 반영본
+
+2026-10-12 확인: 국산·수입 모두 2026-09, 국산 39개·수입 11개. EV4 498대가 50위, GLC-Class 481대가 51위다. 직전 반영본은 국산 9월·수입 8월이므로 순위변동을 전월 비교로 해석하지 않는다. 각 시장에 최신 공개 기준월이 다를 때는 `source_period`와 앱의 혼합월 안내를 유지한다.

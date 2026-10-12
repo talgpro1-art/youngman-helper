@@ -17,9 +17,9 @@ COLUMNS = [
 ]
 
 REVIEWED_SALES = MONTHLY_SALES.parent / "reviewed_sales.csv"
-UPDATE_ID = "2026-10-02-domestic09-import08"
-BASELINE = MONTHLY_SALES.parent / "history" / "vehicle_master_before_2026-10-02-domestic09-import08.csv"
-VEHICLE_UPDATES = MONTHLY_SALES.parent / "vehicle_updates_2026-10-02.json"
+UPDATE_ID = "2026-10-12-domestic09-import09"
+BASELINE = MONTHLY_SALES.parent / "history" / "vehicle_master_before_2026-10-12-domestic09-import09.csv"
+VEHICLE_UPDATES = MONTHLY_SALES.parent / "vehicle_updates_2026-10-12.json"
 
 
 def normalize(value: object) -> str:
@@ -200,23 +200,25 @@ def load_master() -> pd.DataFrame:
 def main() -> None:
     master = load_master()
     sales = pd.read_csv(REVIEWED_SALES).fillna("")
-    if sales.duplicated(["brand", "model"]).any():
+    keys = [row_key(row.brand, row.model) for row in sales.itertuples()]
+    if len(set(keys)) != len(keys) or any(not all(key) for key in keys):
         raise ValueError("Duplicate brand/model in reviewed sales")
     sales["units_sold"] = pd.to_numeric(sales["units_sold"], errors="raise")
     if (sales["units_sold"] < 0).any() or (sales["units_sold"] % 1 != 0).any():
         raise ValueError("Sales counts must be nonnegative integers")
     if not sales["source_period"].str.fullmatch(r"(국산|수입) 20\d{2}-(0[1-9]|1[0-2])").all():
         raise ValueError("Invalid reporting period")
-    ranking = sales.sort_values("units_sold", ascending=False, kind="stable").head(50)
+    # Explicit market priority preserves domestic-first ties even if input order changes.
+    sales["_market_order"] = sales.source_period.str.startswith("수입").astype(int)
+    sales = sales.sort_values(["units_sold", "_market_order"], ascending=[False, True], kind="stable")
+    ranking = sales.head(50)
     if len(sales) < 51 or len(ranking) != 50:
         raise ValueError("Not enough reviewed rows to establish the TOP50")
-    next_units = sales.sort_values("units_sold", ascending=False, kind="stable").iloc[50]["units_sold"]
+    next_units = sales.iloc[50]["units_sold"]
     if ranking.iloc[-1]["units_sold"] <= next_units:
         raise ValueError("TOP50 cutoff is tied or not established")
-    BASELINE.parent.mkdir(parents=True, exist_ok=True)
-    if not BASELINE.exists():
-        shutil.copy2(VEHICLE_MASTER, BASELINE)
-    baseline = pd.read_csv(BASELINE, dtype=str).fillna("")
+    # Capture the actual deployed ranks once for this update, never on a repeat run.
+    baseline = pd.read_csv(BASELINE, dtype=str).fillna("") if BASELINE.exists() else master
     price_updates = json.loads(VEHICLE_UPDATES.read_text(encoding="utf-8"))
     overrides = {row_key(r["brand"], r["model"]): r for r in price_updates}
     lookup = {row_key(row["brand"], row["model"]): row.to_dict() for _, row in master.iterrows()}
@@ -231,35 +233,25 @@ def main() -> None:
     sales_rows = []
     for new_rank, (brand, model, units_sold, source_period) in enumerate(ranking[["brand", "model", "units_sold", "source_period"]].itertuples(index=False, name=None), start=1):
         key = row_key(brand, model)
-        row = {col: "" for col in COLUMNS}
-        row.update({col: lookup.get(key, {}).get(col, "") for col in COLUMNS})
-        for col, value in IMPORT_META.get(key, {}).items():
-            if not row.get(col):
-                row[col] = value
-
+        if key in lookup:
+            # A sales-only refresh must not overwrite already-reviewed metadata.
+            row = dict(lookup[key])
+        else:
+            row = {col: "" for col in COLUMNS}
+            row.update(overrides.get(key, {}))
+            required = ["vehicle", "segment", "price_url", "image_url", "image_source_url", "image_source_type"]
+            if (any(not row.get(col) for col in required)
+                    or row.get("image_review_status") != "approved"
+                    or row.get("image_source_type") not in {"official_site", "official_newsroom", "official_press_release"}
+                    or any(not row[col].startswith("https://") for col in ["price_url", "image_url", "image_source_url"])):
+                raise ValueError(f"Verified official metadata required for new entrant: {brand} {model}")
+            row["brand"] = brand
+            row["model"] = model
+            row["active"] = "Y"
         row["rank"] = new_rank
         row["rank_change"] = rank_change(old_rank.get(key), new_rank)
-        row["brand"] = brand
-        row["model"] = model
-        row["vehicle"] = f"{brand} {model}"
-        row["units_sold"] = f"{units_sold:,}"
+        row["units_sold"] = f"{int(units_sold):,}"
         row["source_period"] = source_period
-        row["segment"] = clean_unknown(row.get("segment")) or default_segment(model)
-        row["powertrain"] = infer_powertrain(model, row.get("powertrain"))
-        row["target_tag"] = clean_unknown(row.get("target_tag")) or default_target(row["segment"], row["powertrain"])
-        row["active"] = "Y"
-        row["image_review_status"] = clean_unknown(row.get("image_review_status"))
-        row["image_source_type"] = clean_unknown(row.get("image_source_type"))
-
-        if key in RENAULT_LINKS and not row.get("price_url"):
-            price_url, catalog_url, note = RENAULT_LINKS[key]
-            row["price_url"] = price_url
-            row["catalog_url"] = catalog_url
-            row["note"] = note
-
-        for col, value in overrides.get(key, {}).items():
-            if col in COLUMNS and col not in {"brand", "model", "rank", "units_sold", "source_period"}:
-                row[col] = value
         rows.append({col: row.get(col, "") for col in COLUMNS})
         sales_rows.append({
             "rank": new_rank,
@@ -269,9 +261,16 @@ def main() -> None:
             "source_period": source_period,
         })
 
-    pd.DataFrame(rows, columns=COLUMNS).to_csv(VEHICLE_MASTER, index=False, encoding="utf-8-sig", lineterminator="\n")
+    # Complete validation before writing either output or the immutable baseline.
+    BASELINE.parent.mkdir(parents=True, exist_ok=True)
+    if not BASELINE.exists():
+        shutil.copy2(VEHICLE_MASTER, BASELINE)
     MONTHLY_SALES.parent.mkdir(parents=True, exist_ok=True)
-    pd.DataFrame(sales_rows).to_csv(MONTHLY_SALES, index=False, encoding="utf-8-sig", lineterminator="\n")
+    for frame, path in [(pd.DataFrame(rows, columns=COLUMNS), VEHICLE_MASTER), (pd.DataFrame(sales_rows), MONTHLY_SALES)]:
+        content = frame.to_csv(index=False, lineterminator="\n").encode("utf-8-sig")
+        if not path.exists() or path.read_bytes() != content:
+            path.write_bytes(content)
+
     print(f"Updated {VEHICLE_MASTER.name}: {len(rows)} rows")
     print(f"Updated {MONTHLY_SALES.relative_to(ROOT)}")
 

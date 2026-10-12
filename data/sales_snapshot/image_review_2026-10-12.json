@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-10-12",
+  "scope": "Three TOP50 entrants only. Retained 47 image reviews remain in image_review_2026-10-02.json.",
+  "records": [
+    {
+      "brand": "벤츠",
+      "model": "The New S-Class",
+      "image_url": "https://media.oneweb.mercedes-benz.com/images/dynamic/asia/KR/223024/807/iris.png?q=COSY-EU-100-1713d0VXq0SVng9jfZobxEnlqHI5QqqrQCPPnU2GOpJxm7skt0uBI5TB2rQm6ApnksS5uoSiaC3Mt3czNTcDn7j6XLeKVSJAmvqtOLzLRcbZ7axXIFaH1JQ9o8wOkAriZbm0G4FIY54g9Qr9bPDknjTeWmoVrsdhMaCUf%25THtGEy6Qc0lYSkbB2rtAUApnf8L5uoEu5C3Ml9HzNT2DX7j6pEqKVSulTvqt32bLRcN8LaxXjzyH1JV8B8wOqGUiZbfZh4FIEeYg9QlsgPDk2UdeWmpO4sdhuUCUf%253GPGEyN0h0lYjHpB2rGwyApn0Dn5uoBHXC3MZ9OzNTFRb7j6lP%25KVS2VIvqtp0gLRcuMkaxX3TnH1JN6B8wOjKUiZbVva4FIqLIg9QRabPDkxeAeWm1sesdhwUvUf%25ZG6GEyFu70lY93pB2rDLyApny8G5uoYiNC3Mr3jzNTnvA7j6oL7KVS1VKvqtw0gLRcZMraxXF0BHiaK%25Yhs7Apnji45zAJy3C75FpHzNT9fA7j6DE7KVSWlSvqtd0QLRcfBLaxXETKH1Jl6B8wO2KLiZb3uY4FIw5Cg9QZNrPDkFjAeWm9x6sdhD0XUf%25WHUGEydQy0lYfk%25B2rEjcApnI8L5uoQ%25XC3MN3JzNTjNA7j6VjeKVSqdCvqtRfhLRcxp%25axX1TmH1pYEtKgmIy8YZGyAaEJ08OXSFSvhv3mR1uQNmlo2bg7ExG&BKGND=9&IMGT=P27&cp=U7lLKRUtPa6KAFr8s_ubHw&uni=m&POV=BE030,PZM",
+      "source_url": "https://www.mercedes-benz.co.kr/passengercars/models/saloon/s-class/overview.html",
+      "sha256": "ca217682782548f372626a41794a4c5c5d3bbdf7274150ecf046cec7f0cb8467",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "bytes_decoded": true,
+      "visually_reviewed": true,
+      "review": "Official current model/generation asset, reviewed alongside source identity and current manufacturer page."
+    },
+    {
+      "brand": "폴스타",
+      "model": "Polestar 4",
+      "image_url": "https://www.polestar.com/dato-assets/94392/1775808857-02-polestar-4-c-27-overview-intro-d.png?fm=avif&only-imgix=true&fit=min&q=80&dpr=1&w=1120",
+      "source_url": "https://www.polestar.com/kr/polestar-4-models/polestar-4-coupe/",
+      "sha256": "f47960584587b66b7e8a9039919090581260f2b2f5284494ab44b02229222d79",
+      "width": 1120,
+      "height": 492,
+      "format": "AVIF",
+      "bytes_decoded": true,
+      "visually_reviewed": true,
+      "review": "Official current model/generation asset, reviewed alongside source identity and current manufacturer page."
+    },
+    {
+      "brand": "BMW",
+      "model": "3 Series",
+      "image_url": "https://bmw.scene7.com/is/image/BMW/g20_ice_stage-50-years:16to7?fmt=webp-alpha&wid=2560&fit=constrain%2C1",
+      "source_url": "https://www.bmw.co.kr/ko/all-models/3-series/bmw-3-series-sedan/bmw-3-series-sedan.html",
+      "sha256": "f4ffa8a86023d05e8fefd4272355dc0d199f6ac98d076d8422846a0785bd8ad9",
+      "width": 1604,
+      "height": 700,
+      "format": "WEBP",
+      "bytes_decoded": true,
+      "visually_reviewed": true,
+      "review": "Official current model/generation asset, reviewed alongside source identity and current manufacturer page."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "checked_at": "2026-10-12T06:21:00Z",
+  "update_id": "2026-10-12-domestic09-import09",
+  "baseline_commit": "742ee77b732e5d85dc286ab227c9852a83cf8480",
+  "baseline_master_blob": "3e2047617d4ee47c47ba2893af5f81afdc1b1eea",
+  "selection": "Latest published September 2026 domestic and import model tables, observed live on October 12; exact publication time is not established.",
+  "raw_rows_file": "source_rows_2026-10-12.json",
+  "sources": [
+    {
+      "market": "국산",
+      "period": "2026-09",
+      "url": "https://auto.danawa.com/auto/?Work=record&Tab=Model&Nation=domestic&Month=2026-09-00",
+      "raw_records_saved": 67,
+      "reviewed_records_saved": 67,
+      "displayed_total": 100083,
+      "all_model_rows_total": 100083,
+      "verification": "All 67 model/count pairs match the previous deployed source. Commercial aggregates and source-separated models are preserved."
+    },
+    {
+      "market": "수입",
+      "period": "2026-09",
+      "url": "https://auto.danawa.com/auto/?Work=record&Tab=Model&Nation=export&Month=2026-09-00",
+      "raw_records_saved": 155,
+      "reviewed_records_saved": 13,
+      "displayed_total": 34904,
+      "all_model_rows_total": 34904,
+      "maximum_omitted_from_reviewed_units": 447,
+      "verification": "Explicit market/month verified in live page; all 155 model ranks sequential, integer counts descending, source model IDs unique and sum equals displayed total. Trim detail rows excluded."
+    }
+  ],
+  "method": {
+    "grain": "Source model group and exact source generation; no arbitrary model aggregation",
+    "sort": "units_sold descending; domestic before import for ties, stable source order within each market",
+    "rank_movement": "Previous deployed October 2 ranking snapshot (domestic September/import August), captured once. NEW means outside the previous TOP50, not a new launch.",
+    "caveat": "Both markets now use September 2026, but domestic sales and import registrations remain different measures; sales-support ranking, not a market-share table.",
+    "identity_notes": [
+      "E-Class source Model=4516 has 2748 registrations; old Model=3757 has 1 and remains a separate raw row. Never combine into 2749.",
+      "아반떼 and 디 올 뉴 아반떼 remain separate.",
+      "Combustion and electric variants remain separate wherever the source separates them."
+    ],
+    "retained_metadata": "All non-ranking fields of the 47 retained vehicles are unchanged. Only the 3 entrants receive newly verified metadata."
+  },
+  "top50": {
+    "domestic_rows": 39,
+    "import_rows": 11,
+    "cutoff_units": 498,
+    "cutoff_model": "EV4",
+    "next_excluded": {
+      "brand": "벤츠",
+      "model": "GLC-Class",
+      "units": 481
+    },
+    "added": [
+      "벤츠 The New S-Class",
+      "폴스타 Polestar 4",
+      "BMW 3 Series"
+    ],
+    "removed": [
+      "벤츠 GLC-Class",
+      "BYD SEALION 6 DM-i",
+      "현대 캐스퍼 일렉트릭"
+    ]
+  }
+}

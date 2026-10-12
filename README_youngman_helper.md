@@ -97,13 +97,13 @@ GitHub Actions 자동 갱신:
 `vehicle_master.csv`에서 다음 컬럼을 보강하면 화면에 바로 반영됩니다.
 
 - `units_sold`: 판매/등록 대수
-- `rank_change`: 전월 대비 순위 변동
+- `rank_change`: 직전 앱 반영본 대비 순위 변동
 - `image_url`: 차량 이미지 URL
 - `price_url`: 공식 가격표 PDF 또는 가격 페이지
 - `catalog_url`: 추가 PDF 링크. 현재는 카탈로그뿐 아니라 HEV 가격표 등 추가 PDF도 포함
 
-판매순위는 `scripts/build_combined_sales_rankings.py`의 월간 국산·수입 통합 목록을 수동으로 검증한 뒤 실행하면 `vehicle_master.csv`와 `data/sales_snapshot/monthly_sales.csv`를 함께 갱신합니다.
-현재 통합 TOP50은 2026년 10월 2일 확인한 최신 공개 모델별 집계인 국산 2026년 9월 판매실적과 수입 2026년 8월 등록실적을 사용합니다. 수입 9월 모델별 표는 아직 공개되지 않아 8월을 유지합니다. 서로 다른 기준월과 판매/등록 지표를 합친 영업 참고 순위이며, 동일 월 시장점유율을 의미하지 않습니다. 순위변동은 직전 앱 반영본(국산·수입 8월) 대비입니다. 원천 검증 내역은 `data/sales_snapshot/sources_2026-10-02.json`에 보관합니다.
+판매순위는 `data/sales_snapshot/reviewed_sales.csv`와 새 진입 차량의 공식 자료를 검증한 뒤 `scripts/build_combined_sales_rankings.py`를 실행하면 `vehicle_master.csv`와 `data/sales_snapshot/monthly_sales.csv`를 함께 갱신합니다. 상세 절차와 검증 명령은 `docs/sales_refresh_process.md`를 참고하세요.
+현재 통합 TOP50은 2026년 10월 12일 확인한 국산·수입 모두 2026년 9월 모델별 집계이며, 국산 39개·수입 11개 모델로 구성합니다. 국산 판매와 수입 등록은 서로 다른 지표이므로 영업 참고용으로 사용합니다. 순위변동은 직전 앱 반영본(국산 9월·수입 8월) 대비이며 NEW는 직전 TOP50 밖에서 진입했다는 뜻입니다. 원천 검증 내역은 `data/sales_snapshot/sources_2026-10-12.json`, 전체 222개 모델은 `data/sales_snapshot/source_rows_2026-10-12.json`에 보관합니다.
 
 ## 판매순위/링크 소스 메모
 
