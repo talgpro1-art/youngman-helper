@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-10-15",
+    "brand": "기아",
+    "model": "셀토스",
+    "title": "공식 가격표 변경 감지: 기아 셀토스",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-10-15",
+    "brand": "기아",
+    "model": "셀토스",
+    "title": "공식 추가PDF 변경 감지: 기아 셀토스",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_seltos.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
     "date": "2026-10-08",
     "article_date": "2026-10-08",
     "brand": "기아",
@@ -9,19 +29,6 @@
     "body": "EV6 견적서에서 20인치 휠 선택 시 인증 주행거리가 452km로 변경된다는 상세 사양 정보입니다.",
     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1lSGRwcVRuVno0WGJXbmJVVVRXSTBNbjkzQ1M3TzhBdnZ3ZUk1Ynd4SXZ1YkMwWjVyUVl2VXQxWFdReEM1akxraW1HakJGN0l2RnF5TjFITW1fbUlHVUE2dERsX0FyczVHQ2kwOHVtLXdGdjJ00gF0QVVfeXFMTWVIZHBxVG5WejRYYlduYlVVVFdJME1uOTNDUzdPOEF2dndlSTVid3hJdnViQzBaNXJRWXZVdDFYV1F4QzVqTGtpbUdqQkY3SXZGcXlOMUhNbV9tSUdVQTZ0RGxfQXJzNUdDaTA4dW0td0Z2MnQ?oc=5",
     "published": "2026-10-08T12:08:33+09:00",
-    "severity": "warning",
-    "source": "newcar_watch_verified"
-  },
-  {
-    "date": "2026-10-07",
-    "article_date": "2026-10-07",
-    "brand": "현대",
-    "model": "쏘나타",
-    "vehicle": "쏘나타 디 엣지",
-    "title": "2027 쏘나타 디 엣지 가격 공개… 기존 대비 10~30만원 인상·편의사양 확대 - 오토센티널",
-    "body": "2027년형 쏘나타 디 엣지의 가격이 공개되었으며, 기존 대비 10~30만원 인상 및 편의사양이 확대되었습니다.",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE15ZGhwbG1KUTlTNFpJTXB4cEpZVnExR3gya1lzRzhjVldsUXg0YThiWlNFWGNaMmFXMmpENmpXQzRXbEhHUjd3bkdzV085RUN0UmlTbTdaeUNTWnhqMkxNdHppYTdILWxhRWtscm9rMDY?oc=5",
-    "published": "2026-10-07T10:21:49+09:00",
     "severity": "warning",
     "source": "newcar_watch_verified"
   }
