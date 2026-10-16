@@ -1,35 +1,13 @@
 [
   {
-    "date": "2026-10-15",
-    "brand": "기아",
-    "model": "셀토스",
-    "title": "공식 가격표 변경 감지: 기아 셀토스",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-10-15",
-    "brand": "기아",
-    "model": "셀토스",
-    "title": "공식 추가PDF 변경 감지: 기아 셀토스",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_seltos.pdf",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-10-08",
-    "article_date": "2026-10-08",
-    "brand": "기아",
-    "model": "EV6",
-    "vehicle": "EV6",
-    "title": "EV6 견적서에서 20인치 휠을 고르면 인증 주행거리가 452km로 바뀐다 - 래디언스리포트",
-    "body": "EV6 견적서에서 20인치 휠 선택 시 인증 주행거리가 452km로 변경된다는 상세 사양 정보입니다.",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1lSGRwcVRuVno0WGJXbmJVVVRXSTBNbjkzQ1M3TzhBdnZ3ZUk1Ynd4SXZ1YkMwWjVyUVl2VXQxWFdReEM1akxraW1HakJGN0l2RnF5TjFITW1fbUlHVUE2dERsX0FyczVHQ2kwOHVtLXdGdjJ00gF0QVVfeXFMTWVIZHBxVG5WejRYYlduYlVVVFdJME1uOTNDUzdPOEF2dndlSTVid3hJdnViQzBaNXJRWXZVdDFYV1F4QzVqTGtpbUdqQkY3SXZGcXlOMUhNbV9tSUdVQTZ0RGxfQXJzNUdDaTA4dW0td0Z2MnQ?oc=5",
-    "published": "2026-10-08T12:08:33+09:00",
-    "severity": "warning",
+    "date": "2026-10-16",
+    "brand": "",
+    "model": "",
+    "title": "최근 검증 완료된 주요 신차/가격표 이슈가 없습니다.",
+    "body": "구글시트 검증 기준을 통과한 최근 7일 이내 신차·가격표 소식이 없습니다.",
+    "link": "",
+    "published": "",
+    "severity": "info",
     "source": "newcar_watch_verified"
   }
 ]
