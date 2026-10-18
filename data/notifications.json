@@ -1,13 +1,28 @@
 [
   {
-    "date": "2026-10-17",
-    "brand": "",
-    "model": "",
-    "title": "최근 검증 완료된 주요 신차/가격표 이슈가 없습니다.",
-    "body": "구글시트 검증 기준을 통과한 최근 7일 이내 신차·가격표 소식이 없습니다.",
-    "link": "",
-    "published": "",
-    "severity": "info",
+    "date": "2026-10-16",
+    "article_date": "2026-10-16",
+    "brand": "테슬라",
+    "model": "로드스터",
+    "vehicle": "테슬라 로드스터",
+    "title": "테슬라 로드스터, 韓서 레이스용 3.5억 사전예약…\"하늘 나는\" 로켓 트림은 '비공개 초대 전용' - 뉴시스",
+    "body": "테슬라 로드스터가 한국에서 레이스용 모델 기준 3억 5천만원에 사전예약을 시작했습니다.",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWOFVSaGhDbXlnTWh1T2psOVVZLTIxYW9wakgxZE15TC1HZmQ0MzdnV25JRXI4TTdyMnZYSkMxaHo0OTV5eHktZ0Q0WTc0QVFMLVV5U1FDVTlfbWMwQnFGV9IBeEFVX3lxTE16UmtLX1Bya2liQTNSNFRRdDQxQUtSb0gyYndKX0ViMWNHMzdmeUpZcUdoRDZ0NWRMRGxGMDVqR09xb2pHcnEySVM5NlBOY1FreE1EOWl3MmpVdjNtM3BoT2dPeFdIUlk1M3NvOFlwWmFIRFlsZ29aXw?oc=5",
+    "published": "2026-10-16T16:31:18+09:00",
+    "severity": "warning",
+    "source": "newcar_watch_verified"
+  },
+  {
+    "date": "2026-10-14",
+    "article_date": "2026-10-14",
+    "brand": "현대",
+    "model": "투싼",
+    "vehicle": "현대 신형 투싼",
+    "title": "‘21일 판매 예정’ 현대차 신형 투싼, V2L 뺀 가격 전략 통하나 - Daum",
+    "body": "현대자동차가 오는 21일 신형 투싼의 판매를 개시할 예정입니다. V2L 기능을 제외하는 등 가격 경쟁력을 높이기 위한 상품성 및 가격 전략을 적용합니다.",
+    "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFAxREtpbFdvNUF1NmJ6X1p2RU5LbWEycmtzakxXWHM1ZlR6M0xKdnBGM0lXb2pvcjBYa3FaVE1jbHB1ZUpwZkE?oc=5",
+    "published": "2026-10-14T18:45:16+09:00",
+    "severity": "warning",
     "source": "newcar_watch_verified"
   }
 ]
