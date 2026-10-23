@@ -1,23 +1,29 @@
 [
   {
-    "date": "2026-10-22",
-    "brand": "기아",
-    "model": "카니발",
-    "title": "공식 가격표 변경 감지: 기아 카니발",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf",
+    "date": "2026-10-23",
+    "article_date": "2026-10-23",
+    "brand": "르노코리아",
+    "model": "그랑 콜레오스",
+    "vehicle": "그랑 콜레오스",
+    "title": "“가격은 낮추고 고객 선호 사양은 빵빵한”..르노 ‘그랑 콜레오스’, 중형 SUV 시장서 ‘바람몰이’ - 데일리카",
+    "body": "르노코리아의 중형 SUV 그랑 콜레오스가 가격 경쟁력과 선호 사양을 바탕으로 국내 중형 SUV 시장에서 긍정적인 반응을 얻고 있다는 소식입니다.",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9QX3ZyclpfT2ZGbkJWM2FrenF5Z1BfMm9TaVQwM2p1aGxWUDlxLUJlUTBrZExtYlNQLWtFaUVqMFJ4NXlwNnhxMmlEdWJFNldrejdNS0R3RDYzV25iTENLQ2MyYXZLMUxEUW9va2NnQjJPX1lKNGc?oc=5",
+    "published": "2026-10-23T05:28:14+09:00",
     "severity": "warning",
-    "source": "price_link_checker"
+    "source": "newcar_watch_verified"
   },
   {
     "date": "2026-10-22",
-    "brand": "기아",
-    "model": "카니발",
-    "title": "공식 추가PDF 변경 감지: 기아 카니발",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_carnival.pdf",
+    "article_date": "2026-10-22",
+    "brand": "현대",
+    "model": "투싼",
+    "vehicle": "현대 디 올 뉴 투싼",
+    "title": "현대차 '가격 방어' 통했다…디 올 뉴 투싼 첫날 1만5045대 - 글로벌이코노믹",
+    "body": "현대자동차 디 올 뉴 투싼이 사전계약 첫날 1만 5045대의 실적을 올려 흥행을 기록했다는 소식입니다.",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNRm9JNVF6TzByS2J2NGwteFhZRk5pSHFWZ3ZnWjcyNWdVbTQ0OEE1eThMaWZVNFh0ODc5MXMxM2QzbkM1NTFtZWRhY1JXb0VSM0NaNkRxWmx4SnU1SHhZYU84NHpRUWJJREJFWGtrMWI5U1JnVzVNWjNyTmN1OXVDb0ZISDk3QQ?oc=5",
+    "published": "2026-10-22T14:40:29+09:00",
     "severity": "warning",
-    "source": "price_link_checker"
+    "source": "newcar_watch_verified"
   },
   {
     "date": "2026-10-20",
@@ -55,19 +61,6 @@
     "body": "제네시스 GV80 하이브리드 블랙 모델이 출시되었으며 최고출력 352마력, 출시 가격은 1억 325만 원으로 공개되었습니다.",
     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9UWUhTRV9UdjFSNWQ1TXVEcjhDU0Z0QjROY1RMQ2Qzb19ZOVdKb1dlUDlaYU1YUVhLRHhtRzl2VG5ZYjg4eTZORmVOYTJJUEliOVdFanNXbDBCSjFET0JZTm8zWDc1Yi1HMl9TeFdwYmU?oc=5",
     "published": "2026-10-18T04:00:00+09:00",
-    "severity": "warning",
-    "source": "newcar_watch_verified"
-  },
-  {
-    "date": "2026-10-16",
-    "article_date": "2026-10-16",
-    "brand": "테슬라",
-    "model": "로드스터",
-    "vehicle": "테슬라 로드스터",
-    "title": "테슬라 로드스터, 韓서 레이스용 3.5억 사전예약…\"하늘 나는\" 로켓 트림은 '비공개 초대 전용' - 뉴시스",
-    "body": "테슬라 로드스터가 한국에서 레이스용 모델 기준 3억 5천만원에 사전예약을 시작했습니다.",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWOFVSaGhDbXlnTWh1T2psOVVZLTIxYW9wakgxZE15TC1HZmQ0MzdnV25JRXI4TTdyMnZYSkMxaHo0OTV5eHktZ0Q0WTc0QVFMLVV5U1FDVTlfbWMwQnFGV9IBeEFVX3lxTE16UmtLX1Bya2liQTNSNFRRdDQxQUtSb0gyYndKX0ViMWNHMzdmeUpZcUdoRDZ0NWRMRGxGMDVqR09xb2pHcnEySVM5NlBOY1FreE1EOWl3MmpVdjNtM3BoT2dPeFdIUlk1M3NvOFlwWmFIRFlsZ29aXw?oc=5",
-    "published": "2026-10-16T16:31:18+09:00",
     "severity": "warning",
     "source": "newcar_watch_verified"
   }
