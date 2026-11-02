@@ -430,6 +430,47 @@ def show_newcar_premium_zone(newcars: pd.DataFrame) -> None:
     st.markdown("\n".join(dedent(part).strip() for part in parts), unsafe_allow_html=True)
 
 
+def show_updates_preview(notifications: list[dict], newcars: pd.DataFrame) -> None:
+    """Stable editorial previews of the same source-backed secondary content."""
+    visible_notifications = notifications[:5]
+    price_updates = [item for item in visible_notifications if safe_str(item.get("source")) == "price_link_checker"]
+    notice = next(iter(price_updates or visible_notifications), None)
+    upcoming, recent = filtered_newcars(newcars)
+    roadmap = pd.concat([upcoming, recent], ignore_index=True)
+    if notice:
+        notice_title = html_text(notice.get("title"), "알림")
+        notice_date = safe_str(notice.get("article_date")) or safe_str(notice.get("date")) or safe_str(notice.get("created_at")) or safe_str(notice.get("published"))
+        notice_vehicle = safe_str(notice.get("vehicle")) or f"{safe_str(notice.get('brand'))} {safe_str(notice.get('model'))}".strip()
+        notice_meta = html_text(" · ".join(value for value in [notice_date, notice_vehicle] if value))
+    else:
+        notice_title, notice_meta = "등록된 알림이 없습니다", "새로운 알림이 등록되면 표시합니다."
+    notice_link = safe_str(notice.get("link")) if notice else ""
+    notice_title = f'<a href="{escape(notice_link)}" target="_blank" rel="noopener noreferrer">{notice_title}</a>' if notice_link.startswith("http") else notice_title
+    if not roadmap.empty:
+        row = roadmap.iloc[0]
+        roadmap_title = html_text(row.get("vehicle"), "신차")
+        launch_date = safe_str(row.get("launch_date"))
+        timing = f"{launch_date} · {dday_label(row.get('launch_dt'))}" if launch_date else "출시 일정 확인중"
+        roadmap_meta = html_text(f"{timing} · {confidence_label(row.get('launch_confidence'))} · {price_status_label(row.get('price_status'))}")
+    else:
+        roadmap_title, roadmap_meta = "업데이트 대기", "현재 확인된 출시 예정·최근 출시 차량이 없습니다."
+    st.markdown(f"""
+    <section class="updates-preview" aria-label="가격표 알림과 신차 소식">
+      <article class="update-preview" data-preview="notice">
+        <div class="update-eyebrow">가격표·업무 알림 <span>{len(visible_notifications)}건</span></div>
+        <div class="update-title">{notice_title}</div><div class="update-meta">{notice_meta}</div>
+      </article>
+      <article class="update-preview" data-preview="roadmap">
+        <div class="update-eyebrow">신차 출시 로드맵 <span>{len(roadmap)}건</span></div>
+        <div class="update-title">{roadmap_title}</div><div class="update-meta">{roadmap_meta}</div>
+      </article>
+    </section>
+    """, unsafe_allow_html=True)
+    with st.expander(f"소식 전체보기 · 알림 {len(visible_notifications)}건 / 로드맵 {len(roadmap)}건"):
+        show_notifications(notifications)
+        show_newcar_premium_zone(newcars)
+
+
 def filter_vehicles(df: pd.DataFrame) -> pd.DataFrame:
     search_col, segment_col = st.columns([3, 1])
     search = search_col.text_input("차량명 검색", placeholder="예: 쏘렌토, 그랜저, 카니발")
@@ -607,10 +648,8 @@ def main() -> None:
     with tab1:
         hero_path = ROOT / "assets" / "night-garage-hero.png"
         hero_image = f'<img src="{image_file_to_data_url(hero_path)}" alt="" aria-hidden="true">' if hero_path.exists() else ""
-        st.markdown(f'<section class="garage-hero">{hero_image}<div class="garage-hero-copy"><h1>순위에서 <em>가격표</em>까지.</h1><p>국산·수입 통합 TOP50</p></div></section>', unsafe_allow_html=True)
-        with st.expander(f"가격표·업무 알림 {len(notifications[:5])}건 · 신차 출시 로드맵"):
-            show_notifications(notifications)
-            show_newcar_premium_zone(newcars)
+        st.markdown(f'<section class="garage-hero">{hero_image}<div class="garage-hero-copy"><h1>영맨헬퍼</h1><p>차량 판매순위부터 가격표까지 원클릭으로</p></div></section>', unsafe_allow_html=True)
+        show_updates_preview(notifications, newcars)
         show_rank_section(df)
     with tab2:
         show_pdf_section(df)
@@ -620,8 +659,7 @@ def main() -> None:
         show_effect_section()
     st.divider()
     show_summary_metrics(df)
-    st.divider()
-    st.caption("보안 원칙: 고객 개인정보, 실제 계약정보, 견적정보, 상담내역은 사용하지 않습니다. 공식/공개 자료 기반의 영업 보조 대시보드입니다.")
+
 
 
 if __name__ == "__main__":

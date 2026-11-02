@@ -1,5 +1,6 @@
 """Offline Streamlit smoke tests for the published TOP50 data and entrant cards."""
 from pathlib import Path
+import json
 import unittest
 from unittest.mock import patch
 
@@ -87,6 +88,20 @@ class AppSalesTests(unittest.TestCase):
         self.app.selectbox[0].select('전체')
         self.run_app()
         self.assertIn('표시 차량: 50개', [item.value for item in self.app.caption])
+
+    def test_editorial_previews_copy_and_navigation(self):
+        markdown = '\n'.join(item.value for item in self.app.markdown)
+        self.assertIn('<h1>영맨헬퍼</h1>', markdown)
+        self.assertIn('차량 판매순위부터 가격표까지 원클릭으로', markdown)
+        self.assertNotIn('보안 원칙: 고객 개인정보, 실제 계약정보', '\n'.join(item.value for item in self.app.caption))
+        self.assertEqual([tab.label for tab in self.app.tabs], ['TOP50', '가격표', '옵션', '업무효과'])
+        preview = next(item.value for item in self.app.markdown if 'class="updates-preview"' in item.value)
+        notifications = json.loads((ROOT / 'data/notifications.json').read_text())[:5]
+        selected = next(item for item in notifications if item.get('source') == 'price_link_checker')
+        self.assertIn(selected['title'], preview)
+        self.assertIn(selected['date'], preview)
+        self.assertIn('data-preview="roadmap"', preview)
+        self.assertIn('소식 전체보기', self.app.expander[0].label)
 
     def test_new_entrant_options_have_safe_empty_state(self):
         self.app.radio[0].set_value('전체 차량')

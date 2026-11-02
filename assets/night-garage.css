@@ -47,4 +47,49 @@ a:focus-visible,button:focus-visible,input:focus-visible,[role="tab"]:focus-visi
 @media(max-width:700px){.block-container{padding:2.7rem .8rem 2rem}.garage-brand{font-size:1.65rem}.garage-brand small{font-size:.6rem;margin-left:.6rem}[data-baseweb="tab-list"]{gap:.8rem}[data-baseweb="tab"]{font-size:.9rem}.garage-hero{min-height:125px}.garage-hero-copy{padding:.8rem}.garage-hero h1{font-size:1.65rem}.garage-hero p{font-size:.9rem}.garage-hero img{object-position:65% center}.mobile-section-title{font-size:1.18rem}.rank-list-head{display:none}.vehicle-card{grid-template-columns:46px 82px minmax(0,1fr);gap:.6rem;padding:.85rem .65rem;border-top:1px solid var(--garage-border);margin-bottom:.6rem;border-radius:8px}.vehicle-thumb,.car-placeholder{width:82px;height:60px}.vehicle-name{font-size:1rem}.rank-badge{font-size:1.4rem}.vehicle-stats{grid-column:2/4}.vehicle-documents{grid-column:1/4}.vehicle-units{font-size:.95rem}.compact-link{flex:1;min-height:44px}.vehicle-meta{font-size:.77rem}.tag-row{display:inline-flex;margin-left:.4rem}.garage-brand small{letter-spacing:.06em}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media(max-width:700px){.block-container{padding-top:1.2rem}.garage-hero{min-height:110px}.stApp [data-testid="stVerticalBlock"]{gap:.45rem}}
-@media(min-width:701px){.stApp [data-testid="stTabs"]{margin-top:-49px}.stApp [role="tablist"]{padding-left:220px}}
+/* Editorial refinements: keep navigation in normal flow below Streamlit chrome. */
+.stApp{font-family:Pretendard,"Noto Sans KR","Malgun Gothic",sans-serif}
+.block-container{padding-top:4.5rem;max-width:1360px}
+.garage-brand{font-size:19px;font-weight:700;line-height:1.4;letter-spacing:-.025em;margin:0}
+.stApp [role="tablist"],[data-baseweb="tab-list"]{padding-left:0;gap:24px}
+.stApp [role="tab"] p{font-size:14px;font-weight:600}
+.garage-hero{min-height:112px;border-bottom:1px solid var(--garage-border);margin:0}
+.garage-hero img{opacity:.45;object-position:center 52%}
+.garage-hero-copy{background:transparent;padding:16px 20px;animation:none;color:var(--garage-text)}
+.garage-hero h1{font-size:30px;font-weight:700;line-height:1.4;letter-spacing:-.025em}
+.garage-hero p{font-size:14px;font-weight:400;line-height:1.5;margin-top:4px;color:#d4dbe5}
+.mobile-section-title{font-size:19px;font-weight:700;line-height:1.4;letter-spacing:-.025em;margin:8px 0 4px}
+.updates-preview{display:grid;grid-template-columns:1fr 1fr;background:#0d1520;border-bottom:1px solid var(--garage-border)}
+.update-preview{min-width:0;padding:12px 16px}
+.update-preview+.update-preview{border-left:1px solid var(--garage-border)}
+.update-eyebrow{display:flex;align-items:center;justify-content:space-between;font-size:12px;line-height:1.5;color:var(--garage-muted);margin-bottom:4px}
+.update-eyebrow span{color:#ffad76}
+.update-title{font-size:14px;font-weight:700;line-height:1.5;letter-spacing:-.025em}
+.update-title a{color:var(--garage-text)!important;text-decoration:none}
+.update-title a:hover{text-decoration:underline;text-underline-offset:3px}
+.update-meta{color:var(--garage-muted);font-size:12px;line-height:1.5;margin-top:3px}
+.update-summary{color:var(--garage-muted);font-size:14px;line-height:1.5;margin-top:4px}
+.vehicle-card{background:transparent;border-left:0;border-right:0;padding:12px 16px;box-shadow:none}
+.vehicle-card:hover{background:#101925}
+.vehicle-name{font-weight:700;letter-spacing:-.025em}
+.rank-badge{font-size:24px;font-weight:600;font-variant-numeric:tabular-nums}
+.vehicle-units{font-size:16px;font-weight:600;font-variant-numeric:tabular-nums}
+.pill{background:transparent;padding:0;color:var(--garage-muted);border-radius:0}
+.pill+.pill{border-left:1px solid #44505f;padding-left:6px;margin-left:3px}
+.compact-link,.pdf-button{border-color:#795239;border-radius:4px;font-weight:600}
+.notice-card,.roadmap-card,.option-card,.effect-card{border:0;border-bottom:1px solid var(--garage-border);border-radius:0;box-shadow:none;padding:12px 16px;background:transparent}
+.notice-zone,.premium-zone{padding:0}
+@media(max-width:700px){
+  .block-container{padding-top:4.5rem}
+  .garage-hero{min-height:92px}
+  .garage-hero-copy{padding:12px 16px}
+  .garage-hero h1{font-size:24px}
+  .garage-hero p{font-size:14px;max-width:270px}
+  .stApp [role="tablist"],[data-baseweb="tab-list"]{gap:20px}
+  .updates-preview{grid-template-columns:1fr}
+  .update-preview+.update-preview{border-left:0;border-top:1px solid var(--garage-border)}
+  .update-preview{padding:10px 12px}
+  .update-summary{font-size:12px}
+  .vehicle-card{border-radius:0;margin-bottom:0;padding:12px 0}
+  .mobile-section-title{font-size:19px}
+}
