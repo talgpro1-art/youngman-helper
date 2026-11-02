@@ -30,18 +30,23 @@ class AppSalesTests(unittest.TestCase):
         self.assertFalse(self.app.exception)
 
     def test_complete_table_periods_and_entrant_cards(self):
-        table = self.app.dataframe[0].value
-        self.assertEqual(len(table), 50)
-        self.assertEqual(table['순위'].tolist(), list(range(1, 51)))
-        self.assertEqual(set(table['기준월']), {'국산 2026-09', '수입 2026-09'})
-        self.assertEqual(table.iloc[-1]['차량'], '기아 EV4')
+        master = pd.read_csv(ROOT / 'vehicle_master.csv').fillna('')
+        cards = [item.value for item in self.app.markdown if '<article class="vehicle-card"' in item.value]
+        self.assertEqual(len(cards), 50)
+        self.assertEqual(master['rank'].tolist(), list(range(1, 51)))
+        self.assertEqual(set(master.source_period), {'국산 2026-09', '수입 2026-09'})
+        for card, (_, row) in zip(cards, master.iterrows()):
+            self.assertIn(f'aria-label="{row["rank"]}위 {row.vehicle}"', card)
+            self.assertIn(row.source_period, card)
+            self.assertIn(str(row.units_sold), card)
+        self.assertIn('기아 EV4', cards[-1])
         captions = '\n'.join(item.value for item in self.app.caption)
         self.assertNotIn('국산·수입 기준월이 다른', captions)
         self.assertIn('이전 앱 반영 순위 대비', captions)
         markdown = '\n'.join(item.value for item in self.app.markdown)
         for name, rank in [('벤츠 The New S-Class', 34), ('폴스타 Polestar 4', 43), ('BMW 3 Series', 47)]:
-            row = table.loc[table['차량'].eq(name)].iloc[0]
-            self.assertEqual((row['순위'], row['이전 대비']), (rank, 'NEW'))
+            row = master.loc[master.vehicle.eq(name)].iloc[0]
+            self.assertEqual((row['rank'], row['rank_change']), (rank, 'NEW'))
             self.assertIn(name, markdown)
         self.assertIn('11,421', markdown)
         self.assertIn('2,748', markdown)
@@ -53,7 +58,7 @@ class AppSalesTests(unittest.TestCase):
             self.app.text_input[1].set_value(model)
             self.run_app()
             self.assertIn('표시 차량: 1개', [item.value for item in self.app.caption])
-            self.assertEqual(len(self.app.expander), 1)
+            self.assertEqual(len(self.app.expander), 2)
             expected = master.loc[master.model.eq(model)].iloc[0]
             markdown = '\n'.join(item.value for item in self.app.markdown)
             self.assertIn(expected.price_url.replace('&', '&amp;'), markdown)
@@ -62,7 +67,26 @@ class AppSalesTests(unittest.TestCase):
             self.app.text_input[1].set_value('')
             self.run_app()
             self.assertIn('표시 차량: 50개', [item.value for item in self.app.caption])
-            self.assertEqual(len(self.app.expander), 50)
+            self.assertEqual(len(self.app.expander), 51)
+
+    def test_literal_search_no_matches_and_segment_reset(self):
+        for query in ['[', '없는차량xyz']:
+            self.app.text_input[0].set_value(query)
+            self.app.text_input[1].set_value(query)
+            self.run_app()
+            self.assertIn('표시 차량: 0개', [item.value for item in self.app.caption])
+            self.assertTrue(any('검색 결과가 없습니다' in item.value for item in self.app.info))
+        self.app.text_input[0].set_value('')
+        self.app.text_input[1].set_value('')
+        self.app.selectbox[0].select('SUV')
+        self.run_app()
+        master = pd.read_csv(ROOT / 'vehicle_master.csv')
+        expected = master[master.segment.eq('SUV')]
+        cards = [item.value for item in self.app.markdown if '<article class="vehicle-card"' in item.value]
+        self.assertEqual(len(cards), len(expected))
+        self.app.selectbox[0].select('전체')
+        self.run_app()
+        self.assertIn('표시 차량: 50개', [item.value for item in self.app.caption])
 
     def test_new_entrant_options_have_safe_empty_state(self):
         self.app.radio[0].set_value('전체 차량')

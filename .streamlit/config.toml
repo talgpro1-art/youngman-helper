@@ -3,3 +3,11 @@ toolbarMode = "minimal"
 
 [server]
 enableStaticServing = true
+
+[theme]
+base = "dark"
+primaryColor = "#ff741f"
+backgroundColor = "#080e16"
+secondaryBackgroundColor = "#111b27"
+textColor = "#f4f6fa"
+font = "sans serif"
