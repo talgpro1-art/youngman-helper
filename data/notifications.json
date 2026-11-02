@@ -1,5 +1,105 @@
 [
   {
+    "date": "2026-11-02",
+    "brand": "기아",
+    "model": "쏘렌토",
+    "title": "공식 가격표 변경 감지: 기아 쏘렌토",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-11-02",
+    "brand": "기아",
+    "model": "쏘렌토",
+    "title": "공식 추가PDF 변경 감지: 기아 쏘렌토",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_sorento.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-11-02",
+    "brand": "기아",
+    "model": "스포티지",
+    "title": "공식 가격표 변경 감지: 기아 스포티지",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sportage.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-11-02",
+    "brand": "기아",
+    "model": "스포티지",
+    "title": "공식 추가PDF 변경 감지: 기아 스포티지",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_sportage.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-11-02",
+    "brand": "기아",
+    "model": "셀토스",
+    "title": "공식 가격표 변경 감지: 기아 셀토스",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-11-02",
+    "brand": "기아",
+    "model": "셀토스",
+    "title": "공식 추가PDF 변경 감지: 기아 셀토스",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_seltos.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-11-02",
+    "brand": "기아",
+    "model": "카니발",
+    "title": "공식 가격표 변경 감지: 기아 카니발",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-11-02",
+    "brand": "기아",
+    "model": "카니발",
+    "title": "공식 추가PDF 변경 감지: 기아 카니발",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_carnival.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-11-02",
+    "brand": "기아",
+    "model": "레이",
+    "title": "공식 가격표 변경 감지: 기아 레이",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-11-02",
+    "brand": "기아",
+    "model": "레이",
+    "title": "공식 추가PDF 변경 감지: 기아 레이",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ray.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
     "date": "2026-10-31",
     "article_date": "2026-10-31",
     "brand": "제네시스",
@@ -9,6 +109,19 @@
     "body": "현대자동차가 제네시스 G90 페이스리프트 모델의 12월 출시를 확정짓고 4분기 신차 시장을 이끌 예정입니다.",
     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdE5wcGRReDZzWmpVX2FyY3UxQzlDeXllYmJxM2dzLUlBNUE1NkJfekcySUtpN09Cb1hlLW42Ty1hOFlfd0c1Y09yTEVSRkl4ekVHVElSTmtuekladFd5bmIyQVhobjBsVXRVbTRqWDIyMlNRVXFOdkxvUWt0cjlqZ1BnQmxZalVvU2NlNTc5T2JuQ3g4d2dtaks4NS1DcG5laGdB?oc=5",
     "published": "2026-10-31T01:07:00+09:00",
+    "severity": "warning",
+    "source": "newcar_watch_verified"
+  },
+  {
+    "date": "2026-10-30",
+    "article_date": "2026-10-30",
+    "brand": "MINI",
+    "model": "MINI 쿠퍼",
+    "vehicle": "MINI 쿠퍼 옥스포드 에디션",
+    "title": "[신차] MINI, 브리티시 헤리티지 담은 한정판 ‘MINI 쿠퍼 옥스포드 에디션’ 국내 출시 - 고카넷",
+    "body": "MINI가 브리티시 헤리티지를 담은 한정판 모델 'MINI 쿠퍼 옥스포드 에디션'을 국내에 공식 출시했습니다.",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE80UW9vTm5yekxVSDJFMFRwMG9CZl9nN3ZaeTZrU3kyUS1oLVhLenNvR1U5UXYwUWNFNjhxcmJOY2tkSVgyMkxWRDM3aXRXdFYzeXpERm96MmpJN0Z1TjQ1ODZOSkxWaHg0MEE?oc=5",
+    "published": "2026-10-30T11:14:08+09:00",
     "severity": "warning",
     "source": "newcar_watch_verified"
   },
@@ -35,19 +148,6 @@
     "body": "폭스바겐이 수입차 가격 경쟁 속에서 고성능 모델인 골프 R을 국내 시장에 선보인 현장 소식입니다.",
     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBSb01aOG15OEFHTjRxY0ZDTUlUZlNzVDhhc0VwWGIzSlRhblJZRzBTQ3RvZC1vZTYzWWJFd0lMSklFRk1uS2ZtUE9pLUthaTdrcEVFUEQ0Q3ZPaU1Wb0E?oc=5",
     "published": "2026-10-28T06:36:36+09:00",
-    "severity": "warning",
-    "source": "newcar_watch_verified"
-  },
-  {
-    "date": "2026-10-26",
-    "article_date": "2026-10-26",
-    "brand": "현대",
-    "model": "투싼",
-    "vehicle": "현대 신형 투싼",
-    "title": "현대 신형 투싼 가격표 공개…가솔린 3140만원·하이브리드 3615만원부터 - 비건뉴스",
-    "body": "현대자동차 신형 투싼의 가격표가 공개되었으며 가솔린 모델은 3140만원, 하이브리드 모델은 3615만원부터 시작합니다.",
-    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAwa2xBYktkUmY3aWFHb0stQ1JCLVd2LXY1WkZiaGMtVElQOWlxLUZsWkJRVHBvcUFLY3hWa2hRLVZSQXEzUjRrZWJiRktpNFJ5TGp3SHk4R3lQb2IybkxrWkpBanZJQQ?oc=5",
-    "published": "2026-10-26T01:59:27+09:00",
     "severity": "warning",
     "source": "newcar_watch_verified"
   }
