@@ -19,13 +19,13 @@ class SalesRefreshTests(unittest.TestCase):
         sales = pd.read_csv(build.MONTHLY_SALES)
         reviewed = pd.read_csv(build.REVIEWED_SALES)
         self.assertEqual(len(master), 50)
-        self.assertEqual(len(reviewed), 80)
+        self.assertEqual(len(reviewed), 82)
         self.assertFalse(reviewed.duplicated(["brand", "model"]).any())
         expected = reviewed.sort_values("units_sold", ascending=False, kind="stable").head(50)
         self.assertEqual(list(sales.model), list(expected.model))
         self.assertEqual(list(sales.units_sold), list(expected.units_sold))
         self.assertEqual(list(master['rank'].astype(int)), list(range(1, 51)))
-        self.assertEqual(master.source_period.value_counts().to_dict(), {"국산 2026-09": 39, "수입 2026-09": 11})
+        self.assertEqual(master.source_period.value_counts().to_dict(), {"국산 2026-10": 41, "수입 2026-09": 9})
         self.assertTrue(master.price_url.str.startswith("https://").all())
         old = pd.read_csv(build.BASELINE, dtype=str).fillna("").set_index(["brand", "model"], drop=False)
         for _, row in master.iterrows():
@@ -38,12 +38,12 @@ class SalesRefreshTests(unittest.TestCase):
         self.assertNotIn('아반떼', master.model.tolist())
         self.assertIn('디 올 뉴 아반떼', master.model.tolist())
         self.assertIn('더 뉴 아이오닉 6', master.model.tolist())
-        self.assertEqual(sales.iloc[-1].model, 'EV4')
-        self.assertEqual(int(sales.iloc[-1].units_sold), 498)
-        self.assertEqual(int(reviewed.loc[reviewed.source_period == '국산 2026-09', 'units_sold'].sum()), 100083)
+        self.assertEqual(sales.iloc[-1].model, '트랙스 크로스오버')
+        self.assertEqual(int(sales.iloc[-1].units_sold), 556)
+        self.assertEqual(int(reviewed.loc[reviewed.source_period == '국산 2026-10', 'units_sold'].sum()), 105659)
         self.assertEqual(int(reviewed.loc[reviewed.model == '3 Series', 'units_sold'].iloc[0]), 527)
-        self.assertEqual(set(master.loc[master.rank_change.eq('NEW'), 'model']), {'The New S-Class', 'Polestar 4', '3 Series'})
-        self.assertFalse(set(master.model) & {'GLC-Class', 'SEALION 6 DM-i', '캐스퍼 일렉트릭'})
+        self.assertEqual(set(master.loc[master.rank_change.eq('NEW'), 'model']), {'디 올 뉴 투싼', '베뉴', 'EV6'})
+        self.assertFalse(set(master.model) & {'투싼', '3 Series', 'X5', '버스/특수', 'GLC-Class', 'SEALION 6 DM-i', '캐스퍼 일렉트릭'})
 
     @contextmanager
     def isolated_build(self, first_run=False):
@@ -51,8 +51,8 @@ class SalesRefreshTests(unittest.TestCase):
             root = Path(tmp)
             snapshot = root / 'data' / 'sales_snapshot'
             snapshot.mkdir(parents=True)
-            paths = dict(ROOT=root, VEHICLE_MASTER=root / 'vehicle_master.csv', MONTHLY_SALES=snapshot / 'monthly_sales.csv', BASELINE=snapshot / 'baseline.csv', REVIEWED_SALES=snapshot / 'reviewed_sales.csv', VEHICLE_UPDATES=snapshot / build.VEHICLE_UPDATES.name)
-            for name in ['VEHICLE_MASTER', 'MONTHLY_SALES', 'BASELINE', 'REVIEWED_SALES', 'VEHICLE_UPDATES']:
+            paths = dict(ROOT=root, VEHICLE_MASTER=root / 'vehicle_master.csv', MONTHLY_SALES=snapshot / 'monthly_sales.csv', BASELINE=snapshot / 'baseline.csv', REVIEWED_SALES=snapshot / 'reviewed_sales.csv', VEHICLE_UPDATES=snapshot / build.VEHICLE_UPDATES.name, SOURCE_ROWS=snapshot / build.SOURCE_ROWS.name)
+            for name in ['VEHICLE_MASTER', 'MONTHLY_SALES', 'BASELINE', 'REVIEWED_SALES', 'VEHICLE_UPDATES', 'SOURCE_ROWS']:
                 shutil.copy2(getattr(build, name), paths[name])
             if first_run:
                 shutil.copy2(paths['BASELINE'], paths['VEHICLE_MASTER'])
@@ -96,7 +96,7 @@ class SalesRefreshTests(unittest.TestCase):
                 bad.loc[0, 'source_period'] = value
                 bad_inputs.append(bad)
             bad = data.copy()
-            bad.loc[bad.model.eq('GLC-Class'), 'units_sold'] = 498
+            bad.loc[bad.model.eq('3 Series'), 'units_sold'] = 556
             bad_inputs.extend([bad, data.head(50)])
             for bad in bad_inputs:
                 bad.to_csv(build.REVIEWED_SALES, index=False)
@@ -115,6 +115,30 @@ class SalesRefreshTests(unittest.TestCase):
             self.assertEqual(build.VEHICLE_MASTER.read_bytes(), before)
             self.assertFalse(build.BASELINE.exists())
 
+    def test_source_omission_and_generation_substitution_are_blocked(self):
+        with self.isolated_build(first_run=True):
+            original = build.VEHICLE_MASTER.read_bytes()
+            data = pd.read_csv(build.REVIEWED_SALES).fillna('')
+            bad = data.copy()
+            bad.loc[bad.model.eq('디 올 뉴 투싼'), 'source_model_url'] = 'https://auto.danawa.com/newcar/?Work=estimate&Model=4592'
+            for invalid in [bad, data[~data.model.eq('스포티지')]]:
+                invalid.to_csv(build.REVIEWED_SALES, index=False)
+                with self.assertRaisesRegex(ValueError, 'source'):
+                    build.main()
+                self.assertEqual(build.VEHICLE_MASTER.read_bytes(), original)
+                self.assertFalse(build.BASELINE.exists())
+
+    def test_entrant_catalog_is_required_before_writes(self):
+        with self.isolated_build(first_run=True):
+            original = build.VEHICLE_MASTER.read_bytes()
+            metadata = json.loads(build.VEHICLE_UPDATES.read_text())
+            metadata[0]['catalog_url'] = ''
+            build.VEHICLE_UPDATES.write_text(json.dumps(metadata))
+            with self.assertRaisesRegex(ValueError, 'Verified official metadata'):
+                build.main()
+            self.assertEqual(build.VEHICLE_MASTER.read_bytes(), original)
+            self.assertFalse(build.BASELINE.exists())
+
     def test_retained_metadata_is_not_replaced_by_update_file(self):
         with self.isolated_build():
             before = build.VEHICLE_MASTER.read_bytes()
@@ -129,19 +153,29 @@ class SalesRefreshTests(unittest.TestCase):
             data = pd.read_csv(build.REVIEWED_SALES)
             data.loc[data.model.eq('더 뉴 그랜저'), 'units_sold'] = 11421
             data.loc[data.source_period.str.startswith('수입'), 'source_period'] = '수입 2026-08'
+            raw = json.loads(build.SOURCE_ROWS.read_text())
+            for row in raw['domestic']:
+                if row['model'] == '더 뉴 그랜저':
+                    row['units'] = 11421
+            raw['domestic'].sort(key=lambda row: -row['units'])
+            for rank, row in enumerate(raw['domestic'], 1):
+                row['rank'] = rank
+            for row in raw['imports']:
+                row['period'] = '2026-08'
+            build.SOURCE_ROWS.write_text(json.dumps(raw))
             data.iloc[::-1].to_csv(build.REVIEWED_SALES, index=False)
             build.main()
             sales = pd.read_csv(build.MONTHLY_SALES)
             self.assertEqual(sales.model.iloc[:2].tolist(), ['더 뉴 그랜저', 'Model Y'])
-            self.assertEqual(set(sales.source_period), {'국산 2026-09', '수입 2026-08'})
+            self.assertEqual(set(sales.source_period), {'국산 2026-10', '수입 2026-08'})
 
     def test_complete_source_reconciliation_and_generation_identity(self):
-        raw = json.loads((build.MONTHLY_SALES.parent / 'source_rows_2026-10-12.json').read_text())
+        raw = json.loads((build.MONTHLY_SALES.parent / 'source_rows_2026-11-03.json').read_text())
         reviewed = pd.read_csv(build.REVIEWED_SALES).fillna('')
         sales = pd.read_csv(build.MONTHLY_SALES)
-        self.assertEqual(len(raw['domestic']), 67)
+        self.assertEqual(len(raw['domestic']), 69)
         self.assertEqual(len(raw['imports']), 155)
-        self.assertEqual(sum(row['units'] for row in raw['domestic']), 100083)
+        self.assertEqual(sum(row['units'] for row in raw['domestic']), 105659)
         self.assertEqual(sum(row['units'] for row in raw['imports']), 34904)
         for market in ['domestic', 'imports']:
             rows = raw[market]
@@ -155,13 +189,19 @@ class SalesRefreshTests(unittest.TestCase):
             self.assertEqual((row.model, row.units_sold, row.source_period), (source['model'], source['units'], source['market'] + ' ' + source['period']))
         complete = sorted(raw['domestic'] + raw['imports'], key=lambda row: -row['units'])
         self.assertEqual([(row.model, row.units_sold) for row in sales.itertuples()], [(row['model'], row['units']) for row in complete[:50]])
-        self.assertEqual((complete[49]['model'], complete[49]['units'], complete[50]['model'], complete[50]['units']), ('EV4', 498, 'GLC-Class', 481))
+        self.assertEqual((complete[49]['model'], complete[49]['units'], complete[50]['model'], complete[50]['units']), ('트랙스 크로스오버', 556, '3 Series', 527))
+        previous = json.loads((build.MONTHLY_SALES.parent / 'source_rows_2026-10-12.json').read_text())
+        self.assertEqual(raw['imports'], previous['imports'])
+        self.assertEqual(len({row['source_url'] for row in complete}), 224)
+        tuscon = {row['source_url'].split('Model=')[-1]: row['units'] for row in raw['domestic'] if '투싼' in row['model']}
+        self.assertEqual(tuscon, {'4757': 1428, '4592': 162})
+        self.assertEqual((complete[76]['model'], complete[76]['units']), ('버스/특수', 229))
         eclass = {row['source_url'].split('Model=')[-1]: row['units'] for row in raw['imports'] if row['model'] == 'E-Class'}
         self.assertEqual(eclass, {'4516': 2748, '3757': 1})
         self.assertEqual(sales.loc[sales.model.eq('E-Class'), 'units_sold'].tolist(), [2748])
         # This is the exact master blob deployed before this update, including old movements.
         baseline = build.BASELINE.read_bytes()
-        self.assertEqual(hashlib.sha1(b'blob ' + str(len(baseline)).encode() + b'\0' + baseline).hexdigest(), '3e2047617d4ee47c47ba2893af5f81afdc1b1eea')
+        self.assertEqual(hashlib.sha1(b'blob ' + str(len(baseline)).encode() + b'\0' + baseline).hexdigest(), '4f560eb0414515e74c427d4e4c2198409b024139')
 
     def test_selected_images_have_model_review_evidence(self):
         master = pd.read_csv(build.VEHICLE_MASTER, dtype=str).fillna('')
@@ -169,6 +209,9 @@ class SalesRefreshTests(unittest.TestCase):
         evidence = {(row['brand'], row['model']): row for row in audit['records']}
         self.assertEqual(audit['totals']['selected_images_bytes_decoded_and_visually_reviewed'], 50)
         current = json.loads((build.MONTHLY_SALES.parent / 'image_review_2026-10-12.json').read_text())
+        self.assertEqual(len(current['records']), 3)
+        evidence.update({(row['brand'], row['model']): row for row in current['records']})
+        current = json.loads((build.MONTHLY_SALES.parent / 'image_review_2026-11-03.json').read_text())
         self.assertEqual(len(current['records']), 3)
         evidence.update({(row['brand'], row['model']): row for row in current['records']})
         self.assertEqual(len(set(zip(master.brand, master.model)) & set(evidence)), 50)
@@ -183,6 +226,26 @@ class SalesRefreshTests(unittest.TestCase):
             self.assertGreater(item['height'], 0)
         truck = master.loc[master.model.eq('버스/트럭')].iloc[0]
         self.assertIn('대표 이미지', truck.note)
+
+    def test_entrant_metadata_matches_verified_generation_and_links(self):
+        evidence = json.loads((build.MONTHLY_SALES.parent / 'verified_entrant_metadata_2026-11-03.json').read_text())
+        master = pd.read_csv(build.VEHICLE_MASTER, dtype=str).fillna('')
+        reviewed = pd.read_csv(build.REVIEWED_SALES)
+        old = pd.read_csv(build.BASELINE, dtype=str).fillna('')
+        self.assertEqual({r['id'] for r in evidence['models']}, {'4757', '3654', '4641'})
+        for item in evidence['models']:
+            row = master.loc[master.brand.eq(item['brand']) & master.model.eq(item['model'])].iloc[0]
+            source = reviewed.loc[reviewed.brand.eq(item['brand']) & reviewed.model.eq(item['model'])].iloc[0]
+            self.assertTrue(source.source_model_url.endswith('Model=' + item['id']))
+            self.assertTrue(item['generation'])
+            self.assertTrue(item['verificationDetails'])
+            for field in ['price_url', 'catalog_url', 'image_url', 'image_source_url', 'powertrain', 'segment']:
+                self.assertEqual(row[field], item[field])
+            self.assertEqual(row.image_source_type, 'official_site')
+        new_tucson = master.loc[master.model.eq('디 올 뉴 투싼')].iloc[0]
+        old_tucson = old.loc[old.model.eq('투싼')].iloc[0]
+        for field in ['price_url', 'catalog_url', 'image_url']:
+            self.assertNotEqual(new_tucson[field], old_tucson[field])
 
     def test_document_button_labels_preserve_price_catalog_distinction(self):
         # Load just the pure link helpers without running Streamlit's module-level UI.

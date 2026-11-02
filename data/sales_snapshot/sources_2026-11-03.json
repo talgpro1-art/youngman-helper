@@ -1,0 +1,74 @@
+{
+  "checked_at": "2026-11-02T23:50:00Z",
+  "update_id": "2026-11-03-domestic10-import09",
+  "baseline_commit": "b75a0de1212f2d4ad479e4d67037b7168b9c07bc",
+  "baseline_master_blob": "4f560eb0414515e74c427d4e4c2198409b024139",
+  "selection": "Latest published October 2026 domestic and September 2026 import tables, observed November 3 KST. October imports has no table; retain the verified September import rows unchanged.",
+  "raw_rows_file": "source_rows_2026-11-03.json",
+  "sources": [
+    {
+      "market": "국산",
+      "period": "2026-10",
+      "url": "https://auto.danawa.com/auto/?Work=record&Tab=Model&Nation=domestic&Month=2026-10-00",
+      "raw_records_saved": 69,
+      "reviewed_records_saved": 69,
+      "displayed_total": 105659,
+      "all_model_rows_total": 105659,
+      "verification": "All 69 model rows saved with exact source generation IDs. Source commercial aggregates remain separate: source labels 버스/트럭 (현대) and 버스/특수 (기아) map to their existing brand/model identities without changing counts."
+    },
+    {
+      "market": "수입",
+      "period": "2026-09",
+      "url": "https://auto.danawa.com/auto/?Work=record&Tab=Model&Nation=export&Month=2026-09-00",
+      "raw_records_saved": 155,
+      "reviewed_records_saved": 13,
+      "displayed_total": 34904,
+      "all_model_rows_total": 34904,
+      "maximum_omitted_from_reviewed_units": 447,
+      "verification": "All 155 rows match the prior verified September source without correction. Source IDs unique, counts integer and descending, sum equals 34904."
+    }
+  ],
+  "method": {
+    "grain": "Source model group and exact source generation; no arbitrary model aggregation",
+    "sort": "units_sold descending; domestic before import for ties, stable source order within each market",
+    "rank_movement": "Previous actually deployed September domestic/September import TOP50 from baseline commit, captured once byte-for-byte. NEW means outside that TOP50, not a new launch.",
+    "caveat": "Domestic October sales and import September registrations use different months and measures; mixed-month reference ranking, not market share.",
+    "identity_notes": [
+      "E-Class source Model=4516 has 2748 registrations; old Model=3757 has 1 and remains a separate raw row. Never combine into 2749.",
+      "아반떼 and 디 올 뉴 아반떼 remain separate.",
+      "Combustion and electric variants remain separate wherever the source separates them.",
+      "New Tucson Model=4757 (1428 units) is fifth generation, distinct from old Tucson Model=4592 (162). No older Tucson assets reused.",
+      "Kia 버스/특수 remains a single source aggregate at 229 units, integrated rank 77. It is below TOP50; no claim that its prior metadata issue is globally resolved."
+    ],
+    "retained_metadata": "All nonranking fields of the 47 continuing models are unchanged. Only the 3 entrants receive verified current metadata."
+  },
+  "top50": {
+    "domestic_rows": 41,
+    "import_rows": 9,
+    "cutoff_units": 556,
+    "cutoff_model": "트랙스 크로스오버",
+    "next_excluded": {
+      "brand": "BMW",
+      "model": "3 Series",
+      "units": 527
+    },
+    "added": [
+      "현대 디 올 뉴 투싼",
+      "현대 베뉴",
+      "기아 EV6"
+    ],
+    "removed": [
+      "현대 투싼",
+      "BMW 3 Series",
+      "BMW X5"
+    ]
+  },
+  "unpublished_next_period": {
+    "market": "수입",
+    "period": "2026-10",
+    "url": "https://auto.danawa.com/auto/?Work=record&Tab=Model&Nation=export&Month=2026-10-00",
+    "tables": 0,
+    "rows": 0,
+    "sidebar": "수입 09월 판매실적"
+  }
+}

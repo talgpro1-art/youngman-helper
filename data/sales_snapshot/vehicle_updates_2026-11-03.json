@@ -1,0 +1,47 @@
+[
+  {
+    "brand": "현대",
+    "model": "디 올 뉴 투싼",
+    "powertrain": "가솔린/하이브리드",
+    "segment": "SUV",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-tucson_price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-tucson-catalog.pdf",
+    "image_url": "https://www.hyundai.com/contents/repn-car/side-w/tucson-27fc-well-side.png",
+    "image_source_url": "https://www.hyundai.com/kr/ko/e/all-vehicles",
+    "vehicle": "현대 디 올 뉴 투싼",
+    "target_tag": "패밀리/장기렌트/레저",
+    "note": "공식 가격표 및 카탈로그; Fifth generation, full model change launched 2026-10-21; distinct from previous Tucson 4592.",
+    "image_review_status": "approved",
+    "image_source_type": "official_site"
+  },
+  {
+    "brand": "현대",
+    "model": "베뉴",
+    "powertrain": "가솔린",
+    "segment": "SUV",
+    "price_url": "https://www.hyundai.com/contents/repn-car/catalog/venue-2027-price.pdf",
+    "catalog_url": "https://www.hyundai.com/contents/repn-car/catalog/venue-catalog.pdf",
+    "image_url": "https://www.hyundai.com/contents/repn-car/side-w/venue-27my-well-side.png",
+    "image_source_url": "https://www.hyundai.com/kr/ko/e/all-vehicles",
+    "vehicle": "현대 베뉴",
+    "target_tag": "패밀리/장기렌트/레저",
+    "note": "공식 가격표 및 카탈로그; Venue QX, current Korean 2027 model year.",
+    "image_review_status": "approved",
+    "image_source_type": "official_site"
+  },
+  {
+    "brand": "기아",
+    "model": "EV6",
+    "powertrain": "전기",
+    "segment": "SUV",
+    "price_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev6.pdf",
+    "catalog_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev6.pdf",
+    "image_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/ev6/pe/ev6_pe_feature_bg_pc.jpg",
+    "image_source_url": "https://www.kia.com/kr/vehicles/ev6/price/",
+    "vehicle": "기아 EV6",
+    "target_tag": "전기차/법인/출퇴근/친환경",
+    "note": "공식 가격표 및 카탈로그; The new EV6, CV facelift, current The 2027 EV6.",
+    "image_review_status": "approved",
+    "image_source_type": "official_site"
+  }
+]

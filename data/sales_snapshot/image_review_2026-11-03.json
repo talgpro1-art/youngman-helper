@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-11-03T08:51:00+09:00",
+  "records": [
+    {
+      "brand": "현대",
+      "model": "디 올 뉴 투싼",
+      "image_url": "https://www.hyundai.com/contents/repn-car/side-w/tucson-27fc-well-side.png",
+      "source_url": "https://www.hyundai.com/kr/ko/e/all-vehicles",
+      "sha256": "cdc6225bcd5cbac17a7d5630390c3bc4c3ab08933c03a0a4a1177cbb73d9db10",
+      "width": 290,
+      "height": 130,
+      "verification": "Parent metadata reviewer verified loaded image DOM and model alt; image bytes decoded locally. Price PDF: 5 pages, launch 26.10.21, H-Pick 31,400,000 KRW. Catalog: 31 pages, The all-new TUCSON and Pleos Connect. Exact image alt 디 올 뉴 투싼; loaded 290 x 130. Sales-table ID 4757 and model name verified independently; individual Danawa detail not read."
+    },
+    {
+      "brand": "현대",
+      "model": "베뉴",
+      "image_url": "https://www.hyundai.com/contents/repn-car/side-w/venue-27my-well-side.png",
+      "source_url": "https://www.hyundai.com/kr/ko/e/all-vehicles",
+      "sha256": "35be19ef7c10c2a57bf46518e43096d6c8f42288c4fcd72b637c1efa722007c8",
+      "width": 290,
+      "height": 130,
+      "verification": "Parent metadata reviewer verified loaded image DOM and model alt; image bytes decoded locally. Price PDF: 3 pages, 2027 Venue Smart 19,940,000 KRW, gasoline 1.6. Catalog: 22 pages; official download and browser cover VENUE verified. Exact image alt 베뉴, loaded 290 x 130."
+    },
+    {
+      "brand": "기아",
+      "model": "EV6",
+      "image_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/ev6/pe/ev6_pe_feature_bg_pc.jpg",
+      "source_url": "https://www.kia.com/kr/vehicles/ev6/price/",
+      "sha256": "37f2656c16f5a5c09ee83fa2d4d1e01e10b40ddc7b2e3db24a1e1fb4eb0154f7",
+      "width": 1920,
+      "height": 1080,
+      "verification": "Parent metadata reviewer verified loaded image DOM and model alt; image bytes decoded locally. Price PDF EV6_202611: 4 pages, live price page dated 2026-11-01, standard 63 kWh and long-range 84 kWh. Catalog EV6_202611: 12 pages, produced 2026-11-02; use PC catalog rather than stale mobile 202609. Exact image alt The 2027 EV6, loaded 1920 x 1080."
+    }
+  ]
+}
