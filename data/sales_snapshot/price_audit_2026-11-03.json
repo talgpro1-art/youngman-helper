@@ -1,0 +1,2308 @@
+{
+  "audit_id": "2026-11-03-price-links",
+  "ranking_commit": "761d91c00c457327ff17137d3c305a9dcbb94768",
+  "deployed_commit": "b75a0de1212f2d4ad479e4d67037b7168b9c07bc",
+  "source": "Official brand audit evidence forwarded by parent task; check times retained individually",
+  "method": "Separate current official target observation from PDF body/model identity and model-year applicability. Current is scoped to reported evidence, not certification of every trim price. No guessed targets; uncertain is not broken.",
+  "summary": {
+    "candidate_before_patch": {
+      "models": 50,
+      "model_status": {
+        "current": 34,
+        "outdated": 9,
+        "uncertain": 7
+      },
+      "link_fields": 90,
+      "unique_existing_urls": 88,
+      "link_status": {
+        "current": 67,
+        "outdated": 12,
+        "uncertain": 11
+      },
+      "existing_body_or_model_page_identity_checked_fields": 50,
+      "verified_replacement_fields": 5,
+      "current_or_proposed_official_target_confirmed_fields": 80
+    },
+    "combined_before_patch": {
+      "models": 53,
+      "model_status": {
+        "current": 34,
+        "outdated": 11,
+        "uncertain": 8
+      },
+      "link_fields": 95,
+      "unique_existing_urls": 91,
+      "link_status": {
+        "current": 68,
+        "outdated": 14,
+        "uncertain": 13
+      },
+      "existing_body_or_model_page_identity_checked_fields": 51,
+      "verified_replacement_fields": 7,
+      "current_or_proposed_official_target_confirmed_fields": 83
+    },
+    "confirmed_broken_links": 0,
+    "candidate_after_local_patch": {
+      "model_status": {
+        "current": 38,
+        "outdated": 5,
+        "uncertain": 7
+      },
+      "link_status": {
+        "current": 72,
+        "outdated": 7,
+        "uncertain": 11
+      }
+    },
+    "combined_after_local_patch": {
+      "model_status": {
+        "current": 38,
+        "outdated": 7,
+        "uncertain": 8
+      },
+      "link_status": {
+        "current": 73,
+        "outdated": 9,
+        "uncertain": 13
+      }
+    }
+  },
+  "changes": [
+    {
+      "brand": "현대",
+      "model": "쏘나타 디 엣지",
+      "field": "price_url",
+      "old": "https://www.hyundai.com/contents/repn-car/catalog/sonata-the-edge2026-price.pdf",
+      "new": "https://www.hyundai.com/contents/repn-car/catalog/sonata-2027-price.pdf",
+      "evidence_urls": [
+        "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+        "https://www.hyundai.com/contents/repn-car/catalog/sonata-2027-price.pdf"
+      ],
+      "checked_at": "2026-11-03T09:12:00+09:00",
+      "reason": "Exact latest official replacement PDF model/applicability verified."
+    },
+    {
+      "brand": "BMW",
+      "model": "5 Series",
+      "field": "price_url",
+      "old": "https://bmwfinancial.co.kr/bmw/bmw-pricelist-pdf/september_2026_pricelist.pdf",
+      "new": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf",
+      "evidence_urls": [
+        "https://www.bmw.co.kr/ko/index.html",
+        "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf"
+      ],
+      "checked_at": "2026-11-03T00:12:36Z",
+      "reason": "Exact latest official replacement PDF model/applicability verified."
+    },
+    {
+      "brand": "BMW",
+      "model": "X3",
+      "field": "price_url",
+      "old": "https://bmwfinancial.co.kr/bmw/bmw-pricelist-pdf/september_2026_pricelist.pdf",
+      "new": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf",
+      "evidence_urls": [
+        "https://www.bmw.co.kr/ko/index.html",
+        "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf"
+      ],
+      "checked_at": "2026-11-03T00:12:36Z",
+      "reason": "Exact latest official replacement PDF model/applicability verified."
+    },
+    {
+      "brand": "르노",
+      "model": "그랑 콜레오스",
+      "field": "price_url",
+      "old": "https://cdn.renault.co.kr/upload/asset/price/price_koleos_202610.pdf",
+      "new": "https://www.renault.co.kr/upload/asset/price/price_koleos_202611.pdf",
+      "evidence_urls": [
+        "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+        "https://www.renault.co.kr/upload/asset/price/price_koleos_202611.pdf"
+      ],
+      "checked_at": "2026-11-03T00:12:36Z",
+      "reason": "Exact latest official replacement PDF model/applicability verified."
+    },
+    {
+      "brand": "쉐보레",
+      "model": "트랙스 크로스오버",
+      "field": "price_url",
+      "old": "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/11-pdf/2026%EB%85%84-10%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf",
+      "new": "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/12-pdfs/2026%EB%85%84-11%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf",
+      "evidence_urls": [
+        "https://www.chevrolet.co.kr/finance/type-price",
+        "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/12-pdfs/2026%EB%85%84-11%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf"
+      ],
+      "checked_at": "2026-11-03T00:12:36Z",
+      "reason": "Exact latest official replacement PDF model/applicability verified."
+    },
+    {
+      "brand": "현대",
+      "model": "쏘나타 디 엣지",
+      "field": "note",
+      "old": "현대 공식 다운로드 목록에서 확인한 쏘나타 디 엣지 가격표·카탈로그 (2026-10-02 확인); 하이브리드 가격표는 별도",
+      "new": "현대 공식 2027 쏘나타 디 엣지 가격표·카탈로그 다운로드 연결 확인 (2026-11-03); 하이브리드 가격표는 별도",
+      "evidence_urls": [
+        "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+        "https://www.hyundai.com/contents/repn-car/catalog/sonata-2027-price.pdf"
+      ],
+      "checked_at": "2026-11-03T09:12:00+09:00",
+      "reason": "Narrow correction of edition or document-scope statement supported by recorded evidence."
+    },
+    {
+      "brand": "BMW",
+      "model": "5 Series",
+      "field": "note",
+      "old": "BMW 코리아 공식 2026년 9월 통합 가격표 (10월 2일 공식 홈페이지 연결 및 차종 적용 확인)",
+      "new": "BMW 코리아 공식 홈페이지에 게시된 2026년 10월 통합 가격표; 5 Series 적용 확인 (2026-11-03)",
+      "evidence_urls": [
+        "https://www.bmw.co.kr/ko/index.html",
+        "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf"
+      ],
+      "checked_at": "2026-11-03T00:12:36Z",
+      "reason": "Narrow correction of edition or document-scope statement supported by recorded evidence."
+    },
+    {
+      "brand": "BMW",
+      "model": "X3",
+      "field": "note",
+      "old": "BMW 코리아 공식 2026년 9월 통합 가격표 (10월 2일 공식 홈페이지 연결 및 차종 적용 확인)",
+      "new": "BMW 코리아 공식 홈페이지에 게시된 2026년 10월 통합 가격표; 신형 X3 적용 확인 (2026-11-03)",
+      "evidence_urls": [
+        "https://www.bmw.co.kr/ko/index.html",
+        "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf"
+      ],
+      "checked_at": "2026-11-03T00:12:36Z",
+      "reason": "Narrow correction of edition or document-scope statement supported by recorded evidence."
+    },
+    {
+      "brand": "르노",
+      "model": "그랑 콜레오스",
+      "field": "note",
+      "old": "르노코리아 공식 2026년 10월 가격표·카탈로그 (2026-10-02 공식 다운로드 연결 확인)",
+      "new": "르노코리아 공식 2026년 11월 가격표 확인 (2026-11-03); 카탈로그는 2026년 10월 링크 유지, 11월판 본문 검증 대기",
+      "evidence_urls": [
+        "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+        "https://www.renault.co.kr/upload/asset/price/price_koleos_202611.pdf"
+      ],
+      "checked_at": "2026-11-03T00:12:36Z",
+      "reason": "Narrow correction of edition or document-scope statement supported by recorded evidence."
+    },
+    {
+      "brand": "쉐보레",
+      "model": "트랙스 크로스오버",
+      "field": "note",
+      "old": "쉐보레 공식 2026년 10월 전차종 가격표; 트랙스 크로스오버 2026 수록 (2026-10-02 공식 연결 확인)",
+      "new": "쉐보레 공식 2026년 11월 전차종 가격표; 트랙스 크로스오버 2026 수록 확인 (2026-11-03)",
+      "evidence_urls": [
+        "https://www.chevrolet.co.kr/finance/type-price",
+        "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/12-pdfs/2026%EB%85%84-11%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf"
+      ],
+      "checked_at": "2026-11-03T00:12:36Z",
+      "reason": "Narrow correction of edition or document-scope statement supported by recorded evidence."
+    },
+    {
+      "brand": "기아",
+      "model": "봉고 3",
+      "field": "note",
+      "old": "기아 공식 가격표·카탈로그 PDF (가격표 2026-09판, 2026-10-02 현재 공식 페이지 게시본)",
+      "new": "기아 공식 LPG 터보 가격표·봉고Ⅲ 통합 카탈로그 PDF (2026-11판)",
+      "evidence_urls": [
+        "https://www.kia.com/kr/vehicles/bongo3/price",
+        "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_bongo3.pdf"
+      ],
+      "checked_at": "2026-11-03T00:10:00.578179+00:00",
+      "reason": "Narrow correction of edition or document-scope statement supported by recorded evidence."
+    },
+    {
+      "brand": "기아",
+      "model": "레이 EV",
+      "field": "note",
+      "old": "레이 EV 전용 공식 가격표·카탈로그",
+      "new": "레이 EV 공식 가격표·레이 가솔린/EV 통합 카탈로그",
+      "evidence_urls": [
+        "https://www.kia.com/kr/vehicles/catalog-price",
+        "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray-ev.pdf"
+      ],
+      "checked_at": "2026-11-03T00:10:00.578179+00:00",
+      "reason": "Narrow correction of edition or document-scope statement supported by recorded evidence."
+    },
+    {
+      "brand": "제네시스",
+      "model": "G80",
+      "field": "note",
+      "old": "G80이 선택된 제네시스 공식 다운로드 센터; 2026년 10월 가격표·카탈로그 연결 확인 (2026-10-02)",
+      "new": "G80이 선택된 제네시스 공식 다운로드 센터; 2026년 11월 가격표·카탈로그 게시 목록 확인 (2026-11-03)",
+      "evidence_urls": [
+        "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000076"
+      ],
+      "checked_at": "2026-11-03T09:12:00+09:00",
+      "reason": "Narrow correction of edition or document-scope statement supported by recorded evidence."
+    },
+    {
+      "brand": "제네시스",
+      "model": "GV80",
+      "field": "note",
+      "old": "GV80이 선택된 제네시스 공식 다운로드 센터; 2026년 10월 가격표·카탈로그 연결 확인 (2026-10-02)",
+      "new": "GV80이 선택된 제네시스 공식 다운로드 센터; 2026년 11월 가격표·카탈로그 게시 목록 확인 (2026-11-03)",
+      "evidence_urls": [
+        "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000072"
+      ],
+      "checked_at": "2026-11-03T00:14:14.991627+00:00",
+      "reason": "Narrow correction of edition or document-scope statement supported by recorded evidence."
+    },
+    {
+      "brand": "제네시스",
+      "model": "GV70",
+      "field": "note",
+      "old": "GV70이 선택된 제네시스 공식 다운로드 센터; 2026년 10월 가격표·카탈로그 연결 확인 (2026-10-02)",
+      "new": "GV70이 선택된 제네시스 공식 다운로드 센터; 2026년 11월 가격표·카탈로그 게시 목록 확인 (2026-11-03)",
+      "evidence_urls": [
+        "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000119"
+      ],
+      "checked_at": "2026-11-03T00:14:14.991645+00:00",
+      "reason": "Narrow correction of edition or document-scope statement supported by recorded evidence."
+    }
+  ],
+  "records": [
+    {
+      "brand": "테슬라",
+      "model": "Model Y",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.tesla.com/ko_kr/modely/design",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.tesla.com/ko_kr/modely/design"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official configurator shows correct model/trims. Model Y price observation: RWD 49,990,000 / Long Range AWD 66,990,000 KRW.",
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "스포티지",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sportage.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/sportage/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sportage.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 Sportage",
+          "pdf_pages": 7,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_sportage.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/sportage/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_sportage.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 Sportage",
+          "pdf_pages": 14,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "더 뉴 그랜저",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-grandeur-price.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-new-grandeur-price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-grandeur-catalog.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-new-grandeur-catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "쏘렌토",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/sorento/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 Sorento",
+          "pdf_pages": 5,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_sorento.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/sorento/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_sorento.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 Sorento",
+          "pdf_pages": 14,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "카니발",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/carnival/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 Carnival",
+          "pdf_pages": 12,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_carnival.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/carnival/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_carnival.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 Carnival",
+          "pdf_pages": 14,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "디 올 뉴 아반떼",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante_price.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante_price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante-catalog.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante-catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "셀토스",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/seltos/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 Seltos",
+          "pdf_pages": 6,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_seltos.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/seltos/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_seltos.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement. Catalog produced 2026-10-15 despite 202611 title.",
+          "document_version": "202611",
+          "model_identity": "The 2027 Seltos",
+          "pdf_pages": 12,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "쏘나타 디 엣지",
+      "scope": "candidate_top50",
+      "status": "outdated",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/sonata-the-edge2026-price.pdf",
+          "status": "outdated",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": true,
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/sonata-2027-price.pdf",
+          "mutation": "apply_verified_replacement",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/sonata-2027-price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Official latest target differs from existing URL. Replacement PDF model/applicability verified; exact-old-URL guarded change.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/sonata-the-edge_catalog.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/sonata-the-edge_catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "EV5",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev5.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/catalog-price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev5.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "Current official EV5",
+          "pdf_pages": 4,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev5.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/catalog-price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev5.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "Current official EV5",
+          "pdf_pages": 14,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "포터2",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-2026-price.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/porter2-2026-price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-catalog.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/porter2-catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "디 올 뉴 팰리세이드",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/palisade-2027-price.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/palisade-2027-price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/palisade-catalog.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/palisade-catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "EV3",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev3.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/catalog-price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev3.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "Current official EV3",
+          "pdf_pages": 4,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev3.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/catalog-price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev3.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "Current official EV3",
+          "pdf_pages": 16,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "레이",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/ray/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 Ray",
+          "pdf_pages": 4,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ray.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/ray/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ray.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 Ray",
+          "pdf_pages": 18,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "벤츠",
+      "model": "E-Class",
+      "scope": "candidate_top50",
+      "status": "outdated",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261002.pdf",
+          "status": "outdated",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261023.pdf",
+          "mutation": "hold_content_verification",
+          "evidence_urls": [
+            "https://www.mercedes-benz.co.kr/passengercars/models/price-list.html",
+            "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261023.pdf"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official latest target differs from existing URL. Replacement PDF content/applicability not sufficiently verified; preserve original URL.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/model/catalog/2026/Mercedes-Benz_The%20new%20E-Class_Catalogue_20260424.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.mercedes-benz.co.kr/passengercars/models/catalog.html",
+            "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/model/catalog/2026/Mercedes-Benz_The%20new%20E-Class_Catalogue_20260424.pdf"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official current catalog page links exact existing catalog. Body/generation applicability not newly parsed; current destination only.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "PV5",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-cargo.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/pv5-cargo/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-cargo.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 PV5 Cargo Long / PV5 Passenger",
+          "pdf_pages": 4,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-passenger.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/pv5-passenger/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-passenger.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement. Passenger PRICE document; preserve supplemental-price label.",
+          "document_version": "202611",
+          "model_identity": "The 2027 PV5 Cargo Long / PV5 Passenger",
+          "pdf_pages": 12,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "K5",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k5.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/k5/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k5.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 K5",
+          "pdf_pages": 11,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_k5.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/k5/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_k5.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 K5",
+          "pdf_pages": 16,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "버스/트럭",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/kr/ko/c/purchase-guid/catalog",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/c/purchase-guid/catalog"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Current official commercial index, updated 2026-10-16; aggregate properly links multiple truck/bus documents, not a single model price PDF.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "싼타페",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/santafe-2026-price.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/santafe-2026-price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/santafe-catalog.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/santafe-catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "코나",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/kona-2027-price.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/kona-2027-price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/kona-catalog.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/kona-catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "봉고 3",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_bongo3.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/bongo3/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_bongo3.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement. LPG turbo price; combined LPG/EV catalog with LPG specifications.",
+          "document_version": "202611",
+          "model_identity": "The 2026 Bongo III",
+          "pdf_pages": 8,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_bongo3.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/bongo3/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_bongo3.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement. LPG turbo price; combined LPG/EV catalog with LPG specifications.",
+          "document_version": "202611",
+          "model_identity": "The 2026 Bongo III",
+          "pdf_pages": 8,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "더 뉴 스타리아",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria_price.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria_price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria_catalog.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria_catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "제네시스",
+      "model": "G80",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000076",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000076"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Actual JS model selection and November document listing confirmed by parent reviewers; no PDF body verification established by this evidence. No direct PDF URL inferred. Current listing: genesis-g80-pricelist-kor-202611.pdf; genesis-g80-catalog-kor-202611.pdf",
+          "document_version": "202611 listing",
+          "model_identity": "G80",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "아이오닉 5",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq-5-2027-price.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/ioniq-5-2027-price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq5-catalog.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/ioniq5-catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact named official model download button destination confirmed by parent reviewer; no new PDF body verification asserted by this field record.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "제네시스",
+      "model": "GV80",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000072",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000072"
+          ],
+          "checked_at": "2026-11-03T00:14:14.991627+00:00",
+          "details": "Actual JS model selection and November document listing confirmed by parent reviewers; no PDF body verification established by this evidence. No direct PDF URL inferred. Current listing: genesis-gv80-pricelist-kor-202611.pdf; genesis-gv80-catalog-kor-202611.pdf",
+          "document_version": "202611 listing",
+          "model_identity": "GV80",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "model": "5 Series",
+      "scope": "candidate_top50",
+      "status": "outdated",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://bmwfinancial.co.kr/bmw/bmw-pricelist-pdf/september_2026_pricelist.pdf",
+          "status": "outdated",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": true,
+          "proposed_url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf",
+          "mutation": "apply_verified_replacement",
+          "evidence_urls": [
+            "https://www.bmw.co.kr/ko/index.html",
+            "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official latest target differs from existing URL. Replacement PDF model/applicability verified; exact-old-URL guarded change.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "레이 EV",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray-ev.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/catalog-price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray-ev.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "Current Ray EV; combined Ray catalog",
+          "pdf_pages": 4,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ray-ev.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/catalog-price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ray-ev.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement. Combined gasoline/EV catalog; EV content on zero-based pages 11-17.",
+          "document_version": "202611",
+          "model_identity": "Current Ray EV; combined Ray catalog",
+          "pdf_pages": 18,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "모닝",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_morning.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/morning/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_morning.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 Morning",
+          "pdf_pages": 3,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_morning.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/morning/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_morning.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 Morning",
+          "pdf_pages": 14,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "디 올 뉴 투싼",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-tucson_price.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-tucson_price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Current official download target reconfirmed; entrant review also read price/catalog model and generation. See verified_entrant_metadata_2026-11-03.json.",
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-tucson-catalog.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-tucson-catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Current official download target reconfirmed; entrant review also read price/catalog model and generation. See verified_entrant_metadata_2026-11-03.json.",
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "K8",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k8.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/k8/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k8.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 K8",
+          "pdf_pages": 11,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_k8.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/k8/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_k8.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 K8",
+          "pdf_pages": 16,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "니로",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_niro.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/niro/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_niro.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The new Niro hybrid",
+          "pdf_pages": 4,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_niro.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/niro/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_niro.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The new Niro hybrid",
+          "pdf_pages": 10,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "제네시스",
+      "model": "GV70",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000119",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000119"
+          ],
+          "checked_at": "2026-11-03T00:14:14.991645+00:00",
+          "details": "Actual JS model selection and November document listing confirmed by parent reviewers; no PDF body verification established by this evidence. No direct PDF URL inferred. Current listing: genesis-gv70-pricelist-kor-202611.pdf; genesis-gv70-catalog-kor-202611.pdf",
+          "document_version": "202611 listing",
+          "model_identity": "GV70",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "스타리아 일렉트릭",
+      "scope": "candidate_top50",
+      "status": "uncertain",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria-electric_price.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria-electric_price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Earlier reviewer clicked exact official price destination successfully. Later timeout does not override this positive evidence.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria-eletric-catalog.pdf",
+          "status": "uncertain",
+          "official_current_target_verified": false,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria-eletric-catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact latest official download destination not established; retain original URL. Supplemental uncertainty does not negate an earlier positive observation.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "BYD",
+      "model": "Dolphin",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.bydauto.kr/purchase/build-my-car/dolphin",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.bydauto.kr/car/byd-dolphin",
+            "https://www.bydauto.kr/purchase/build-my-car/dolphin"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official model page links existing configurator/catalog; catalog model/trims checked. Dynamic numeric configurator prices not independently validated.",
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.bydauto.kr/static/file/BYD_DOLPHIN_Catalog.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.bydauto.kr/car/byd-dolphin",
+            "https://www.bydauto.kr/static/file/BYD_DOLPHIN_Catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official model page links existing configurator/catalog; catalog model/trims checked. Dynamic numeric configurator prices not independently validated.",
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "아이오닉 9",
+      "scope": "candidate_top50",
+      "status": "uncertain",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq9-2027-price.pdf",
+          "status": "uncertain",
+          "official_current_target_verified": false,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/ioniq9-2027-price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact latest official download destination not established; retain original URL. Supplemental uncertainty does not negate an earlier positive observation. Existing PDF body model checked earlier: Ioniq 9 price 6 pages/2027; Porter Electric price 2 pages and combined LPG/Electric catalog 13 pages; Ioniq 6 price 6 pages and catalog 27 pages (ordinary/N Line, not N).",
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq9-catalog.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/ioniq9-catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T00:15:45Z",
+          "details": "Supplemental official Ioniq 9 catalog button opened exact existing URL in tab 115. Body not reread; direct web fetch size limit is not a broken-link result.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "르노",
+      "model": "아르카나",
+      "scope": "candidate_top50",
+      "status": "outdated",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://cdn.renault.co.kr/upload/asset/price/price_Arkana_202610.pdf",
+          "status": "outdated",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": "https://www.renault.co.kr/upload/asset/price/price_Arkana_202611.pdf",
+          "mutation": "hold_content_verification",
+          "evidence_urls": [
+            "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+            "https://www.renault.co.kr/upload/asset/price/price_Arkana_202611.pdf"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official latest target differs from existing URL. Replacement PDF content/applicability not sufficiently verified; preserve original URL.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://cdn.renault.co.kr/upload/asset/ebrochure/eBrochure_Arkana_202610.pdf",
+          "status": "outdated",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": "https://www.renault.co.kr/upload/asset/ebrochure/eBrochure_Arkana_202611.pdf",
+          "mutation": "hold_content_verification",
+          "evidence_urls": [
+            "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+            "https://www.renault.co.kr/upload/asset/ebrochure/eBrochure_Arkana_202611.pdf"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official latest target differs from existing URL. Replacement PDF content/applicability not sufficiently verified; preserve original URL.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "르노",
+      "model": "그랑 콜레오스",
+      "scope": "candidate_top50",
+      "status": "outdated",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://cdn.renault.co.kr/upload/asset/price/price_koleos_202610.pdf",
+          "status": "outdated",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": true,
+          "proposed_url": "https://www.renault.co.kr/upload/asset/price/price_koleos_202611.pdf",
+          "mutation": "apply_verified_replacement",
+          "evidence_urls": [
+            "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+            "https://www.renault.co.kr/upload/asset/price/price_koleos_202611.pdf"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official latest target differs from existing URL. Replacement PDF model/applicability verified; exact-old-URL guarded change.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://cdn.renault.co.kr/upload/asset/ebrochure/eBrochure_koleos_202610.pdf",
+          "status": "outdated",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": "https://www.renault.co.kr/upload/asset/ebrochure/eBrochure_koleos_202611.pdf",
+          "mutation": "hold_content_verification",
+          "evidence_urls": [
+            "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+            "https://www.renault.co.kr/upload/asset/ebrochure/eBrochure_koleos_202611.pdf"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official latest target differs from existing URL. Replacement PDF content/applicability not sufficiently verified; preserve original URL.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "캐스퍼",
+      "scope": "candidate_top50",
+      "status": "uncertain",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://casper.hyundai.com/wcontents/repn-car/catalog/AX08/AX_CASPER_price.pdf",
+          "status": "uncertain",
+          "official_current_target_verified": false,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://casper.hyundai.com/vehicles/highlight",
+            "https://casper.hyundai.com/wcontents/repn-car/catalog/AX08/AX_CASPER_price.pdf"
+          ],
+          "checked_at": "2026-11-03T00:15:45Z",
+          "details": "2027 CASPER official page and existing PDF model content match; latest exact PDF target not established. Official catalog control resolves a digital catalog, not proof candidate PDF is current.",
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://casper.hyundai.com/wcontents/repn-car/catalog/AX08/AX_CASPER_catalog.pdf",
+          "status": "uncertain",
+          "official_current_target_verified": false,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://casper.hyundai.com/vehicles/highlight",
+            "https://casper.hyundai.com/wcontents/repn-car/catalog/AX08/AX_CASPER_catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T00:15:45Z",
+          "details": "2027 CASPER official page and existing PDF model content match; latest exact PDF target not established. Official catalog control resolves a digital catalog, not proof candidate PDF is current.",
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "EV4",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev4.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/catalog-price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev4.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "Current official EV4",
+          "pdf_pages": 4,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev4.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/catalog-price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev4.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "Current official EV4",
+          "pdf_pages": 14,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "베뉴",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/venue-2027-price.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/venue-2027-price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Current official download target reconfirmed; entrant review also read price/catalog model and generation. See verified_entrant_metadata_2026-11-03.json.",
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/venue-catalog.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/venue-catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Current official download target reconfirmed; entrant review also read price/catalog model and generation. See verified_entrant_metadata_2026-11-03.json.",
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "벤츠",
+      "model": "The New S-Class",
+      "scope": "candidate_top50",
+      "status": "outdated",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261002.pdf",
+          "status": "outdated",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261023.pdf",
+          "mutation": "hold_content_verification",
+          "evidence_urls": [
+            "https://www.mercedes-benz.co.kr/passengercars/models/price-list.html",
+            "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261023.pdf"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official latest target differs from existing URL. Replacement PDF content/applicability not sufficiently verified; preserve original URL.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/model/catalog/2026/Mercedes-Benz_S-Class_Catalogue_20260914.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.mercedes-benz.co.kr/passengercars/models/catalog.html",
+            "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/model/catalog/2026/Mercedes-Benz_S-Class_Catalogue_20260914.pdf"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official current catalog page links exact existing catalog. Body/generation applicability not newly parsed; current destination only.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "테슬라",
+      "model": "Model 3",
+      "scope": "candidate_top50",
+      "status": "uncertain",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.tesla.com/ko_kr/model3/design",
+          "status": "uncertain",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.tesla.com/ko_kr/model3/design"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Correct official Model 3 configurator identity, but anomalous interim values/footer zero indicate incomplete initialization; displayed prices not certified. Preserve URL.",
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "BYD",
+      "model": "SEALION 7",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.bydauto.kr/purchase/build-my-car/sealion7",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.bydauto.kr/car/byd-sealion7",
+            "https://www.bydauto.kr/purchase/build-my-car/sealion7"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official model page links existing configurator/catalog; catalog model/trims checked. Dynamic numeric configurator prices not independently validated.",
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.bydauto.kr/static/file/BYD_SEALION_7_Catalog.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.bydauto.kr/car/byd-sealion7",
+            "https://www.bydauto.kr/static/file/BYD_SEALION_7_Catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official model page links existing configurator/catalog; catalog model/trims checked. Dynamic numeric configurator prices not independently validated.",
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "KGM",
+      "model": "무쏘",
+      "scope": "candidate_top50",
+      "status": "uncertain",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kg-mobility.com/attached/contents/display/file/200000200010009/20260930235631587_DTUhhe.pdf",
+          "status": "uncertain",
+          "official_current_target_verified": false,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kg-mobility.com/pr/model/show-room/200000100030004"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official Musso page reports server no response. Latest links and document contents unverified; not classified broken.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kg-mobility.com/attached/contents/display/file/200000200010009/20260930235631342_MBxm14.pdf",
+          "status": "uncertain",
+          "official_current_target_verified": false,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kg-mobility.com/pr/model/show-room/200000100030004"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official Musso page reports server no response. Latest links and document contents unverified; not classified broken.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "model": "X3",
+      "scope": "candidate_top50",
+      "status": "outdated",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://bmwfinancial.co.kr/bmw/bmw-pricelist-pdf/september_2026_pricelist.pdf",
+          "status": "outdated",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": true,
+          "proposed_url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf",
+          "mutation": "apply_verified_replacement",
+          "evidence_urls": [
+            "https://www.bmw.co.kr/ko/index.html",
+            "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official latest target differs from existing URL. Replacement PDF model/applicability verified; exact-old-URL guarded change.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "폴스타",
+      "model": "Polestar 4",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.polestar.com/kr/polestar-4-models/polestar-4-coupe/specifications/",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.polestar.com/kr/polestar-4-models/polestar-4-coupe/specifications/"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official Polestar 4 Coupe page: rear motor 66,900,000 / dual motor 69,900,000 KRW. Independent 2027 model-year claim not established.",
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "EV6",
+      "scope": "candidate_top50",
+      "status": "current",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev6.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/catalog-price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev6.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 EV6 / CV facelift",
+          "pdf_pages": 4,
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev6.pdf",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/catalog-price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev6.pdf"
+          ],
+          "checked_at": "2026-11-03T00:10:00.578179+00:00",
+          "details": "Parent-supplied reviewer evidence: actual PDF read; current official download anchor and document/model identity confirmed. Stable URL serves 202611 edition; no URL replacement.",
+          "document_version": "202611",
+          "model_identity": "The 2027 EV6 / CV facelift",
+          "pdf_pages": 12,
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "포터2 일렉트릭",
+      "scope": "candidate_top50",
+      "status": "uncertain",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-electric-2026-price.pdf",
+          "status": "uncertain",
+          "official_current_target_verified": false,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/porter2-electric-2026-price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact latest official download destination not established; retain original URL. Supplemental uncertainty does not negate an earlier positive observation. Existing PDF body model checked earlier: Ioniq 9 price 6 pages/2027; Porter Electric price 2 pages and combined LPG/Electric catalog 13 pages; Ioniq 6 price 6 pages and catalog 27 pages (ordinary/N Line, not N).",
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-electric_catalog.pdf",
+          "status": "uncertain",
+          "official_current_target_verified": false,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/porter2-electric_catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact latest official download destination not established; retain original URL. Supplemental uncertainty does not negate an earlier positive observation. Existing PDF body model checked earlier: Ioniq 9 price 6 pages/2027; Porter Electric price 2 pages and combined LPG/Electric catalog 13 pages; Ioniq 6 price 6 pages and catalog 27 pages (ordinary/N Line, not N).",
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "더 뉴 아이오닉 6",
+      "scope": "candidate_top50",
+      "status": "uncertain",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq6-pe_price.pdf",
+          "status": "uncertain",
+          "official_current_target_verified": false,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/ioniq6-pe_price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact latest official download destination not established; retain original URL. Supplemental uncertainty does not negate an earlier positive observation. Existing PDF body model checked earlier: Ioniq 9 price 6 pages/2027; Porter Electric price 2 pages and combined LPG/Electric catalog 13 pages; Ioniq 6 price 6 pages and catalog 27 pages (ordinary/N Line, not N).",
+          "existing_document_or_page_model_identity_checked": true
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-ioniq6-catalog.pdf",
+          "status": "uncertain",
+          "official_current_target_verified": false,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-new-ioniq6-catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Exact latest official download destination not established; retain original URL. Supplemental uncertainty does not negate an earlier positive observation. Existing PDF body model checked earlier: Ioniq 9 price 6 pages/2027; Porter Electric price 2 pages and combined LPG/Electric catalog 13 pages; Ioniq 6 price 6 pages and catalog 27 pages (ordinary/N Line, not N).",
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "르노",
+      "model": "필랑트",
+      "scope": "candidate_top50",
+      "status": "outdated",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://cdn.renault.co.kr/upload/asset/price/price_filante_202610.pdf",
+          "status": "outdated",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": "https://www.renault.co.kr/upload/asset/price/price_filante_202611.pdf",
+          "mutation": "hold_content_verification",
+          "evidence_urls": [
+            "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+            "https://www.renault.co.kr/upload/asset/price/price_filante_202611.pdf"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official latest target differs from existing URL. Replacement PDF content/applicability not sufficiently verified; preserve original URL.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://cdn.renault.co.kr/upload/asset/ebrochure/eBrochure_filante_202610.pdf",
+          "status": "outdated",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": "https://www.renault.co.kr/upload/asset/ebrochure/eBrochure_filante_202611.pdf",
+          "mutation": "hold_content_verification",
+          "evidence_urls": [
+            "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+            "https://www.renault.co.kr/upload/asset/ebrochure/eBrochure_filante_202611.pdf"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official latest target differs from existing URL. Replacement PDF content/applicability not sufficiently verified; preserve original URL.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "쉐보레",
+      "model": "트랙스 크로스오버",
+      "scope": "candidate_top50",
+      "status": "outdated",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/11-pdf/2026%EB%85%84-10%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf",
+          "status": "outdated",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": true,
+          "proposed_url": "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/12-pdfs/2026%EB%85%84-11%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf",
+          "mutation": "apply_verified_replacement",
+          "evidence_urls": [
+            "https://www.chevrolet.co.kr/finance/type-price",
+            "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/12-pdfs/2026%EB%85%84-11%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official latest target differs from existing URL. Replacement PDF model/applicability verified; exact-old-URL guarded change.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "투싼",
+      "scope": "deployed_only_audit",
+      "status": "uncertain",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/tucson-2026-price.pdf",
+          "status": "uncertain",
+          "official_current_target_verified": false,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/tucson-2026-price.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Legacy model 4592 absent from current official list, which lists fifth-generation 4757. Legacy PDF body not rechecked. No cross-generation substitution; departed row audit-only.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/tucson-catalog.pdf",
+          "status": "uncertain",
+          "official_current_target_verified": false,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "none",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/tucson-catalog.pdf"
+          ],
+          "checked_at": "2026-11-03T09:12:00+09:00",
+          "details": "Legacy model 4592 absent from current official list, which lists fifth-generation 4757. Legacy PDF body not rechecked. No cross-generation substitution; departed row audit-only.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "model": "3 Series",
+      "scope": "deployed_only_audit",
+      "status": "outdated",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://bmwfinancial.co.kr/bmw/bmw-pricelist-pdf/september_2026_pricelist.pdf",
+          "status": "outdated",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": true,
+          "proposed_url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf",
+          "mutation": "departed_audit_only",
+          "evidence_urls": [
+            "https://www.bmw.co.kr/ko/index.html"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official current October PDF includes this model; departed, audit-only. No November URL inferred.",
+          "existing_document_or_page_model_identity_checked": false
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.bmw.co.kr/ko/all-models/3-series/bmw-3-series-sedan/bmw-3-series-sedan.html",
+          "status": "current",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": false,
+          "proposed_url": null,
+          "mutation": "departed_audit_only",
+          "evidence_urls": [
+            "https://www.bmw.co.kr/ko/all-models/3-series/bmw-3-series-sedan/bmw-3-series-sedan.html"
+          ],
+          "checked_at": "2026-11-03T00:15:10Z",
+          "details": "Exact existing official model page opened: BMW 3시리즈 (G20), BMW320i specifications, G20 sedan images and configuration link. Identity verified, not latest pricing or all derivatives.",
+          "existing_document_or_page_model_identity_checked": true
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "model": "X5",
+      "scope": "deployed_only_audit",
+      "status": "outdated",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://bmwfinancial.co.kr/bmw/bmw-pricelist-pdf/september_2026_pricelist.pdf",
+          "status": "outdated",
+          "official_current_target_verified": true,
+          "replacement_document_content_verified": true,
+          "proposed_url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf",
+          "mutation": "departed_audit_only",
+          "evidence_urls": [
+            "https://www.bmw.co.kr/ko/index.html"
+          ],
+          "checked_at": "2026-11-03T00:12:36Z",
+          "details": "Official current October PDF includes this model; departed, audit-only. No November URL inferred.",
+          "existing_document_or_page_model_identity_checked": false
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Seven outdated candidate URL fields remain held for replacement-content verification.",
+    "Seven candidate models remain uncertain; preserve their URLs.",
+    "Genesis checks establish selected model and November listing, not PDF body verification.",
+    "Existing link_status rows and timestamps are not rewritten; URL-aware badges do not certify current model year.",
+    "Bottom TOP50 price table only; separate roadmap/news links are not covered.",
+    "No publishing authorization for revised commit; local preparation only."
+  ]
+}

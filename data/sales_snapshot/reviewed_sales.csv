@@ -1,71 +1,73 @@
 brand,model,units_sold,source_period,source_model_url
-현대,더 뉴 그랜저,8898,국산 2026-09,
-기아,쏘렌토,6957,국산 2026-09,
-현대,디 올 뉴 아반떼,6945,국산 2026-09,
-기아,스포티지,5497,국산 2026-09,
-기아,셀토스,5422,국산 2026-09,
-기아,카니발,5286,국산 2026-09,
-현대,쏘나타 디 엣지,4153,국산 2026-09,
-기아,레이,3382,국산 2026-09,
-현대,싼타페,3217,국산 2026-09,
-현대,디 올 뉴 팰리세이드,2965,국산 2026-09,
-기아,K5,2916,국산 2026-09,
-현대,포터2,2845,국산 2026-09,
-기아,모닝,2522,국산 2026-09,
-기아,EV5,2160,국산 2026-09,
-기아,봉고 3,2126,국산 2026-09,
-현대,버스/트럭,2016,국산 2026-09,
-현대,더 뉴 스타리아,2001,국산 2026-09,
-기아,PV5,1888,국산 2026-09,
-제네시스,G80,1866,국산 2026-09,
-제네시스,GV70,1835,국산 2026-09,
-현대,투싼,1825,국산 2026-09,
-기아,K8,1734,국산 2026-09,
-기아,EV3,1627,국산 2026-09,
-현대,코나,1605,국산 2026-09,
-기아,니로,1351,국산 2026-09,
-제네시스,GV80,1261,국산 2026-09,
-현대,아이오닉 5,1260,국산 2026-09,
-현대,스타리아 일렉트릭,1087,국산 2026-09,
-르노,그랑 콜레오스,1007,국산 2026-09,
-현대,캐스퍼,859,국산 2026-09,
-기아,레이 EV,848,국산 2026-09,
-현대,아이오닉 9,760,국산 2026-09,
-KGM,무쏘,717,국산 2026-09,
-르노,아르카나,691,국산 2026-09,
-르노,필랑트,591,국산 2026-09,
-쉐보레,트랙스 크로스오버,588,국산 2026-09,
-현대,포터2 일렉트릭,575,국산 2026-09,
-현대,더 뉴 아이오닉 6,522,국산 2026-09,
-기아,EV4,498,국산 2026-09,
-현대,캐스퍼 일렉트릭,478,국산 2026-09,
-KGM,티볼리,428,국산 2026-09,
-기아,EV6,410,국산 2026-09,
-기아,타스만,404,국산 2026-09,
-KGM,뉴 토레스,397,국산 2026-09,
-기아,버스/특수,364,국산 2026-09,
-제네시스,G90,348,국산 2026-09,
-KGM,액티언,347,국산 2026-09,
-현대,디 올 뉴 넥쏘,326,국산 2026-09,
-현대,아반떼,294,국산 2026-09,
-기아,EV9,289,국산 2026-09,
-현대,코나 일렉트릭,267,국산 2026-09,
-기아,봉고 3 EV,221,국산 2026-09,
-현대,베뉴,146,국산 2026-09,
-현대,ST1,145,국산 2026-09,
-제네시스,Electrified GV70,124,국산 2026-09,
-쉐보레,트레일블레이저,121,국산 2026-09,
-제네시스,G70,116,국산 2026-09,
-KGM,무쏘 EV,107,국산 2026-09,
-제네시스,Electrified G80,93,국산 2026-09,
-KGM,렉스턴 뉴 아레나,86,국산 2026-09,
-제네시스,GV60,85,국산 2026-09,
-현대,아반떼 N,66,국산 2026-09,
-기아,K9,61,국산 2026-09,
-현대,아이오닉 6 N,23,국산 2026-09,
-KGM,토레스 EVX,18,국산 2026-09,
-제네시스,GV60 MAGMA,14,국산 2026-09,
-현대,아이오닉 5 N,2,국산 2026-09,
+기아,스포티지,7708,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4684
+현대,더 뉴 그랜저,6989,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4802
+기아,쏘렌토,6784,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4563
+기아,카니발,5570,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4586
+현대,디 올 뉴 아반떼,5501,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4835
+기아,셀토스,4816,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4763
+현대,쏘나타 디 엣지,3894,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4466
+기아,EV5,3558,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4499
+현대,포터2,3348,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=1901
+현대,디 올 뉴 팰리세이드,3322,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4699
+기아,EV3,3124,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4647
+기아,레이,2972,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4689
+기아,PV5,2688,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4714
+기아,K5,2683,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4585
+현대,버스/트럭,2510,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=3039999
+현대,싼타페,2469,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4435
+현대,코나,2400,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4361
+기아,봉고 3,2398,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=3772
+현대,더 뉴 스타리아,2313,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4765
+제네시스,G80,2007,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4603
+현대,아이오닉 5,1896,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4624
+제네시스,GV80,1814,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4465
+기아,레이 EV,1525,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4691
+기아,모닝,1495,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4554
+현대,디 올 뉴 투싼,1428,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4757
+기아,K8,1421,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4665
+기아,니로,1394,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4775
+제네시스,GV70,1287,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4609
+현대,스타리아 일렉트릭,1269,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4770
+현대,아이오닉 9,1099,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4088
+르노,아르카나,1075,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4560
+르노,그랑 콜레오스,1066,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4659
+현대,캐스퍼,1060,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4671
+기아,EV4,950,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4712
+현대,베뉴,882,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=3654
+KGM,무쏘,743,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4766
+기아,EV6,675,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4641
+현대,포터2 일렉트릭,619,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4399
+현대,더 뉴 아이오닉 6,584,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4746
+르노,필랑트,562,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4772
+쉐보레,트랙스 크로스오버,556,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4429
+현대,캐스퍼 일렉트릭,466,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4653
+기아,타스만,401,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4686
+KGM,티볼리,364,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4545
+기아,EV9,343,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4128
+KGM,뉴 토레스,311,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4807
+기아,봉고 3 EV,306,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4404
+KGM,액티언,302,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4622
+현대,디 올 뉴 넥쏘,277,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4677
+제네시스,G90,273,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4016
+기아,버스/특수,229,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=3079999
+쉐보레,트레일블레이저,211,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4474
+현대,코나 일렉트릭,205,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4510
+KGM,무쏘 EV,193,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4666
+제네시스,Electrified GV70,176,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4705
+현대,투싼,162,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4592
+제네시스,GV60,152,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4701
+현대,ST1,140,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4626
+현대,아반떼,132,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4455
+제네시스,Electrified G80,117,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4660
+제네시스,G70,98,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=3995
+현대,아반떼 N,97,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4564
+KGM,렉스턴 뉴 아레나,75,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4518
+기아,K9,70,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4066
+KGM,토레스 EVX,49,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4492
+현대,아이오닉 6 N,31,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4742
+제네시스,GV60 MAGMA,13,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4761
+현대,아이오닉 5 N,7,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4558
+제네시스,GV90,5,국산 2026-10,https://auto.danawa.com/newcar/?Work=estimate&Model=4608
 테슬라,Model Y,11421,수입 2026-09,https://auto.danawa.com/newcar/?Work=estimate&Model=4667
 BMW,5 Series,1781,수입 2026-09,https://auto.danawa.com/newcar/?Work=estimate&Model=4517
 벤츠,E-Class,2748,수입 2026-09,https://auto.danawa.com/newcar/?Work=estimate&Model=4516

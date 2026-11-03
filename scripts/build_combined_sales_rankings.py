@@ -17,9 +17,12 @@ COLUMNS = [
 ]
 
 REVIEWED_SALES = MONTHLY_SALES.parent / "reviewed_sales.csv"
-UPDATE_ID = "2026-10-12-domestic09-import09"
-BASELINE = MONTHLY_SALES.parent / "history" / "vehicle_master_before_2026-10-12-domestic09-import09.csv"
-VEHICLE_UPDATES = MONTHLY_SALES.parent / "vehicle_updates_2026-10-12.json"
+UPDATE_ID = "2026-11-03-domestic10-import09"
+BASELINE = MONTHLY_SALES.parent / "history" / "vehicle_master_before_2026-11-03-domestic10-import09.csv"
+VEHICLE_UPDATES = MONTHLY_SALES.parent / "vehicle_updates_2026-11-03.json"
+
+
+SOURCE_ROWS = MONTHLY_SALES.parent / "source_rows_2026-11-03.json"
 
 
 def normalize(value: object) -> str:
@@ -197,6 +200,36 @@ def load_master() -> pd.DataFrame:
     return df
 
 
+def validate_source_reconciliation(sales: pd.DataFrame) -> None:
+    """Require complete source evidence and an exact, unaggregated reviewed subset."""
+    raw = json.loads(SOURCE_ROWS.read_text(encoding="utf-8"))
+    complete = raw["domestic"] + raw["imports"]
+    by_url = {row["source_url"]: row for row in complete}
+    if len(by_url) != len(complete):
+        raise ValueError("Duplicate source model identity")
+    for market, label in [("domestic", "국산"), ("imports", "수입")]:
+        rows = raw[market]
+        if (not rows or [r["rank"] for r in rows] != list(range(1, len(rows) + 1))
+                or any(type(r["units"]) is not int or r["units"] < 0 or r["market"] != label for r in rows)
+                or [r["units"] for r in rows] != sorted((r["units"] for r in rows), reverse=True)):
+            raise ValueError("Invalid complete source rows")
+    if sales.source_model_url.duplicated().any():
+        raise ValueError("Duplicate reviewed source identity")
+    for row in sales.itertuples():
+        source = by_url.get(row.source_model_url)
+        if source is None or (row.model, row.units_sold, row.source_period) != (
+                source["model"], source["units"], source["market"] + " " + source["period"]):
+            raise ValueError("Reviewed row does not match exact source model")
+    ranked = sorted(complete, key=lambda row: -row["units"])
+    expected = [r["source_url"] for r in ranked[:50]]
+    reviewed = sales.assign(_market=sales.source_period.str.startswith("수입").astype(int))
+    actual = reviewed.sort_values(["units_sold", "_market"], ascending=[False, True], kind="stable")
+    if actual.head(50).source_model_url.tolist() != expected:
+        raise ValueError("Reviewed TOP50 does not match complete source cutoff/order")
+    if len(ranked) < 51 or ranked[49]["units"] <= ranked[50]["units"]:
+        raise ValueError("Complete source TOP50 cutoff is tied or not established")
+
+
 def main() -> None:
     master = load_master()
     sales = pd.read_csv(REVIEWED_SALES).fillna("")
@@ -208,6 +241,7 @@ def main() -> None:
         raise ValueError("Sales counts must be nonnegative integers")
     if not sales["source_period"].str.fullmatch(r"(국산|수입) 20\d{2}-(0[1-9]|1[0-2])").all():
         raise ValueError("Invalid reporting period")
+    validate_source_reconciliation(sales)
     # Explicit market priority preserves domestic-first ties even if input order changes.
     sales["_market_order"] = sales.source_period.str.startswith("수입").astype(int)
     sales = sales.sort_values(["units_sold", "_market_order"], ascending=[False, True], kind="stable")
@@ -239,11 +273,11 @@ def main() -> None:
         else:
             row = {col: "" for col in COLUMNS}
             row.update(overrides.get(key, {}))
-            required = ["vehicle", "segment", "price_url", "image_url", "image_source_url", "image_source_type"]
+            required = ["vehicle", "segment", "price_url", "catalog_url", "image_url", "image_source_url", "image_source_type"]
             if (any(not row.get(col) for col in required)
                     or row.get("image_review_status") != "approved"
                     or row.get("image_source_type") not in {"official_site", "official_newsroom", "official_press_release"}
-                    or any(not row[col].startswith("https://") for col in ["price_url", "image_url", "image_source_url"])):
+                    or any(not row[col].startswith("https://") for col in ["price_url", "catalog_url", "image_url", "image_source_url"])):
                 raise ValueError(f"Verified official metadata required for new entrant: {brand} {model}")
             row["brand"] = brand
             row["model"] = model

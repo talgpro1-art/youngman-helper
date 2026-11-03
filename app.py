@@ -206,7 +206,7 @@ def load_notifications(version: int) -> list[dict]:
 
 @st.cache_data(show_spinner=False)
 def load_price_checks(version: int) -> pd.DataFrame:
-    columns = ["vehicle", "verification_status", "verification_detail", "checked_at"]
+    columns = ["vehicle", "url", "verification_status", "verification_detail", "checked_at"]
     if not LINK_STATUS.exists():
         return pd.DataFrame(columns=columns)
     df = pd.read_csv(LINK_STATUS, dtype=str).fillna("")
@@ -215,7 +215,7 @@ def load_price_checks(version: int) -> pd.DataFrame:
         if col not in df.columns:
             df[col] = ""
     df = df[df["doc_type"].astype(str).eq("가격표")].copy()
-    return df.sort_values("checked_at").drop_duplicates("vehicle", keep="last")[columns]
+    return df.sort_values("checked_at").drop_duplicates(["vehicle", "url"], keep="last")[columns]
 
 
 @st.cache_data(show_spinner=False, ttl=600)
@@ -268,7 +268,7 @@ def price_status_label(value: object) -> str:
 
 def price_verification_label(value: object) -> str:
     return {
-        "MATCHED": "차종 일치",
+        "MATCHED": "차종명 일치 · 세대/연식 미검증",
         "OFFICIAL_PAGE": "공식 페이지",
         "BROWSER_REQUIRED": "브라우저 확인",
         "TEXT_UNAVAILABLE": "내용 확인 필요",
@@ -632,8 +632,8 @@ def main() -> None:
     df = load_vehicles(file_version(VEHICLE_MASTER), "2026-10-02-price-image-audit")
     price_checks = load_price_checks(file_version(LINK_STATUS))
     if not price_checks.empty:
-        price_checks = price_checks.rename(columns={"checked_at": "price_checked_at"})
-        df = df.merge(price_checks, on="vehicle", how="left")
+        price_checks = price_checks.rename(columns={"checked_at": "price_checked_at", "url": "price_url"})
+        df = df.merge(price_checks, on=["vehicle", "price_url"], how="left", validate="many_to_one")
     for col in ["verification_status", "verification_detail", "price_checked_at"]:
         if col not in df.columns:
             df[col] = ""
