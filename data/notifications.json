@@ -1,103 +1,52 @@
 [
   {
-    "date": "2026-11-02",
-    "brand": "기아",
-    "model": "쏘렌토",
-    "title": "공식 가격표 변경 감지: 기아 쏘렌토",
+    "date": "2026-11-03",
+    "brand": "현대",
+    "model": "디 올 뉴 아반떼",
+    "title": "공식 추가PDF 변경 감지: 현대 디 올 뉴 아반떼",
     "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante-catalog.pdf",
     "severity": "warning",
     "source": "price_link_checker"
   },
   {
     "date": "2026-11-02",
-    "brand": "기아",
-    "model": "쏘렌토",
-    "title": "공식 추가PDF 변경 감지: 기아 쏘렌토",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_sorento.pdf",
+    "article_date": "2026-11-02",
+    "brand": "르노코리아",
+    "model": "필랑트",
+    "vehicle": "르노코리아 필랑트 누아르 에디션",
+    "title": "[Car & Now] 르노코리아, 1000대 한정 '필랑트 누아르 에디션' 출시·첫차, 11월 중고차 시세 전망 공개 - www.ebn.co.kr",
+    "body": "르노코리아가 1000대 한정판 '필랑트 누아르 에디션'을 출시했습니다.",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5uTzh1T0RiTXRDMjRsdjUtS1phaUZtUlpwd1R0WE50ajdrRExWTExNTVBFMFJkRldmN0haMlZVRlNqN3lfYXQ5QkZtZUpJb0RDU01kWVFveUpEeTBTZ1dMczhGZ2wwbVdf?oc=5",
+    "published": "2026-11-02T15:41:13+09:00",
     "severity": "warning",
-    "source": "price_link_checker"
+    "source": "newcar_watch_verified"
   },
   {
     "date": "2026-11-02",
-    "brand": "기아",
-    "model": "스포티지",
-    "title": "공식 가격표 변경 감지: 기아 스포티지",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sportage.pdf",
+    "article_date": "2026-11-02",
+    "brand": "르노코리아",
+    "model": "필랑트 누아르 에디션",
+    "vehicle": "르노코리아 필랑트 누아르 에디션",
+    "title": "르노코리아, 필랑트 ‘누아르 에디션’ 출시… 1000대 한정 판매 - Chosunbiz",
+    "body": "르노코리아가 필랑트 누아르 에디션을 1000대 한정 판매로 국내 공식 출시했습니다.",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE14MWpmejhxa0t5LVZqcExoenNrOGo5VkRzMzZhYWF6MTdRRGxRUnUtZVRxQ0hXU0toMGplLThuMlZrTGZlZV9VemFmZlhYWlcxZW42QXh6anczRTdsTEw1aWptVjYzbjFhR2ZLTUdfc2VuM1F5ZC05WU9YaTIwQjTSAZMBQVVfeXFMTV8wYWhwc0hkUjRKNVcyRlJ4Q3hfT0poNHNELXpzWDZNRF8yX0ttdVljc2dUWFdic04zUG11RnJRcVMtZjVRSUFHZDc5T1huLUtwN1NvSWs0cmhIQnhtUGpxcUw4UWNsRENocG00d3NNTW1NV0wxbDM5ZWp2UmdwUUZuREdhUDk2QVo3WElJMS12ZW0w?oc=5",
+    "published": "2026-11-02T10:15:00+09:00",
     "severity": "warning",
-    "source": "price_link_checker"
+    "source": "newcar_watch_verified"
   },
   {
     "date": "2026-11-02",
-    "brand": "기아",
-    "model": "스포티지",
-    "title": "공식 추가PDF 변경 감지: 기아 스포티지",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_sportage.pdf",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-11-02",
+    "article_date": "2026-11-02",
     "brand": "기아",
     "model": "셀토스",
-    "title": "공식 가격표 변경 감지: 기아 셀토스",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf",
+    "vehicle": "셀토스 HEV",
+    "title": "[시승기] 연비 22.2km/L 찍은 셀토스 HEV, 4200만원 주고 살 만할까? - CEO스코어데일리",
+    "body": "기아 셀토스 하이브리드 모델의 시승기 기사로 실연비 22.2km/L 및 가격 관련 정보가 언급되었습니다.",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5KdTRiazQyU2lkbGR2QWkwdXVETGd5YkFTX0wtZ1l0ZVl2cWUxTy0zME1ObzBUeEU5V0ozcWN1V2ZZcHZKaDhZczZsS3Rad2Z0cFBhSVduT20tWnJQcDcxZWxfbC16LUV0WVE?oc=5",
+    "published": "2026-11-02T07:00:00+09:00",
     "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-11-02",
-    "brand": "기아",
-    "model": "셀토스",
-    "title": "공식 추가PDF 변경 감지: 기아 셀토스",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_seltos.pdf",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-11-02",
-    "brand": "기아",
-    "model": "카니발",
-    "title": "공식 가격표 변경 감지: 기아 카니발",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-11-02",
-    "brand": "기아",
-    "model": "카니발",
-    "title": "공식 추가PDF 변경 감지: 기아 카니발",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_carnival.pdf",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-11-02",
-    "brand": "기아",
-    "model": "레이",
-    "title": "공식 가격표 변경 감지: 기아 레이",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf",
-    "severity": "warning",
-    "source": "price_link_checker"
-  },
-  {
-    "date": "2026-11-02",
-    "brand": "기아",
-    "model": "레이",
-    "title": "공식 추가PDF 변경 감지: 기아 레이",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ray.pdf",
-    "severity": "warning",
-    "source": "price_link_checker"
+    "source": "newcar_watch_verified"
   },
   {
     "date": "2026-10-31",
@@ -122,32 +71,6 @@
     "body": "MINI가 브리티시 헤리티지를 담은 한정판 모델 'MINI 쿠퍼 옥스포드 에디션'을 국내에 공식 출시했습니다.",
     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE80UW9vTm5yekxVSDJFMFRwMG9CZl9nN3ZaeTZrU3kyUS1oLVhLenNvR1U5UXYwUWNFNjhxcmJOY2tkSVgyMkxWRDM3aXRXdFYzeXpERm96MmpJN0Z1TjQ1ODZOSkxWaHg0MEE?oc=5",
     "published": "2026-10-30T11:14:08+09:00",
-    "severity": "warning",
-    "source": "newcar_watch_verified"
-  },
-  {
-    "date": "2026-10-28",
-    "article_date": "2026-10-28",
-    "brand": "메르세데스-벤츠",
-    "model": "일렉트릭 GLB",
-    "vehicle": "벤츠 일렉트릭 GLB",
-    "title": "\"CLA 흥행 잇겠다\"…벤츠, 6000만원대 '일렉트릭 GLB' 사전계약 - 뉴스웍스",
-    "body": "메르세데스-벤츠가 6000만원대의 가격대를 형성한 일렉트릭 GLB 사전계약을 진행합니다.",
-    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBKdTQzRk5hOGpydmQtNm8xWkpHYVVIMHJWdFF2QkhWVzdQYkZfdUxkeFNoMzRjTkU4S3RRQzM2XzduRWxYSVpkbDdOYzZfdWV4Ykw1X2lJNjBNSFgzd182MjJVa1Y5QURXOE54NFZNNNIBc0FVX3lxTE1hNXFZOER0ZmRYeXJkMlhoT2JuY1ZUMTFFV0JBYzZfSWZnQ2xrN09aSzdwa3VQOE03NW0zaThDRURCNWtHWnFVVUtCcTV5T0xWaC1GQnBob0QtZU44NVdKTDBfeHlobmc0NmlHNi0yVTUxSGM?oc=5",
-    "published": "2026-10-28T10:23:48+09:00",
-    "severity": "warning",
-    "source": "newcar_watch_verified"
-  },
-  {
-    "date": "2026-10-28",
-    "article_date": "2026-10-28",
-    "brand": "폭스바겐",
-    "model": "골프 R",
-    "vehicle": "폭스바겐 골프 R",
-    "title": "[AT 현장]수입차 ‘가격 경쟁’ 속…폭스바겐, ‘엔지니어링의 정수’ 골프 R 택했다 - 아시아타임즈",
-    "body": "폭스바겐이 수입차 가격 경쟁 속에서 고성능 모델인 골프 R을 국내 시장에 선보인 현장 소식입니다.",
-    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBSb01aOG15OEFHTjRxY0ZDTUlUZlNzVDhhc0VwWGIzSlRhblJZRzBTQ3RvZC1vZTYzWWJFd0lMSklFRk1uS2ZtUE9pLUthaTdrcEVFUEQ0Q3ZPaU1Wb0E?oc=5",
-    "published": "2026-10-28T06:36:36+09:00",
     "severity": "warning",
     "source": "newcar_watch_verified"
   }
