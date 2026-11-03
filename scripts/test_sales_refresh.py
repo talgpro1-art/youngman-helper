@@ -10,6 +10,7 @@ import hashlib
 from contextlib import contextmanager
 import pandas as pd
 import build_combined_sales_rankings as build
+from apply_reviewed_price_updates import apply_updates, AUDIT
 import check_price_links as checker
 
 
@@ -28,13 +29,18 @@ class SalesRefreshTests(unittest.TestCase):
         self.assertEqual(master.source_period.value_counts().to_dict(), {"국산 2026-10": 41, "수입 2026-09": 9})
         self.assertTrue(master.price_url.str.startswith("https://").all())
         old = pd.read_csv(build.BASELINE, dtype=str).fillna("").set_index(["brand", "model"], drop=False)
+        audit = json.loads(AUDIT.read_text())
+        price_changes = {(r['brand'], r['model'], r['field']): r for r in audit['changes']}
         for _, row in master.iterrows():
             key = (row.brand, row.model)
             old_rank = int(old.loc[key, 'rank']) if key in old.index else None
             self.assertEqual(row.rank_change, build.rank_change(old_rank, int(row['rank'])))
             if key in old.index:
                 for col in set(build.COLUMNS) - {'rank', 'rank_change', 'units_sold', 'source_period'}:
-                    self.assertEqual(row[col], old.loc[key, col], (key, col))
+                    change = price_changes.get((*key, col))
+                    if change:
+                        self.assertEqual(old.loc[key, col], change['old'])
+                    self.assertEqual(row[col], change['new'] if change else old.loc[key, col], (key, col))
         self.assertNotIn('아반떼', master.model.tolist())
         self.assertIn('디 올 뉴 아반떼', master.model.tolist())
         self.assertIn('더 뉴 아이오닉 6', master.model.tolist())
@@ -75,6 +81,8 @@ class SalesRefreshTests(unittest.TestCase):
             original = build.VEHICLE_MASTER.read_bytes()
             build.main()
             self.assertEqual(build.BASELINE.read_bytes(), original)
+            # Ranking rebuild preserves metadata; the separate guarded audit applies only reviewed price changes.
+            apply_updates(build.VEHICLE_MASTER, AUDIT)
             self.assertEqual(build.VEHICLE_MASTER.read_bytes(), expected_master)
             self.assertEqual(build.MONTHLY_SALES.read_bytes(), expected_sales)
             build.main()
