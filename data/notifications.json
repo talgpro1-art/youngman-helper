@@ -1,13 +1,36 @@
 [
   {
-    "date": "2026-11-03",
+    "date": "2026-11-04",
     "brand": "현대",
-    "model": "디 올 뉴 아반떼",
-    "title": "공식 추가PDF 변경 감지: 현대 디 올 뉴 아반떼",
+    "model": "쏘나타 디 엣지",
+    "title": "공식 가격표 변경 감지: 현대 쏘나타 디 엣지",
     "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante-catalog.pdf",
+    "link": "https://www.hyundai.com/contents/repn-car/catalog/sonata-2027-price.pdf",
     "severity": "warning",
     "source": "price_link_checker"
+  },
+  {
+    "date": "2026-11-04",
+    "brand": "쉐보레",
+    "model": "트랙스 크로스오버",
+    "title": "공식 가격표 변경 감지: 쉐보레 트랙스 크로스오버",
+    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
+    "link": "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/12-pdfs/2026%EB%85%84-11%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf",
+    "severity": "warning",
+    "source": "price_link_checker"
+  },
+  {
+    "date": "2026-11-02",
+    "article_date": "2026-11-02",
+    "brand": "현대",
+    "model": "투싼",
+    "vehicle": "현대 2026 신형 투싼",
+    "title": "2026 신형 투싼, 3,140만 원부터…벤츠 · 렉서스는 얼마? - 창원특례신문",
+    "body": "2026년형 신형 투싼의 시작 가격이 3,140만 원으로 공개되었다는 소식입니다.",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ZU214Vi1NMFpfWXRZOXliX2xaTXBlRGxVbmJBbmFUNkNfMGY1Y3M2SmZObUZlVTFNTVZQdU5hV0kwZzhTOHlob0pzenl1em1oQkVlR1NmbzJLb0FNRHRIbUw3anRhUHfSAWtBVV95cUxQeE10Y0VjZGx3dzBmXzNGLUhaQkN0UFNoOHRmMjlFSXJjV2luczVMdThSS0hObGFYUWxpakU3ZUNSZE9rVlM5clhOMHVoUmNEZ0FUY0NvaGVVNnhLVHFZZ1cyRjhPaXRVSjlhWQ?oc=5",
+    "published": "2026-11-02T19:35:00+09:00",
+    "severity": "warning",
+    "source": "newcar_watch_verified"
   },
   {
     "date": "2026-11-02",
@@ -58,19 +81,6 @@
     "body": "현대자동차가 제네시스 G90 페이스리프트 모델의 12월 출시를 확정짓고 4분기 신차 시장을 이끌 예정입니다.",
     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdE5wcGRReDZzWmpVX2FyY3UxQzlDeXllYmJxM2dzLUlBNUE1NkJfekcySUtpN09Cb1hlLW42Ty1hOFlfd0c1Y09yTEVSRkl4ekVHVElSTmtuekladFd5bmIyQVhobjBsVXRVbTRqWDIyMlNRVXFOdkxvUWt0cjlqZ1BnQmxZalVvU2NlNTc5T2JuQ3g4d2dtaks4NS1DcG5laGdB?oc=5",
     "published": "2026-10-31T01:07:00+09:00",
-    "severity": "warning",
-    "source": "newcar_watch_verified"
-  },
-  {
-    "date": "2026-10-30",
-    "article_date": "2026-10-30",
-    "brand": "MINI",
-    "model": "MINI 쿠퍼",
-    "vehicle": "MINI 쿠퍼 옥스포드 에디션",
-    "title": "[신차] MINI, 브리티시 헤리티지 담은 한정판 ‘MINI 쿠퍼 옥스포드 에디션’ 국내 출시 - 고카넷",
-    "body": "MINI가 브리티시 헤리티지를 담은 한정판 모델 'MINI 쿠퍼 옥스포드 에디션'을 국내에 공식 출시했습니다.",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE80UW9vTm5yekxVSDJFMFRwMG9CZl9nN3ZaeTZrU3kyUS1oLVhLenNvR1U5UXYwUWNFNjhxcmJOY2tkSVgyMkxWRDM3aXRXdFYzeXpERm96MmpJN0Z1TjQ1ODZOSkxWaHg0MEE?oc=5",
-    "published": "2026-10-30T11:14:08+09:00",
     "severity": "warning",
     "source": "newcar_watch_verified"
   }
