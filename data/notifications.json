@@ -1,23 +1,29 @@
 [
   {
     "date": "2026-11-04",
-    "brand": "현대",
-    "model": "쏘나타 디 엣지",
-    "title": "공식 가격표 변경 감지: 현대 쏘나타 디 엣지",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.hyundai.com/contents/repn-car/catalog/sonata-2027-price.pdf",
+    "article_date": "2026-11-04",
+    "brand": "BMW",
+    "model": "7시리즈",
+    "vehicle": "BMW 7시리즈",
+    "title": "BMW, 완전히 달라진 7시리즈 출시…전기차 주행거리 508km 확보 - 월요신문",
+    "body": "BMW가 전기차 주행거리 508km를 확보하며 완전히 달라진 신형 7시리즈를 출시했습니다.",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1hUlRFOVU1MklIZnN6VEpaUUVSd1JybGJva3h0WEVFb0QtN0x2QktwNzZ6VlZSNFhwTEd3THd3SHhnRUxfbWNCcXlVTHpWR0pGSW5sbEFDQ2lZWmM5OFlzeDdfRVNjOFRrY2c?oc=5",
+    "published": "2026-11-04T09:29:34+09:00",
     "severity": "warning",
-    "source": "price_link_checker"
+    "source": "newcar_watch_verified"
   },
   {
     "date": "2026-11-04",
-    "brand": "쉐보레",
-    "model": "트랙스 크로스오버",
-    "title": "공식 가격표 변경 감지: 쉐보레 트랙스 크로스오버",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/12-pdfs/2026%EB%85%84-11%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf",
+    "article_date": "2026-11-04",
+    "brand": "르노코리아",
+    "model": "필랑트 느와르 에디션",
+    "vehicle": "르노코리아 필랑트 느와르 에디션",
+    "title": "르노코리아, 보스 오디오 장착한 '필랑트 느와르 에디션' 출시 - 교통뉴스",
+    "body": "르노코리아가 보스 오디오 시스템을 탑재한 필랑트 느와르 에디션을 출시했습니다.",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE03OW51T3Z0blpFX0M2U19NWVd5NmVHamN5amRZWnFEM0p6bHlXTGl5Q2xqNVM3b2pwZXZQZDIweHAtWFpmaGY4OU84aGpDTk9MdG04Q0M4QUw0YXFjcTZjVnhCYkdzTUwwMHA4Mw?oc=5",
+    "published": "2026-11-04T09:22:36+09:00",
     "severity": "warning",
-    "source": "price_link_checker"
+    "source": "newcar_watch_verified"
   },
   {
     "date": "2026-11-02",
@@ -51,36 +57,10 @@
     "brand": "르노코리아",
     "model": "필랑트 누아르 에디션",
     "vehicle": "르노코리아 필랑트 누아르 에디션",
-    "title": "르노코리아, 필랑트 ‘누아르 에디션’ 출시… 1000대 한정 판매 - Chosunbiz",
-    "body": "르노코리아가 필랑트 누아르 에디션을 1000대 한정 판매로 국내 공식 출시했습니다.",
-    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE14MWpmejhxa0t5LVZqcExoenNrOGo5VkRzMzZhYWF6MTdRRGxRUnUtZVRxQ0hXU0toMGplLThuMlZrTGZlZV9VemFmZlhYWlcxZW42QXh6anczRTdsTEw1aWptVjYzbjFhR2ZLTUdfc2VuM1F5ZC05WU9YaTIwQjTSAZMBQVVfeXFMTV8wYWhwc0hkUjRKNVcyRlJ4Q3hfT0poNHNELXpzWDZNRF8yX0ttdVljc2dUWFdic04zUG11RnJRcVMtZjVRSUFHZDc5T1huLUtwN1NvSWs0cmhIQnhtUGpxcUw4UWNsRENocG00d3NNTW1NV0wxbDM5ZWp2UmdwUUZuREdhUDk2QVo3WElJMS12ZW0w?oc=5",
-    "published": "2026-11-02T10:15:00+09:00",
-    "severity": "warning",
-    "source": "newcar_watch_verified"
-  },
-  {
-    "date": "2026-11-02",
-    "article_date": "2026-11-02",
-    "brand": "기아",
-    "model": "셀토스",
-    "vehicle": "셀토스 HEV",
-    "title": "[시승기] 연비 22.2km/L 찍은 셀토스 HEV, 4200만원 주고 살 만할까? - CEO스코어데일리",
-    "body": "기아 셀토스 하이브리드 모델의 시승기 기사로 실연비 22.2km/L 및 가격 관련 정보가 언급되었습니다.",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5KdTRiazQyU2lkbGR2QWkwdXVETGd5YkFTX0wtZ1l0ZVl2cWUxTy0zME1ObzBUeEU5V0ozcWN1V2ZZcHZKaDhZczZsS3Rad2Z0cFBhSVduT20tWnJQcDcxZWxfbC16LUV0WVE?oc=5",
-    "published": "2026-11-02T07:00:00+09:00",
-    "severity": "warning",
-    "source": "newcar_watch_verified"
-  },
-  {
-    "date": "2026-10-31",
-    "article_date": "2026-10-31",
-    "brand": "제네시스",
-    "model": "G90 페이스리프트",
-    "vehicle": "제네시스 G90",
-    "title": "현대차, 제네시스 G90 페이스리프트 12월 출시 확정…신차 쏟아지는 4분기 이끈다 - Korean Car Blog",
-    "body": "현대자동차가 제네시스 G90 페이스리프트 모델의 12월 출시를 확정짓고 4분기 신차 시장을 이끌 예정입니다.",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdE5wcGRReDZzWmpVX2FyY3UxQzlDeXllYmJxM2dzLUlBNUE1NkJfekcySUtpN09Cb1hlLW42Ty1hOFlfd0c1Y09yTEVSRkl4ekVHVElSTmtuekladFd5bmIyQVhobjBsVXRVbTRqWDIyMlNRVXFOdkxvUWt0cjlqZ1BnQmxZalVvU2NlNTc5T2JuQ3g4d2dtaks4NS1DcG5laGdB?oc=5",
-    "published": "2026-10-31T01:07:00+09:00",
+    "title": "르노코리아, 1천대 한정 '필랑트 누아르 에디션' 출시 - 파이낸셜뉴스",
+    "body": "르노코리아가 1천대 한정판 모델인 필랑트 누아르 에디션을 국내에 공식 출시했습니다.",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE11czY5NjVWZFlBNmc4MUhXMWhNaHdIM0xJcTJGNTgyamtxX3o5VUFaaFMyYVBKMDJWLXRqcVg1enk3bWFsTTBUdTZxUUNJUld5eUlscWZBTWhlUQ?oc=5",
+    "published": "2026-11-02T10:21:42+09:00",
     "severity": "warning",
     "source": "newcar_watch_verified"
   }
