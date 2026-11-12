@@ -17,12 +17,12 @@ COLUMNS = [
 ]
 
 REVIEWED_SALES = MONTHLY_SALES.parent / "reviewed_sales.csv"
-UPDATE_ID = "2026-11-03-domestic10-import09"
-BASELINE = MONTHLY_SALES.parent / "history" / "vehicle_master_before_2026-11-03-domestic10-import09.csv"
-VEHICLE_UPDATES = MONTHLY_SALES.parent / "vehicle_updates_2026-11-03.json"
+UPDATE_ID = "2026-11-12-domestic10-import10"
+BASELINE = MONTHLY_SALES.parent / "history" / "vehicle_master_before_2026-11-12-domestic10-import10.csv"
+VEHICLE_UPDATES = MONTHLY_SALES.parent / "vehicle_updates_2026-11-12.json"
 
 
-SOURCE_ROWS = MONTHLY_SALES.parent / "source_rows_2026-11-03.json"
+SOURCE_ROWS = MONTHLY_SALES.parent / "source_rows_2026-11-12.json"
 
 
 def normalize(value: object) -> str:

@@ -1,0 +1,61 @@
+{
+  "update_id": "2026-11-12-domestic10-import10",
+  "checked_at_utc": "2026-11-12T07:14:49.599986+00:00",
+  "baseline_commit": "7fd0b8fbe1eaa4bfdc80447dbe256b5c945b4d7f",
+  "baseline_master_blob": "bdf79e8dbcdbac26b30ecd118015e7c21c464d2d",
+  "baseline_verification": "Actual live app all 50 ranks, rank movements, source periods and unit counts matched the exact main master before update.",
+  "sources": [
+    {
+      "market": "국산",
+      "period": "2026-10",
+      "url": "https://auto.danawa.com/auto/?Tab=Model&Work=record",
+      "rows": 69,
+      "units": 105659,
+      "prior_period": "2026-10",
+      "same_period_unit_corrections": 0
+    },
+    {
+      "market": "수입",
+      "period": "2026-10",
+      "url": "https://auto.danawa.com/auto/?Tab=Model&Work=record",
+      "rows": 163,
+      "units": 31117,
+      "prior_period": "2026-09"
+    }
+  ],
+  "method": "Complete 232 models, exact generation identities, no EV or generation aggregation. Sort by units descending, domestic first then source order for ties. 48 retained vehicles preserve all nonranking fields except explicitly reviewed independent price changes.",
+  "identity_verification": "All 232 current sales-table model href IDs were directly verified against model-row checkbox ID, title-cell href ID and visible model label. Domestic IDs were cross-checked against the current domestic source table. No ID, model, units, market or period differences from the reviewed source.",
+  "cutoff": {
+    "rank50": "GLC-Class",
+    "units50": 527,
+    "rank51": "3 Series",
+    "units51": 503
+  },
+  "new_entries": [
+    "BMW X5",
+    "벤츠 GLC-Class"
+  ],
+  "removed": [
+    "BYD SEALION 7",
+    "폴스타 Polestar 4"
+  ],
+  "previous_deployed_snapshot": "history/vehicle_master_before_2026-11-12-domestic10-import10.csv",
+  "fresh_identity_verification": {
+    "observed_at_utc": "2026-11-12T07:25:34.580961+00:00",
+    "source_url": "https://auto.danawa.com/auto/?Tab=Model&Work=record",
+    "candidate_compared": "data/sales_snapshot/source_rows_2026-11-12.json",
+    "verified_rows": 232,
+    "domestic_rows": 69,
+    "imports_rows": 163,
+    "domestic_units": 105659,
+    "imports_units": 31117,
+    "all_ids_directly_observed_in_fresh_html": true,
+    "market_validation": "Fresh linked domestic table ID membership; remaining IDs in combined table are imports.",
+    "extraction": "Only recordTable model rows containing compItemCk record_ID; assert checkbox ID equals title-cell model href ID and checkbox title equals visible label. Excludes trim subrows, promotions and other page links.",
+    "differences": [],
+    "raw_html_sha256_by_market": {
+      "combined": "1ae4d70ad4bf26ec97dacac83c724a958aeb49ae5f2574ada2500cf43888e8fb",
+      "domestic": "3e4e9c37290f76a7db9ebaaa8db44088c56d8c4d4b65d61fd05f44f42e91f1f7"
+    }
+  }
+}

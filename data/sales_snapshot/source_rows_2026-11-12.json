@@ -1,0 +1,2326 @@
+{
+  "domestic": [
+    {
+      "rank": 1,
+      "model": "스포티지",
+      "units": 7708,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4684",
+      "source_label": "스포티지",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 2,
+      "model": "더 뉴 그랜저",
+      "units": 6989,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4802",
+      "source_label": "더 뉴 그랜저",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 3,
+      "model": "쏘렌토",
+      "units": 6784,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4563",
+      "source_label": "쏘렌토",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 4,
+      "model": "카니발",
+      "units": 5570,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4586",
+      "source_label": "카니발",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 5,
+      "model": "디 올 뉴 아반떼",
+      "units": 5501,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4835",
+      "source_label": "디 올 뉴 아반떼",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 6,
+      "model": "셀토스",
+      "units": 4816,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4763",
+      "source_label": "셀토스",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 7,
+      "model": "쏘나타 디 엣지",
+      "units": 3894,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4466",
+      "source_label": "쏘나타 디 엣지",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 8,
+      "model": "EV5",
+      "units": 3558,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4499",
+      "source_label": "EV5",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 9,
+      "model": "포터2",
+      "units": 3348,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=1901",
+      "source_label": "포터2",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 10,
+      "model": "디 올 뉴 팰리세이드",
+      "units": 3322,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4699",
+      "source_label": "디 올 뉴 팰리세이드",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 11,
+      "model": "EV3",
+      "units": 3124,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4647",
+      "source_label": "EV3",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 12,
+      "model": "레이",
+      "units": 2972,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4689",
+      "source_label": "레이",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 13,
+      "model": "PV5",
+      "units": 2688,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4714",
+      "source_label": "PV5",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 14,
+      "model": "K5",
+      "units": 2683,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4585",
+      "source_label": "K5",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 15,
+      "model": "버스/트럭",
+      "units": 2510,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=3039999",
+      "source_label": "버스/트럭 (현대)",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 16,
+      "model": "싼타페",
+      "units": 2469,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4435",
+      "source_label": "싼타페",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 17,
+      "model": "코나",
+      "units": 2400,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4361",
+      "source_label": "코나",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 18,
+      "model": "봉고 3",
+      "units": 2398,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=3772",
+      "source_label": "봉고 3",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 19,
+      "model": "더 뉴 스타리아",
+      "units": 2313,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4765",
+      "source_label": "더 뉴 스타리아",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 20,
+      "model": "G80",
+      "units": 2007,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4603",
+      "source_label": "G80",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 21,
+      "model": "아이오닉 5",
+      "units": 1896,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4624",
+      "source_label": "아이오닉 5",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 22,
+      "model": "GV80",
+      "units": 1814,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4465",
+      "source_label": "GV80",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 23,
+      "model": "레이 EV",
+      "units": 1525,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4691",
+      "source_label": "레이 EV",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 24,
+      "model": "모닝",
+      "units": 1495,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4554",
+      "source_label": "모닝",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 25,
+      "model": "디 올 뉴 투싼",
+      "units": 1428,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4757",
+      "source_label": "디 올 뉴 투싼",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 26,
+      "model": "K8",
+      "units": 1421,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4665",
+      "source_label": "K8",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 27,
+      "model": "니로",
+      "units": 1394,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4775",
+      "source_label": "니로",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 28,
+      "model": "GV70",
+      "units": 1287,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4609",
+      "source_label": "GV70",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 29,
+      "model": "스타리아 일렉트릭",
+      "units": 1269,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4770",
+      "source_label": "스타리아 일렉트릭",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 30,
+      "model": "아이오닉 9",
+      "units": 1099,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4088",
+      "source_label": "아이오닉 9",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 31,
+      "model": "아르카나",
+      "units": 1075,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4560",
+      "source_label": "아르카나",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 32,
+      "model": "그랑 콜레오스",
+      "units": 1066,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4659",
+      "source_label": "그랑 콜레오스",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 33,
+      "model": "캐스퍼",
+      "units": 1060,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4671",
+      "source_label": "캐스퍼",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 34,
+      "model": "EV4",
+      "units": 950,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4712",
+      "source_label": "EV4",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 35,
+      "model": "베뉴",
+      "units": 882,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=3654",
+      "source_label": "베뉴",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 36,
+      "model": "무쏘",
+      "units": 743,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4766",
+      "source_label": "무쏘",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 37,
+      "model": "EV6",
+      "units": 675,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4641",
+      "source_label": "EV6",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 38,
+      "model": "포터2 일렉트릭",
+      "units": 619,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4399",
+      "source_label": "포터2 일렉트릭",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 39,
+      "model": "더 뉴 아이오닉 6",
+      "units": 584,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4746",
+      "source_label": "더 뉴 아이오닉 6",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 40,
+      "model": "필랑트",
+      "units": 562,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4772",
+      "source_label": "필랑트",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 41,
+      "model": "트랙스 크로스오버",
+      "units": 556,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4429",
+      "source_label": "트랙스 크로스오버",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 42,
+      "model": "캐스퍼 일렉트릭",
+      "units": 466,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4653",
+      "source_label": "캐스퍼 일렉트릭",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 43,
+      "model": "타스만",
+      "units": 401,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4686",
+      "source_label": "타스만",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 44,
+      "model": "티볼리",
+      "units": 364,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4545",
+      "source_label": "티볼리",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 45,
+      "model": "EV9",
+      "units": 343,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4128",
+      "source_label": "EV9",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 46,
+      "model": "뉴 토레스",
+      "units": 311,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4807",
+      "source_label": "뉴 토레스",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 47,
+      "model": "봉고 3 EV",
+      "units": 306,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4404",
+      "source_label": "봉고 3 EV",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 48,
+      "model": "액티언",
+      "units": 302,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4622",
+      "source_label": "액티언",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 49,
+      "model": "디 올 뉴 넥쏘",
+      "units": 277,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4677",
+      "source_label": "디 올 뉴 넥쏘",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 50,
+      "model": "G90",
+      "units": 273,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4016",
+      "source_label": "G90",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 51,
+      "model": "버스/특수",
+      "units": 229,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=3079999",
+      "source_label": "버스/특수 (기아)",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 52,
+      "model": "트레일블레이저",
+      "units": 211,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4474",
+      "source_label": "트레일블레이저",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 53,
+      "model": "코나 일렉트릭",
+      "units": 205,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4510",
+      "source_label": "코나 일렉트릭",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 54,
+      "model": "무쏘 EV",
+      "units": 193,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4666",
+      "source_label": "무쏘 EV",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 55,
+      "model": "Electrified GV70",
+      "units": 176,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4705",
+      "source_label": "Electrified GV70",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 56,
+      "model": "투싼",
+      "units": 162,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4592",
+      "source_label": "투싼",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 57,
+      "model": "GV60",
+      "units": 152,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4701",
+      "source_label": "GV60",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 58,
+      "model": "ST1",
+      "units": 140,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4626",
+      "source_label": "ST1",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 59,
+      "model": "아반떼",
+      "units": 132,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4455",
+      "source_label": "아반떼",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 60,
+      "model": "Electrified G80",
+      "units": 117,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4660",
+      "source_label": "Electrified G80",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 61,
+      "model": "G70",
+      "units": 98,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=3995",
+      "source_label": "G70",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 62,
+      "model": "아반떼 N",
+      "units": 97,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4564",
+      "source_label": "아반떼 N",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 63,
+      "model": "렉스턴 뉴 아레나",
+      "units": 75,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4518",
+      "source_label": "렉스턴 뉴 아레나",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 64,
+      "model": "K9",
+      "units": 70,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4066",
+      "source_label": "K9",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 65,
+      "model": "토레스 EVX",
+      "units": 49,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4492",
+      "source_label": "토레스 EVX",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 66,
+      "model": "아이오닉 6 N",
+      "units": 31,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4742",
+      "source_label": "아이오닉 6 N",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 67,
+      "model": "GV60 MAGMA",
+      "units": 13,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4761",
+      "source_label": "GV60 MAGMA",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 68,
+      "model": "아이오닉 5 N",
+      "units": 7,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4558",
+      "source_label": "아이오닉 5 N",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 69,
+      "model": "GV90",
+      "units": 5,
+      "market": "국산",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4608",
+      "source_label": "GV90",
+      "identity_verification": "direct_current_sales_table_html_href"
+    }
+  ],
+  "imports": [
+    {
+      "rank": 1,
+      "model": "Model Y",
+      "units": 5508,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4667",
+      "source_label": "Model Y",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 2,
+      "model": "E-Class",
+      "units": 3683,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4516",
+      "source_label": "E-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 3,
+      "model": "Model 3",
+      "units": 3553,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4610",
+      "source_label": "Model 3",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 4,
+      "model": "5 Series",
+      "units": 1478,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4517",
+      "source_label": "5 Series",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 5,
+      "model": "X3",
+      "units": 762,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4656",
+      "source_label": "X3",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 6,
+      "model": "Dolphin",
+      "units": 740,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4704",
+      "source_label": "Dolphin",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 7,
+      "model": "The New S-Class",
+      "units": 575,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4642",
+      "source_label": "The New S-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 8,
+      "model": "X5",
+      "units": 532,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4475",
+      "source_label": "X5",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 9,
+      "model": "GLC-Class",
+      "units": 527,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4373",
+      "source_label": "GLC-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 10,
+      "model": "3 Series",
+      "units": 503,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4650",
+      "source_label": "3 Series",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 11,
+      "model": "GLE-Class",
+      "units": 494,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4471",
+      "source_label": "GLE-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 12,
+      "model": "All New ES Electric",
+      "units": 492,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4838",
+      "source_label": "All New ES Electric",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 13,
+      "model": "ES90",
+      "units": 431,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4756",
+      "source_label": "ES90",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 14,
+      "model": "All New RAV4",
+      "units": 430,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4803",
+      "source_label": "All New RAV4",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 15,
+      "model": "EX30",
+      "units": 400,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4446",
+      "source_label": "EX30",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 16,
+      "model": "NX",
+      "units": 376,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4164",
+      "source_label": "NX",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 17,
+      "model": "SEALION 6 DM-i",
+      "units": 363,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4818",
+      "source_label": "SEALION 6 DM-i",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 18,
+      "model": "7 Series",
+      "units": 356,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4196",
+      "source_label": "7 Series",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 19,
+      "model": "G-Class",
+      "units": 334,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4629",
+      "source_label": "G-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 20,
+      "model": "SEALION 7",
+      "units": 304,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4706",
+      "source_label": "SEALION 7",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 21,
+      "model": "Cooper",
+      "units": 291,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4618",
+      "source_label": "Cooper",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 22,
+      "model": "XC60",
+      "units": 290,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4747",
+      "source_label": "XC60",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 23,
+      "model": "RX",
+      "units": 276,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4390",
+      "source_label": "RX",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 24,
+      "model": "X7",
+      "units": 271,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4192",
+      "source_label": "X7",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 25,
+      "model": "Golf",
+      "units": 267,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4720",
+      "source_label": "Golf",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 26,
+      "model": "Atlas",
+      "units": 266,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=3773",
+      "source_label": "Atlas",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 27,
+      "model": "i5",
+      "units": 253,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4528",
+      "source_label": "i5",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 28,
+      "model": "Camry",
+      "units": 251,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4674",
+      "source_label": "Camry",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 29,
+      "model": "CLE",
+      "units": 241,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4555",
+      "source_label": "CLE",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 30,
+      "model": "iX3",
+      "units": 232,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4751",
+      "source_label": "iX3",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 31,
+      "model": "GLB-Class",
+      "units": 229,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4496",
+      "source_label": "GLB-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 32,
+      "model": "ID.5",
+      "units": 221,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4121",
+      "source_label": "ID.5",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 33,
+      "model": "Cayenne Electric",
+      "units": 199,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4762",
+      "source_label": "Cayenne Electric",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 34,
+      "model": "The new A6",
+      "units": 196,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4773",
+      "source_label": "The new A6",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 35,
+      "model": "X6",
+      "units": 195,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4476",
+      "source_label": "X6",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 36,
+      "model": "Alphard",
+      "units": 167,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4473",
+      "source_label": "Alphard",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 37,
+      "model": "iX1",
+      "units": 165,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4372",
+      "source_label": "iX1",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 38,
+      "model": "Taycan",
+      "units": 165,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4619",
+      "source_label": "Taycan",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 39,
+      "model": "C-Class",
+      "units": 161,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4037",
+      "source_label": "C-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 40,
+      "model": "Cayenne",
+      "units": 155,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4506",
+      "source_label": "Cayenne",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 41,
+      "model": "X1",
+      "units": 152,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4371",
+      "source_label": "X1",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 42,
+      "model": "Polestar 4",
+      "units": 145,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4513",
+      "source_label": "Polestar 4",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 43,
+      "model": "The New Maybach S-Class",
+      "units": 141,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4789",
+      "source_label": "The New Maybach S-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 44,
+      "model": "Mini Electric",
+      "units": 139,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4571",
+      "source_label": "Mini Electric",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 45,
+      "model": "ID.4",
+      "units": 136,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4005",
+      "source_label": "ID.4",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 46,
+      "model": "EX90",
+      "units": 133,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4418",
+      "source_label": "EX90",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 47,
+      "model": "XC90",
+      "units": 133,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4737",
+      "source_label": "XC90",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 48,
+      "model": "7X",
+      "units": 129,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4810",
+      "source_label": "7X",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 49,
+      "model": "Macan Electric",
+      "units": 125,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4613",
+      "source_label": "Macan Electric",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 50,
+      "model": "S90",
+      "units": 123,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4740",
+      "source_label": "S90",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 51,
+      "model": "New ATTO 3",
+      "units": 118,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4822",
+      "source_label": "New ATTO 3",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 52,
+      "model": "The new Q5",
+      "units": 117,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4736",
+      "source_label": "The new Q5",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 53,
+      "model": "4 Series",
+      "units": 116,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4614",
+      "source_label": "4 Series",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 54,
+      "model": "Crown",
+      "units": 111,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4447",
+      "source_label": "Crown",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 55,
+      "model": "Cybertruck",
+      "units": 104,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=3825",
+      "source_label": "Cybertruck",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 56,
+      "model": "Polestar 3",
+      "units": 99,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4375",
+      "source_label": "Polestar 3",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 57,
+      "model": "Countryman",
+      "units": 96,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4587",
+      "source_label": "Countryman",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 58,
+      "model": "Aceman",
+      "units": 95,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4640",
+      "source_label": "Aceman",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 59,
+      "model": "GLS-Class",
+      "units": 88,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4507",
+      "source_label": "GLS-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 60,
+      "model": "UX",
+      "units": 85,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=3688",
+      "source_label": "UX",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 61,
+      "model": "2 Series Gran Coupe",
+      "units": 84,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4683",
+      "source_label": "2 Series Gran Coupe",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 62,
+      "model": "Range Rover Sport",
+      "units": 82,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4363",
+      "source_label": "Range Rover Sport",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 63,
+      "model": "iX",
+      "units": 78,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4708",
+      "source_label": "iX",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 64,
+      "model": "XC40",
+      "units": 71,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4405",
+      "source_label": "XC40",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 65,
+      "model": "iX2",
+      "units": 70,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4582",
+      "source_label": "iX2",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 66,
+      "model": "CR-V",
+      "units": 70,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4469",
+      "source_label": "CR-V",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 67,
+      "model": "SEAL",
+      "units": 69,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4703",
+      "source_label": "SEAL",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 68,
+      "model": "Wrangler",
+      "units": 66,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4509",
+      "source_label": "Wrangler",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 69,
+      "model": "Range Rover",
+      "units": 64,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4119",
+      "source_label": "Range Rover",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 70,
+      "model": "Defender",
+      "units": 64,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4776",
+      "source_label": "Defender",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 71,
+      "model": "2 Series Active Tourer",
+      "units": 63,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4114",
+      "source_label": "2 Series Active Tourer",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 72,
+      "model": "Panamera",
+      "units": 62,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4593",
+      "source_label": "Panamera",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 73,
+      "model": "The New 911",
+      "units": 62,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4651",
+      "source_label": "The New 911",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 74,
+      "model": "EX30 CC",
+      "units": 61,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4750",
+      "source_label": "EX30 CC",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 75,
+      "model": "Touareg",
+      "units": 60,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4531",
+      "source_label": "Touareg",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 76,
+      "model": "EQS SUV",
+      "units": 59,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4381",
+      "source_label": "EQS SUV",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 77,
+      "model": "LM",
+      "units": 59,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4635",
+      "source_label": "LM",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 78,
+      "model": "Convertible",
+      "units": 56,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4681",
+      "source_label": "Convertible",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 79,
+      "model": "Sienna",
+      "units": 54,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4063",
+      "source_label": "Sienna",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 80,
+      "model": "GLA-Class",
+      "units": 50,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4495",
+      "source_label": "GLA-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 81,
+      "model": "i4",
+      "units": 49,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4639",
+      "source_label": "i4",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 82,
+      "model": "Escalade",
+      "units": 44,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4663",
+      "source_label": "Escalade",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 83,
+      "model": "Urus",
+      "units": 43,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=3526",
+      "source_label": "Urus",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 84,
+      "model": "V60 Cross Country",
+      "units": 40,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4421",
+      "source_label": "V60 Cross Country",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 85,
+      "model": "The new Q3",
+      "units": 37,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4774",
+      "source_label": "The new Q3",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 86,
+      "model": "1 Series",
+      "units": 37,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4652",
+      "source_label": "1 Series",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 87,
+      "model": "Z4",
+      "units": 36,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4424",
+      "source_label": "Z4",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 88,
+      "model": "X2",
+      "units": 35,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4580",
+      "source_label": "X2",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 89,
+      "model": "The new A5",
+      "units": 35,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4735",
+      "source_label": "The new A5",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 90,
+      "model": "Electric G-Class",
+      "units": 32,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4638",
+      "source_label": "Electric G-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 91,
+      "model": "8 Series",
+      "units": 31,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4171",
+      "source_label": "8 Series",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 92,
+      "model": "Maybach GLS",
+      "units": 28,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4508",
+      "source_label": "Maybach GLS",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 93,
+      "model": "Countryman Electric",
+      "units": 27,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4572",
+      "source_label": "Countryman Electric",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 94,
+      "model": "i7",
+      "units": 27,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4181",
+      "source_label": "i7",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 95,
+      "model": "All New ES",
+      "units": 27,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4837",
+      "source_label": "All New ES",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 96,
+      "model": "Q8",
+      "units": 25,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4697",
+      "source_label": "Q8",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 97,
+      "model": "M2",
+      "units": 24,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4655",
+      "source_label": "M2",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 98,
+      "model": "The New AMG GT",
+      "units": 24,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4566",
+      "source_label": "The New AMG GT",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 99,
+      "model": "A3",
+      "units": 23,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4707",
+      "source_label": "A3",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 100,
+      "model": "Highlander",
+      "units": 22,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4460",
+      "source_label": "Highlander",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 101,
+      "model": "408",
+      "units": 20,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4377",
+      "source_label": "408",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 102,
+      "model": "New Pilot",
+      "units": 20,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4796",
+      "source_label": "New Pilot",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 103,
+      "model": "M3",
+      "units": 19,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4649",
+      "source_label": "M3",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 104,
+      "model": "Sierra",
+      "units": 17,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4127",
+      "source_label": "Sierra",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 105,
+      "model": "LX",
+      "units": 17,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4700",
+      "source_label": "LX",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 106,
+      "model": "EQA",
+      "units": 17,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4568",
+      "source_label": "EQA",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 107,
+      "model": "M5",
+      "units": 17,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4657",
+      "source_label": "M5",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 108,
+      "model": "A8",
+      "units": 16,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4431",
+      "source_label": "A8",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 109,
+      "model": "3008",
+      "units": 16,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4741",
+      "source_label": "3008",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 110,
+      "model": "XM",
+      "units": 16,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4422",
+      "source_label": "XM",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 111,
+      "model": "Canyon",
+      "units": 16,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4779",
+      "source_label": "Canyon",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 112,
+      "model": "EQE SUV",
+      "units": 15,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4430",
+      "source_label": "EQE SUV",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 113,
+      "model": "Flying Spur",
+      "units": 15,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4676",
+      "source_label": "Flying Spur",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 114,
+      "model": "Range Rover Velar",
+      "units": 14,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4472",
+      "source_label": "Range Rover Velar",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 115,
+      "model": "M4",
+      "units": 14,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4615",
+      "source_label": "M4",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 116,
+      "model": "LS",
+      "units": 14,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4031",
+      "source_label": "LS",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 117,
+      "model": "Purosangue",
+      "units": 13,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4184",
+      "source_label": "Purosangue",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 118,
+      "model": "Accord",
+      "units": 11,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4547",
+      "source_label": "Accord",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 119,
+      "model": "Amalfi",
+      "units": 10,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4739",
+      "source_label": "Amalfi",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 120,
+      "model": "5008",
+      "units": 9,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4628",
+      "source_label": "5008",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 121,
+      "model": "SL-Class",
+      "units": 8,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4380",
+      "source_label": "SL-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 122,
+      "model": "Gladiator",
+      "units": 8,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4732",
+      "source_label": "Gladiator",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 123,
+      "model": "EQE",
+      "units": 8,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4111",
+      "source_label": "EQE",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 124,
+      "model": "A6 e-tron",
+      "units": 7,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4142",
+      "source_label": "A6 e-tron",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 125,
+      "model": "Acadia",
+      "units": 7,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4136",
+      "source_label": "Acadia",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 126,
+      "model": "2 Series",
+      "units": 7,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=3803",
+      "source_label": "2 Series",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 127,
+      "model": "X4",
+      "units": 6,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4072",
+      "source_label": "X4",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 128,
+      "model": "Maybach EQS SUV",
+      "units": 6,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4511",
+      "source_label": "Maybach EQS SUV",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 129,
+      "model": "The new Continental",
+      "units": 6,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4688",
+      "source_label": "The new Continental",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 130,
+      "model": "A-Class",
+      "units": 5,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4427",
+      "source_label": "A-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 131,
+      "model": "12Cilindri Spider",
+      "units": 5,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4644",
+      "source_label": "12Cilindri Spider",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 132,
+      "model": "S-Class",
+      "units": 4,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=3992",
+      "source_label": "S-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 133,
+      "model": "308",
+      "units": 4,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4379",
+      "source_label": "308",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 134,
+      "model": "Q7",
+      "units": 4,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4698",
+      "source_label": "Q7",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 135,
+      "model": "New Grand Cherokee",
+      "units": 4,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4760",
+      "source_label": "New Grand Cherokee",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 136,
+      "model": "Range Rover Evoque",
+      "units": 4,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4551",
+      "source_label": "Range Rover Evoque",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 137,
+      "model": "Spectre",
+      "units": 4,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4433",
+      "source_label": "Spectre",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 138,
+      "model": "Bentayga",
+      "units": 3,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4024",
+      "source_label": "Bentayga",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 139,
+      "model": "Cullinan Series2",
+      "units": 3,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4682",
+      "source_label": "Cullinan Series2",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 140,
+      "model": "Grand Cherokee",
+      "units": 3,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4065",
+      "source_label": "Grand Cherokee",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 141,
+      "model": "Discovery",
+      "units": 3,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4064",
+      "source_label": "Discovery",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 142,
+      "model": "Maybach SL",
+      "units": 3,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4670",
+      "source_label": "Maybach SL",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 143,
+      "model": "All New CLA-Class",
+      "units": 2,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4718",
+      "source_label": "All New CLA-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 144,
+      "model": "Nautilus",
+      "units": 2,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4512",
+      "source_label": "Nautilus",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 145,
+      "model": "EQB",
+      "units": 2,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4569",
+      "source_label": "EQB",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 146,
+      "model": "Prius",
+      "units": 2,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4439",
+      "source_label": "Prius",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 147,
+      "model": "X6 M",
+      "units": 2,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4480",
+      "source_label": "X6 M",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 148,
+      "model": "Electric CLA",
+      "units": 2,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4719",
+      "source_label": "Electric CLA",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 149,
+      "model": "EQS",
+      "units": 2,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4048",
+      "source_label": "EQS",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 150,
+      "model": "The New i7",
+      "units": 2,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4801",
+      "source_label": "The New i7",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 151,
+      "model": "CLA-Class",
+      "units": 2,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4461",
+      "source_label": "CLA-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 152,
+      "model": "Ghost Series II",
+      "units": 2,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4721",
+      "source_label": "Ghost Series II",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 153,
+      "model": "Explorer",
+      "units": 2,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4616",
+      "source_label": "Explorer",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 154,
+      "model": "X5 M",
+      "units": 1,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4479",
+      "source_label": "X5 M",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 155,
+      "model": "Revuelto",
+      "units": 1,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4505",
+      "source_label": "Revuelto",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 156,
+      "model": "AMG GT",
+      "units": 1,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=3982",
+      "source_label": "AMG GT",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 157,
+      "model": "Phantom Series II",
+      "units": 1,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4443",
+      "source_label": "Phantom Series II",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 158,
+      "model": "Expedition",
+      "units": 1,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4679",
+      "source_label": "Expedition",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 159,
+      "model": "Roma Spider",
+      "units": 1,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4497",
+      "source_label": "Roma Spider",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 160,
+      "model": "Navigator",
+      "units": 1,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4668",
+      "source_label": "Navigator",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 161,
+      "model": "E-Class",
+      "units": 1,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=3757",
+      "source_label": "E-Class",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 162,
+      "model": "The new e-tron GT",
+      "units": 1,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4759",
+      "source_label": "The new e-tron GT",
+      "identity_verification": "direct_current_sales_table_html_href"
+    },
+    {
+      "rank": 163,
+      "model": "GR 86",
+      "units": 1,
+      "market": "수입",
+      "period": "2026-10",
+      "source_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4177",
+      "source_label": "GR 86",
+      "identity_verification": "direct_current_sales_table_html_href"
+    }
+  ]
+}

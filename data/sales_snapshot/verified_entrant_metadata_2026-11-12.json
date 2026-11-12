@@ -1,0 +1,80 @@
+{
+  "checked_at_utc": "2026-11-12T07:14:48.114283+00:00",
+  "publication_ready": true,
+  "models": [
+    {
+      "brand": "BMW",
+      "model": "X5",
+      "source_model_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4475",
+      "generation": "G05 LCI (2023 facelift); not X5 M F95",
+      "official_model_url": "https://www.bmw.co.kr/ko/all-models/x-series/x5/bmw-x5.html",
+      "price_url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf",
+      "catalog_url": "https://www.bmw.co.kr/ko/all-models/x-series/x5/bmw-x5.html#technical-data",
+      "document_type": "official_web_specifications",
+      "checked_at_utc": "2026-11-12T07:14:48.114283+00:00",
+      "image_url": "https://bmw.scene7.com/is/image/BMW/BMW-SEPTEMBER2026-OFFERS-X5-xDrive40i?wid=1200&hei=800",
+      "image_verified": true,
+      "image_identity": "Black G05 LCI SUV driving, current slim headlights/kidney grille; existing exact official campaign asset retained.",
+      "document_verification": "Live Korean G05 model page contains technical-data section xDrive40i 381 hp, 0-100 5.4s, 250 km/h; Korean consumption; PHEV 501 hp/77 km; body dimensions and equipment. No standalone catalogue PDF exposed.",
+      "verified_assets": [
+        {
+          "bytes": 68900,
+          "sha256": "f3ec1cbdddf64588accf1fcf88bcbeff8b2b8c8fbae2413dfcf80762ce4036eb",
+          "format": "WEBP",
+          "dimensions": [
+            1200,
+            800
+          ],
+          "mime": "image/webp",
+          "url": "https://bmw.scene7.com/is/image/BMW/BMW-SEPTEMBER2026-OFFERS-X5-xDrive40i?wid=1200&hei=800"
+        },
+        {
+          "url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf",
+          "bytes": 47668,
+          "sha256": "6580311a353d1edf91e45e8845eb5d38c43c0fb6cc3974afb48da0b6d090b351",
+          "mime": "application/pdf"
+        }
+      ]
+    },
+    {
+      "brand": "벤츠",
+      "model": "GLC-Class",
+      "source_model_url": "https://auto.danawa.com/newcar/?Work=estimate&Model=4373",
+      "generation": "X254 SUV (second generation); not C254 Coupe or electric GLC",
+      "official_model_url": "https://www.mercedes-benz.co.kr/passengercars/models/suv/glc/overview.html",
+      "price_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261104.pdf",
+      "catalog_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/model/catalog/2026/The%20new%20GLC%20n%20GLC%20Coupe_Catalogue_20260424.pdf",
+      "document_type": "official_catalogue_pdf",
+      "checked_at_utc": "2026-11-12T07:14:48.114283+00:00",
+      "image_url": "https://www.mercedes-benz.co.kr/content/dam/hq/passengercars/cars/glc/suv-x254/modeloverview/images/mercedes-benz-glc-suv-x254-modeloverview-696x392-05-2022.png",
+      "image_verified": true,
+      "image_identity": "Silver X254 GLC conventional SUV front three-quarter, GLC plate and non-coupe roof; existing exact official asset retained.",
+      "document_verification": "Official current catalogue listing exact URL downloaded; cover and Korean text identify The new GLC & GLC Coupe, MY26. Contains SUV 220d/300 Avantgarde/AMG line sections; keep separate from MY27 price rows.",
+      "verified_assets": [
+        {
+          "bytes": 208616,
+          "sha256": "f0c90a74b63ed81a9c83b88ef4a3410b673f584b4cca2056bd5cdd72350e5020",
+          "format": "PNG",
+          "dimensions": [
+            696,
+            392
+          ],
+          "mime": "image/png",
+          "url": "https://www.mercedes-benz.co.kr/content/dam/hq/passengercars/cars/glc/suv-x254/modeloverview/images/mercedes-benz-glc-suv-x254-modeloverview-696x392-05-2022.png"
+        },
+        {
+          "bytes": 23746608,
+          "sha256": "3c94ae37f544eabd2c2183fcd7cc4b469142c5b653b9a8aae0bbb795731dbfb1",
+          "mime": "application/pdf",
+          "url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/model/catalog/2026/The%20new%20GLC%20n%20GLC%20Coupe_Catalogue_20260424.pdf"
+        },
+        {
+          "bytes": 2270227,
+          "sha256": "586df4ac4671a16607bdd10923c9e26afce883a60fb688a252f5ceec1b66c840",
+          "mime": "application/pdf",
+          "url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261104.pdf"
+        }
+      ]
+    }
+  ]
+}

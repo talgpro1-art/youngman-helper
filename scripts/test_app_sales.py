@@ -35,26 +35,28 @@ class AppSalesTests(unittest.TestCase):
         cards = [item.value for item in self.app.markdown if '<article class="vehicle-card"' in item.value]
         self.assertEqual(len(cards), 50)
         self.assertEqual(master['rank'].tolist(), list(range(1, 51)))
-        self.assertEqual(set(master.source_period), {'국산 2026-10', '수입 2026-09'})
+        self.assertEqual(set(master.source_period), {'국산 2026-10', '수입 2026-10'})
         for card, (_, row) in zip(cards, master.iterrows()):
             self.assertIn(f'aria-label="{row["rank"]}위 {row.vehicle}"', card)
             self.assertIn(row.source_period, card)
             self.assertIn(str(row.units_sold), card)
-        self.assertIn('쉐보레 트랙스 크로스오버', cards[-1])
+        self.assertIn('벤츠 GLC-Class', cards[-1])
         captions = '\n'.join(item.value for item in self.app.caption)
-        self.assertIn('국산·수입 기준월이 다른', captions)
+        self.assertNotIn('국산·수입 기준월이 다른', captions)
         self.assertIn('이전 앱 반영 순위 대비', captions)
         markdown = '\n'.join(item.value for item in self.app.markdown)
-        for name, rank in [('현대 디 올 뉴 투싼', 28), ('현대 베뉴', 39), ('기아 EV6', 46)]:
+        for name, rank in [('BMW X5', 49), ('벤츠 GLC-Class', 50)]:
             row = master.loc[master.vehicle.eq(name)].iloc[0]
             self.assertEqual((row['rank'], row['rank_change']), (rank, 'NEW'))
             self.assertIn(name, markdown)
-        self.assertIn('11,421', markdown)
-        self.assertIn('2,748', markdown)
+        sclass = master.loc[master.model.eq('The New S-Class')].iloc[0]
+        self.assertEqual((sclass['rank'], sclass.rank_change), (46, '▼6'))
+        self.assertIn('5,508', markdown)
+        self.assertIn('3,683', markdown)
 
     def test_search_price_links_and_repeated_reset(self):
         master = pd.read_csv(ROOT / 'vehicle_master.csv').fillna('')
-        for model in ['디 올 뉴 투싼', '베뉴', 'EV6']:
+        for model in ['The New S-Class', 'X5', 'GLC-Class']:
             self.app.text_input[0].set_value(model)
             self.app.text_input[1].set_value(model)
             self.run_app()
@@ -106,11 +108,11 @@ class AppSalesTests(unittest.TestCase):
     def test_entrant_options_preserve_generation_and_existing_data(self):
         self.app.radio[0].set_value('전체 차량')
         self.run_app()
-        for name in ['현대 디 올 뉴 투싼', '현대 베뉴', '기아 EV6']:
+        for name in ['현대 디 올 뉴 투싼', '현대 베뉴', '기아 EV6', '벤츠 The New S-Class', 'BMW X5', '벤츠 GLC-Class']:
             self.app.selectbox[1].select(name)
             self.run_app()
             cards = [item.value for item in self.app.markdown if 'class="option-card"' in item.value]
-            if name == '현대 디 올 뉴 투싼':
+            if name in {'현대 디 올 뉴 투싼', '벤츠 The New S-Class', 'BMW X5'}:
                 self.assertIn('아직 옵션 설명 데이터가 없습니다.', [item.value for item in self.app.info])
                 self.assertEqual(cards, [])  # Do not reuse the old Tucson generation's options.
             else:

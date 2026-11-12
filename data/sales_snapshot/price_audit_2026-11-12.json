@@ -1,0 +1,1586 @@
+{
+  "checked_at": "2026-11-12T07:21:38.073229+00:00",
+  "base_commit": "7fd0b8fbe1eaa4bfdc80447dbe256b5c945b4d7f",
+  "scope": "Every current and proposed TOP50 vehicle price source: 52 unique models and 53 price fields, including both PV5 bodies. Nonprice catalogues were preserved except verified entrant metadata.",
+  "summary": {
+    "current_top50_models": 50,
+    "unique_models_reviewed": 52,
+    "price_fields_reviewed": 53,
+    "latest_verified_models": 51,
+    "latest_unconfirmed_models": 1,
+    "retained_price_url_changes": 4,
+    "note_changes": 4
+  },
+  "limitations": [
+    "KGM Musso existing price PDF contents verified, but current official model/download listing returned server errors. Its old link is preserved and is not claimed to be latest.",
+    "Hyundai bus/truck is an aggregate official commercial download index, not one model price PDF.",
+    "Fixed URLs may serve refreshed contents without a URL change. BMW currently links its October 2026 edition; dynamic web prices have no document issue date.",
+    "Prices are distinct from retained catalogue model years. This audit does not assert all nonprice catalogues are latest."
+  ],
+  "records": [
+    {
+      "brand": "기아",
+      "model": "스포티지",
+      "vehicle": "기아 스포티지",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sportage.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sportage.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/sportage/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sportage.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2027",
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "스포티지_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "더 뉴 그랜저",
+      "vehicle": "현대 더 뉴 그랜저",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-grandeur-price.pdf",
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-grandeur-price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-new-grandeur-price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "facelift year not stated",
+          "document_body_verified": true,
+          "verification": "Current official catalogue page (26.10.21 update) model-specific price button opened exact existing PDF URL. Actual PDF body model/generation and KRW price verified. Filename alone not used as price evidence.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "Premium 가솔린2.5 42,450,000원"
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "쏘렌토",
+      "vehicle": "기아 쏘렌토",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/sorento/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_sorento.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2027",
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "쏘렌토_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "카니발",
+      "vehicle": "기아 카니발",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/carnival/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_carnival.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2027",
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "카니발_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "테슬라",
+      "model": "Model Y",
+      "vehicle": "테슬라 Model Y",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.tesla.com/ko_kr/modely/design",
+          "proposed_url": "https://www.tesla.com/ko_kr/modely/design",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.tesla.com/ko_kr/modely/design#overview",
+            "https://www.tesla.com/ko_kr/modely/design"
+          ],
+          "publication_period": null,
+          "generation_scope": "Current Korean Model Y Premium, standard body; page separately offers Model Y L Premium AWD at 72,990,000 KRW, excluded from Model Y price range. Current selected body five seats, 400 km and 5.9 seconds. No explicit generation code or model year shown.",
+          "verification": "Browser tab title Korean Model Y designer, locale KR, radio button labels and footer show full KRW purchase amounts; footer says before fuel savings."
+        }
+      ],
+      "limitations": "Undated dynamic official page; verification date is not a document issue date. No claim that a November PDF edition exists."
+    },
+    {
+      "brand": "현대",
+      "model": "디 올 뉴 아반떼",
+      "vehicle": "현대 디 올 뉴 아반떼",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante_price.pdf",
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante_price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-avante_price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "year not stated",
+          "document_body_verified": true,
+          "verification": "Current official catalogue page (26.10.21 update) model-specific price button opened exact existing PDF URL. Actual PDF body model/generation and KRW price verified. Filename alone not used as price evidence.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "Modern 가솔린2.0 IVT 23,980,000원"
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "셀토스",
+      "vehicle": "기아 셀토스",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/seltos/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_seltos.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2027",
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "셀토스_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "쏘나타 디 엣지",
+      "vehicle": "현대 쏘나타 디 엣지",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/sonata-2027-price.pdf",
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/sonata-2027-price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/sonata-2027-price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "2027",
+          "document_body_verified": true,
+          "verification": "Current official catalogue page (26.10.21 update) model-specific price button opened exact existing PDF URL. Actual PDF body model/generation and KRW price verified. Filename alone not used as price evidence.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "Premium 1.6터보 29,430,000원"
+        }
+      ]
+    },
+    {
+      "brand": "벤츠",
+      "model": "E-Class",
+      "vehicle": "벤츠 E-Class",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261002.pdf",
+          "proposed_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261104.pdf",
+          "status": "verified_current",
+          "mutation": "apply_verified_replacement",
+          "replacement_document_content_verified": true,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.mercedes-benz.co.kr/passengercars/models/price-list.html",
+            "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261104.pdf"
+          ],
+          "publication_period": "2026-11-04",
+          "generation_scope": "W214, MY2026 and MY2027 separated",
+          "verification": "Current official price-list page browser download link; downloaded one-page PDF internal date 2026.11.04 and model groups confirmed."
+        }
+      ],
+      "limitations": "Price list model-year groups are distinct from retained catalogue model years."
+    },
+    {
+      "brand": "기아",
+      "model": "EV5",
+      "vehicle": "기아 EV5",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev5.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev5.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/ev5/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev5.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2027",
+          "date_basis": "2026년 11월 2일 기준",
+          "document_title": "EV5_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "테슬라",
+      "model": "Model 3",
+      "vehicle": "테슬라 Model 3",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.tesla.com/ko_kr/model3/design",
+          "proposed_url": "https://www.tesla.com/ko_kr/model3/design",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.tesla.com/ko_kr/model3/design#overview",
+            "https://www.tesla.com/ko_kr/model3/design"
+          ],
+          "publication_period": null,
+          "generation_scope": "Current Korean Model 3 family with RWD/Premium Long Range RWD/Performance AWD. RWD selected range 430 km, 6.2 seconds. No explicit model year or generation code shown.",
+          "verification": "Browser Korean Model 3 designer radio labels show amounts and actual drivetrain names; footer 46,990,000 KRW before fuel savings."
+        }
+      ],
+      "limitations": "Undated dynamic official page; verification date is not a document issue date. No claim that a November PDF edition exists."
+    },
+    {
+      "brand": "현대",
+      "model": "포터2",
+      "vehicle": "현대 포터2",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-2026-price.pdf",
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-2026-price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/porter2-2026-price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "2026",
+          "document_body_verified": true,
+          "verification": "Current official catalogue page (26.10.21 update) model-specific price button opened exact existing PDF URL. Actual PDF body model/generation and KRW price verified. Filename alone not used as price evidence.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "Smart LPG2.5터보 21,520,000원"
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "디 올 뉴 팰리세이드",
+      "vehicle": "현대 디 올 뉴 팰리세이드",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/palisade-2027-price.pdf",
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/palisade-2027-price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/palisade-2027-price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "2027",
+          "document_body_verified": true,
+          "verification": "Current official catalogue page (26.10.21 update) model-specific price button opened exact existing PDF URL. Actual PDF body model/generation and KRW price verified. Filename alone not used as price evidence.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "Exclusive 2.5터보 44,780,000원"
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "EV3",
+      "vehicle": "기아 EV3",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev3.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev3.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/ev3/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev3.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2026",
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "EV3_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "레이",
+      "vehicle": "기아 레이",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/ray/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2027",
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "레이_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "PV5",
+      "vehicle": "기아 PV5",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-cargo.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-cargo.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/pv5-cargo/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-cargo.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2027",
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "PV5 카고_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        },
+        {
+          "field": "catalog_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-passenger.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-passenger.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/pv5-passenger/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_pv5-passenger.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2027",
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "PV5 패신저_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "K5",
+      "vehicle": "기아 K5",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k5.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k5.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/k5/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k5.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2027",
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "K5_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "버스/트럭",
+      "vehicle": "현대 버스/트럭",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/kr/ko/c/purchase-guid/catalog",
+          "proposed_url": "https://www.hyundai.com/kr/ko/c/purchase-guid/catalog",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/c/purchase-guid/catalog"
+          ],
+          "publication_period": null,
+          "model_year": "aggregate",
+          "document_body_verified": false,
+          "verification": "Official current commercial catalogue index: 2026년10월 기준, 26.10.16 update. Bus/truck aggregate deliberately retained as index, not falsely represented as a single model PDF.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": null
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "싼타페",
+      "vehicle": "현대 싼타페",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/santafe-2026-price.pdf",
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/santafe-2026-price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/santafe-2026-price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "2026",
+          "document_body_verified": true,
+          "verification": "Current official catalogue page (26.10.21 update) model-specific price button opened exact existing PDF URL. Actual PDF body model/generation and KRW price verified. Filename alone not used as price evidence.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "Exclusive 2.5터보 36,570,000원"
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "코나",
+      "vehicle": "현대 코나",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/kona-2027-price.pdf",
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/kona-2027-price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/kona-2027-price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "2027",
+          "document_body_verified": true,
+          "verification": "Current official catalogue page (26.10.21 update) model-specific price button opened exact existing PDF URL. Actual PDF body model/generation and KRW price verified. Filename alone not used as price evidence.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "Modern 1.6터보 24,630,000원"
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "봉고 3",
+      "vehicle": "기아 봉고 3",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_bongo3.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_bongo3.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/bongo3/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_bongo3.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2026",
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "봉고Ⅲ_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "더 뉴 스타리아",
+      "vehicle": "현대 더 뉴 스타리아",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria_price.pdf",
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria_price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria_price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "facelift",
+          "document_body_verified": true,
+          "verification": "Current official catalogue page (26.10.21 update) model-specific price button opened exact existing PDF URL. Actual PDF body model/generation and KRW price verified. Filename alone not used as price evidence.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "Tourer11 Smart 35,020,000원"
+        }
+      ]
+    },
+    {
+      "brand": "제네시스",
+      "model": "G80",
+      "vehicle": "제네시스 G80",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000076",
+          "proposed_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000076",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000076"
+          ],
+          "publication_period": "2026-11-01",
+          "model_year": "current",
+          "document_body_verified": true,
+          "verification": "Official current HTML price button resolves file_key for genesis-g80-pricelist-kor-202611.pdf; actual POST download HTTP200 PDF body states 2026년11월1일, KRW prices. Stable model-specific download-center URL preserved.",
+          "document_sha256": "d0e2052d1e1e2776177c9bb1e3b807707354660449f4984551a90b37816c62d6",
+          "document_bytes": 2196164,
+          "price_identity_sample": "기본 2.5터보 60,630,000원"
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "아이오닉 5",
+      "vehicle": "현대 아이오닉 5",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq-5-2027-price.pdf",
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq-5-2027-price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/ioniq-5-2027-price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "2027",
+          "document_body_verified": true,
+          "verification": "Current official catalogue page (26.10.21 update) model-specific price button opened exact existing PDF URL. Actual PDF body model/generation and KRW price verified. Filename alone not used as price evidence.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "EValue+ 세제전49,810,000원/후47,350,000원"
+        }
+      ]
+    },
+    {
+      "brand": "제네시스",
+      "model": "GV80",
+      "vehicle": "제네시스 GV80",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000072",
+          "proposed_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000072",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000072"
+          ],
+          "publication_period": "2026-11-01",
+          "model_year": "current",
+          "document_body_verified": true,
+          "verification": "Official current HTML price button resolves file_key for genesis-gv80-pricelist-kor-202611.pdf; actual POST download HTTP200 PDF body states 2026년11월1일, KRW prices. Stable model-specific download-center URL preserved.",
+          "document_sha256": "ce77e76b2f9843be73a67fc8d63c3fc5a4014226caf33cefadb497492a95e6b2",
+          "document_bytes": 3473629,
+          "price_identity_sample": "기본 2.5터보 69,850,000원"
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "레이 EV",
+      "vehicle": "기아 레이 EV",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray-ev.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray-ev.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/ray-ev/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ray-ev.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2027",
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "레이 EV_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "모닝",
+      "vehicle": "기아 모닝",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_morning.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_morning.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/morning/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_morning.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2027",
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "모닝_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "model": "5 Series",
+      "vehicle": "BMW 5 Series",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf",
+          "proposed_url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.bmw.co.kr/ko/index.html",
+            "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf"
+          ],
+          "publication_period": "2026-10",
+          "generation_scope": "G60, distinct i5 and M5 rows excluded",
+          "verification": "Current official homepage price link clicked; one-page actual PDF read, issue 2026-10 (no November edition linked).",
+          "document_sha256": "6580311a353d1edf91e45e8845eb5d38c43c0fb6cc3974afb48da0b6d090b351",
+          "document_bytes": 47668,
+          "http_status": 200
+        }
+      ],
+      "limitations": "Price list model-year groups are distinct from retained catalogue model years."
+    },
+    {
+      "brand": "현대",
+      "model": "디 올 뉴 투싼",
+      "vehicle": "현대 디 올 뉴 투싼",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-tucson_price.pdf",
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-tucson_price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-all-new-tucson_price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "new generation",
+          "document_body_verified": true,
+          "verification": "Current official catalogue page (26.10.21 update) model-specific price button opened exact existing PDF URL. Actual PDF body model/generation and KRW price verified. Filename alone not used as price evidence.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "H-Pick 1.6터보 31,400,000원"
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "K8",
+      "vehicle": "기아 K8",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k8.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k8.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/k8/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_k8.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2027",
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "K8_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "니로",
+      "vehicle": "기아 니로",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_niro.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_niro.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/niro/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_niro.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": null,
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "니로_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "제네시스",
+      "model": "GV70",
+      "vehicle": "제네시스 GV70",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000119",
+          "proposed_url": "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000119",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.genesis.com/kr/ko/support/download-center/genesis-models.html?chngcaropt=000119"
+          ],
+          "publication_period": "2026-11-01",
+          "model_year": "current",
+          "document_body_verified": true,
+          "verification": "Official current HTML price button resolves file_key for genesis-gv70-pricelist-kor-202611.pdf; actual POST download HTTP200 PDF body states 2026년11월1일, KRW prices. Stable model-specific download-center URL preserved.",
+          "document_sha256": "77c0d5e41c6126b048ec1e55c633e74e37b5b4efb8e50370616b678919de73e1",
+          "document_bytes": 2292025,
+          "price_identity_sample": "기본 2.5터보 54,730,000원"
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "스타리아 일렉트릭",
+      "vehicle": "현대 스타리아 일렉트릭",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria-electric_price.pdf",
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria-electric_price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/the-new-staria-electric_price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "current",
+          "document_body_verified": true,
+          "verification": "Current official catalogue page (26.10.21 update) model-specific price button opened exact existing PDF URL. Actual PDF body model/generation and KRW price verified. Filename alone not used as price evidence.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "TourerElectric11 60,290,000원"
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "아이오닉 9",
+      "vehicle": "현대 아이오닉 9",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq9-2027-price.pdf",
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq9-2027-price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/ioniq9-2027-price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "2027",
+          "document_body_verified": true,
+          "verification": "Current official catalogue page (26.10.21 update) model-specific price button opened exact existing PDF URL. Actual PDF body model/generation and KRW price verified. Filename alone not used as price evidence.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "Exclusive 세제전71,100,000원/후67,590,000원"
+        }
+      ]
+    },
+    {
+      "brand": "르노",
+      "model": "아르카나",
+      "vehicle": "르노 아르카나",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://cdn.renault.co.kr/upload/asset/price/price_Arkana_202610.pdf",
+          "proposed_url": "https://www.renault.co.kr/upload/asset/price/price_Arkana_202611.pdf",
+          "status": "verified_current",
+          "mutation": "apply_verified_replacement",
+          "replacement_document_content_verified": true,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+            "https://www.renault.co.kr/upload/asset/price/price_Arkana_202611.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "27MY",
+          "document_body_verified": true,
+          "verification": "Current official model-specific price button opened exact www /202611 PDF. www and official CDN HTTP200 actual PDF bytes verified; earlier web-search403 was not user link failure. Arkana date supplied by current official November filename, body27MY; Filante/Koleos body November2026.",
+          "document_sha256": "36d00c035a903c795679692c16e06e8e17cea27711318307ad0f3683b0825dbe",
+          "document_bytes": 663278,
+          "price_identity_sample": "1.6GTe iconic 26,770,000원"
+        }
+      ]
+    },
+    {
+      "brand": "르노",
+      "model": "그랑 콜레오스",
+      "vehicle": "르노 그랑 콜레오스",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.renault.co.kr/upload/asset/price/price_koleos_202611.pdf",
+          "proposed_url": "https://www.renault.co.kr/upload/asset/price/price_koleos_202611.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+            "https://www.renault.co.kr/upload/asset/price/price_koleos_202611.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2027",
+          "document_body_verified": true,
+          "verification": "Current official model-specific price button opened exact www /202611 PDF. www and official CDN HTTP200 actual PDF bytes verified; earlier web-search403 was not user link failure. Arkana date supplied by current official November filename, body27MY; Filante/Koleos body November2026.",
+          "document_sha256": "c12c811c80dbc5246520e8d7e0098399bd1d9d8f3f4b3310ca7a957eecb54e43",
+          "document_bytes": 1731939,
+          "price_identity_sample": "E-Tech techno 세제전40,060,000원/후39,059,000원"
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "캐스퍼",
+      "vehicle": "현대 캐스퍼",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://casper.hyundai.com/wcontents/repn-car/catalog/AX08/AX_CASPER_price.pdf",
+          "proposed_url": "https://casper.hyundai.com/wcontents/repn-car/catalog/AX08/AX_CASPER_price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://casper.hyundai.com/vehicles/highlight",
+            "https://casper.hyundai.com/wcontents/repn-car/catalog/AX08/AX_CASPER_price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "2027 official model page",
+          "document_body_verified": true,
+          "verification": "Official 2027CASPER model page price download opened exact existing fixed URL; PDF model and KRW prices agree.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "Smart 15,460,000원"
+        }
+      ]
+    },
+    {
+      "brand": "기아",
+      "model": "EV4",
+      "vehicle": "기아 EV4",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev4.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev4.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/ev4/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev4.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2026",
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "EV4_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "베뉴",
+      "vehicle": "현대 베뉴",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/venue-2027-price.pdf",
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/venue-2027-price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/venue-2027-price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "2027",
+          "document_body_verified": true,
+          "verification": "Current official catalogue page (26.10.21 update) model-specific price button opened exact existing PDF URL. Actual PDF body model/generation and KRW price verified. Filename alone not used as price evidence.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "Smart 19,940,000원"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "model": "X3",
+      "vehicle": "BMW X3",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf",
+          "proposed_url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.bmw.co.kr/ko/index.html",
+            "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf"
+          ],
+          "publication_period": "2026-10",
+          "generation_scope": "G45 New X3",
+          "verification": "Current official homepage price link clicked; one-page actual PDF read, issue 2026-10 (no November edition linked).",
+          "document_sha256": "6580311a353d1edf91e45e8845eb5d38c43c0fb6cc3974afb48da0b6d090b351",
+          "document_bytes": 47668,
+          "http_status": 200
+        }
+      ],
+      "limitations": "Price list model-year groups are distinct from retained catalogue model years."
+    },
+    {
+      "brand": "KGM",
+      "model": "무쏘",
+      "vehicle": "KGM 무쏘",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kg-mobility.com/attached/contents/display/file/200000200010009/20260930235631587_DTUhhe.pdf",
+          "proposed_url": "https://www.kg-mobility.com/attached/contents/display/file/200000200010009/20260930235631587_DTUhhe.pdf",
+          "status": "latest_unconfirmed",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": false,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kg-mobility.com/od/promotion/catalog-download",
+            "https://www.kg-mobility.com/attached/contents/display/file/200000200010009/20260930235631587_DTUhhe.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "2026 current generation",
+          "document_body_verified": true,
+          "verification": "Existing PDF body identifies MUSSO M5. Current official model detail, model index and catalog-download UI all display '서버로부터 응답이 없습니다.'; summary button displays '종합가격표 파일이 없습니다.' Search found old official PDFs but no independently verified newer current link. No permission denial, no unexecuted write.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "M5 2.0터보 30,400,000원"
+        }
+      ]
+    },
+    {
+      "brand": "BYD",
+      "model": "Dolphin",
+      "vehicle": "BYD Dolphin",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.bydauto.kr/purchase/build-my-car/dolphin",
+          "proposed_url": "https://www.bydauto.kr/purchase/build-my-car/dolphin",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.bydauto.kr/car/byd-dolphin",
+            "https://www.bydauto.kr/purchase/build-my-car/dolphin"
+          ],
+          "publication_period": null,
+          "generation_scope": "Current Korea DOLPHIN/Active EV. Configurator independently names same two trims. Do not confuse Active-only performance with base trim.",
+          "verification": "Official model page lines 81-85 contains 2,450 and 2,920 만 원; configurator renders trims but dynamic numeric prices absent from its web extraction."
+        }
+      ],
+      "limitations": "Undated dynamic official page; verification date is not a document issue date. No claim that a November PDF edition exists."
+    },
+    {
+      "brand": "기아",
+      "model": "EV6",
+      "vehicle": "기아 EV6",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev6.pdf",
+          "proposed_url": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev6.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.kia.com/kr/vehicles/ev6/price",
+            "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_ev6.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2027",
+          "date_basis": "2026년 11월 1일 기준",
+          "document_title": "EV6_202611",
+          "verification": "Current official model price-page download target and actual Korean model price contents checked."
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "포터2 일렉트릭",
+      "vehicle": "현대 포터2 일렉트릭",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-electric-2026-price.pdf",
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/porter2-electric-2026-price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/porter2-electric-2026-price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "2026",
+          "document_body_verified": true,
+          "verification": "Current official catalogue page (26.10.21 update) model-specific price button opened exact existing PDF URL. Actual PDF body model/generation and KRW price verified. Filename alone not used as price evidence.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "StyleSpecial 43,500,000원"
+        }
+      ]
+    },
+    {
+      "brand": "현대",
+      "model": "더 뉴 아이오닉 6",
+      "vehicle": "현대 더 뉴 아이오닉 6",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq6-pe_price.pdf",
+          "proposed_url": "https://www.hyundai.com/contents/repn-car/catalog/ioniq6-pe_price.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.hyundai.com/kr/ko/e/vehicles/catalog-price-download",
+            "https://www.hyundai.com/contents/repn-car/catalog/ioniq6-pe_price.pdf"
+          ],
+          "publication_period": null,
+          "model_year": "facelift",
+          "document_body_verified": true,
+          "verification": "Current official catalogue page (26.10.21 update) model-specific price button opened exact existing PDF URL. Actual PDF body model/generation and KRW price verified. Filename alone not used as price evidence.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "EValue+standard 세제전51,090,000원"
+        }
+      ]
+    },
+    {
+      "brand": "벤츠",
+      "model": "The New S-Class",
+      "vehicle": "벤츠 The New S-Class",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261002.pdf",
+          "proposed_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261104.pdf",
+          "status": "verified_current",
+          "mutation": "apply_verified_replacement",
+          "replacement_document_content_verified": true,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.mercedes-benz.co.kr/passengercars/models/price-list.html",
+            "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261104.pdf"
+          ],
+          "publication_period": "2026-11-04",
+          "generation_scope": "W223/V223 facelift, MY2027 only; pre-facelift MY26 excluded",
+          "verification": "Current official price-list page browser download link; downloaded one-page PDF internal date 2026.11.04 and model groups confirmed."
+        }
+      ],
+      "limitations": "Price list model-year groups are distinct from retained catalogue model years."
+    },
+    {
+      "brand": "르노",
+      "model": "필랑트",
+      "vehicle": "르노 필랑트",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://cdn.renault.co.kr/upload/asset/price/price_filante_202610.pdf",
+          "proposed_url": "https://www.renault.co.kr/upload/asset/price/price_filante_202611.pdf",
+          "status": "verified_current",
+          "mutation": "apply_verified_replacement",
+          "replacement_document_content_verified": true,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+            "https://www.renault.co.kr/upload/asset/price/price_filante_202611.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "current",
+          "document_body_verified": true,
+          "verification": "Current official model-specific price button opened exact www /202611 PDF. www and official CDN HTTP200 actual PDF bytes verified; earlier web-search403 was not user link failure. Arkana date supplied by current official November filename, body27MY; Filante/Koleos body November2026.",
+          "document_sha256": "ce07ce1e289c7fb86142b08d55fdc5a86624b94b3a9a363ed8b833e14b379c32",
+          "document_bytes": 2355799,
+          "price_identity_sample": "E-Tech techno 세제전44,950,000원/후43,949,000원"
+        }
+      ]
+    },
+    {
+      "brand": "쉐보레",
+      "model": "트랙스 크로스오버",
+      "vehicle": "쉐보레 트랙스 크로스오버",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/12-pdfs/2026%EB%85%84-11%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf",
+          "proposed_url": "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/12-pdfs/2026%EB%85%84-11%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.chevrolet.co.kr/finance/type-price",
+            "https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/index/finance/type-price/2026/12-pdfs/2026%EB%85%84-11%EC%9B%94-%EC%A0%84%EC%B0%A8%EC%A2%85-%EA%B0%80%EA%B2%A9%ED%91%9C.pdf"
+          ],
+          "publication_period": "2026-11",
+          "model_year": "2026",
+          "document_body_verified": true,
+          "verification": "Official finance/type-price current November2026 page links exact existing all-model PDF; actual PDF identifies Trax2026 and November2026.",
+          "document_sha256": null,
+          "document_bytes": null,
+          "price_identity_sample": "LS Deluxe 21,990,000원"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "model": "X5",
+      "vehicle": "BMW X5",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf",
+          "proposed_url": "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.bmw.co.kr/ko/index.html",
+            "https://www.bmw.co.kr/content/dam/bmw/marketKR/bmw_co_kr/Pricelist/pricelist_oct2026.pdf.asset.1792129034710.pdf"
+          ],
+          "publication_period": "2026-10",
+          "generation_scope": "G05 LCI, separate X5 M Competition excluded",
+          "verification": "Current official homepage price link clicked; one-page actual PDF read, issue 2026-10 (no November edition linked).",
+          "document_sha256": "6580311a353d1edf91e45e8845eb5d38c43c0fb6cc3974afb48da0b6d090b351",
+          "document_bytes": 47668,
+          "http_status": 200
+        }
+      ],
+      "limitations": "Price list model-year groups are distinct from retained catalogue model years."
+    },
+    {
+      "brand": "벤츠",
+      "model": "GLC-Class",
+      "vehicle": "벤츠 GLC-Class",
+      "scope": "candidate_top50",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261104.pdf",
+          "proposed_url": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261104.pdf",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.mercedes-benz.co.kr/passengercars/models/price-list.html",
+            "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261104.pdf"
+          ],
+          "publication_period": "2026-11-04",
+          "generation_scope": "X254 SUV; MY26/27 distinguished, coupe/AMG/electric excluded",
+          "verification": "Current official price-list page browser download link; downloaded one-page PDF internal date 2026.11.04 and model groups confirmed."
+        }
+      ],
+      "limitations": "Price list model-year groups are distinct from retained catalogue model years."
+    },
+    {
+      "brand": "BYD",
+      "model": "SEALION 7",
+      "vehicle": "BYD SEALION 7",
+      "scope": "removed_from_top50_audit_only",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.bydauto.kr/purchase/build-my-car/sealion7",
+          "proposed_url": "https://www.bydauto.kr/purchase/build-my-car/sealion7",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.bydauto.kr/car/byd-sealion7",
+            "https://www.bydauto.kr/purchase/build-my-car/sealion7"
+          ],
+          "publication_period": null,
+          "generation_scope": "Current Korean SEALION 7 EV, base/Plus/Dynamic AWD; distinct from SEALION 6 DM-i. Same three trims shown in configurator.",
+          "verification": "Official model page lines 81-88 lists 4,490, 4,690, 5,390 만 원; model dimensions 4,830 x 1,925 x 1,620 mm and wheelbase 2,930 mm."
+        }
+      ],
+      "limitations": "Undated dynamic official page; verification date is not a document issue date. No claim that a November PDF edition exists."
+    },
+    {
+      "brand": "폴스타",
+      "model": "Polestar 4",
+      "vehicle": "폴스타 Polestar 4",
+      "scope": "removed_from_top50_audit_only",
+      "links": [
+        {
+          "field": "price_url",
+          "existing_url": "https://www.polestar.com/kr/polestar-4-models/polestar-4-coupe/specifications/",
+          "proposed_url": "https://www.polestar.com/kr/polestar-4-models/polestar-4-coupe/specifications/",
+          "status": "verified_current",
+          "mutation": "none",
+          "replacement_document_content_verified": false,
+          "current_official_content_verified": true,
+          "checked_at": "2026-11-12T07:21:38.073229+00:00",
+          "evidence_urls": [
+            "https://www.polestar.com/kr/polestar-4-models/polestar-4-coupe/specifications/"
+          ],
+          "publication_period": null,
+          "generation_scope": "Current Polestar 4 coupe Rear motor/Dual motor as linked in existing master. Prior master says MY2027; current opened content confirms coupe/trims but explicit MY2027 was not newly observed.",
+          "verification": "Official specifications lines 173-181 shows starting 66,900,000 and 69,900,000 KRW with 272/544hp and range 511/481 km; option prices not aggregated."
+        }
+      ],
+      "limitations": "Undated dynamic official page; verification date is not a document issue date. No claim that a November PDF edition exists."
+    }
+  ],
+  "changes": [
+    {
+      "brand": "벤츠",
+      "model": "E-Class",
+      "field": "price_url",
+      "old": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261002.pdf",
+      "new": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261104.pdf",
+      "evidence_urls": [
+        "https://www.mercedes-benz.co.kr/passengercars/models/price-list.html",
+        "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261104.pdf"
+      ],
+      "checked_at": "2026-11-12T07:21:38.073229+00:00"
+    },
+    {
+      "brand": "벤츠",
+      "model": "E-Class",
+      "field": "note",
+      "old": "벤츠 코리아 공식 2026년 10월 2일 통합 가격표. 카탈로그는 공식 최신 연결본인 2026년 4월 24일·26년식 기준",
+      "new": "벤츠 코리아 공식 2026년 11월 4일 통합 가격표(E-Class MY26·MY27 구분). 카탈로그는 2026년 4월 24일·MY26 기준.",
+      "evidence_urls": [
+        "https://www.mercedes-benz.co.kr/passengercars/models/price-list.html",
+        "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261104.pdf"
+      ],
+      "checked_at": "2026-11-12T07:21:38.073229+00:00"
+    },
+    {
+      "brand": "벤츠",
+      "model": "The New S-Class",
+      "field": "price_url",
+      "old": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261002.pdf",
+      "new": "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261104.pdf",
+      "evidence_urls": [
+        "https://www.mercedes-benz.co.kr/passengercars/models/price-list.html",
+        "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261104.pdf"
+      ],
+      "checked_at": "2026-11-12T07:21:38.073229+00:00"
+    },
+    {
+      "brand": "벤츠",
+      "model": "The New S-Class",
+      "field": "note",
+      "old": "메르세데스-벤츠 코리아 공식 전체 가격표의 S-Class 27년식 및 2027 신형 전용 카탈로그 (2026-10-12 확인); 구형·마이바흐와 구분",
+      "new": "벤츠 코리아 공식 2026년 11월 4일 통합 가격표의 S-Class MY27 및 기존 2027 신형 전용 카탈로그(2026-10-12 검증). 구형·마이바흐와 구분.",
+      "evidence_urls": [
+        "https://www.mercedes-benz.co.kr/passengercars/models/price-list.html",
+        "https://www.mercedes-benz.co.kr/content/dam/south-korea/passenger-cars/home/price-list/Mercedes-Benz-Korea-Price-List_261104.pdf"
+      ],
+      "checked_at": "2026-11-12T07:21:38.073229+00:00"
+    },
+    {
+      "brand": "르노",
+      "model": "아르카나",
+      "field": "price_url",
+      "old": "https://cdn.renault.co.kr/upload/asset/price/price_Arkana_202610.pdf",
+      "new": "https://www.renault.co.kr/upload/asset/price/price_Arkana_202611.pdf",
+      "evidence_urls": [
+        "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+        "https://www.renault.co.kr/upload/asset/price/price_Arkana_202611.pdf"
+      ],
+      "checked_at": "2026-11-12T07:21:38.073229+00:00"
+    },
+    {
+      "brand": "르노",
+      "model": "아르카나",
+      "field": "note",
+      "old": "르노코리아 공식 2026년 10월 가격표·카탈로그 (2026-10-02 공식 다운로드 연결 확인)",
+      "new": "르노코리아 공식 현재 다운로드 목록의 2026년 11월 가격표(2026-11-12 확인); 카탈로그는 2026년 10월 기존 링크 유지.",
+      "evidence_urls": [
+        "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+        "https://www.renault.co.kr/upload/asset/price/price_Arkana_202611.pdf"
+      ],
+      "checked_at": "2026-11-12T07:21:38.073229+00:00"
+    },
+    {
+      "brand": "르노",
+      "model": "필랑트",
+      "field": "price_url",
+      "old": "https://cdn.renault.co.kr/upload/asset/price/price_filante_202610.pdf",
+      "new": "https://www.renault.co.kr/upload/asset/price/price_filante_202611.pdf",
+      "evidence_urls": [
+        "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+        "https://www.renault.co.kr/upload/asset/price/price_filante_202611.pdf"
+      ],
+      "checked_at": "2026-11-12T07:21:38.073229+00:00"
+    },
+    {
+      "brand": "르노",
+      "model": "필랑트",
+      "field": "note",
+      "old": "르노코리아 공식 2026년 10월 가격표·카탈로그 (2026-10-02 공식 다운로드 연결 확인)",
+      "new": "르노코리아 공식 현재 다운로드 목록의 2026년 11월 가격표(2026-11-12 확인); 카탈로그는 2026년 10월 기존 링크 유지.",
+      "evidence_urls": [
+        "https://www.renault.co.kr/ko/side/catalog_download.jsp",
+        "https://www.renault.co.kr/upload/asset/price/price_filante_202611.pdf"
+      ],
+      "checked_at": "2026-11-12T07:21:38.073229+00:00"
+    }
+  ]
+}

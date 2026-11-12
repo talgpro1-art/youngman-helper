@@ -6,7 +6,7 @@ import json
 
 ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / 'vehicle_master.csv'
-AUDIT = ROOT / 'data/sales_snapshot/price_audit_2026-11-03.json'
+AUDIT = ROOT / 'data/sales_snapshot/price_audit_2026-11-12.json'
 
 
 def apply_updates(master_path: Path = MASTER, audit_path: Path = AUDIT) -> None:
