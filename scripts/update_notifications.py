@@ -8,6 +8,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTI_FILE = ROOT / "data" / "notifications.json"
+REFRESH_FILE = ROOT / "data" / "notification_refresh.json"
 ROADMAP_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTTCzFCPz6nPFnu-oRoTjB16Ng7hhPAy811JU3DZcnSKglptFHHf3hLOVIXN4Y-yis7_RZhK52_Ys1m/pub?gid=1952505960&single=true&output=csv"
 MAX_NEWS_AGE_DAYS = 7
 BLOCKED_SOURCES = ("mshale", "naver blog", "네이버 블로그", "youtube", "유튜브", "gwaramedia", "바카라")
@@ -111,16 +112,21 @@ def main() -> None:
         notifications = load_verified_notifications()
     except Exception as exc:
         print(f"Verified roadmap load failed: {exc}")
-        notifications = []
+        REFRESH_FILE.parent.mkdir(parents=True, exist_ok=True)
+        REFRESH_FILE.write_text(json.dumps({"checked_at": now_kst().isoformat(timespec="seconds"), "status": "failed", "error": str(exc)}, ensure_ascii=False, indent=2), encoding="utf-8")
+        # A failed read is not evidence that there is no news.
+        return
 
     if not notifications:
         notifications = empty_notification()
 
     NOTI_FILE.parent.mkdir(parents=True, exist_ok=True)
     NOTI_FILE.write_text(json.dumps(notifications, ensure_ascii=False, indent=2), encoding="utf-8")
+    REFRESH_FILE.write_text(json.dumps({"checked_at": now_kst().isoformat(timespec="seconds"), "status": "success", "count": len(notifications)}, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Saved notifications: {NOTI_FILE}")
     print(f"Count: {len(notifications)}")
 
 
 if __name__ == "__main__":
     main()
+

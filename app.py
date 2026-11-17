@@ -206,14 +206,21 @@ def load_notifications(version: int) -> list[dict]:
 
 @st.cache_data(show_spinner=False)
 def load_price_checks(version: int) -> pd.DataFrame:
-    columns = ["vehicle", "url", "verification_status", "verification_detail", "checked_at"]
+    columns = ["vehicle", "url", "verification_status", "verification_detail", "checked_at", "download_status"]
     if not LINK_STATUS.exists():
         return pd.DataFrame(columns=columns)
     df = pd.read_csv(LINK_STATUS, dtype=str).fillna("")
     df.columns = [c.replace("\ufeff", "").strip() for c in df.columns]
-    for col in columns + ["doc_type"]:
+    for col in columns + ["doc_type", "status_code", "error"]:
         if col not in df.columns:
             df[col] = ""
+    # Older snapshots called all access/network failures ERROR. Reclassify their
+    # recorded evidence without claiming a fresh check or changing URLs.
+    legacy = df["verification_status"].eq("ERROR")
+    restricted = df["status_code"].isin(["401", "403", "429"])
+    missing = df["status_code"].isin(["404", "410"])
+    df.loc[legacy & restricted, "verification_status"] = "ACCESS_RESTRICTED"
+    df.loc[legacy & ~restricted & ~missing, "verification_status"] = "CHECK_UNAVAILABLE"
     df = df[df["doc_type"].astype(str).eq("가격표")].copy()
     return df.sort_values("checked_at").drop_duplicates(["vehicle", "url"], keep="last")[columns]
 
@@ -273,15 +280,25 @@ def price_verification_label(value: object) -> str:
         "BROWSER_REQUIRED": "브라우저 확인",
         "TEXT_UNAVAILABLE": "내용 확인 필요",
         "MISMATCH": "차종 불일치 의심",
-        "ERROR": "링크 오류",
+        "INVALID_PDF": "PDF 파일 확인 필요",
+        "ERROR": "문서 없음 · 링크 확인 필요",
+        "ACCESS_RESTRICTED": "자동 검사 접근 제한 · 직접 확인",
+        "CHECK_UNAVAILABLE": "자동 검사 미완료 · 직접 확인",
     }.get(safe_str(value).upper(), "검수 대기")
+
+
+def price_check_label(row) -> str:
+    label = price_verification_label(row.get("verification_status"))
+    if safe_str(row.get("download_status")) == "VERIFIED_PDF":
+        return "PDF 다운로드 확인 · " + label
+    return label
 
 
 def price_audit_html(row: pd.Series) -> str:
     status = safe_str(row.get("verification_status"))
-    label = price_verification_label(status)
+    label = price_check_label(row)
     checked = safe_str(row.get("price_checked_at"))[:10]
-    css = "error" if status.upper() in {"MISMATCH", "ERROR"} else "review" if status.upper() in {"BROWSER_REQUIRED", "TEXT_UNAVAILABLE"} else ""
+    css = "error" if status.upper() in {"MISMATCH", "ERROR", "INVALID_PDF"} else "review" if status.upper() in {"BROWSER_REQUIRED", "TEXT_UNAVAILABLE", "ACCESS_RESTRICTED", "CHECK_UNAVAILABLE"} else ""
     suffix = f" · {checked}" if checked else ""
     return f'<div class="price-audit {css}">가격표 검수: {html_text(label + suffix)}</div>'
 
@@ -292,6 +309,7 @@ def notification_meta(item: dict) -> str:
     if not vehicle:
         vehicle = f"{safe_str(item.get('brand'))} {safe_str(item.get('model'))}".strip()
     source = safe_str(item.get("source"))
+    date = f"기사일 {date}" if item.get("article_date") else date
     return " · ".join(part for part in [date, vehicle, source] if part)
 
 
@@ -432,6 +450,16 @@ def show_newcar_premium_zone(newcars: pd.DataFrame) -> None:
 
 def show_updates_preview(notifications: list[dict], newcars: pd.DataFrame) -> None:
     """Stable editorial previews of the same source-backed secondary content."""
+    status_path = ROOT / "data" / "notification_refresh.json"
+    try:
+        refresh = json.loads(status_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        refresh = {}
+    if refresh.get("checked_at"):
+        state = "갱신 완료" if refresh.get("status") == "success" else "갱신 실패 · 이전 소식 유지"
+        st.caption(f"소식 자동 확인: {refresh['checked_at']} · {state} (기사일과 다름)")
+    else:
+        st.caption("표시 날짜는 기사 발행일입니다. 소식 자동 확인 시각은 아직 기록되지 않았습니다.")
     visible_notifications = notifications[:5]
     price_updates = [item for item in visible_notifications if safe_str(item.get("source")) == "price_link_checker"]
     notice = next(iter(price_updates or visible_notifications), None)
@@ -440,6 +468,8 @@ def show_updates_preview(notifications: list[dict], newcars: pd.DataFrame) -> No
     if notice:
         notice_title = html_text(notice.get("title"), "알림")
         notice_date = safe_str(notice.get("article_date")) or safe_str(notice.get("date")) or safe_str(notice.get("created_at")) or safe_str(notice.get("published"))
+        if notice.get("article_date"):
+            notice_date = f"기사일 {notice_date}"
         notice_vehicle = safe_str(notice.get("vehicle")) or f"{safe_str(notice.get('brand'))} {safe_str(notice.get('model'))}".strip()
         notice_meta = html_text(" · ".join(value for value in [notice_date, notice_vehicle] if value))
     else:
@@ -518,7 +548,7 @@ def rank_table(df: pd.DataFrame) -> pd.DataFrame:
     table = df[["rank", "rank_change", "vehicle_name", "source_period", "units_sold", "segment", "verification_status", "active"]].copy()
     table["rank_change"] = table["rank_change"].apply(display_rank_change)
     table["units_sold"] = table["units_sold"].apply(display_units)
-    table["verification_status"] = table["verification_status"].map(price_verification_label)
+    table["verification_status"] = df.apply(price_check_label, axis=1)
     table["active"] = table["active"].astype(str).str.upper().map(lambda value: "확인 필요" if value == "N" else "활성")
     table.columns = ["순위", "이전 대비", "차량", "기준월", "판매/등록대수", "차급", "가격표 검수", "상태"]
     return table
@@ -565,7 +595,7 @@ def show_pdf_section(df: pd.DataFrame) -> None:
             if safe_str(row.get("note")):
                 st.caption(f"비고: {safe_str(row.get('note'))}")
             checked = safe_str(row.get("price_checked_at"))[:10]
-            st.caption(f"가격표 검수: {price_verification_label(row.get('verification_status'))}" + (f" · {checked}" if checked else ""))
+            st.caption(f"가격표 검수: {price_check_label(row)}" + (f" · {checked}" if checked else ""))
 
 
 def show_option_section(df: pd.DataFrame, options: pd.DataFrame, mentions: pd.DataFrame) -> None:
@@ -664,3 +694,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

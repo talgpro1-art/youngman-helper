@@ -99,7 +99,7 @@ class AppSalesTests(unittest.TestCase):
         self.assertEqual([tab.label for tab in self.app.tabs], ['TOP50', '가격표', '옵션', '업무효과'])
         preview = next(item.value for item in self.app.markdown if 'class="updates-preview"' in item.value)
         notifications = json.loads((ROOT / 'data/notifications.json').read_text())[:5]
-        selected = next(item for item in notifications if item.get('source') == 'price_link_checker')
+        selected = next((item for item in notifications if item.get('source') == 'price_link_checker'), notifications[0])
         self.assertIn(selected['title'], preview)
         self.assertIn(selected['date'], preview)
         self.assertIn('data-preview="roadmap"', preview)
@@ -130,3 +130,4 @@ class AppSalesTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

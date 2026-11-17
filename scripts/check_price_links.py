@@ -106,14 +106,21 @@ def pdf_text_is_degraded(text: str) -> bool:
 
 def semantic_verification(model: str, url: str, info: dict, error: str = "") -> tuple[str, str]:
     if error:
-        return "ERROR", error
+        return "CHECK_UNAVAILABLE", f"자동 검사 실패: {error} · 브라우저에서 직접 확인"
     if info.get("status_code") == "BROWSER_REQUIRED":
         return "BROWSER_REQUIRED", "브라우저에서 공식 페이지 확인"
-    if info.get("status_code") != 200:
-        return "ERROR", f"HTTP {info.get('status_code')}"
+    code = info.get("status_code")
+    if code in {401, 403, 429}:
+        return "ACCESS_RESTRICTED", f"자동 검사 접근 제한 (HTTP {code}) · 링크 오류 확정 아님"
+    if code in {404, 410}:
+        return "ERROR", f"HTTP {code} · 문서를 찾을 수 없음"
+    if code != 200:
+        return "CHECK_UNAVAILABLE", f"자동 검사 미완료 (HTTP {code}) · 브라우저에서 직접 확인"
     if not is_pdf_url(url):
         return "OFFICIAL_PAGE", "공식 가격/다운로드 페이지"
 
+    if info.get("download_status") == "INVALID_PDF":
+        return "INVALID_PDF", "응답을 받았지만 유효한 PDF 페이지를 읽을 수 없음"
     text = safe_str(info.get("_pdf_text"))
     if not text:
         return "TEXT_UNAVAILABLE", "PDF 글자를 읽지 못해 수동 확인 필요"
@@ -160,6 +167,16 @@ def fetch_hash(url: str) -> dict:
         "etag": res.headers.get("ETag", ""),
     }
     if content:
+        try:
+            reader = PdfReader(io.BytesIO(content))
+            info["pdf_page_count"] = len(reader.pages)
+            if not info["pdf_page_count"]:
+                raise ValueError("PDF has no pages")
+            info["download_status"] = "VERIFIED_PDF"
+        except Exception as exc:
+            info["download_status"] = "INVALID_PDF"
+            info["_pdf_error"] = str(exc)
+            return info
         try:
             info["_pdf_text"] = extract_pdf_text(content)
         except Exception:
@@ -226,6 +243,7 @@ def main() -> None:
                 error = str(e)
             verification_status, verification_detail = semantic_verification(model, url, info, error)
             info.pop("_pdf_text", None)
+            info.pop("_pdf_error", None)
             old_sha = old_hashes.get((vehicle, doc_type), "")
             is_changed = bool(old_sha and info.get("sha256") and old_sha != info.get("sha256"))
             row = {
@@ -256,3 +274,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

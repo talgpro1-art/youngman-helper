@@ -36,7 +36,7 @@ class PriceAuditDisplayTests(unittest.TestCase):
             checks = price_helpers(path)['load_price_checks'](0)
             self.assertEqual(len(checks), 3)
             current = checks[(checks.vehicle == '차량 A') & (checks.url == 'https://official/current.pdf')].iloc[0]
-            self.assertEqual(current.verification_status, 'ERROR')
+            self.assertEqual(current.verification_status, 'CHECK_UNAVAILABLE')
             self.assertEqual(current.checked_at, '2026-10-02')
             self.assertNotIn('rank', checks.columns)
 
@@ -72,6 +72,8 @@ class PriceAuditDisplayTests(unittest.TestCase):
                 raise OSError('Offline app test')
             return original(source, *args, **kwargs)
 
+        import streamlit as st
+        st.cache_data.clear()
         with patch.object(pd, 'read_csv', side_effect=local_csv):
             app = AppTest.from_file(str(ROOT / 'app.py'), default_timeout=20).run()
         self.assertFalse(app.exception)
@@ -92,3 +94,4 @@ class PriceAuditDisplayTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
