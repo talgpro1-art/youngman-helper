@@ -1,15 +1,13 @@
 [
   {
-    "date": "2026-11-11",
-    "article_date": "2026-11-11",
-    "brand": "기아",
-    "model": "K8 하이브리드",
-    "vehicle": "기아 K8 하이브리드",
-    "title": "“실내 크기는 같은데 가격표는 달랐다”…K8 하이브리드, 그랜저보다 627만원 낮아 - 뉴스와",
-    "body": "K8 하이브리드의 실내 공간 및 가격 경쟁력을 그랜저와 비교하여 K8 하이브리드가 그랜저 대비 627만원 저렴하다는 정보를 전달하는 기사입니다.",
-    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOX0ZGWVFaZlozRFF5VDFwU1hienN4LVoyWFhYQ2lfUHdoc1c3TFJsSFM5cGRwTUJiZVpzZFYweUdtRmh1cF93SlgzOFd1bXl6RmRGRGFxNEd3UXI1M0QydlZOVmJyVUtIeTdmMGNST1VGQkQtVHVZYVBDTlpWcUVpZlA3WQ?oc=5",
-    "published": "2026-11-11T16:00:30+09:00",
-    "severity": "warning",
+    "date": "2026-11-19",
+    "brand": "",
+    "model": "",
+    "title": "최근 검증 완료된 주요 신차/가격표 이슈가 없습니다.",
+    "body": "구글시트 검증 기준을 통과한 최근 7일 이내 신차·가격표 소식이 없습니다.",
+    "link": "",
+    "published": "",
+    "severity": "info",
     "source": "newcar_watch_verified"
   }
 ]
