@@ -1,13 +1,28 @@
 [
   {
     "date": "2026-11-19",
-    "brand": "",
-    "model": "",
-    "title": "최근 검증 완료된 주요 신차/가격표 이슈가 없습니다.",
-    "body": "구글시트 검증 기준을 통과한 최근 7일 이내 신차·가격표 소식이 없습니다.",
-    "link": "",
-    "published": "",
-    "severity": "info",
+    "article_date": "2026-11-19",
+    "brand": "기아",
+    "model": "레이",
+    "vehicle": "기아 레이",
+    "title": "레이 1,555만 원 같은 값에 승용 트렌디와 2인승 밴 프레스티지 - 래디언스리포트",
+    "body": "기아 레이 승용 트렌디 트림과 2인승 밴 프레스티지 트림이 1,555만 원으로 동일하게 책정된 가격 및 트림 구성 정보를 전달합니다.",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5sTVV4YU51VURra25ETW9lY1ZzX192b1AySWVOSHNMUFYxX1c2MkZaZnhRVHRCOUlxR254SUsyYmd2Tm5NdFpWVDlMOEM0UFlUcXY3U3R3UHZTdGtxcEtCa2pxLTQwOS1xMzV6Q3lWRlZYTDB60gF0QVVfeXFMTmxNVXhhTnVVRGtrbkRNb2VjVnNfX3ZvUDJJZU5Ic0xQVjFfVzYyRlpmeFFUdEI5SXFHbnhJSzJiZ3ZObk10WlZUOUw4QzRQWVRxdjdTdHdQdlN0a3FwS0JranEtNDA5LXEzNXpDeVZGVlhMMHo?oc=5",
+    "published": "2026-11-19T19:38:15+09:00",
+    "severity": "warning",
+    "source": "newcar_watch_verified"
+  },
+  {
+    "date": "2026-11-14",
+    "article_date": "2026-11-14",
+    "brand": "제네시스",
+    "model": "GV90",
+    "vehicle": "제네시스 GV90",
+    "title": "제네시스 GV90 출시…최고 2억3950만원 - BNT뉴스",
+    "body": "제네시스 GV90이 공식 출시되었으며 최고 가격은 2억 3950만원으로 공개되었습니다.",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBVTFliQk5CSDkxaGNqdlE1dU9pVm54S2dvZW5HY0tHM3B3TGRESWU2UmxhQTc5MWp2amkyMDI4N2NHYndqaDhzS0tHblV2azZMTi1HTHJ4bjhBN0gzOW43NVhtc3g?oc=5",
+    "published": "2026-11-14T07:38:36+09:00",
+    "severity": "warning",
     "source": "newcar_watch_verified"
   }
 ]
