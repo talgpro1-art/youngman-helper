@@ -1,13 +1,16 @@
 [
   {
-    "date": "2026-11-26",
-    "brand": "기아",
-    "model": "EV5",
-    "title": "공식 추가PDF 변경 감지: 기아 EV5",
-    "body": "공식 PDF/가격표 링크의 파일 내용이 이전 체크 대비 변경되었습니다. 상담 전 최신 가격표를 확인해 주세요.",
-    "link": "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_ev5.pdf",
+    "date": "2026-11-23",
+    "article_date": "2026-11-23",
+    "brand": "KG모빌리티",
+    "model": "렉스턴 PHEV",
+    "vehicle": "렉스턴 PHEV",
+    "title": "KGM, ‘SE-10’ 신형 플래그십 SUV 차명 ‘렉스턴 PHEV’ 확정 및 티저 공개 : 다나와 자동차 - Danawa",
+    "body": "KGM이 코드명 SE-10의 신형 플래그십 SUV 차명을 '렉스턴 PHEV'로 확정하고 티저 이미지를 공개했습니다.",
+    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1rZlIydzVrZ0V1bU44ZlZxVGVsRjZyU2V1dzAyVFRqV3p0YW41eUsycXZIVFJkNW96ano0VnF0MXUwQ0dDc290OUxLRk1kc1BBU3NpX3ZnTHNudXU0OEstVS1HXy1FVjFoSXJaMUV3VUJPZw?oc=5",
+    "published": "2026-11-23T17:09:21+09:00",
     "severity": "warning",
-    "source": "price_link_checker"
+    "source": "newcar_watch_verified"
   },
   {
     "date": "2026-11-23",
@@ -32,32 +35,6 @@
     "body": "1회 주유로 1029km 주행이 가능한 제네시스 G80 하이브리드 모델이 공개되었습니다.",
     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE40U0N6Z3c5LTZPT1FyNy1rWjhlZHhnRktva0ZJVVZQSmthMzBCdW5RNW9ieWRsSnpZazNVOU1XV09oTVhrSk15dm4yRHNsRHhNSGpfSzBR?oc=5",
     "published": "2026-11-21T06:45:55+09:00",
-    "severity": "warning",
-    "source": "newcar_watch_verified"
-  },
-  {
-    "date": "2026-11-20",
-    "article_date": "2026-11-20",
-    "brand": "제네시스",
-    "model": "G80 하이브리드",
-    "vehicle": "제네시스 G80 하이브리드",
-    "title": "SUV 다음은 세단' 제네시스의 승부수…G80 하이브리드 공개 - 머니투데이 - 머니투데이",
-    "body": "11/19 LA 현지시간 세계 최초 공개(국내 보도자료 11/20). 국내 출시·계약 일정 및 전용 가격표는 확인되지 않았습니다.",
-    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBzVllid25aemp6TzJTVzRBY1djeDFKMjVzcWY4YjRROXl5ZDFxYW4tWnFobHNjYk1xUW9LM1o5ejJHSEhJeC1TX3ROQTgzQk5HdUl0OVYzRER6ZHBJc0l1V2NlRUR3b25aeTNKcDF5TWF5QdIBckFVX3lxTFBzVllid25aemp6TzJTVzRBY1djeDFKMjVzcWY4YjRROXl5ZDFxYW4tWnFobHNjYk1xUW9LM1o5ejJHSEhJeC1TX3ROQTgzQk5HdUl0OVYzRER6ZHBJc0l1V2NlRUR3b25aeTNKcDF5TWF5QQ?oc=5",
-    "published": "2026-11-20T11:09:03+09:00",
-    "severity": "warning",
-    "source": "newcar_watch_verified"
-  },
-  {
-    "date": "2026-11-19",
-    "article_date": "2026-11-19",
-    "brand": "기아",
-    "model": "레이",
-    "vehicle": "기아 레이",
-    "title": "레이 1,555만 원 같은 값에 승용 트렌디와 2인승 밴 프레스티지 - 래디언스리포트",
-    "body": "기아 레이 승용 트렌디 트림과 2인승 밴 프레스티지 트림이 1,555만 원으로 동일하게 책정된 가격 및 트림 구성 정보를 전달합니다.",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5sTVV4YU51VURra25ETW9lY1ZzX192b1AySWVOSHNMUFYxX1c2MkZaZnhRVHRCOUlxR254SUsyYmd2Tm5NdFpWVDlMOEM0UFlUcXY3U3R3UHZTdGtxcEtCa2pxLTQwOS1xMzV6Q3lWRlZYTDB60gF0QVVfeXFMTmxNVXhhTnVVRGtrbkRNb2VjVnNfX3ZvUDJJZU5Ic0xQVjFfVzYyRlpmeFFUdEI5SXFHbnhJSzJiZ3ZObk10WlZUOUw4QzRQWVRxdjdTdHdQdlN0a3FwS0JranEtNDA5LXEzNXpDeVZGVlhMMHo?oc=5",
-    "published": "2026-11-19T19:38:15+09:00",
     "severity": "warning",
     "source": "newcar_watch_verified"
   }
