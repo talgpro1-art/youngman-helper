@@ -562,9 +562,9 @@ def show_sales_period(df: pd.DataFrame) -> None:
 
 
 def show_rank_section(df: pd.DataFrame) -> None:
-    filtered = filter_vehicles(df)
-    st.markdown('<div class="mobile-section-title">국산·수입 통합 TOP50</div>', unsafe_allow_html=True)
+    st.markdown('<h2 class="mobile-section-title">국산·수입 통합 TOP50</h2>', unsafe_allow_html=True)
     show_sales_period(df)
+    filtered = filter_vehicles(df)
     st.caption(f"표시 차량: {len(filtered)}개")
     if filtered.empty:
         st.info("검색 결과가 없습니다. 차량명을 바꾸거나 차급 필터를 전체로 선택해 주세요.")
@@ -575,7 +575,7 @@ def show_rank_section(df: pd.DataFrame) -> None:
 
 
 def show_pdf_section(df: pd.DataFrame) -> None:
-    st.markdown('<div class="mobile-section-title">공식 가격표·PDF 바로가기</div>', unsafe_allow_html=True)
+    st.markdown('<h2 class="mobile-section-title">공식 가격표·PDF 바로가기</h2>', unsafe_allow_html=True)
     show_sales_period(df)
     keyword = st.text_input("가격표 검색", placeholder="예: 쏘렌토, 그랜저, 카니발")
     filtered = df.copy()
@@ -599,7 +599,7 @@ def show_pdf_section(df: pd.DataFrame) -> None:
 
 
 def show_option_section(df: pd.DataFrame, options: pd.DataFrame, mentions: pd.DataFrame) -> None:
-    st.markdown('<div class="mobile-section-title">차량별 관심 옵션·기능 설명</div>', unsafe_allow_html=True)
+    st.markdown('<h2 class="mobile-section-title">차량별 관심 옵션·기능 설명</h2>', unsafe_allow_html=True)
     st.caption("TOP10 차량 중심으로 상담 문장을 먼저 보여줍니다. 운영 시 공식 가격표와 안내 문구를 주기적으로 업데이트할 수 있습니다.")
     top10 = df[df["rank"] <= 10].copy()
     scope = st.radio("옵션 표시 범위", ["TOP10 데모", "전체 차량"], horizontal=True)
@@ -622,14 +622,14 @@ def show_option_section(df: pd.DataFrame, options: pd.DataFrame, mentions: pd.Da
             if not mention_rows.empty:
                 mention = mention_rows.iloc[0]
                 keywords = safe_str(mention.get("keywords")).replace(";", " · ")
-                mention_html = f'<div style="border-radius:12px;background:#eef2ff;border:1px solid #c7d2fe;padding:.65rem .75rem;margin:.55rem 0;"><div style="font-size:1.02rem;font-weight:900;color:#3730a3;">온라인 언급률 {html_text(mention.get("mention_rate"), "0")}%</div><div style="font-size:.82rem;color:#4338ca;">언급 수 {html_text(mention.get("mention_count"), "0")}/{html_text(mention.get("total_mentions"), "0")}</div><div style="font-size:.82rem;color:#4338ca;">주요 키워드: {html_text(keywords)}</div></div>'
+                mention_html = f'<div class="mention-brief"><strong>온라인 언급률 {html_text(mention.get("mention_rate"), "0")}%</strong><div>언급 수 {html_text(mention.get("mention_count"), "0")}/{html_text(mention.get("total_mentions"), "0")}</div><div>주요 키워드: {html_text(keywords)}</div></div>'
         status_html = f'<div class="small-muted">{html_text(opt.get("data_status"))}</div>' if safe_str(opt.get("data_status")) else ""
         st.markdown(f'<div class="option-card"><div class="option-name">{html_text(option_name)}</div>{mention_html}<div class="option-label">쉬운 설명</div><div class="effect-body">{html_text(function)}</div><div class="option-label">고객에게 이렇게 설명</div><div class="talking-point">{html_text(consultation_sentence(vehicle_name, option_name, sales_point))}</div>{status_html}</div>', unsafe_allow_html=True)
     st.info("옵션명·설명은 영업 상담 보조용 요약입니다. 실제 적용 트림, 옵션 구성, 가격은 반드시 공식 가격표를 확인하세요.")
 
 
 def show_effect_section() -> None:
-    st.markdown('<div class="mobile-section-title">업무효과</div>', unsafe_allow_html=True)
+    st.markdown('<h2 class="mobile-section-title">업무효과</h2>', unsafe_allow_html=True)
     st.caption("영맨 헬퍼는 공개 자료 기반 정보를 한 화면에 모아 상담 준비 과정을 표준화합니다.")
     c1, c2 = st.columns(2)
     with c1:
@@ -648,7 +648,7 @@ def show_effect_section() -> None:
 
 
 def show_summary_metrics(df: pd.DataFrame) -> None:
-    st.markdown('<div class="mobile-section-title">운영 데이터 요약</div>', unsafe_allow_html=True)
+    st.markdown('<h2 class="mobile-section-title">운영 데이터 요약</h2>', unsafe_allow_html=True)
     m1, m2, m3, m4 = st.columns(4)
     m1.metric("관리 차종", f"{len(df)}개")
     m2.metric("공식링크", f"{int(df['has_pdf'].sum()) if not df.empty else 0}개")
@@ -658,7 +658,14 @@ def show_summary_metrics(df: pd.DataFrame) -> None:
 
 
 def main() -> None:
-    st.markdown('<div class="garage-brand">영맨<span>헬퍼</span></div>', unsafe_allow_html=True)
+    st.markdown(
+        '<div class="garage-brand"><span class="brand-mark" aria-hidden="true">'
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" '
+        'stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v-3l2-5h12l2 5v3H4Z"/>'
+        '<path d="M4 13h16M7 16v2m10-2v2M7 14.5h.5m9 0h.5"/></svg></span>'
+        '<strong>영맨헬퍼</strong><small>차량 정보 대시보드</small></div>',
+        unsafe_allow_html=True,
+    )
     df = load_vehicles(file_version(VEHICLE_MASTER), "2026-10-02-price-image-audit")
     price_checks = load_price_checks(file_version(LINK_STATUS))
     if not price_checks.empty:
@@ -678,7 +685,7 @@ def main() -> None:
     with tab1:
         hero_path = ROOT / "assets" / "night-garage-hero.png"
         hero_image = f'<img src="{image_file_to_data_url(hero_path)}" alt="" aria-hidden="true">' if hero_path.exists() else ""
-        st.markdown(f'<section class="garage-hero">{hero_image}<div class="garage-hero-copy"><h1>영맨헬퍼</h1><p>차량 판매순위부터 가격표까지 원클릭으로</p></div></section>', unsafe_allow_html=True)
+        st.markdown(f'<section class="garage-hero">{hero_image}<div class="garage-hero-copy"><div class="garage-kicker">SALES DESK</div><h1>영맨헬퍼</h1><p>차량 판매순위부터 가격표까지 원클릭으로</p></div></section>', unsafe_allow_html=True)
         show_updates_preview(notifications, newcars)
         show_rank_section(df)
     with tab2:
