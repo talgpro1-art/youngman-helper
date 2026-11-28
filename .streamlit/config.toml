@@ -5,9 +5,9 @@ toolbarMode = "minimal"
 enableStaticServing = true
 
 [theme]
-base = "dark"
-primaryColor = "#ff741f"
-backgroundColor = "#080e16"
-secondaryBackgroundColor = "#111b27"
-textColor = "#f4f6fa"
+base = "light"
+primaryColor = "#244da4"
+backgroundColor = "#f4f6fa"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#1c2a43"
 font = "sans serif"
